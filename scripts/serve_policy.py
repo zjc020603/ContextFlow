@@ -41,6 +41,10 @@ class Checkpoint:
     dir: str
     # Optional: Override inference dtype (e.g., "float32", "bfloat16"). Defaults to bfloat16 if not specified.
     inference_dtype: str | None = None
+    # Enable paired correct/no/wrong demonstration evaluation requests.
+    context_ablation: bool = False
+    # Use the already-downloaded LIBERO demo dataset without contacting Hugging Face.
+    local_files_only: bool = False
 
 
 @dataclasses.dataclass
@@ -105,12 +109,20 @@ def create_policy_from_checkpoint(
     train_config = _config.get_config(checkpoint.config)
     use_incontext = loader == LoaderMode.INCONTEXT or (loader == LoaderMode.AUTO and _is_incontext_config(train_config))
 
+    if checkpoint.local_files_only:
+        if not use_incontext or not hasattr(train_config.data, "policy_local_files_only"):
+            raise ValueError("This config does not support local-only demonstration loading")
+        train_config = dataclasses.replace(
+            train_config, data=dataclasses.replace(train_config.data, policy_local_files_only=True)
+        )
+
     if use_incontext:
         return _policy_config.create_trained_policy_incontext(
             train_config,
             checkpoint.dir,
             default_prompt=default_prompt,
             inference_dtype=checkpoint.inference_dtype,
+            context_ablation=checkpoint.context_ablation,
         )
 
     return _policy_config.create_trained_policy(

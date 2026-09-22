@@ -368,6 +368,42 @@ qs_action() (
             printf '开始 ContextFlow 训练，共 20,000 步；W&B 模式：%s。\n' "$WANDB_MODE"
             qs_run train "$QS_ROOT/.venv/bin/python" -u "$QS_ROOT/scripts/train.py" ContextFlow --exp-name "$exp" --batch-size "$batch"
             ;;
+        9)
+            qs_number QS_TRIALS '每个任务、每种 context 的评估次数' 25 1 50 || return
+            QS_RUN_NAME="context_ablation_object_correct_no_wrong_${QS_TRIALS}trials"
+            qs_activate train && qs_dataset && qs_checkpoint && qs_gpu || return
+            qs_number QS_PORT '策略服务端口' 8000 1 65535 || return
+            qs_require "$QS_ROOT/examples/libero/.venv/bin/python" || return
+            qs_server_command
+            QS_SERVER+=(--policy.context-ablation --policy.local-files-only)
+            if ((QS_DRY_RUN)); then
+                qs_print_command "${QS_SERVER[@]}"
+                qs_print_command "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.context_ablation \
+                    --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" --output-dir '<运行目录>'
+                return
+            fi
+            qs_logs || return
+            "$QS_ROOT/.venv/bin/python" - "$QS_LOG_DIR" "$QS_CHECKPOINT" "$QS_TRIALS" "$QS_PORT" <<'PY'
+import datetime, json, pathlib, sys
+root, checkpoint, trials, port = sys.argv[1:]
+(pathlib.Path(root) / 'run.json').write_text(json.dumps({
+    'created_at': datetime.datetime.now().astimezone().isoformat(),
+    'checkpoint': str(pathlib.Path(checkpoint).resolve()), 'inference_dtype': 'float32',
+    'num_trials_per_task_per_condition': int(trials), 'port': int(port),
+    'conditions': ['correct', 'no', 'wrong'], 'tasks': ['milk', 'tomato_sauce'],
+    'client_seed': 7, 'paired_policy_seed': 0, 'max_steps': 280,
+    'termination': 'fixed horizon; both In predicates checked every step',
+}, indent=2) + '\n')
+PY
+            qs_port_free || return
+            qs_start server "${QS_SERVER[@]}" || return
+            qs_wait_server "$QS_PID" || return
+            qs_activate libero || return
+            qs_run context_ablation "$QS_ROOT/examples/libero/.venv/bin/python" -u -m examples.libero.context_ablation \
+                --host "$QS_HOST" --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" \
+                --output-dir "$QS_LOG_DIR" --verify-interventions || return
+            "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.summarize_context_ablation "$QS_LOG_DIR"
+            ;;
         *) printf '请输入菜单中的编号。\n'; return 1 ;;
     esac
 )
@@ -389,7 +425,8 @@ qs_main() {
         printf '%s\n' '1  检查环境、资源路径和 GPU' '2  进入训练 / 策略服务环境终端' \
             '3  进入 LIBERO 模拟器环境终端' '4  启动 ContextFlow 策略服务' \
             '5  连接已有策略服务，运行 LIBERO 评估' '6  一键评估：启动服务 → 等待就绪 → 评估 → 关闭服务' \
-            '7  计算训练集归一化统计' '8  启动新的 ContextFlow 训练' '0  退出'
+            '7  计算训练集归一化统计' '8  启动新的 ContextFlow 训练' \
+            '9  牛奶 / 番茄酱 correct / no / wrong context 对照实验' '0  退出'
         read -r -p '输入编号并回车：' choice || break
         [[ "$choice" != 0 ]] || break
         qs_action "$choice"

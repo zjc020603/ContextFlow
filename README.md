@@ -93,6 +93,22 @@ defaults to `checkpoints/ContextFlow/ContextFlow_run1/19999`.
 Logs and results are saved under descriptive, timestamped `logs/quickstart/`
 directories. Videos are grouped by task instruction and exported at 20 FPS.
 
+Choose **9** for the milk / tomato-sauce context experiment. Both are held-out
+LIBERO-Object tasks. The launcher runs each language instruction with its own
+demonstration (`correct`), all demonstration masks disabled (`no`), and the other
+task's demonstration (`wrong`). Language and live observations remain unchanged.
+Each condition uses the same initial states and per-replan random seeds. It runs
+a fixed 280 control steps, checking both objects' LIBERO `In` predicates each step;
+neither goal ends a trial early. Results distinguish `language_only`, `other_only`,
+`both`, and `neither`, with paired transition counts in `comparison.json`.
+This is a separate intervention protocol, not the original Table 1 evaluation.
+The two task scenes differ, so comparisons are paired within each language/task.
+
+Videos are stored under `<run>/<condition>/videos/<instruction>/`, with actions,
+end-effector/gripper trajectories, object positions, and per-step goal predicates
+in `<condition>/trajectories/`. Each episode also records its actual demonstration
+and random seeds. This launcher uses local-only demonstration loading.
+
 The policy server and simulator can run on separate machines; set `--host` on the evaluation client to the server address. To test the server with random observations, see the [simple client](examples/simple_client/README.md).
 
 ## Real-World Dataset

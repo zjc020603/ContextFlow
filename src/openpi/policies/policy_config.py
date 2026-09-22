@@ -77,6 +77,7 @@ def create_trained_policy_incontext(
     default_prompt: str | None = None,
     norm_stats: dict[str, transforms.NormStats] | None = None,
     inference_dtype: str | None = None,
+    context_ablation: bool = False,
 ) -> _policy.Policy:
     """Create a policy from a trained checkpoint.
 
@@ -141,6 +142,7 @@ def create_trained_policy_incontext(
 
     return _policy_incontext.PolicyIncontext(
         model,
+        context_ablation=context_ablation,
         # TODO: check the transforms here, if it is the same as the one in the training
         transforms=input_transforms,
         output_transforms=[

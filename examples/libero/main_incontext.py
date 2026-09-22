@@ -4,6 +4,7 @@ import logging
 import math
 import os
 import pathlib
+import time
 import imageio
 from libero.libero import benchmark
 from libero.libero import get_libero_path
@@ -19,6 +20,7 @@ from collections import Counter
 
 LIBERO_DUMMY_ACTION = [0.0] * 6 + [-1.0]
 LIBERO_ENV_RESOLUTION = 256  # resolution used to render training data
+LIBERO_CONTROL_FREQUENCY = 20  # One recorded frame per control step; export at real-time speed.
 
 # Task descriptions and their indices come from the LeRobot dataset itself, so the
 # indices sent to the policy server always match the dataset it fetches demos from.
@@ -77,6 +79,12 @@ def eval_libero(args: Args) -> None:
         suffix = "incontext_unseen" if args.unseen_only or args.unseen_task_index >= 0 else "incontext"
         args.results_out_path = str(pathlib.Path("logs") / "eval_results" / f"{args.task_suite_name}_{suffix}_results.json")
 
+    results_path = pathlib.Path(args.results_out_path)
+    results_path.parent.mkdir(parents=True, exist_ok=True)
+    episode_records_path = results_path.with_suffix(".episodes.jsonl")
+    # Keep completed trials available even if a long evaluation is interrupted.
+    episode_records_path.write_text("")
+
     logging.info(f"Held-out tasks: {len(LIBERO_UNSEEN_TASKS)}")
 
     # Initialize LIBERO task suite
@@ -132,6 +140,7 @@ def eval_libero(args: Args) -> None:
         # Start episodes
         task_episodes, task_successes = 0, 0
         for episode_idx in tqdm.tqdm(range(args.num_trials_per_task)):
+            episode_started = time.monotonic()
             logging.info(f"\nTask: {task_description}")
 
             # Reset environment
@@ -143,6 +152,7 @@ def eval_libero(args: Args) -> None:
 
             # Setup
             t = 0
+            done = False
             replay_images = []
 
             logging.info(f"Starting episode {task_episodes+1}...")
@@ -204,8 +214,11 @@ def eval_libero(args: Args) -> None:
                     t += 1
 
                 except Exception as e:
-                    logging.error(f"Caught exception: {e}")
-                    break
+                    # Infrastructure/inference errors must not become task failures
+                    # in a reported benchmark success rate.
+                    logging.exception("Evaluation error in task %s, episode %d", task_description, episode_idx)
+                    env.close()
+                    raise RuntimeError("Evaluation aborted due to an execution error") from e
 
             task_episodes += 1
             total_episodes += 1
@@ -213,16 +226,28 @@ def eval_libero(args: Args) -> None:
             # Save a replay video of the episode
             suffix = "success" if done else "failure"
             task_segment = task_description.replace(" ", "_")
+            task_video_dir = pathlib.Path(args.video_out_path) / task_segment
+            task_video_dir.mkdir(parents=True, exist_ok=True)
             imageio.mimwrite(
-                pathlib.Path(args.video_out_path) / f"rollout_{task_segment}_ep{episode_idx:03d}_{suffix}.mp4",
+                task_video_dir / f"rollout_{task_segment}_ep{episode_idx:03d}_{suffix}.mp4",
                 [np.asarray(x) for x in replay_images],
-                fps=10,
+                fps=LIBERO_CONTROL_FREQUENCY,
             )
 
             # Log current results
             logging.info(f"Success: {done}")
             logging.info(f"# episodes completed so far: {total_episodes}")
             logging.info(f"# successes: {total_successes} ({total_successes / total_episodes * 100:.1f}%)")
+            with episode_records_path.open("a") as records:
+                records.write(json.dumps({
+                    "task_id": task_id,
+                    "task_description": task_description,
+                    "episode_index": episode_idx,
+                    "success": bool(done),
+                    "elapsed_seconds": time.monotonic() - episode_started,
+                }) + "\n")
+
+        env.close()
 
         # Track per-task results using task_description as key
         per_task_episodes[task_description] = task_episodes
@@ -268,6 +293,12 @@ def eval_libero(args: Args) -> None:
             "task_suite_name": args.task_suite_name,
             "num_trials_per_task": args.num_trials_per_task,
             "seed": args.seed,
+            "unseen_only": args.unseen_only,
+            "unseen_task_index": args.unseen_task_index,
+            "replan_steps": args.replan_steps,
+            "resize_size": args.resize_size,
+            "num_steps_wait": args.num_steps_wait,
+            "video_fps": LIBERO_CONTROL_FREQUENCY,
         },
         "per_task_results": per_task_results,
         "summary": {
@@ -292,7 +323,12 @@ def _get_libero_env(task, resolution, seed):
     """Initializes and returns the LIBERO environment, along with the task description."""
     task_description = task.language
     task_bddl_file = pathlib.Path(get_libero_path("bddl_files")) / task.problem_folder / task.bddl_file
-    env_args = {"bddl_file_name": task_bddl_file, "camera_heights": resolution, "camera_widths": resolution}
+    env_args = {
+        "bddl_file_name": task_bddl_file,
+        "camera_heights": resolution,
+        "camera_widths": resolution,
+        "control_freq": LIBERO_CONTROL_FREQUENCY,
+    }
     env = OffScreenRenderEnv(**env_args)
     env.seed(seed)  # IMPORTANT: seed seems to affect object positions even when using fixed initial state
     return env, task_description

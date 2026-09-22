@@ -154,8 +154,9 @@ def main(args: Args) -> None:
         policy = _policy.PolicyRecorder(policy, "policy_records")
 
     hostname = socket.gethostname()
-    local_ip = socket.gethostbyname(hostname)
-    logging.info("Creating server (host: %s, ip: %s)", hostname, local_ip)
+    # Binding to all interfaces does not require the machine's hostname to
+    # resolve in DNS (cluster hostnames often have no DNS or /etc/hosts entry).
+    logging.info("Creating server (host: %s, bind: 0.0.0.0:%s)", hostname, args.port)
 
     server = websocket_policy_server.WebsocketPolicyServer(
         policy=policy,

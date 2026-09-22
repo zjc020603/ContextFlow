@@ -70,6 +70,29 @@ Follow the [LIBERO guide](examples/libero/LIBERO_README.md) to set up the simula
 
 `examples/libero/main_incontext.py` evaluates unseen tasks by default and reports their success rate.
 
+### Interactive launcher
+
+After installing the policy environment in `.venv`, the simulator environment in
+`examples/libero/.venv`, and downloading the dataset and checkpoints, run:
+
+```bash
+bash quickstart.sh
+```
+
+Choose **6 → 5 → 50** to start a policy server and evaluate the two unseen tasks
+in each of LIBERO-Spatial and LIBERO-Object, with 50 trials per task. The launcher
+starts a fresh server for each suite and stops it when evaluation finishes.
+`bash quickstart.sh --dry-run` previews commands without starting the workloads.
+
+`source scripts/activate_env.sh train` or `source scripts/activate_env.sh libero`
+activates the corresponding environment. By default, datasets are stored in
+`../datasets` and the OpenPI cache in `../models/openpi`, relative to the repository;
+override these with `LEROBOT_HOME` and `OPENPI_DATA_HOME`. The checkpoint prompt
+defaults to `checkpoints/ContextFlow/ContextFlow_run1/19999`.
+
+Logs and results are saved under descriptive, timestamped `logs/quickstart/`
+directories. Videos are grouped by task instruction and exported at 20 FPS.
+
 The policy server and simulator can run on separate machines; set `--host` on the evaluation client to the server address. To test the server with random observations, see the [simple client](examples/simple_client/README.md).
 
 ## Real-World Dataset

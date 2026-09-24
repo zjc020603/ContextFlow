@@ -10,6 +10,7 @@ import time
 
 import flax.nnx as nnx
 import jax
+import jax.numpy as jnp
 import numpy as np
 import tyro
 
@@ -33,6 +34,7 @@ def main(
     if steps < 1:
         raise ValueError("steps must be positive")
     logging.basicConfig(level=logging.INFO)
+    logging.getLogger().setLevel(logging.INFO)
     cfg = configs.get_config(config_name)
     if params_path is not None:
         cfg = dataclasses.replace(cfg, weight_loader=FullBackboneWeightLoader(params_path))
@@ -64,6 +66,7 @@ def main(
         out_shardings=(state_sharding, replicated),
         donate_argnums=(1,),
     )
+    output.parent.mkdir(parents=True, exist_ok=True)
     metrics = []
     for index in range(steps):
         start = time.monotonic()
@@ -75,6 +78,7 @@ def main(
             raise ValueError(f"Non-finite training metrics: {record}")
         record.update(step=index, seconds=time.monotonic() - start)
         metrics.append(record)
+        output.write_text(json.dumps({"config": config_name, "phase": "training", "steps": metrics}, indent=2) + "\n")
         logging.info("smoke step: %s", record)
 
     # Reuse actual trained backbone arrays in a native reference, without copying
@@ -90,9 +94,9 @@ def main(
     obs, _ = batch
     masked = dataclasses.replace(
         obs,
-        incontext_image_masks=jax.tree.map(np.zeros_like, obs.incontext_image_masks),
-        incontext_state_masks=np.zeros_like(obs.incontext_state_masks),
-        incontext_action_masks=np.zeros_like(obs.incontext_action_masks),
+        incontext_image_masks=jax.tree.map(jnp.zeros_like, obs.incontext_image_masks),
+        incontext_state_masks=jnp.zeros_like(obs.incontext_state_masks),
+        incontext_action_masks=jnp.zeros_like(obs.incontext_action_masks),
     )
     # Native preprocessing ignores demonstrations; the live observations are identical.
     key = jax.random.key(7)
@@ -103,8 +107,19 @@ def main(
         context_actions = np.asarray(sample(model, obs))
     assert np.all(np.isfinite(context_actions))
     assert np.all(np.isfinite(no_context_actions))
-    np.testing.assert_allclose(no_context_actions, native_actions, atol=0.03, rtol=0.03)
+    # A masked prefix has a different sequence length. In bfloat16, that can
+    # change reduction rounding and compound across denoising steps. Test the
+    # structural equivalence in float32 instead of loosening a bf16 tolerance.
+    for candidate in (model, native):
+        candidate.PaliGemma.llm.module = candidate.PaliGemma.llm.module.clone(embed_dtype="float32")
+        candidate.PaliGemma.img.module = candidate.PaliGemma.img.module.clone(dtype_mm="float32")
+    model._image_token_dtype = jnp.dtype("float32")  # noqa: SLF001
+    with sharding.set_mesh(mesh):
+        native_float32 = np.asarray(sample(native, masked))
+        masked_float32 = np.asarray(sample(model, masked))
+    np.testing.assert_allclose(masked_float32, native_float32, atol=1e-3, rtol=1e-3)
     report = {
+        "phase": "complete",
         "config": config_name,
         "checkpoint": cfg.weight_loader.params_path,
         "steps": metrics,
@@ -116,6 +131,9 @@ def main(
         "sample_actions": cfg.model.sample_actions,
         "action_horizon": cfg.model.action_horizon,
         "no_context_native_max_abs_error": float(np.max(np.abs(no_context_actions - native_actions))),
+        "no_context_native_float32_max_abs_error": float(np.max(np.abs(masked_float32 - native_float32))),
+        "float32_parity_atol": 1e-3,
+        "float32_parity_rtol": 1e-3,
         "context_action_mean_abs_change": float(np.mean(np.abs(context_actions - no_context_actions))),
         "training_episode_count": len(loader.data_config().train_episode),
         "training_episode_sha256": hashlib.sha256(json.dumps(loader.data_config().train_episode).encode()).hexdigest(),

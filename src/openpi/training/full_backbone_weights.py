@@ -35,7 +35,7 @@ def merge_full_backbone(loaded, template):
         raise ValueError(
             f"Pretrained backbone mismatch: missing={missing}, unexpected={unexpected}, shape_mismatch={mismatched}"
         )
-    result = {k: flat[k].astype(v.dtype) if k in flat else v for k, v in ref.items()}
+    result = {k: flat[k].astype(v.dtype, copy=False) if k in flat else v for k, v in ref.items()}
     logging.info(
         "Full backbone loaded: %d leaves / %d parameters; newly initialized context/LoRA: %d leaves",
         len(flat),

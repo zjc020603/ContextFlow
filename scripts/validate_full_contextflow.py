@@ -10,6 +10,7 @@ import time
 
 import flax.nnx as nnx
 import jax
+import jax.numpy as jnp
 import numpy as np
 import tyro
 
@@ -22,7 +23,7 @@ from scripts import train
 
 
 def main(
-    config_name: str = "ContextFlow_pi05_full",
+    config_name: str = "ContextFlow_pi0_full",
     *,
     params_path: str | None = None,
     steps: int = 3,
@@ -33,6 +34,7 @@ def main(
     if steps < 1:
         raise ValueError("steps must be positive")
     logging.basicConfig(level=logging.INFO)
+    logging.getLogger().setLevel(logging.INFO)
     cfg = configs.get_config(config_name)
     if params_path is not None:
         cfg = dataclasses.replace(cfg, weight_loader=FullBackboneWeightLoader(params_path))
@@ -64,6 +66,7 @@ def main(
         out_shardings=(state_sharding, replicated),
         donate_argnums=(1,),
     )
+    output.parent.mkdir(parents=True, exist_ok=True)
     metrics = []
     for index in range(steps):
         start = time.monotonic()
@@ -75,6 +78,7 @@ def main(
             raise ValueError(f"Non-finite training metrics: {record}")
         record.update(step=index, seconds=time.monotonic() - start)
         metrics.append(record)
+        output.write_text(json.dumps({"config": config_name, "phase": "training", "steps": metrics}, indent=2) + "\n")
         logging.info("smoke step: %s", record)
 
     # Reuse actual trained backbone arrays in a native reference, without copying
@@ -90,9 +94,9 @@ def main(
     obs, _ = batch
     masked = dataclasses.replace(
         obs,
-        incontext_image_masks=jax.tree.map(np.zeros_like, obs.incontext_image_masks),
-        incontext_state_masks=np.zeros_like(obs.incontext_state_masks),
-        incontext_action_masks=np.zeros_like(obs.incontext_action_masks),
+        incontext_image_masks=jax.tree.map(jnp.zeros_like, obs.incontext_image_masks),
+        incontext_state_masks=jnp.zeros_like(obs.incontext_state_masks),
+        incontext_action_masks=jnp.zeros_like(obs.incontext_action_masks),
     )
     # Native preprocessing ignores demonstrations; the live observations are identical.
     key = jax.random.key(7)
@@ -105,6 +109,7 @@ def main(
     assert np.all(np.isfinite(no_context_actions))
     np.testing.assert_allclose(no_context_actions, native_actions, atol=0.03, rtol=0.03)
     report = {
+        "phase": "complete",
         "config": config_name,
         "checkpoint": cfg.weight_loader.params_path,
         "steps": metrics,

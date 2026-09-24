@@ -1,6 +1,6 @@
 # ContextFlow: In-Context Flow Matching for Robot Manipulation
 
-Full pretrained π0.5 + ContextFlow experiments: [setup and validation](docs/FULL_CONTEXTFLOW.md).
+Full pretrained π0 + ContextFlow control (also includes π0.5): [setup and validation](docs/FULL_CONTEXTFLOW.md).
 
 
 This repository contains the model and training/evaluation code for **ContextFlow** — a model that conditions on **in-context demonstrations** (demo images, states, and actions of a related task) to generalize to unseen tasks without fine-tuning.

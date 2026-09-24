@@ -1,6 +1,7 @@
 # Full pretrained VLM + ContextFlow
 
-This branch prioritizes `ContextFlow_pi05_full`. It keeps the complete pretrained
+This branch prioritizes `ContextFlow_pi0_full`, the matched full π0 control.
+Both configurations are available. The π0.5 configuration keeps the complete pretrained
 SigLIP + PaliGemma/Gemma-2B + action expert from `pi05_base` and adds the existing
 ContextFlow demonstration projections and Perceiver compressors. The original
 `ContextFlow` configuration and checkpoints remain available.
@@ -9,6 +10,17 @@ The question is whether context becomes more useful when the full pretrained VLM
 is retained. The original small `gemma_300m_v2` prompt expert is not used here.
 The new context modules need training; loading a base checkpoint alone is not a
 trained context-conditioned policy.
+
+## π0 control on this branch
+
+Use `ContextFlow_pi0_full` and `pi0_base` in the commands below to run the control.
+It keeps the full pretrained Gemma-2B VLM and action expert. It uses π0's native
+continuous current-state token, action/time MLP, 48 text tokens and z-score
+normalization. π0.5 uses a discrete state prefix, adaptive RMSNorm, 200 text tokens
+and quantile normalization. All context modules and training settings are matched.
+The statistics JSON is identical because both runs use the same raw dataset split,
+actions and horizon; the models apply their respective native normalization modes.
+The validation script defaults to the π0 control on this branch.
 
 ## Architecture and initialization
 

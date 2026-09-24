@@ -88,7 +88,9 @@ Omit `--local-files-only` to allow dataset download. Omit `--params-path` to use
 registered official checkpoint URL. Short validation uses a repeated real batch,
 the production AdamW training step, finite loss/gradient checks, and sampled actions
 with/without demonstrations. It also compares masked-context inference against a
-native reference sharing the trained backbone arrays. It saves a JSON report, not
+native reference sharing the trained backbone arrays. The strict parity check uses
+float32 (atol/rtol 1e-3); bfloat16 differences are reported separately because
+adding masked tokens can change reduction rounding. It saves a JSON report, not
 a deployable checkpoint or optimizer state. It does not measure task success.
 
 ## Full training and evaluation
@@ -98,7 +100,8 @@ After short validation, launch a separate training experiment:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 "$PYTHON" scripts/train.py ContextFlow_pi05_full \
   --exp-name pi05_full_seed42 --batch-size 32 --fsdp-devices 8 \
-  --num-train-steps 20000 --no-wandb-enabled
+  --num-train-steps 20000 --data.local-files-only --no-wandb-enabled \
+  --weight-loader.params-path /path/to/pi05_base/params
 
 "$PYTHON" scripts/serve_policy.py --env LIBERO \
   policy:checkpoint --policy.config ContextFlow_pi05_full \
@@ -114,3 +117,20 @@ that demonstrations are being used effectively.
 
 The separate attention-capture experiments in the uncommitted main worktree are
 not part of this branch. The original paired context-ablation protocol is retained.
+
+## Validation record (2026-09-24)
+
+[`validation/pi0_smoke.json`](validation/pi0_smoke.json) records three real
+LIBERO optimizer steps (batch 4, FSDP 4, 8 demo frames / 128 demo actions), finite
+loss/gradients, and inference checks. The complete official checkpoint matched
+all 50 backbone parameter leaves; only 119 new context leaves were initialized.
+The no-context/native float32 maximum action difference was
+`4.95e-06`. The same comparison in
+bfloat16 had maximum difference `0.1237`;
+use identical sequence layouts or float32 for tight numerical comparisons.
+
+The validation deliberately repeats one real batch and uses two denoising steps
+to check the execution path. It does not establish convergence, LIBERO success
+rate, or a context benefit. Loss values across π0 and π0.5 should not be compared
+as performance scores because their normalization differs. No 20,000-step training
+run was started. Timing includes compilation and shared-machine contention.

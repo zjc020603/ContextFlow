@@ -173,6 +173,7 @@ def test_full_backbone_loader_rejects_missing_or_wrong_weights():
     loaded = {"PaliGemma": {"kernel": np.ones((2, 3), np.float32)}}
     merged = merge_full_backbone(loaded, template)
     np.testing.assert_array_equal(merged["PaliGemma"]["kernel"], 1)
+    assert merged["PaliGemma"]["kernel"] is loaded["PaliGemma"]["kernel"]
     np.testing.assert_array_equal(merged["demo_action_proj"]["kernel"], 0)
     with pytest.raises(ValueError, match="missing"):
         merge_full_backbone({}, template)

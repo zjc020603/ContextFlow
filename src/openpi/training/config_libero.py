@@ -89,6 +89,8 @@ def build(api) -> list[api.TrainConfig]:
         # CustomLeRobotDataset specific parameters
         sample_frames: int = 2  # Number of frames for in-context demonstration
         sample_actions: int = 32  # Number of actions for in-context demonstration
+        # Public CLI switch for training on an already downloaded dataset.
+        local_files_only: bool = False
         policy_local_files_only: bool = False
         random_select: bool = True  # If True, randomly select demo episodes; if False, use deterministic selection
         norm_stats_aliases: dict[str, str] | None = dataclasses.field(
@@ -97,6 +99,11 @@ def build(api) -> list[api.TrainConfig]:
                 "dem_prompt_all_actions": "actions",
             }
         )
+
+        @override
+        def create_base_config(self, assets_dirs: pathlib.Path) -> DataConfig:
+            config = super().create_base_config(assets_dirs)
+            return dataclasses.replace(config, local_files_only=self.local_files_only or config.local_files_only)
 
         @override
         def create(self, assets_dirs: pathlib.Path, model_config: BaseModelConfig) -> DataConfig:
@@ -141,7 +148,7 @@ def build(api) -> list[api.TrainConfig]:
                 LeRobotDatasetMetadata(
                     self.repo_id,
                     root=pathlib.Path(self.episode_json_path).parent.parent,
-                    local_files_only=(self.base_config or api.DataConfig()).local_files_only,
+                    local_files_only=self.local_files_only or (self.base_config or api.DataConfig()).local_files_only,
                 )
             train_epi = api.get_kept_episode_indices(self.episode_json_path, self.remove_task_list)
 

@@ -107,7 +107,17 @@ def main(
         context_actions = np.asarray(sample(model, obs))
     assert np.all(np.isfinite(context_actions))
     assert np.all(np.isfinite(no_context_actions))
-    np.testing.assert_allclose(no_context_actions, native_actions, atol=0.03, rtol=0.03)
+    # A masked prefix has a different sequence length. In bfloat16, that can
+    # change reduction rounding and compound across denoising steps. Test the
+    # structural equivalence in float32 instead of loosening a bf16 tolerance.
+    for candidate in (model, native):
+        candidate.PaliGemma.llm.module = candidate.PaliGemma.llm.module.clone(embed_dtype="float32")
+        candidate.PaliGemma.img.module = candidate.PaliGemma.img.module.clone(dtype_mm="float32")
+    model._image_token_dtype = jnp.dtype("float32")  # noqa: SLF001
+    with sharding.set_mesh(mesh):
+        native_float32 = np.asarray(sample(native, masked))
+        masked_float32 = np.asarray(sample(model, masked))
+    np.testing.assert_allclose(masked_float32, native_float32, atol=1e-3, rtol=1e-3)
     report = {
         "phase": "complete",
         "config": config_name,
@@ -121,6 +131,9 @@ def main(
         "sample_actions": cfg.model.sample_actions,
         "action_horizon": cfg.model.action_horizon,
         "no_context_native_max_abs_error": float(np.max(np.abs(no_context_actions - native_actions))),
+        "no_context_native_float32_max_abs_error": float(np.max(np.abs(masked_float32 - native_float32))),
+        "float32_parity_atol": 1e-3,
+        "float32_parity_rtol": 1e-3,
         "context_action_mean_abs_change": float(np.mean(np.abs(context_actions - no_context_actions))),
         "training_episode_count": len(loader.data_config().train_episode),
         "training_episode_sha256": hashlib.sha256(json.dumps(loader.data_config().train_episode).encode()).hexdigest(),

@@ -66,3 +66,11 @@ def test_invalid_full_backbone_settings_fail_early():
         dataclasses.replace(c, use_text_prompts=False)
     with pytest.raises(ValueError, match="unpooled"):
         dataclasses.replace(c, avg_current_img=True)
+
+
+def test_full_config_exposes_local_training_data_switch(monkeypatch):
+    c = config.get_config("ContextFlow_pi05_full")
+    monkeypatch.setattr(config.DataConfigFactory, "create_base_config", lambda self, assets: self.base_config)
+    local = dataclasses.replace(c.data, local_files_only=True)
+    assert local.create_base_config(c.assets_dirs).local_files_only
+    assert not c.data.create_base_config(c.assets_dirs).local_files_only

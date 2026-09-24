@@ -468,6 +468,8 @@ class AbsoluteActions(DataTransformFn):
 @dataclasses.dataclass(frozen=True)
 class TokenizePrompt(DataTransformFn):
     tokenizer: _tokenizer.PaligemmaTokenizer
+    discrete_state_input: bool = False
+    state_dim: int | None = None
 
     def __call__(self, data: DataDict) -> DataDict:
         if (prompt := data.pop("prompt", None)) is None:
@@ -475,8 +477,35 @@ class TokenizePrompt(DataTransformFn):
 
         if not isinstance(prompt, str):
             prompt = prompt.item()
-        tokens, token_masks = self.tokenizer.tokenize(prompt)
+        state = data["state"] if self.discrete_state_input else None
+        if state is not None and self.state_dim is not None:
+            state = state[..., :self.state_dim]
+        tokens, token_masks = self.tokenizer.tokenize(prompt, state)
         return {**data, "tokenized_prompt": tokens, "tokenized_prompt_mask": token_masks}
+
+
+@dataclasses.dataclass(frozen=True)
+class RestoreNativePadding(DataTransformFn):
+    """Restore pad-after-normalization semantics for legacy LIBERO adapters.
+
+    Constant zero dimensions can become -1 under quantile normalization.
+    They are padding, not measured state/action values or demonstration signal.
+    """
+
+    state_dim: int | None = None
+    action_dim: int | None = None
+
+    def __call__(self, data: DataDict) -> DataDict:
+        result = dict(data)
+        for key, dim in (
+            ("state", self.state_dim), ("dem_prompt_all_states", self.state_dim),
+            ("actions", self.action_dim), ("dem_prompt_all_actions", self.action_dim),
+        ):
+            if dim is not None and key in result:
+                value = np.array(result[key], copy=True)
+                value[..., dim:] = 0
+                result[key] = value
+        return result
 
 
 @dataclasses.dataclass(frozen=True)

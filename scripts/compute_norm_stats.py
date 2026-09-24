@@ -55,6 +55,7 @@ def main(
     *,
     use_delta_joint_actions: bool = True,
     fast: bool = True,
+    local_files_only: bool = False,
     output_dir: str | None = None,
 ):
     """Compute statistics, using delta joint actions by default for compatible data configs.
@@ -64,10 +65,18 @@ def main(
         sample_frames: Optional number of frames to sample.
         use_delta_joint_actions: Subtract joint state from actions for statistics only.
         fast: Use numeric-only loading for full ContextFlow statistics. Sampling and other configs use the legacy path.
+        local_files_only: Use an already downloaded dataset without contacting the Hub.
         output_dir: Optional output directory for norm_stats.json; defaults to the config's asset directory.
     """
     config = _config.get_config(config_name)
-    if fast and config_name == "ContextFlow" and sample_frames is None:
+    if local_files_only:
+        config = dataclasses.replace(
+            config, data=dataclasses.replace(
+                config.data,
+                base_config=dataclasses.replace(config.data.base_config or _config.DataConfig(), local_files_only=True),
+            ),
+        )
+    if fast and config_name in ("ContextFlow", "ContextFlow_pi05_full", "ContextFlow_pi0_full") and sample_frames is None:
         from openpi.training import libero_norm_stats
 
         data_config = config.data.create(config.assets_dirs, config.model)

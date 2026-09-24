@@ -1,5 +1,8 @@
 # ContextFlow: In-Context Flow Matching for Robot Manipulation
 
+Full pretrained π0.5 + ContextFlow experiments: [setup and validation](docs/FULL_CONTEXTFLOW.md).
+
+
 This repository contains the model and training/evaluation code for **ContextFlow** — a model that conditions on **in-context demonstrations** (demo images, states, and actions of a related task) to generalize to unseen tasks without fine-tuning.
 
 It is a fork of [openpi](https://github.com/Physical-Intelligence/openpi) by the [Physical Intelligence team](https://www.physicalintelligence.company/) and builds on their base model, the [π₀ model](https://www.physicalintelligence.company/blog/pi0), a flow-based diffusion VLA.

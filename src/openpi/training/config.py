@@ -261,8 +261,14 @@ class ModelTransformFactory(GroupFactory):
                     inputs=[
                         _transforms.InjectDefaultPrompt(self.default_prompt),
                         _transforms.ResizeImages(224, 224),
+                        _transforms.RestoreNativePadding(
+                            state_dim=getattr(model_config, "state_dim", None),
+                            action_dim=getattr(model_config, "native_action_dim", None),
+                        ),
                         _transforms.TokenizePrompt(
                             _tokenizer.PaligemmaTokenizer(model_config.max_token_len),
+                            discrete_state_input=getattr(model_config, "discrete_state_input", False),
+                            state_dim=getattr(model_config, "state_dim", None),
                         ),
                     ],
                 )

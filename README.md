@@ -226,12 +226,31 @@ preserved in `migration/local-tools` (some retain original machine paths).
 
 This migration includes code, reports, figures, interactive report HTML,
 JSON/JSONL/CSV results, configurations and provenance. Raw attention/observation
-arrays, rollout videos, binary viewer/video archives, all model checkpoints,
+arrays, rollout videos, binary viewer/video archives, public model checkpoints,
 external datasets and virtual environments are intentionally excluded. Some
 report links to those excluded files therefore require the original artifacts.
 
 Public weights and datasets can be downloaded again using the setup instructions.
-The local pi05 fine-tuned weights cannot be recovered by downloading the public
-base model; they were also excluded by request. The old cluster's original files
-remain untouched. Recreate environments and LIBERO path configuration on the new
+The final locally fine-tuned pi05 model is selected for separate release upload;
+see [its manifest](migration/pi05_trained_model.json) for status and checksums.
+These weights cannot be recovered by downloading the public base model. Only
+step 19999 `params` and `assets` are retained for inference, excluding optimizer
+state and intermediate checkpoints. The old cluster's original files remain untouched. Recreate environments and LIBERO path configuration on the new
 cluster rather than relying on old absolute paths.
+
+When the model release is published, restore it with the following commands
+(`gh` is the GitHub CLI; alternatively download the release assets in a browser):
+
+```bash
+gh release download migration-pi05-contextflow-20261008 \
+  --repo zjc020603/ContextFlow --dir /tmp/contextflow-pi05-model
+(cd /tmp/contextflow-pi05-model && sha256sum -c SHA256SUMS)
+MODEL_DIR="$PWD/.worktrees/pi05-full/checkpoints/ContextFlow_pi05_full/pi05_full_seed42_20260924_214930/19999"
+mkdir -p "$MODEL_DIR"
+cat /tmp/contextflow-pi05-model/contextflow-pi05-full-step19999.tar.part-* \
+  | tar -xf - -C "$MODEL_DIR"
+```
+
+Use `experiment/pi05-full-contextflow` and config `ContextFlow_pi05_full` to load
+this model. The archived final validation confirms finite parameters and sampled
+actions; it does not establish a behavioral success rate for this trained model.

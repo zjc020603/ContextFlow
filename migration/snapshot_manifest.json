@@ -192,20 +192,20 @@
   "excluded_from_public_upload": [
     "authentication credentials and private keys"
   ],
-  "status": "source/report snapshot; binary artifacts intentionally excluded",
+  "status": "source/report snapshot plus final locally trained pi05 model (release upload pending)",
   "excluded_from_migration": [
     "public downloadable pretrained/released model weights",
     "rebuildable virtual environments and dependency caches",
-    "all locally trained checkpoints (explicit user choice)",
     "raw experiment arrays (.npz)",
     "rollout videos (.mp4) and duplicate binary viewer/video archives",
     "runtime PID files and Python bytecode caches",
-    "external public datasets (download again on the new cluster)"
+    "external public datasets (download again on the new cluster)",
+    "intermediate locally trained checkpoints and optimizer state"
   ],
   "verification": {
     "focused_tests_passed": 20,
     "public_upload_secret_scan": "passed (3444 source/report files plus staged-file scan)",
-    "notes": "20 focused tests passed. Source/report files scanned for credentials. Raw arrays, videos, all checkpoints and rebuildable environments are intentionally excluded; originals remain on the old cluster.",
+    "notes": "20 focused tests passed. Source/report files scanned for credentials. Raw arrays, videos, public model weights, intermediate checkpoints, optimizer states and rebuildable environments are excluded; originals remain on the old cluster.",
     "all_markdown_reports_in_logs_included": true,
     "tracked_experiment_record_counts": {
       ".json": 2299,
@@ -236,13 +236,26 @@
     ],
     "per_step_params_GiB": 12.51,
     "per_step_training_state_GiB": 20.34,
-    "retention": "excluded by user request; original files retained on old cluster"
+    "retention": "intermediate checkpoints and all optimizer state excluded; final step 19999 params+assets selected for migration"
   },
   "included": [
     "source code and experiment scripts",
     "reports, figures and interactive report HTML",
     "JSON/JSONL/CSV metrics, configuration and provenance",
     "environment package inventories and setup instructions",
-    "small training/validation logs from separate worktrees"
-  ]
+    "small training/validation logs from separate worktrees",
+    "final locally trained pi05 ContextFlow params+assets via separate GitHub Release (upload pending)"
+  ],
+  "large_artifacts_pending": {
+    "local_pi05_final_model": {
+      "checkpoint_step": 19999,
+      "included": [
+        "params",
+        "assets"
+      ],
+      "bytes": 13435425037,
+      "release_tag": "migration-pi05-contextflow-20261008",
+      "manifest": "migration/pi05_trained_model.json"
+    }
+  }
 }

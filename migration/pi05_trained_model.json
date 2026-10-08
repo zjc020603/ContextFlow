@@ -1,0 +1,482 @@
+{
+  "name": "ContextFlow with full pretrained pi05 backbone, locally fine-tuned",
+  "config": "ContextFlow_pi05_full",
+  "source_branch": "experiment/pi05-full-contextflow",
+  "source_commit": "597539deeb868bea72c8e2ee34f054a71e32bcce",
+  "initial_weights": "gs://openpi-assets/checkpoints/pi05_base/params",
+  "training_run": "pi05_full_seed42_20260924_214930",
+  "checkpoint_step": 19999,
+  "optimizer_updates": 20000,
+  "seed": 42,
+  "included": [
+    "params",
+    "assets"
+  ],
+  "excluded": [
+    "train_state",
+    "intermediate checkpoints"
+  ],
+  "public_base_is_not_this_model": true,
+  "bytes": 13435425037,
+  "release_tag": "migration-pi05-contextflow-20261008",
+  "upload_status": "prepared and locally verified; upload pending",
+  "files": [
+    {
+      "path": "params/_METADATA",
+      "bytes": 72262,
+      "sha256": "5870428d652e3c57263fd26dcf8eac13a66714ec17eba9499c9507218a30ab34"
+    },
+    {
+      "path": "params/_sharding",
+      "bytes": 60101,
+      "sha256": "e9b13ad3d800f0d7c9ba4ef77705acadc7c3bc1ae5ecbfae591ac2bf74b87e29"
+    },
+    {
+      "path": "params/d/107f24002eb05cc801ab95ba83edfa9b",
+      "bytes": 7626,
+      "sha256": "7ccc080769afb6965176de9c7c9714f2996890f260b0795dbe45d8dcb40b6282"
+    },
+    {
+      "path": "params/manifest.ocdbt",
+      "bytes": 118,
+      "sha256": "7cd037aa1af52a34c71e9cba47ac83cc5e9a28cec9697c6ffb054666934a73fc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/067f8afdd356d9884a08a143b76cee78",
+      "bytes": 1326,
+      "sha256": "a7e9577cc827f8413450738a462000a16434b1b0f9528537a3b0ad8e80d0e846"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/09730f22591636b159b04012601e3bd2",
+      "bytes": 1388,
+      "sha256": "a6f5a97035f11a550a5f6027e7eb2968fe8f4ddb4c1460b3f80643f85972dc73"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/0b4f918dcd0355b80f5a551954f86717",
+      "bytes": 1518,
+      "sha256": "2c06203b8288be8725ec161c2b4f0b81922daff6564b918030e3990cb17ec3cf"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/0c2883e4b3d3731923d110f0235a568a",
+      "bytes": 1526,
+      "sha256": "c135179996c90d44a1a43b242ee84a8344407c6973572918078d2cec9892bd07"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/0f2683a975750d1a8507d1901d405aad",
+      "bytes": 1388,
+      "sha256": "98f97f0577214f86850529546a0d4fe9349c573d5d9b687d8b4977dfcb1f1197"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/14e43ff103fd168b130f61d5ef94059f",
+      "bytes": 1526,
+      "sha256": "1d7a92c42c999fa137e3179819b022c2aca7f68a52bc80d2a43f6a8451fe2bca"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/1d6c9cd25be1f63daed78b5311c9efc6",
+      "bytes": 2134,
+      "sha256": "70f83299d44d1f5c12378e65284c7fdd4d36e0f8b6609194aeb5813db72c87a9"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/20469b55652d00e45448f283c1251cf7",
+      "bytes": 1245,
+      "sha256": "9fe21280bd4c505928d4b0aa5b9bd22f26d37a71b844786156bbfa7482de3e6e"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/21992e4bd330be64ac65ae97f73f4b28",
+      "bytes": 1390,
+      "sha256": "96daa126316ee1ce3d1678d7b4ad9099989038f98ead965b2d4928a94706efa0"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/2d1d00bca1cb70d4b1f7143713c869ec",
+      "bytes": 1615,
+      "sha256": "250e820d85f0a9c9787f7f81b34af5bd03feaadb6c6a3671681f0dd8ecac9000"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/2e248bf76fc4d8280800d7c7b923233a",
+      "bytes": 1484,
+      "sha256": "9a1aff2196dfb30f9181b7813593eab2a451627688e69557e7af6178011c752c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/305a678c1638cf54f2fcd71eddc31336",
+      "bytes": 1037,
+      "sha256": "5f215f46658c32adf1e24a591ae3a7411987ddce032e037ac6b2eb26c552a2c7"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/32c5655211fee44e410ed389ffaa5d6e",
+      "bytes": 1518,
+      "sha256": "22916569be498a3cab7435b3ffce1db612f5a414f1be83ab9f54d9323a7e9b04"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/35130a92203825af69e0a1e7d0a72fb6",
+      "bytes": 1482,
+      "sha256": "263ac5dd45c0cd611bf0853694aa3af0a97fd8e5dfe7ec0fc878436db2d151ae"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/3aedd24f9f2fde870fd7d421057e8d3b",
+      "bytes": 660,
+      "sha256": "e16e3ee26087c564bc283a445f15d2b65c5df92d954f6608f9149bde9317c1ae"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/3b3706f896f41d66bc6a73dabe028640",
+      "bytes": 1503,
+      "sha256": "8e3371940f2f129d4e9fd5e0b72d60813a472d9b8c70572e01f4362e2186d4d0"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/3bfdec55e788f162c298fd4af16ff5e7",
+      "bytes": 1467,
+      "sha256": "9091b930101be4097333e77922943f802f4f654caaba6d31449115b051570361"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/3dff5fa125333ba46b11c6830efb83b6",
+      "bytes": 1392,
+      "sha256": "d30cf2216d299f36ff4eebf6991454ad9b8fa27b6b0a45acbf936a4830b3e484"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4772fff88765964f4c7748fb38dc9cdd",
+      "bytes": 2240369147,
+      "sha256": "bb84e2e3c7e53f4bb1904f861d44e36ed9077f187bd61e92e29ec22bada7cae0"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4962cce42e2ba78548ad0a3f8451ca3c",
+      "bytes": 1493,
+      "sha256": "a850f5454a2061825c33d4a6a93cfab2ccc7ceb74083d324473607b6180afb6a"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4d0c940c771c8d21020b6b05f2402ec0",
+      "bytes": 1680288340,
+      "sha256": "58804328bf009d3a33a176202c95d6e797e6a80547888749fc6729f3f0e0dd75"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4e26b1dd95d4812fbcb0573eefba19b7",
+      "bytes": 1397,
+      "sha256": "061cc946ea682f9ee48c912fb8190e675d5aebf68bfc0fad201ca48492a82225"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/4f3430dfd69b17229bfb73b0e3933dfc",
+      "bytes": 1047,
+      "sha256": "b4a0a0de1b5565957961b9c35de04b2dc2e6014ed840c2542d2014d6143e9774"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/5359f08ec701b8517baa63a59023b5b8",
+      "bytes": 489333417,
+      "sha256": "5498091d0a76ead9cf857af5f73c08720ebc3347cc131881af6ac3ad13f62fdc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/547635ed05e3d35907858e0082a741d6",
+      "bytes": 1419,
+      "sha256": "5905a754ddd8b7a17aa1aaf518ec373efa70245336cc344a3294f60cb0bb21c1"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/57405375ed58745aa6bdcfaf65e2bc89",
+      "bytes": 807,
+      "sha256": "72b660aff5417712c7ceec2f663ba949bc98e0ed9b5379c20fd74f71c15e7ffc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/59ba9d2de82f8c371392cd220efb23d6",
+      "bytes": 1374,
+      "sha256": "2526342f4b7596d84b3839b094533b94457329aa6f81eff2eb42f27b4a7b6dce"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/5aeb2e4cf7dda450988827ac750a87d1",
+      "bytes": 1337,
+      "sha256": "676fd70c67b68147e925dbae4e51b8dd0520a957d372efe1855ce7dfb13fc9f8"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/73a3d19f8a14a16a8bf674af244847f6",
+      "bytes": 1364,
+      "sha256": "1e023362e5b7a7067c95e1348399288a562573fd87b88e23f2bcace3efbf4064"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/75d2028dc46aacf6ea87108af8eaccb6",
+      "bytes": 1517,
+      "sha256": "34363f105287f711e7506dbd998cb932913bdc32217862488181dea2b2958f18"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/75d8abf5dd6c1bf5e564e1722da0aa2f",
+      "bytes": 212,
+      "sha256": "eec7e8324e350f643d1f107aaf35fa6d2951b88fd97c92e1749c78404ae987bc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/76e476ec86b297b1e99259c7454e8c64",
+      "bytes": 1531,
+      "sha256": "a3ca400120a6967125134cd053c9321df3840e52f930c5803e50a303f45d8b54"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/7baee1ac4cc056c67ac817551775a53f",
+      "bytes": 69901394,
+      "sha256": "f06d822ceea297e6da652127f14e5fe9979c3a5534f052306de3ecfe50656893"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/84bc23d85ff29c9d78d7357996986e26",
+      "bytes": 1261,
+      "sha256": "2c705b65bb59d9c62a87f2f346caf5766cadaa4d4f5cf4df449bbd8c68db4200"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/86434877d1cc52331c2cc1b4892b7bd8",
+      "bytes": 686,
+      "sha256": "2c32fd6ce64d90fb4f7d8ea95cfb0a50c7be512623a1c55096f75e10bac4e71b"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/87119f1827f4dce5c4fbad979452bbd6",
+      "bytes": 280073164,
+      "sha256": "13a31f46cc49f76d04ed05253032800a5b8d568bfe291d2a9de246ef473d5366"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/8b7d3f8fb3bdee4701e6e523b32226f0",
+      "bytes": 2203973926,
+      "sha256": "07d901a12df5bd2c11cf91e3aa979bdcdd931a06dbff1e3cfcf525f25afe5079"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/8b82db7173166459d1af23650d8458b6",
+      "bytes": 16703201,
+      "sha256": "29a837a3b816d53388c2af52019771ef8a93c39f6e7d13e1d91be14ca7d202d5"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/90b3ff43a2db07011ed533cf10359e5d",
+      "bytes": 1496,
+      "sha256": "7b13f36088e9123977a4f12b3ec40f692979fa666dd0b07433873755ce53a3c4"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/90e2a28633bc4edfe67897476a2abff7",
+      "bytes": 2156109445,
+      "sha256": "c9c8aff190a700148ceb70990d243a7fde97c73ddb05e6532ccbc2fd8bf5e92c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/9312b021b120e8d6e7aa54e3e7215381",
+      "bytes": 1602,
+      "sha256": "0e6dfbf2cb2c9f55bf27925db4c2d5f0c8004a15d184b2019856adf330435906"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/95bf6093aca86182ff662f3676fe42c0",
+      "bytes": 1552,
+      "sha256": "67fd01c7dc17c2087f184e2865407fcff9060cf966f2c25c18ac7b4f97db666f"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/9650f2c46801db9bac720e4b6d08d30e",
+      "bytes": 1518,
+      "sha256": "8df1b3f254b8ffe25886b665962e3ddd58ddd01415f29275eafa5a27af0ec06c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/99b98502f6166092ca35bf2f7abacb1d",
+      "bytes": 280,
+      "sha256": "04fae8361dbcd1f8ca5440b5a2bbd91bcaae9e6123757476e70e9d0995fd4366"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/9bdb640288533e86bb0d95592a9e0676",
+      "bytes": 1744,
+      "sha256": "c120947f6f1640c2fd89c74b8cc39b71b9f7e90b523205c2d4bd934eb3f26838"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/a0681eeeaba50f59cc95f6ab186cf6a7",
+      "bytes": 1384,
+      "sha256": "6fa4b4c2c6e8477770aae650336542c8cb87051f9d2accded589e60c544760c0"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/a0df37ab719476dd89091fbbcb1ee621",
+      "bytes": 2289,
+      "sha256": "5270debe935b92820dcffbe9c10062e32ac3c3b7d7d2860d1deb235cd0c47ad4"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/a79c17c5b376fbb9335caa9ff387d6b1",
+      "bytes": 773,
+      "sha256": "f46ea66b6752ec84f6a7d91f272f73232963cfe252c847b45e144944ea06bb19"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/a7c1c39d9cd1649712a23cdcfdc53561",
+      "bytes": 1466,
+      "sha256": "9a4700c3b0cbd3e78df6b24030298ba5114abd7316038ed4df0831af286857d0"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/ae53cf22addece101d68dc9d444c8dda",
+      "bytes": 1509,
+      "sha256": "3606fd02fbedcbd1333b9fa4769cea6334431f058a986df1b95a2bd6c7507b9c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/afb69a9c07ff14ce1f152357f43f748e",
+      "bytes": 1131,
+      "sha256": "3ede6ee60b46ef7c1681995f9d5e40d21f9c0507d0287fac9d84ecf9dfe55ea3"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/b1a7014b2fbf7a11cd26f56cc879e38b",
+      "bytes": 560102124,
+      "sha256": "7b4c237859271d37adf2125e5b271de0f623e58d44c488eddc1ba5bde61c59bc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/b6a7567eb650383564a613946cc00224",
+      "bytes": 1501,
+      "sha256": "4e2985b28377391ff093cc160f831b2b3b8b8383f8696d06a7b1bfd8014df19a"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/b78216e250fdee462660e38c5d0409dd",
+      "bytes": 1361,
+      "sha256": "1c40c8a8484f43ea09af9246171872d819ff05916e159120dc802a616e0c691d"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/bd5ddf4355ad58059d17eeca87b83997",
+      "bytes": 697,
+      "sha256": "5693377ac4c2089640a6b03c192cff537ffb4965185f80c97def7aa3881a23da"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/bf7caa58b1082ee9e4f0492c8a4f6370",
+      "bytes": 580850,
+      "sha256": "5c9c1ef375d1b4739d3aba6c23796e5b1c3002c4fc882342e6974745046ca7df"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/bfa1ff38bde6c9a07a2bb8faae82dda0",
+      "bytes": 450,
+      "sha256": "00b3d46b409f3a3495d9ac2e0feea356baca3f87cf2d5a02517794d2ee59d2c3"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/c57a00b6ef6356b6a810182107e1fbec",
+      "bytes": 810,
+      "sha256": "4824638e4bae9ad5db32f676da7828ea82ac1a382441c154800ec8331ea0ec98"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/c6241bc17f9f22ca60bd992d578cd94f",
+      "bytes": 367,
+      "sha256": "4765970d39c65bf97724b5c8bdc7bf725bfc74662f457a0de91a1814dfb2ed4b"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/c6c48daa697bcd1a788f194d17847132",
+      "bytes": 1476,
+      "sha256": "460a933746194a3d3c4b7fda9f0f94f114225a910281127023df228caacbc4cc"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/c8a72ab255ab8f9d147154ff85e19601",
+      "bytes": 1383,
+      "sha256": "3c5beea146e7c6ab61d2571a31eafa2a7601a6b29e9b3a7751d424c9f6a0039c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/ca668616ac688d3ee03e151b06d0d664",
+      "bytes": 1960486739,
+      "sha256": "7d174b9d96af38affeae071fa3c78972d0ecdff44d4356c6c0ff602cd2229dfa"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/ce1e28f8304ba078125193ec30f7ce83",
+      "bytes": 1347,
+      "sha256": "440c5fe97f3ad4d9b40a6b8bb6bc9da1dc59b76a8f84a5120ee1a0c87aafbda9"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/d8c127476db609c192438a27d61d6ba8",
+      "bytes": 309598450,
+      "sha256": "626e271ae91dbe8d759726502b0cfdc96a4c7131e57980fdac457976ade0e3ce"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/dae90247444a8e949a3f89ff49105752",
+      "bytes": 410,
+      "sha256": "0eb8cea407814f8d8566ed13f20254066358ca1b6f0f993323026156e98b42bb"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/dd5ae62fdeb87e01c465b8531e718532",
+      "bytes": 854,
+      "sha256": "f6207229de2ef7246acf2b0ac8ae7947bbe456b23fc480a6525d361eb2acefa2"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/def384d15485c1a0661c15ad7e27bc3b",
+      "bytes": 1528,
+      "sha256": "6538f0d9780d70b67d238eb2be161b9e3e6014610e642761ed2eb233cf0559c8"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/dff9797ba037b4a921e444be51856869",
+      "bytes": 1400,
+      "sha256": "0d9ba194b7c2255f6f57938805f903c2a1d2f6cfc1c74be5ad1f5f2d22e14f66"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/e05643ad532040a6ce32e4429387d637",
+      "bytes": 1064,
+      "sha256": "9a3a185107caf3791c51cc0b23d7dd28caf2ac2658dcf0c9ab4f0a3a504d3e50"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/e0b7ff8adabecf082f477d16dbf8b934",
+      "bytes": 1467680777,
+      "sha256": "b77a92afa9ad4046ce44f95fc4b34717dca1fb9d6ce8f2476102dfa6952bc5ea"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/e7b644e58ff8f69feca9157faa7d6586",
+      "bytes": 741,
+      "sha256": "addc855e611943e9d046e9f4598b52eb0acfafc014372fc4648f5883eef3de8e"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/e856eeefd3ea9980fd0543c2541b0fc9",
+      "bytes": 1116,
+      "sha256": "eb2725add1fcfcfcb0d9b2b60467c9da7585ec568ddfdeaf59a4e74bf60d4f82"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/eefe88451c71a6e1eac04ea3faca6689",
+      "bytes": 1389,
+      "sha256": "95652eff792e4a3240b1124cc2e90ed7bff58c0cf28a2f0b95a041d2612b944c"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/f8bd1b3e00133e7e5333d33ca9bd64fe",
+      "bytes": 264,
+      "sha256": "2a7d2f18d341d2dc25342b8b453d466203284736137389f21d81ae354aaf530e"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/f9e3048576e09da14d706d8cb2f1560d",
+      "bytes": 1389,
+      "sha256": "bb40d8ea81c1538fffc8827a03acba18da6c1c09a75a4ccbb00bf311febfeea1"
+    },
+    {
+      "path": "params/ocdbt.process_0/d/f9f7ad1b9f10782f036324f5b762feb4",
+      "bytes": 1507,
+      "sha256": "a022f4bb7c391ef5c8a34c628b72b1ef5f59d8669b9f389af1e09f1b02d2be7d"
+    },
+    {
+      "path": "params/ocdbt.process_0/manifest.ocdbt",
+      "bytes": 603,
+      "sha256": "bd3f8887b2baea5a3ace822ea93f2542ec7e7c91007a59b88aa7cb44ecb45765"
+    },
+    {
+      "path": "assets/physical-intelligence/libero/norm_stats.json",
+      "bytes": 4511,
+      "sha256": "c7cdcf7324a15621b9428b41ff04b4a941a7dccd229c60678eef2ed0ee4ea818"
+    }
+  ],
+  "parts": [
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-01",
+      "bytes": 1572864000,
+      "sha256": "77175d53b057e9696520905f614bf38ccbda8d2963d2dfb57de377936fbdc895"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-02",
+      "bytes": 1572864000,
+      "sha256": "dc7d6a2c5546d0666c5760c2a69ac3cf2483a4a4380ef4b648c332469bd643bf"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-03",
+      "bytes": 1572864000,
+      "sha256": "7b2b814bfd2786617ba06bbcc2f35b8d6683690890125e3fc14f0abc27609e5b"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-04",
+      "bytes": 1572864000,
+      "sha256": "5ea07f5eb6b3f818785bfa8108e574159d27b818cf2bc98d36b543d9e019d4e0"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-05",
+      "bytes": 1572864000,
+      "sha256": "a8df599271244da238ebbd9cb91ecf4a0f271edd0d76b5b949b9b2a3546fb018"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-06",
+      "bytes": 1572864000,
+      "sha256": "6f811900d452fb7b7d1e43b2ccbbeab149e6d206db7ccb7efa78e168bc514e09"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-07",
+      "bytes": 1572864000,
+      "sha256": "06ba7046e36f4f4a0b5b7d3da7012e21334b9ec0b6a705972fcd4b7dbd5c5b76"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-08",
+      "bytes": 1572864000,
+      "sha256": "cce2dd2458ad4c2f3c7cb6def0c81c082db4bd1d80df5a27b19366ec89174a66"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-09",
+      "bytes": 852582400,
+      "sha256": "d4abcc2d5917d3b9309ee9b08cb4e0111ee31662c5a1dca65c7dfa054504b0dd"
+    }
+  ]
+}

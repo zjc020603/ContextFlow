@@ -192,7 +192,7 @@
   "excluded_from_public_upload": [
     "authentication credentials and private keys"
   ],
-  "status": "source/report snapshot plus final locally trained pi05 model (release upload pending)",
+  "status": "complete for selected migration scope: code, reports, statistical records and final locally trained pi05 model",
   "excluded_from_migration": [
     "public downloadable pretrained/released model weights",
     "rebuildable virtual environments and dependency caches",
@@ -224,9 +224,21 @@
       ".bddl": 20,
       ".typed": 2,
       ".svg": 1
-    }
+    },
+    "model_remote_assets_sha256_verified": true,
+    "model_release_asset_count": 11,
+    "model_archive_files_verified_against_original": 82,
+    "public_release_metadata_and_checksum_download_verified": true
   },
-  "excluded_local_training_output": {
+  "included": [
+    "source code and experiment scripts",
+    "reports, figures and interactive report HTML",
+    "JSON/JSONL/CSV metrics, configuration and provenance",
+    "environment package inventories and setup instructions",
+    "small training/validation logs from separate worktrees",
+    "final locally trained pi05 ContextFlow params+assets via separate GitHub Release"
+  ],
+  "local_training_checkpoint_retention": {
     "publicly_redownloadable": false,
     "steps": [
       5000,
@@ -238,24 +250,16 @@
     "per_step_training_state_GiB": 20.34,
     "retention": "intermediate checkpoints and all optimizer state excluded; final step 19999 params+assets selected for migration"
   },
-  "included": [
-    "source code and experiment scripts",
-    "reports, figures and interactive report HTML",
-    "JSON/JSONL/CSV metrics, configuration and provenance",
-    "environment package inventories and setup instructions",
-    "small training/validation logs from separate worktrees",
-    "final locally trained pi05 ContextFlow params+assets via separate GitHub Release (upload pending)"
-  ],
-  "large_artifacts_pending": {
-    "local_pi05_final_model": {
-      "checkpoint_step": 19999,
-      "included": [
-        "params",
-        "assets"
-      ],
-      "bytes": 13435425037,
-      "release_tag": "migration-pi05-contextflow-20261008",
-      "manifest": "migration/pi05_trained_model.json"
-    }
+  "model_release": {
+    "url": "https://github.com/zjc020603/ContextFlow/releases/tag/migration-pi05-contextflow-20261008",
+    "receipt": "migration/pi05_release_receipt.json",
+    "manifest": "migration/pi05_trained_model.json",
+    "checkpoint_step": 19999,
+    "included": [
+      "params",
+      "assets"
+    ],
+    "bytes": 13435425037,
+    "inference_only": true
   }
 }

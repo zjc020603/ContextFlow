@@ -1,0 +1,66 @@
+{
+  "status": "published and verified",
+  "url": "https://github.com/zjc020603/ContextFlow/releases/tag/migration-pi05-contextflow-20261008",
+  "release_id": 406350472,
+  "source_commit": "597539deeb868bea72c8e2ee34f054a71e32bcce",
+  "assets": [
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-01",
+      "bytes": 1572864000,
+      "sha256": "sha256:77175d53b057e9696520905f614bf38ccbda8d2963d2dfb57de377936fbdc895"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-02",
+      "bytes": 1572864000,
+      "sha256": "sha256:dc7d6a2c5546d0666c5760c2a69ac3cf2483a4a4380ef4b648c332469bd643bf"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-03",
+      "bytes": 1572864000,
+      "sha256": "sha256:7b2b814bfd2786617ba06bbcc2f35b8d6683690890125e3fc14f0abc27609e5b"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-04",
+      "bytes": 1572864000,
+      "sha256": "sha256:5ea07f5eb6b3f818785bfa8108e574159d27b818cf2bc98d36b543d9e019d4e0"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-05",
+      "bytes": 1572864000,
+      "sha256": "sha256:a8df599271244da238ebbd9cb91ecf4a0f271edd0d76b5b949b9b2a3546fb018"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-06",
+      "bytes": 1572864000,
+      "sha256": "sha256:6f811900d452fb7b7d1e43b2ccbbeab149e6d206db7ccb7efa78e168bc514e09"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-07",
+      "bytes": 1572864000,
+      "sha256": "sha256:06ba7046e36f4f4a0b5b7d3da7012e21334b9ec0b6a705972fcd4b7dbd5c5b76"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-08",
+      "bytes": 1572864000,
+      "sha256": "sha256:cce2dd2458ad4c2f3c7cb6def0c81c082db4bd1d80df5a27b19366ec89174a66"
+    },
+    {
+      "name": "contextflow-pi05-full-step19999.tar.part-09",
+      "bytes": 852582400,
+      "sha256": "sha256:d4abcc2d5917d3b9309ee9b08cb4e0111ee31662c5a1dca65c7dfa054504b0dd"
+    },
+    {
+      "name": "pi05_trained_model.json",
+      "bytes": 18211,
+      "sha256": "sha256:f4f8a2b90aec8faea62443b9472724123868bc4a30a0502b68f70eb982455ebb"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 1080,
+      "sha256": "sha256:cb33eb9f7a91c5339db51a184ab49852e037aab7e85d237d5f0e442d9edcea15"
+    }
+  ],
+  "public_release_metadata_verified_without_authentication": true,
+  "public_checksum_file_download_verified_without_authentication": true,
+  "public_checksum_download_method": "GitHub release asset API"
+}

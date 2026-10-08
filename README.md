@@ -231,14 +231,16 @@ external datasets and virtual environments are intentionally excluded. Some
 report links to those excluded files therefore require the original artifacts.
 
 Public weights and datasets can be downloaded again using the setup instructions.
-The final locally fine-tuned pi05 model is selected for separate release upload;
-see [its manifest](migration/pi05_trained_model.json) for status and checksums.
+The final locally fine-tuned pi05 model is available in a [separate release](https://github.com/zjc020603/ContextFlow/releases/tag/migration-pi05-contextflow-20261008);
+see [its manifest](migration/pi05_trained_model.json) for checksums and
+[the upload receipt](migration/pi05_release_receipt.json) for remote verification.
 These weights cannot be recovered by downloading the public base model. Only
 step 19999 `params` and `assets` are retained for inference, excluding optimizer
-state and intermediate checkpoints. The old cluster's original files remain untouched. Recreate environments and LIBERO path configuration on the new
-cluster rather than relying on old absolute paths.
+state and intermediate checkpoints. The old cluster's original files remain
+untouched. Recreate environments and LIBERO path configuration on the new cluster
+rather than relying on old absolute paths.
 
-When the model release is published, restore it with the following commands
+Restore the published model with the following commands
 (`gh` is the GitHub CLI; alternatively download the release assets in a browser):
 
 ```bash

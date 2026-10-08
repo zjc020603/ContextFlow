@@ -1,0 +1,11 @@
+{
+  "pairs": 180,
+  "all_raw_actions_exact": true,
+  "max_raw_action_difference": 0.0,
+  "max_executable_action_difference": 0.0,
+  "max_historical_action_difference": 0.0,
+  "max_attention_row_sum_error": 0.0030389500969913996,
+  "parameter_sha256_before": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "parameter_sha256_after": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "passed": true
+}

@@ -1,0 +1,21 @@
+usage: compute_norm_stats.py [-h] [OPTIONS]
+
+Compute statistics, using delta joint actions by default for compatible data 
+configs.
+
+╭─ options ──────────────────────────────────────────────────────────────────╮
+│ -h, --help                                                                 │
+│     show this help message and exit                                        │
+│ --config-name STR                                                          │
+│     Registered configuration name. (required)                              │
+│ --sample-frames {None}|INT                                                 │
+│     Optional number of frames to sample. (default: None)                   │
+│ --use-delta-joint-actions, --no-use-delta-joint-actions                    │
+│     Subtract joint state from actions for statistics only. (default: True) │
+│ --fast, --no-fast                                                          │
+│     Use numeric-only loading for full ContextFlow statistics. Sampling and │
+│     other configs use the legacy path. (default: True)                     │
+│ --output-dir {None}|STR                                                    │
+│     Optional output directory for norm_stats.json; defaults to the         │
+│     config's asset directory. (default: None)                              │
+╰────────────────────────────────────────────────────────────────────────────╯

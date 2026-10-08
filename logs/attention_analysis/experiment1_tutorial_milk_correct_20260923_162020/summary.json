@@ -1,0 +1,206 @@
+{
+  "case_id": "original/correct/milk/ep000_step000",
+  "source_run": "/data/zjc/workspace/ContextFlow/logs/attention_capture/experiment0_consistency_20260923_143830",
+  "instruction": "pick up the milk and place it in the basket",
+  "default_layer": 17,
+  "default_flow_step": 9,
+  "heads": "mean of 8",
+  "action_queries": "first 5; suffix indices [1,6)",
+  "raw_probability_shape": [
+    3,
+    3,
+    1,
+    8,
+    51,
+    1027
+  ],
+  "total_percent": 99.98087632816875,
+  "blocks": [
+    {
+      "name": "base_0_rgb",
+      "kind": "current_image",
+      "start": 0,
+      "stop": 256,
+      "label": "当前主视角图像",
+      "mass_percent": 5.784340607647779,
+      "valid_tokens": 256
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 256,
+      "stop": 512,
+      "label": "当前手腕图像",
+      "mass_percent": 12.996029350903198,
+      "valid_tokens": 256
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 512,
+      "stop": 768,
+      "label": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0,
+      "valid_tokens": 0
+    },
+    {
+      "name": "language",
+      "kind": "language",
+      "start": 768,
+      "stop": 816,
+      "label": "语言",
+      "mass_percent": 0.18577985569663721,
+      "valid_tokens": 12
+    },
+    {
+      "name": "base_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 816,
+      "stop": 848,
+      "label": "示范主视角压缩 token",
+      "mass_percent": 0.8076758618316967,
+      "valid_tokens": 32
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 848,
+      "stop": 880,
+      "label": "示范手腕压缩 token",
+      "mass_percent": 0.8559331260275378,
+      "valid_tokens": 32
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 880,
+      "stop": 912,
+      "label": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0,
+      "valid_tokens": 0
+    },
+    {
+      "name": "demo_states",
+      "kind": "demo_states",
+      "start": 912,
+      "stop": 944,
+      "label": "示范状态压缩 token",
+      "mass_percent": 0.9814831388621313,
+      "valid_tokens": 32
+    },
+    {
+      "name": "demo_actions",
+      "kind": "demo_actions",
+      "start": 944,
+      "stop": 976,
+      "label": "示范动作压缩 token",
+      "mass_percent": 6.442098667030223,
+      "valid_tokens": 32
+    },
+    {
+      "name": "current_state",
+      "kind": "current_state",
+      "start": 976,
+      "stop": 977,
+      "label": "当前状态",
+      "mass_percent": 0.6425023078918457,
+      "valid_tokens": 1
+    },
+    {
+      "name": "predicted_actions",
+      "kind": "predicted_actions",
+      "start": 977,
+      "stop": 1027,
+      "label": "预测动作 token",
+      "mass_percent": 71.28503341227768,
+      "valid_tokens": 50
+    }
+  ],
+  "language": [
+    {
+      "token": "<bos>",
+      "global_percent": 0.006863818780402652
+    },
+    {
+      "token": "pick",
+      "global_percent": 0.015342350347964386
+    },
+    {
+      "token": "up",
+      "global_percent": 0.017238441860172316
+    },
+    {
+      "token": "the",
+      "global_percent": 0.016127436410897644
+    },
+    {
+      "token": "milk",
+      "global_percent": 0.02290378469751886
+    },
+    {
+      "token": "and",
+      "global_percent": 0.014533103726535046
+    },
+    {
+      "token": "place",
+      "global_percent": 0.016975169082797947
+    },
+    {
+      "token": "it",
+      "global_percent": 0.012033351231366396
+    },
+    {
+      "token": "in",
+      "global_percent": 0.015060400755828596
+    },
+    {
+      "token": "the",
+      "global_percent": 0.01522859316537506
+    },
+    {
+      "token": "basket",
+      "global_percent": 0.014335859559651
+    },
+    {
+      "token": "<newline>",
+      "global_percent": 0.019137546078127343
+    }
+  ],
+  "image_peaks": [
+    {
+      "camera": "base_0_rgb",
+      "camera_mass_percent": 5.784340607647779,
+      "patch_index": 184,
+      "row": 11,
+      "col": 8,
+      "pixel_x_half_open": [
+        112,
+        126
+      ],
+      "pixel_y_half_open": [
+        154,
+        168
+      ],
+      "patch_global_percent": 0.1078225500532426,
+      "patch_within_camera_percent": 1.8640422023330503
+    },
+    {
+      "camera": "left_wrist_0_rgb",
+      "camera_mass_percent": 12.996029350903198,
+      "patch_index": 204,
+      "row": 12,
+      "col": 12,
+      "pixel_x_half_open": [
+        168,
+        182
+      ],
+      "pixel_y_half_open": [
+        168,
+        182
+      ],
+      "patch_global_percent": 1.7787384736584497,
+      "patch_within_camera_percent": 13.686784060200901
+    }
+  ],
+  "shared_color_vmax_percent": 4.068195819854736
+}

@@ -1,0 +1,93 @@
+INFO:absl:Handler "orbax.checkpoint._src.handlers.array_checkpoint_handler.ArrayCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.array_checkpoint_handler.ArrayCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.proto_checkpoint_handler.ProtoCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.proto_checkpoint_handler.ProtoCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.base_pytree_checkpoint_handler.BasePyTreeCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.base_pytree_checkpoint_handler.BasePyTreeCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.random_key_checkpoint_handler.JaxRandomKeyCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.random_key_checkpoint_handler.JaxRandomKeyCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint._src.handlers.random_key_checkpoint_handler.NumpyRandomKeyCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint._src.handlers.random_key_checkpoint_handler.NumpyRandomKeyCheckpointHandler'>. Skipping registration.
+INFO:absl:Handler "orbax.checkpoint.test_utils.ErrorCheckpointHandler" already exists in the registry with associated type <class 'orbax.checkpoint.test_utils.ErrorCheckpointHandler'>. Skipping registration.
+INFO:datasets:PyTorch version 2.6.0 available.
+INFO:datasets:JAX version 0.5.0 available.
+INFO:absl:Handler "openpi.training.checkpoints.CallbackHandler" already exists in the registry with associated type <class 'openpi.training.checkpoints.CallbackHandler'>. Skipping registration.
+INFO:root:Loading model with dtype: <class 'jax.numpy.float32'>...
+INFO:absl:orbax-checkpoint version: 0.11.1
+INFO:absl:Created BasePyTreeCheckpointHandler: pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=None
+Timeout (0:00:30)!
+Thread 0x00007f40e17fa640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x00007f4b0a63f740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/selectors.py", line 468 in select
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 1898 in _run_once
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 608 in run_forever
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 641 in run_until_complete
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190 in run
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/asyncio_utils.py", line 50 in run_sync
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/metadata/tree.py", line 523 in as_custom_metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/base_pytree_checkpoint_handler.py", line 952 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/pytree_checkpoint_handler.py", line 1025 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/checkpointers/checkpointer.py", line 277 in metadata
+  File "/data/zjc/workspace/ContextFlow/src/openpi/models/model.py", line 572 in restore_params
+  File "/data/zjc/workspace/ContextFlow/src/openpi/policies/policy_config.py", line 114 in create_trained_policy_incontext
+  File ".cache/check_context_masking.py", line 15 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "<string>", line 1 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f40e17fa640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x00007f4b0a63f740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/selectors.py", line 468 in select
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 1898 in _run_once
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 608 in run_forever
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 641 in run_until_complete
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190 in run
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/asyncio_utils.py", line 50 in run_sync
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/metadata/tree.py", line 523 in as_custom_metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/base_pytree_checkpoint_handler.py", line 952 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/pytree_checkpoint_handler.py", line 1025 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/checkpointers/checkpointer.py", line 277 in metadata
+  File "/data/zjc/workspace/ContextFlow/src/openpi/models/model.py", line 572 in restore_params
+  File "/data/zjc/workspace/ContextFlow/src/openpi/policies/policy_config.py", line 114 in create_trained_policy_incontext
+  File ".cache/check_context_masking.py", line 15 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "<string>", line 1 in <module>
+Timeout (0:00:30)!
+Thread 0x00007f40e17fa640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 81 in _worker
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 982 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x00007f4b0a63f740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/selectors.py", line 468 in select
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 1898 in _run_once
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 608 in run_forever
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 641 in run_until_complete
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190 in run
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/asyncio_utils.py", line 50 in run_sync
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/metadata/tree.py", line 523 in as_custom_metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/base_pytree_checkpoint_handler.py", line 952 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/handlers/pytree_checkpoint_handler.py", line 1025 in metadata
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/orbax/checkpoint/_src/checkpointers/checkpointer.py", line 277 in metadata
+  File "/data/zjc/workspace/ContextFlow/src/openpi/models/model.py", line 572 in restore_params
+  File "/data/zjc/workspace/ContextFlow/src/openpi/policies/policy_config.py", line 114 in create_trained_policy_incontext
+  File ".cache/check_context_masking.py", line 15 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "<string>", line 1 in <module>

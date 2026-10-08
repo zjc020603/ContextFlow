@@ -1,0 +1,722 @@
+[
+  {
+    "task_index": 1,
+    "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+    "split": "unseen",
+    "demo_episode": 1,
+    "frames": 284,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000001.parquet",
+    "source_sha256": "6c416803bba7649172e6b3c0cb2c579a570fcb234e41249f7589c52809971916",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      40,
+      80,
+      121,
+      161,
+      202,
+      242,
+      283
+    ],
+    "model_input_png": "task01_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task01_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/demo_episode000001_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 284,
+        "seconds": 28.4
+      },
+      {
+        "path": "task01_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/demo_episode000001_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 284,
+        "seconds": 14.2
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task01_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/videos/put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate/ep000_failure.mp4"
+  },
+  {
+    "task_index": 5,
+    "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+    "split": "unseen",
+    "demo_episode": 8,
+    "frames": 259,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000008.parquet",
+    "source_sha256": "746602605cf5b61ee0a0830094e452453d0e068283346b76eb66f3d201cdcd24",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      36,
+      73,
+      110,
+      147,
+      184,
+      221,
+      258
+    ],
+    "model_input_png": "task05_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task05_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/demo_episode000008_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 259,
+        "seconds": 25.9
+      },
+      {
+        "path": "task05_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/demo_episode000008_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 259,
+        "seconds": 12.95
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task05_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/videos/put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket/ep000_failure.mp4"
+  },
+  {
+    "task_index": 4,
+    "instruction": "put both the alphabet soup and the cream cheese box in the basket",
+    "split": "seen",
+    "demo_episode": 7,
+    "frames": 272,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000007.parquet",
+    "source_sha256": "a8e0b399a4a625236792ed4e989f98406e1c4010469b336fc71d24bf5cf813ad",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      38,
+      77,
+      116,
+      154,
+      193,
+      232,
+      271
+    ],
+    "model_input_png": "task04_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task04_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/demo_episode000007_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 272,
+        "seconds": 27.2
+      },
+      {
+        "path": "task04_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/demo_episode000007_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 272,
+        "seconds": 13.6
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task04_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/videos/put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket/ep000_success.mp4"
+  },
+  {
+    "task_index": 0,
+    "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+    "split": "seen",
+    "demo_episode": 0,
+    "frames": 214,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000000.parquet",
+    "source_sha256": "1dff46a888aac51da3c4fedb6c6fe596df16f8cba47dd10d0e0c0ca565fd1d65",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      30,
+      60,
+      91,
+      121,
+      152,
+      182,
+      213
+    ],
+    "model_input_png": "task00_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task00_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/demo_episode000000_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 214,
+        "seconds": 21.4
+      },
+      {
+        "path": "task00_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/demo_episode000000_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 214,
+        "seconds": 10.7
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task00_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/videos/put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate/ep000_success.mp4"
+  },
+  {
+    "task_index": 2,
+    "instruction": "put the yellow and white mug in the microwave and close it",
+    "split": "seen",
+    "demo_episode": 2,
+    "frames": 345,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000002.parquet",
+    "source_sha256": "e590ad6f1f13e894d6e3a250ba54346b16803e873403061a7f0978903830d53d",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      49,
+      98,
+      147,
+      196,
+      245,
+      294,
+      344
+    ],
+    "model_input_png": "task02_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task02_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/demo_episode000002_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 345,
+        "seconds": 34.5
+      },
+      {
+        "path": "task02_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/demo_episode000002_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 345,
+        "seconds": 17.25
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task02_put_the_yellow_and_white_mug_in_the_microwave_and_close_it/videos/put_the_yellow_and_white_mug_in_the_microwave_and_close_it/ep000_success.mp4"
+  },
+  {
+    "task_index": 3,
+    "instruction": "turn on the stove and put the moka pot on it",
+    "split": "seen",
+    "demo_episode": 6,
+    "frames": 279,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000006.parquet",
+    "source_sha256": "202f9eb18c0d4d0ff2fb398d1423d9a3c947801b6027c631f095a007017d1db2",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      39,
+      79,
+      119,
+      158,
+      198,
+      238,
+      278
+    ],
+    "model_input_png": "task03_turn_on_the_stove_and_put_the_moka_pot_on_it/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task03_turn_on_the_stove_and_put_the_moka_pot_on_it/demo_episode000006_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 279,
+        "seconds": 27.9
+      },
+      {
+        "path": "task03_turn_on_the_stove_and_put_the_moka_pot_on_it/demo_episode000006_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 279,
+        "seconds": 13.95
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task03_turn_on_the_stove_and_put_the_moka_pot_on_it/videos/turn_on_the_stove_and_put_the_moka_pot_on_it/ep000_failure.mp4"
+  },
+  {
+    "task_index": 6,
+    "instruction": "put both moka pots on the stove",
+    "split": "seen",
+    "demo_episode": 10,
+    "frames": 383,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000010.parquet",
+    "source_sha256": "030c49e6d1907c8092e5ed2e6d7472e8ce00481e7ba442d582831f8163d0ee3a",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      54,
+      109,
+      163,
+      218,
+      272,
+      327,
+      382
+    ],
+    "model_input_png": "task06_put_both_moka_pots_on_the_stove/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task06_put_both_moka_pots_on_the_stove/demo_episode000010_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 383,
+        "seconds": 38.3
+      },
+      {
+        "path": "task06_put_both_moka_pots_on_the_stove/demo_episode000010_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 383,
+        "seconds": 19.15
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task06_put_both_moka_pots_on_the_stove/videos/put_both_moka_pots_on_the_stove/ep000_failure.mp4"
+  },
+  {
+    "task_index": 7,
+    "instruction": "put both the cream cheese box and the butter in the basket",
+    "split": "seen",
+    "demo_episode": 12,
+    "frames": 279,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000012.parquet",
+    "source_sha256": "52df2f981836316f361059970b096c45bea45e59c54152343189db68688a349d",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      39,
+      79,
+      119,
+      158,
+      198,
+      238,
+      278
+    ],
+    "model_input_png": "task07_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task07_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/demo_episode000012_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 279,
+        "seconds": 27.9
+      },
+      {
+        "path": "task07_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/demo_episode000012_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 279,
+        "seconds": 13.95
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task07_put_both_the_cream_cheese_box_and_the_butter_in_the_basket/videos/put_both_the_cream_cheese_box_and_the_butter_in_the_basket/ep000_success.mp4"
+  },
+  {
+    "task_index": 8,
+    "instruction": "put the black bowl in the bottom drawer of the cabinet and close it",
+    "split": "seen",
+    "demo_episode": 14,
+    "frames": 257,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000014.parquet",
+    "source_sha256": "8cec14466bc6a51dd3fb3355a0387e4c29af12355bfc2b4a3e5c9cf52a5d653b",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      36,
+      73,
+      109,
+      146,
+      182,
+      219,
+      256
+    ],
+    "model_input_png": "task08_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task08_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/demo_episode000014_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 257,
+        "seconds": 25.7
+      },
+      {
+        "path": "task08_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/demo_episode000014_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 257,
+        "seconds": 12.85
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task08_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/videos/put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it/ep000_success.mp4"
+  },
+  {
+    "task_index": 9,
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "split": "seen",
+    "demo_episode": 27,
+    "frames": 234,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000027.parquet",
+    "source_sha256": "46e23143129f9b7e17c9e496e250ef0d1370b296c67b23e8d4dac7d79687b274",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      33,
+      66,
+      99,
+      133,
+      166,
+      199,
+      233
+    ],
+    "model_input_png": "task09_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task09_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/demo_episode000027_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 234,
+        "seconds": 23.4
+      },
+      {
+        "path": "task09_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/demo_episode000027_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 234,
+        "seconds": 11.7
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_10/task09_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/videos/pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy/ep000_success.mp4"
+  },
+  {
+    "task_index": 10,
+    "instruction": "put the bowl on the plate",
+    "split": "unseen",
+    "demo_episode": 379,
+    "frames": 112,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000379.parquet",
+    "source_sha256": "41a503640339546b691d94fc699f4bb481a0e0c7176ac6cd563287e6a8927a4c",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      15,
+      31,
+      47,
+      63,
+      79,
+      95,
+      111
+    ],
+    "model_input_png": "task10_put_the_bowl_on_the_plate/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task10_put_the_bowl_on_the_plate/demo_episode000379_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 112,
+        "seconds": 11.2
+      },
+      {
+        "path": "task10_put_the_bowl_on_the_plate/demo_episode000379_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 112,
+        "seconds": 5.6
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task10_put_the_bowl_on_the_plate/videos/put_the_bowl_on_the_plate/ep000_failure.mp4"
+  },
+  {
+    "task_index": 11,
+    "instruction": "put the wine bottle on the rack",
+    "split": "seen",
+    "demo_episode": 380,
+    "frames": 155,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000380.parquet",
+    "source_sha256": "02cb26fe6cc475bd82f353101e88bc67d46e89e46332758340d9e5938a7b72cc",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      22,
+      44,
+      66,
+      88,
+      110,
+      132,
+      154
+    ],
+    "model_input_png": "task11_put_the_wine_bottle_on_the_rack/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task11_put_the_wine_bottle_on_the_rack/demo_episode000380_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 155,
+        "seconds": 15.5
+      },
+      {
+        "path": "task11_put_the_wine_bottle_on_the_rack/demo_episode000380_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 155,
+        "seconds": 7.75
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task11_put_the_wine_bottle_on_the_rack/videos/put_the_wine_bottle_on_the_rack/ep000_success.mp4"
+  },
+  {
+    "task_index": 12,
+    "instruction": "open the top drawer and put the bowl inside",
+    "split": "seen",
+    "demo_episode": 382,
+    "frames": 177,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000382.parquet",
+    "source_sha256": "ada080c77017b5c332471580cef70e9e470b1196729bf33538551ce5c805a295",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      25,
+      50,
+      75,
+      100,
+      125,
+      150,
+      176
+    ],
+    "model_input_png": "task12_open_the_top_drawer_and_put_the_bowl_inside/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task12_open_the_top_drawer_and_put_the_bowl_inside/demo_episode000382_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 177,
+        "seconds": 17.7
+      },
+      {
+        "path": "task12_open_the_top_drawer_and_put_the_bowl_inside/demo_episode000382_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 177,
+        "seconds": 8.85
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task12_open_the_top_drawer_and_put_the_bowl_inside/videos/open_the_top_drawer_and_put_the_bowl_inside/ep000_success.mp4"
+  },
+  {
+    "task_index": 13,
+    "instruction": "put the cream cheese in the bowl",
+    "split": "seen",
+    "demo_episode": 384,
+    "frames": 112,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000384.parquet",
+    "source_sha256": "fd8e3517e34c6a70dc71e9de5a33305ea9e80afc8e9635e27f4b5d3201f2697b",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      15,
+      31,
+      47,
+      63,
+      79,
+      95,
+      111
+    ],
+    "model_input_png": "task13_put_the_cream_cheese_in_the_bowl/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task13_put_the_cream_cheese_in_the_bowl/demo_episode000384_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 112,
+        "seconds": 11.2
+      },
+      {
+        "path": "task13_put_the_cream_cheese_in_the_bowl/demo_episode000384_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 112,
+        "seconds": 5.6
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task13_put_the_cream_cheese_in_the_bowl/videos/put_the_cream_cheese_in_the_bowl/ep000_failure.mp4"
+  },
+  {
+    "task_index": 14,
+    "instruction": "put the wine bottle on top of the cabinet",
+    "split": "seen",
+    "demo_episode": 385,
+    "frames": 90,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000385.parquet",
+    "source_sha256": "406e8c46b04520ef804ef983437fd3fd98ac619f4680b4bae5161203758e5a90",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      12,
+      25,
+      38,
+      50,
+      63,
+      76,
+      89
+    ],
+    "model_input_png": "task14_put_the_wine_bottle_on_top_of_the_cabinet/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task14_put_the_wine_bottle_on_top_of_the_cabinet/demo_episode000385_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 90,
+        "seconds": 9.0
+      },
+      {
+        "path": "task14_put_the_wine_bottle_on_top_of_the_cabinet/demo_episode000385_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 90,
+        "seconds": 4.5
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task14_put_the_wine_bottle_on_top_of_the_cabinet/videos/put_the_wine_bottle_on_top_of_the_cabinet/ep000_success.mp4"
+  },
+  {
+    "task_index": 15,
+    "instruction": "push the plate to the front of the stove",
+    "split": "seen",
+    "demo_episode": 386,
+    "frames": 123,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000386.parquet",
+    "source_sha256": "cfcc95540d093cfa939ff73e484ba6e193db955474bd775415cbf9cd28764686",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      17,
+      34,
+      52,
+      69,
+      87,
+      104,
+      122
+    ],
+    "model_input_png": "task15_push_the_plate_to_the_front_of_the_stove/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task15_push_the_plate_to_the_front_of_the_stove/demo_episode000386_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 123,
+        "seconds": 12.3
+      },
+      {
+        "path": "task15_push_the_plate_to_the_front_of_the_stove/demo_episode000386_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 123,
+        "seconds": 6.15
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task15_push_the_plate_to_the_front_of_the_stove/videos/push_the_plate_to_the_front_of_the_stove/ep000_success.mp4"
+  },
+  {
+    "task_index": 16,
+    "instruction": "turn on the stove",
+    "split": "seen",
+    "demo_episode": 388,
+    "frames": 90,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000388.parquet",
+    "source_sha256": "f82be98fb335ddccb84a7381b4d02f1665bfb5b1622dafd1ecbbaeead89e5508",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      12,
+      25,
+      38,
+      50,
+      63,
+      76,
+      89
+    ],
+    "model_input_png": "task16_turn_on_the_stove/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task16_turn_on_the_stove/demo_episode000388_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 90,
+        "seconds": 9.0
+      },
+      {
+        "path": "task16_turn_on_the_stove/demo_episode000388_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 90,
+        "seconds": 4.5
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task16_turn_on_the_stove/videos/turn_on_the_stove/ep000_success.mp4"
+  },
+  {
+    "task_index": 17,
+    "instruction": "put the bowl on the stove",
+    "split": "unseen",
+    "demo_episode": 392,
+    "frames": 103,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000392.parquet",
+    "source_sha256": "537adeaaa52f4ea2bba9c26a9053a5a738bead0967919222877577b027130116",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      14,
+      29,
+      43,
+      58,
+      72,
+      87,
+      102
+    ],
+    "model_input_png": "task17_put_the_bowl_on_the_stove/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task17_put_the_bowl_on_the_stove/demo_episode000392_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 103,
+        "seconds": 10.3
+      },
+      {
+        "path": "task17_put_the_bowl_on_the_stove/demo_episode000392_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 103,
+        "seconds": 5.15
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task17_put_the_bowl_on_the_stove/videos/put_the_bowl_on_the_stove/ep000_failure.mp4"
+  },
+  {
+    "task_index": 18,
+    "instruction": "put the bowl on top of the cabinet",
+    "split": "seen",
+    "demo_episode": 398,
+    "frames": 100,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000398.parquet",
+    "source_sha256": "1bacdf1fac0d1112c0388bc662dbd4b1b0cea6c6b218bb9dc2addedff643ea34",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      14,
+      28,
+      42,
+      56,
+      70,
+      84,
+      99
+    ],
+    "model_input_png": "task18_put_the_bowl_on_top_of_the_cabinet/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task18_put_the_bowl_on_top_of_the_cabinet/demo_episode000398_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 100,
+        "seconds": 10.0
+      },
+      {
+        "path": "task18_put_the_bowl_on_top_of_the_cabinet/demo_episode000398_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 100,
+        "seconds": 5.0
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task18_put_the_bowl_on_top_of_the_cabinet/videos/put_the_bowl_on_top_of_the_cabinet/ep000_success.mp4"
+  },
+  {
+    "task_index": 19,
+    "instruction": "open the middle drawer of the cabinet",
+    "split": "seen",
+    "demo_episode": 399,
+    "frames": 136,
+    "source_parquet": "/data/zjc/workspace/datasets/physical-intelligence/libero/data/chunk-000/episode_000399.parquet",
+    "source_sha256": "9f3bda067c872a31bf21afaea78bda977a2edd9473331977f9047b161e21d910",
+    "sampled_images_match_captured_model_input": true,
+    "sample_indices": [
+      0,
+      19,
+      38,
+      57,
+      77,
+      96,
+      115,
+      135
+    ],
+    "model_input_png": "task19_open_the_middle_drawer_of_the_cabinet/model_input_8frames.png",
+    "videos": [
+      {
+        "path": "task19_open_the_middle_drawer_of_the_cabinet/demo_episode000399_main_wrist_10fps_dataset_timestamps.mp4",
+        "fps": 10,
+        "frames": 136,
+        "seconds": 13.6
+      },
+      {
+        "path": "task19_open_the_middle_drawer_of_the_cabinet/demo_episode000399_main_wrist_20fps_control_frame_comparison.mp4",
+        "fps": 20,
+        "frames": 136,
+        "seconds": 6.8
+      }
+    ],
+    "rollout_episode0": "../tasks/libero_goal/task19_open_the_middle_drawer_of_the_cabinet/videos/open_the_middle_drawer_of_the_cabinet/ep000_success.mp4"
+  }
+]

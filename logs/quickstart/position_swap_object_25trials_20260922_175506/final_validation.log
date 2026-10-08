@@ -1,0 +1,413 @@
+{
+  "comparison": [
+    {
+      "language": "milk",
+      "context_mode": "correct",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 24,
+      "other_successes": 0,
+      "language_only": 24,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 22,
+      "other_successes": 0,
+      "language_only": 22,
+      "other_only": 0,
+      "both": 0,
+      "neither": 3
+    },
+    {
+      "language": "milk",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "milk",
+      "context_mode": "wrong",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 23,
+      "language_only": 0,
+      "other_only": 23,
+      "both": 0,
+      "neither": 2
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 24,
+      "language_only": 0,
+      "other_only": 24,
+      "both": 0,
+      "neither": 1
+    }
+  ],
+  "paired_correct_vs_wrong": {
+    "milk": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 22,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "neither -> other_only": 1,
+        "language_only -> other_only": 22,
+        "language_only -> neither": 2
+      }
+    },
+    "tomato_sauce": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 21,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "neither -> other_only": 3,
+        "language_only -> other_only": 21,
+        "language_only -> neither": 1
+      }
+    }
+  },
+  "verified": "Matching initial simulator states, observations and per-replan noise seeds in all conditions"
+}
+{
+  "comparison": [
+    {
+      "language": "milk",
+      "context_mode": "correct",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 25,
+      "language_only": 0,
+      "other_only": 25,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 17,
+      "language_only": 0,
+      "other_only": 17,
+      "both": 0,
+      "neither": 8
+    },
+    {
+      "language": "milk",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "milk",
+      "context_mode": "wrong",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 12,
+      "other_successes": 0,
+      "language_only": 12,
+      "other_only": 0,
+      "both": 0,
+      "neither": 13
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 24,
+      "other_successes": 0,
+      "language_only": 24,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    }
+  ],
+  "paired_correct_vs_wrong": {
+    "milk": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 0,
+      "correct_other_only_to_wrong_language_only": 12,
+      "transition_counts": {
+        "other_only -> neither": 13,
+        "other_only -> language_only": 12
+      }
+    },
+    "tomato_sauce": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 0,
+      "correct_other_only_to_wrong_language_only": 16,
+      "transition_counts": {
+        "other_only -> language_only": 16,
+        "other_only -> neither": 1,
+        "neither -> language_only": 8
+      }
+    }
+  },
+  "verified": "Matching initial simulator states, observations and per-replan noise seeds in all conditions"
+}
+{
+  "comparison": [
+    {
+      "layout": "original",
+      "language": "milk",
+      "context_mode": "correct",
+      "episodes": 25,
+      "demo": "milk",
+      "demo_original_position_occupant": "milk",
+      "milk_in_basket": 24,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 24,
+      "demo_identity_successes": 24,
+      "demo_position_occupant_successes": 24,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "layout": "original",
+      "language": "milk",
+      "context_mode": "no",
+      "episodes": 25,
+      "demo": "none",
+      "demo_original_position_occupant": "not_applicable",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": null,
+      "demo_position_occupant_successes": null,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "layout": "original",
+      "language": "milk",
+      "context_mode": "wrong",
+      "episodes": 25,
+      "demo": "tomato_sauce",
+      "demo_original_position_occupant": "tomato_sauce",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 23,
+      "language_successes": 0,
+      "demo_identity_successes": 23,
+      "demo_position_occupant_successes": 23,
+      "both": 0,
+      "neither": 2
+    },
+    {
+      "layout": "original",
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "episodes": 25,
+      "demo": "tomato_sauce",
+      "demo_original_position_occupant": "tomato_sauce",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 22,
+      "language_successes": 22,
+      "demo_identity_successes": 22,
+      "demo_position_occupant_successes": 22,
+      "both": 0,
+      "neither": 3
+    },
+    {
+      "layout": "original",
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "episodes": 25,
+      "demo": "none",
+      "demo_original_position_occupant": "not_applicable",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": null,
+      "demo_position_occupant_successes": null,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "layout": "original",
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "episodes": 25,
+      "demo": "milk",
+      "demo_original_position_occupant": "milk",
+      "milk_in_basket": 24,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": 24,
+      "demo_position_occupant_successes": 24,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "milk",
+      "context_mode": "correct",
+      "episodes": 25,
+      "demo": "milk",
+      "demo_original_position_occupant": "tomato_sauce",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 25,
+      "language_successes": 0,
+      "demo_identity_successes": 0,
+      "demo_position_occupant_successes": 25,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "milk",
+      "context_mode": "no",
+      "episodes": 25,
+      "demo": "none",
+      "demo_original_position_occupant": "not_applicable",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": null,
+      "demo_position_occupant_successes": null,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "milk",
+      "context_mode": "wrong",
+      "episodes": 25,
+      "demo": "tomato_sauce",
+      "demo_original_position_occupant": "milk",
+      "milk_in_basket": 12,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 12,
+      "demo_identity_successes": 0,
+      "demo_position_occupant_successes": 12,
+      "both": 0,
+      "neither": 13
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "episodes": 25,
+      "demo": "tomato_sauce",
+      "demo_original_position_occupant": "milk",
+      "milk_in_basket": 17,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": 0,
+      "demo_position_occupant_successes": 17,
+      "both": 0,
+      "neither": 8
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "episodes": 25,
+      "demo": "none",
+      "demo_original_position_occupant": "not_applicable",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "demo_identity_successes": null,
+      "demo_position_occupant_successes": null,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "episodes": 25,
+      "demo": "milk",
+      "demo_original_position_occupant": "tomato_sauce",
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 24,
+      "language_successes": 24,
+      "demo_identity_successes": 0,
+      "demo_position_occupant_successes": 24,
+      "both": 0,
+      "neither": 1
+    }
+  ],
+  "paired_original_to_swapped": {
+    "milk/correct": {
+      "neither -> other_only": 1,
+      "language_only -> other_only": 24
+    },
+    "milk/no": {
+      "neither -> neither": 25
+    },
+    "milk/wrong": {
+      "other_only -> neither": 12,
+      "other_only -> language_only": 11,
+      "neither -> neither": 1,
+      "neither -> language_only": 1
+    },
+    "tomato_sauce/correct": {
+      "neither -> other_only": 2,
+      "language_only -> other_only": 15,
+      "language_only -> neither": 7,
+      "neither -> neither": 1
+    },
+    "tomato_sauce/no": {
+      "neither -> neither": 25
+    },
+    "tomato_sauce/wrong": {
+      "other_only -> language_only": 23,
+      "other_only -> neither": 1,
+      "neither -> language_only": 1
+    }
+  },
+  "verification": "Same source states across all cells; identical settled states/observations within layout; identical noise and demo episodes across layouts within language/mode",
+  "interpretation": "Counts describe basket outcomes, not proof of an internal object/position mechanism. Both and neither are explicit outcomes."
+}
+Verified 300 episodes, 300 videos at 20 FPS, all trajectories/goals, XY-only interventions, and paired inference inputs.

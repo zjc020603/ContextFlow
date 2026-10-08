@@ -1,0 +1,32 @@
+usage: train.py [-h]
+                {ContextFlow,pi0_libero_low_mem_finetune_split_train,pi0_liber
+o_low_mem_finetune_split_inference,pi0_libero,pi0_libero_without_delta,pi0_lib
+ero_low_mem_finetune,pi0_libero_heldout,pi0_fast_libero,pi0_fast_libero_heldou
+t,pi0_fast_libero_low_mem_finetune,dummy_pi0_libero}
+
+╭─ options ──────────────────────────────────────────────────────────────────╮
+│ -h, --help        show this help message and exit                          │
+╰────────────────────────────────────────────────────────────────────────────╯
+╭─ subcommands ──────────────────────────────────────────────────────────────╮
+│ {ContextFlow,pi0_libero_low_mem_finetune_split_train,pi0_libero_low_mem_f… │
+│     ContextFlow   ContextFlow                                              │
+│     pi0_libero_low_mem_finetune_split_train                                │
+│                   pi0_libero_low_mem_finetune_split_train                  │
+│     pi0_libero_low_mem_finetune_split_inference                            │
+│                   pi0_libero_low_mem_finetune_split_inference              │
+│     pi0_libero    pi0_libero                                               │
+│     pi0_libero_without_delta                                               │
+│                   pi0_libero_without_delta                                 │
+│     pi0_libero_low_mem_finetune                                            │
+│                   pi0_libero_low_mem_finetune                              │
+│     pi0_libero_heldout                                                     │
+│                   pi0_libero_heldout                                       │
+│     pi0_fast_libero                                                        │
+│                   pi0_fast_libero                                          │
+│     pi0_fast_libero_heldout                                                │
+│                   pi0_fast_libero_heldout                                  │
+│     pi0_fast_libero_low_mem_finetune                                       │
+│                   pi0_fast_libero_low_mem_finetune                         │
+│     dummy_pi0_libero                                                       │
+│                   dummy_pi0_libero                                         │
+╰────────────────────────────────────────────────────────────────────────────╯

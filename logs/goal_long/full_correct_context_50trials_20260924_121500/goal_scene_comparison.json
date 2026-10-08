@@ -1,0 +1,28 @@
+[
+  {
+    "reference_task": 10,
+    "task": 17,
+    "field_equal": {
+      "problem_name": true,
+      "fixtures": true,
+      "regions": true,
+      "objects": true,
+      "scene_properties": true,
+      "initial_state": true
+    },
+    "initial_states_sha256_equal": false
+  },
+  {
+    "reference_task": 10,
+    "task": 18,
+    "field_equal": {
+      "problem_name": true,
+      "fixtures": true,
+      "regions": true,
+      "objects": true,
+      "scene_properties": true,
+      "initial_state": true
+    },
+    "initial_states_sha256_equal": false
+  }
+]

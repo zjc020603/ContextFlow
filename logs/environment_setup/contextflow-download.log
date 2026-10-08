@@ -1,0 +1,553 @@
+SOURCE VERIFIED assets/physical-intelligence/libero/norm_stats.json 4513 CRC32C UVfCOQ==
+SOURCE VERIFIED params/manifest.ocdbt 118 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/manifest.ocdbt 661 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032 1389 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54 1957704192 CRC32C hR0Eog==
+SOURCE VERIFIED params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7 979 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d 3904 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863 318886852 CRC32C S3tAcQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c 843619492 CRC32C P3gY6w==
+SOURCE VERIFIED params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622 1803 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1 795287583 CRC32C f8DheQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b 213 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe 1118330769 CRC32C ke9rIQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6 773254948 CRC32C BCEYog==
+SOURCE VERIFIED params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4 1550681447 CRC32C 9QUCUw==
+SOURCE VERIFIED params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee 19299585 CRC32C AzXkTA==
+SOURCE VERIFIED params/d/cadac88e3456c6982e815f3290e39b34 4000 CRC32C SGdLxw==
+SOURCE VERIFIED params/_METADATA 76040 CRC32C e++vlg==
+SOURCE VERIFIED params/_sharding 53720 CRC32C lTANyg==
+SOURCE VERIFIED _CHECKPOINT_METADATA 417 CRC32C iNEBrw==
+{"chunks": 10, "total_chunks": 457}
+{"chunks": 20, "total_chunks": 457}
+RETRY 00024 1/16 ChunkedEncodingErrorRETRY 00027 1/16 ChunkedEncodingError
+
+RETRY 00025 1/16 ChunkedEncodingError
+RETRY 00028 1/16 ChunkedEncodingError
+RETRY 00026 1/16 ChunkedEncodingErrorRETRY 00029 1/16 ChunkedEncodingError
+
+{"chunks": 30, "total_chunks": 457}
+{"chunks": 40, "total_chunks": 457}
+{"chunks": 50, "total_chunks": 457}
+{"chunks": 60, "total_chunks": 457}
+{"chunks": 70, "total_chunks": 457}
+SOURCE VERIFIED assets/physical-intelligence/libero/norm_stats.json 4513 CRC32C UVfCOQ==
+SOURCE VERIFIED params/manifest.ocdbt 118 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/manifest.ocdbt 661 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032 1389 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54 1957704192 CRC32C hR0Eog==
+SOURCE VERIFIED params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7 979 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d 3904 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863 318886852 CRC32C S3tAcQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c 843619492 CRC32C P3gY6w==
+SOURCE VERIFIED params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622 1803 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1 795287583 CRC32C f8DheQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b 213 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe 1118330769 CRC32C ke9rIQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6 773254948 CRC32C BCEYog==
+SOURCE VERIFIED params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4 1550681447 CRC32C 9QUCUw==
+SOURCE VERIFIED params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee 19299585 CRC32C AzXkTA==
+SOURCE VERIFIED params/d/cadac88e3456c6982e815f3290e39b34 4000 CRC32C SGdLxw==
+SOURCE VERIFIED params/_METADATA 76040 CRC32C e++vlg==
+SOURCE VERIFIED params/_sharding 53720 CRC32C lTANyg==
+SOURCE VERIFIED _CHECKPOINT_METADATA 417 CRC32C iNEBrw==
+{"chunks": 10, "total_chunks": 453}
+{"chunks": 20, "total_chunks": 453}
+{"chunks": 30, "total_chunks": 453}
+{"chunks": 40, "total_chunks": 453}
+{"chunks": 50, "total_chunks": 453}
+{"chunks": 60, "total_chunks": 453}
+{"chunks": 70, "total_chunks": 453}
+{"chunks": 80, "total_chunks": 453}
+{"chunks": 90, "total_chunks": 453}
+{"chunks": 100, "total_chunks": 453}
+{"chunks": 110, "total_chunks": 453}
+{"chunks": 120, "total_chunks": 453}
+RETRY 00015 1/16 ChunkedEncodingError
+RETRY 00012 1/16 ChunkedEncodingError
+RETRY 00007 1/16 ChunkedEncodingError
+RETRY 00011 1/16 ChunkedEncodingErrorRETRY 00013 1/16 ChunkedEncodingError
+RETRY 00006 1/16 ChunkedEncodingErrorRETRY 00009 1/16 ChunkedEncodingError
+RETRY 00010 1/16 ChunkedEncodingErrorRETRY 00005 1/16 ChunkedEncodingError
+
+
+
+RETRY 00008 1/16 ChunkedEncodingError
+RETRY 00014 1/16 ChunkedEncodingError
+RETRY 00016 1/16 ChunkedEncodingError
+{"chunks": 130, "total_chunks": 453}
+{"chunks": 140, "total_chunks": 453}
+{"chunks": 150, "total_chunks": 453}
+{"chunks": 160, "total_chunks": 453}
+{"chunks": 170, "total_chunks": 453}
+{"chunks": 180, "total_chunks": 453}
+{"chunks": 190, "total_chunks": 453}
+{"chunks": 200, "total_chunks": 453}
+{"chunks": 210, "total_chunks": 453}
+{"chunks": 220, "total_chunks": 453}
+{"chunks": 230, "total_chunks": 453}
+{"chunks": 240, "total_chunks": 453}
+{"chunks": 250, "total_chunks": 453}
+{"chunks": 260, "total_chunks": 453}
+{"chunks": 270, "total_chunks": 453}
+{"chunks": 280, "total_chunks": 453}
+RETRY 00047 1/16 ChunkedEncodingError
+RETRY 00055 1/16 ChunkedEncodingError
+RETRY 00048 1/16 ChunkedEncodingError
+RETRY 00050 1/16 ChunkedEncodingError
+RETRY 00056 1/16 ChunkedEncodingErrorRETRY 00046 1/16 ChunkedEncodingError
+RETRY 00045 1/16 ChunkedEncodingError
+
+RETRY 00052 1/16 ChunkedEncodingError
+RETRY 00049 1/16 ChunkedEncodingError
+RETRY 00054 1/16 ChunkedEncodingErrorRETRY 00053 1/16 ChunkedEncodingError
+
+RETRY 00051 1/16 ChunkedEncodingError
+{"chunks": 290, "total_chunks": 453}
+{"chunks": 300, "total_chunks": 453}
+{"chunks": 310, "total_chunks": 453}
+{"chunks": 320, "total_chunks": 453}
+{"chunks": 330, "total_chunks": 453}
+{"chunks": 340, "total_chunks": 453}
+{"chunks": 350, "total_chunks": 453}
+{"chunks": 360, "total_chunks": 453}
+{"chunks": 370, "total_chunks": 453}
+{"chunks": 380, "total_chunks": 453}
+{"chunks": 390, "total_chunks": 453}
+{"chunks": 400, "total_chunks": 453}
+RETRY 00054 1/16 ChunkedEncodingError
+RETRY 00059 1/16 ChunkedEncodingError
+RETRY 00061 1/16 ChunkedEncodingError
+RETRY 00065 1/16 ChunkedEncodingError
+RETRY 00056 1/16 ChunkedEncodingError
+RETRY 00063 1/16 ChunkedEncodingErrorRETRY 00060 1/16 ChunkedEncodingError
+
+RETRY 00062 1/16 ChunkedEncodingErrorRETRY 00057 1/16 ChunkedEncodingError
+RETRY 00058 1/16 ChunkedEncodingError
+RETRY 00055 1/16 ChunkedEncodingError
+
+RETRY 00064 1/16 ChunkedEncodingError
+{"chunks": 410, "total_chunks": 453}
+{"chunks": 420, "total_chunks": 453}
+{"chunks": 430, "total_chunks": 453}
+RETRY 00092 1/16 ReadTimeout
+RETRY 00088 1/16 ConnectionError
+RETRY 00086 1/16 ConnectionError
+RETRY 00091 1/16 ConnectionError
+RETRY 00090 1/16 ConnectionError
+RETRY 00089 1/16 ConnectionError
+RETRY 00082 1/16 ConnectionError
+RETRY 00084 1/16 ConnectionError
+RETRY 00087 1/16 ConnectionError
+RETRY 00081 1/16 ConnectionErrorRETRY 00085 1/16 ConnectionErrorRETRY 00083 1/16 ConnectionError
+
+
+RETRY 00092 2/16 ReadTimeout
+RETRY 00088 2/16 ReadTimeout
+RETRY 00091 2/16 ReadTimeout
+RETRY 00086 2/16 ReadTimeout
+RETRY 00090 2/16 ReadTimeout
+RETRY 00089 2/16 ReadTimeout
+RETRY 00087 2/16 ReadTimeout
+RETRY 00084 2/16 ReadTimeoutRETRY 00081 2/16 ReadTimeoutRETRY 00083 2/16 ReadTimeout
+RETRY 00082 2/16 ReadTimeout
+
+RETRY 00085 2/16 ReadTimeout
+
+RETRY 00092 3/16 ReadTimeout
+RETRY 00088 3/16 ReadTimeout
+RETRY 00091 3/16 ReadTimeout
+RETRY 00086 3/16 ReadTimeout
+RETRY 00090 3/16 ReadTimeout
+RETRY 00089 3/16 ReadTimeout
+RETRY 00082 3/16 ReadTimeoutRETRY 00087 3/16 ReadTimeout
+
+RETRY 00084 3/16 ReadTimeout
+RETRY 00085 3/16 ReadTimeout
+RETRY 00083 3/16 ReadTimeout
+RETRY 00081 3/16 ReadTimeout
+RETRY 00092 4/16 ReadTimeout
+RETRY 00088 4/16 ReadTimeout
+RETRY 00091 4/16 ReadTimeout
+RETRY 00086 4/16 ReadTimeout
+RETRY 00090 4/16 ReadTimeoutRETRY 00089 4/16 ReadTimeout
+
+RETRY 00087 4/16 ReadTimeoutRETRY 00082 4/16 ReadTimeout
+
+RETRY 00084 4/16 ReadTimeout
+RETRY 00085 4/16 ReadTimeoutRETRY 00083 4/16 ReadTimeout
+
+RETRY 00081 4/16 ReadTimeout
+RETRY 00092 5/16 ReadTimeout
+RETRY 00091 5/16 ReadTimeout
+RETRY 00088 5/16 ReadTimeout
+RETRY 00086 5/16 ReadTimeout
+RETRY 00090 5/16 ReadTimeoutRETRY 00089 5/16 ReadTimeout
+
+RETRY 00082 5/16 ReadTimeout
+RETRY 00087 5/16 ReadTimeout
+RETRY 00084 5/16 ReadTimeout
+RETRY 00085 5/16 ReadTimeoutRETRY 00083 5/16 ReadTimeout
+
+RETRY 00081 5/16 ReadTimeout
+RETRY 00092 6/16 ReadTimeout
+RETRY 00091 6/16 ReadTimeout
+RETRY 00088 6/16 ReadTimeout
+RETRY 00086 6/16 ReadTimeout
+RETRY 00090 6/16 ReadTimeout
+RETRY 00089 6/16 ReadTimeout
+RETRY 00082 6/16 ReadTimeoutRETRY 00087 6/16 ReadTimeout
+
+RETRY 00084 6/16 ReadTimeout
+RETRY 00083 6/16 ReadTimeout
+RETRY 00085 6/16 ReadTimeout
+RETRY 00081 6/16 ReadTimeout
+RETRY 00092 7/16 ReadTimeout
+RETRY 00091 7/16 ReadTimeout
+RETRY 00088 7/16 ReadTimeout
+RETRY 00086 7/16 ReadTimeout
+RETRY 00090 7/16 ReadTimeout
+RETRY 00089 7/16 ReadTimeout
+RETRY 00082 7/16 ReadTimeoutRETRY 00087 7/16 ReadTimeout
+
+RETRY 00083 7/16 ReadTimeout
+RETRY 00084 7/16 ReadTimeout
+RETRY 00081 7/16 ReadTimeoutRETRY 00085 7/16 ReadTimeout
+
+RETRY 00092 8/16 ReadTimeout
+RETRY 00091 8/16 ReadTimeout
+RETRY 00088 8/16 ReadTimeout
+RETRY 00086 8/16 ReadTimeout
+RETRY 00089 8/16 ReadTimeout
+RETRY 00090 8/16 ReadTimeout
+RETRY 00082 8/16 ReadTimeout
+RETRY 00087 8/16 ReadTimeout
+RETRY 00083 8/16 ReadTimeout
+RETRY 00085 8/16 ReadTimeoutRETRY 00081 8/16 ReadTimeout
+RETRY 00084 8/16 ReadTimeout
+
+RETRY 00092 9/16 ReadTimeout
+RETRY 00091 9/16 ReadTimeout
+RETRY 00088 9/16 ReadTimeout
+RETRY 00086 9/16 ReadTimeoutRETRY 00089 9/16 ReadTimeout
+
+RETRY 00090 9/16 ReadTimeout
+RETRY 00087 9/16 ReadTimeoutRETRY 00082 9/16 ReadTimeout
+
+RETRY 00083 9/16 ReadTimeout
+RETRY 00081 9/16 ReadTimeout
+RETRY 00084 9/16 ReadTimeout
+RETRY 00085 9/16 ReadTimeout
+RETRY 00092 10/16 ReadTimeout
+RETRY 00091 10/16 ReadTimeout
+RETRY 00088 10/16 ReadTimeout
+RETRY 00089 10/16 ReadTimeoutRETRY 00086 10/16 ReadTimeout
+
+RETRY 00090 10/16 ReadTimeout
+RETRY 00082 10/16 ReadTimeout
+RETRY 00087 10/16 ReadTimeout
+RETRY 00083 10/16 ReadTimeout
+RETRY 00081 10/16 ReadTimeout
+RETRY 00084 10/16 ReadTimeout
+RETRY 00085 10/16 ReadTimeout
+RETRY 00092 11/16 ReadTimeout
+RETRY 00088 11/16 ReadTimeout
+RETRY 00091 11/16 ReadTimeout
+RETRY 00086 11/16 ReadTimeout
+RETRY 00089 11/16 ReadTimeout
+RETRY 00090 11/16 ReadTimeout
+RETRY 00087 11/16 ReadTimeoutRETRY 00082 11/16 ReadTimeout
+
+RETRY 00083 11/16 ReadTimeout
+RETRY 00081 11/16 ReadTimeout
+RETRY 00084 11/16 ReadTimeout
+RETRY 00085 11/16 ReadTimeout
+RETRY 00092 12/16 ReadTimeout
+RETRY 00091 12/16 ReadTimeout
+RETRY 00088 12/16 ReadTimeout
+RETRY 00086 12/16 ReadTimeout
+RETRY 00089 12/16 ReadTimeout
+RETRY 00090 12/16 ReadTimeout
+RETRY 00087 12/16 ReadTimeout
+RETRY 00082 12/16 ReadTimeout
+RETRY 00083 12/16 ReadTimeout
+RETRY 00081 12/16 ReadTimeout
+RETRY 00084 12/16 ReadTimeout
+RETRY 00085 12/16 ReadTimeout
+RETRY 00092 13/16 ReadTimeout
+RETRY 00091 13/16 ReadTimeout
+RETRY 00088 13/16 ReadTimeout
+RETRY 00086 13/16 ReadTimeout
+RETRY 00089 13/16 ReadTimeout
+RETRY 00090 13/16 ReadTimeout
+RETRY 00087 13/16 ReadTimeout
+RETRY 00082 13/16 ReadTimeout
+RETRY 00083 13/16 ReadTimeoutRETRY 00081 13/16 ReadTimeout
+
+RETRY 00084 13/16 ReadTimeout
+RETRY 00085 13/16 ReadTimeout
+RETRY 00092 14/16 ReadTimeout
+RETRY 00091 14/16 ReadTimeout
+RETRY 00088 14/16 ReadTimeout
+RETRY 00086 14/16 ReadTimeout
+RETRY 00089 14/16 ReadTimeout
+RETRY 00090 14/16 ReadTimeout
+RETRY 00087 14/16 ReadTimeout
+RETRY 00082 14/16 ReadTimeout
+RETRY 00081 14/16 ReadTimeoutRETRY 00083 14/16 ReadTimeout
+
+RETRY 00084 14/16 ReadTimeout
+RETRY 00085 14/16 ReadTimeout
+RETRY 00092 15/16 ReadTimeout
+RETRY 00088 15/16 ReadTimeout
+RETRY 00091 15/16 ReadTimeout
+RETRY 00086 15/16 ReadTimeoutRETRY 00089 15/16 ReadTimeout
+RETRY 00090 15/16 ReadTimeout
+
+RETRY 00082 15/16 ReadTimeout
+RETRY 00087 15/16 ReadTimeout
+RETRY 00083 15/16 ReadTimeoutRETRY 00081 15/16 ReadTimeout
+
+RETRY 00084 15/16 ReadTimeout
+RETRY 00085 15/16 ReadTimeout
+RETRY 00092 16/16 ReadTimeout
+RETRY 00088 16/16 ReadTimeout
+RETRY 00091 16/16 ReadTimeout
+RETRY 00090 16/16 ReadTimeoutRETRY 00089 16/16 ReadTimeout
+RETRY 00086 16/16 ReadTimeout
+
+RETRY 00082 16/16 ReadTimeout
+RETRY 00087 16/16 ReadTimeout
+RETRY 00081 16/16 ReadTimeout
+RETRY 00083 16/16 ReadTimeout
+RETRY 00084 16/16 ReadTimeout
+RETRY 00085 16/16 ReadTimeout
+RETRY 00000 1/16 ReadTimeout
+RETRY 00001 1/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 1/16 ReadTimeout
+RETRY _sharding 1/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 1/16 ReadTimeout
+RETRY _METADATA 1/16 ReadTimeout
+RETRY 00000 2/16 ReadTimeout
+RETRY 00001 2/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 2/16 ReadTimeout
+RETRY _sharding 2/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 2/16 ReadTimeoutRETRY _METADATA 2/16 ReadTimeout
+
+RETRY 00000 3/16 ReadTimeout
+RETRY 00001 3/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 3/16 ReadTimeout
+RETRY _sharding 3/16 ReadTimeout
+RETRY _METADATA 3/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 3/16 ReadTimeout
+RETRY 00000 4/16 ReadTimeout
+RETRY 00001 4/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 4/16 ReadTimeout
+RETRY _sharding 4/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 4/16 ReadTimeoutRETRY _METADATA 4/16 ReadTimeout
+
+RETRY 00000 5/16 ReadTimeout
+RETRY 00001 5/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 5/16 ReadTimeout
+RETRY _sharding 5/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 5/16 ReadTimeout
+RETRY _METADATA 5/16 ReadTimeout
+RETRY 00000 6/16 ReadTimeout
+RETRY 00001 6/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 6/16 ReadTimeout
+RETRY _sharding 6/16 ReadTimeout
+RETRY _METADATA 6/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 6/16 ReadTimeout
+RETRY 00000 7/16 ReadTimeout
+RETRY 00001 7/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 7/16 ReadTimeout
+RETRY _sharding 7/16 ReadTimeout
+RETRY _METADATA 7/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 7/16 ReadTimeout
+RETRY 00000 8/16 ReadTimeout
+RETRY 00001 8/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 8/16 ReadTimeout
+RETRY _sharding 8/16 ReadTimeout
+RETRY _METADATA 8/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 8/16 ReadTimeout
+RETRY 00000 9/16 ReadTimeout
+RETRY 00001 9/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 9/16 ReadTimeout
+RETRY _sharding 9/16 ReadTimeout
+RETRY _METADATA 9/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 9/16 ReadTimeout
+RETRY 00000 10/16 ReadTimeoutRETRY 00001 10/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 10/16 ReadTimeout
+RETRY _sharding 10/16 ReadTimeout
+RETRY _METADATA 10/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 10/16 ReadTimeout
+RETRY 00001 11/16 ReadTimeoutRETRY 00000 11/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 11/16 ReadTimeout
+RETRY _sharding 11/16 ReadTimeout
+RETRY _METADATA 11/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 11/16 ReadTimeout
+RETRY 00000 12/16 ReadTimeoutRETRY 00001 12/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 12/16 ReadTimeout
+RETRY _sharding 12/16 ReadTimeout
+RETRY _METADATA 12/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 12/16 ReadTimeout
+RETRY 00000 13/16 ReadTimeout
+RETRY 00001 13/16 ReadTimeout
+RETRY cadac88e3456c6982e815f3290e39b34 13/16 ReadTimeout
+RETRY _sharding 13/16 ReadTimeout
+RETRY _METADATA 13/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 13/16 ReadTimeout
+RETRY 00001 14/16 ReadTimeoutRETRY 00000 14/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 14/16 ReadTimeout
+RETRY _sharding 14/16 ReadTimeout
+RETRY _METADATA 14/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 14/16 ReadTimeout
+RETRY 00001 15/16 ReadTimeoutRETRY 00000 15/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 15/16 ReadTimeout
+RETRY _sharding 15/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 15/16 ReadTimeoutRETRY _METADATA 15/16 ReadTimeout
+
+RETRY 00000 16/16 ReadTimeoutRETRY 00001 16/16 ReadTimeout
+
+RETRY cadac88e3456c6982e815f3290e39b34 16/16 ReadTimeout
+RETRY _sharding 16/16 ReadTimeout
+RETRY _CHECKPOINT_METADATA 16/16 ReadTimeoutRETRY _METADATA 16/16 ReadTimeout
+
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/download_contextflow.py", line 53, in <module>
+    future.result()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.cache/download_assets.py", line 66, in transfer
+    if attempt==15: raise RuntimeError(f'Failed transfer: {dest}') from None
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Failed transfer: /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4.parts/00092
+SOURCE VERIFIED assets/physical-intelligence/libero/norm_stats.json 4513 CRC32C UVfCOQ==
+SOURCE VERIFIED params/manifest.ocdbt 118 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/manifest.ocdbt 661 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032 1389 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54 1957704192 CRC32C hR0Eog==
+SOURCE VERIFIED params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7 979 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d 3904 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863 318886852 CRC32C S3tAcQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c 843619492 CRC32C P3gY6w==
+SOURCE VERIFIED params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622 1803 CRC32C SGdLxw==
+SOURCE VERIFIED params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1 795287583 CRC32C f8DheQ==
+SOURCE VERIFIED params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b 213 CRC32C SGdLxw==
+REUSING COMPLETE assets/physical-intelligence/libero/norm_stats.json
+REUSING COMPLETE params/manifest.ocdbt
+REUSING COMPLETE params/ocdbt.process_0/manifest.ocdbt
+REUSING COMPLETE params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032
+REUSING COMPLETE params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54
+REUSING COMPLETE params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7
+REUSING COMPLETE params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d
+REUSING COMPLETE params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863
+REUSING COMPLETE params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c
+REUSING COMPLETE params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622
+REUSING COMPLETE params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1
+REUSING COMPLETE params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b
+REUSING COMPLETE params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe
+REUSING COMPLETE params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6
+SOURCE VERIFIED params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4 1550681447 CRC32C 9QUCUw==
+SOURCE VERIFIED params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee 19299585 CRC32C AzXkTA==
+SOURCE VERIFIED params/d/cadac88e3456c6982e815f3290e39b34 4000 CRC32C SGdLxw==
+SOURCE VERIFIED params/_METADATA 76040 CRC32C e++vlg==
+SOURCE VERIFIED params/_sharding 53720 CRC32C lTANyg==
+SOURCE VERIFIED _CHECKPOINT_METADATA 417 CRC32C iNEBrw==
+{"chunks": 10, "total_chunks": 99}
+{"chunks": 20, "total_chunks": 99}
+{"chunks": 30, "total_chunks": 99}
+{"chunks": 40, "total_chunks": 99}
+{"chunks": 50, "total_chunks": 99}
+{"chunks": 60, "total_chunks": 99}
+{"chunks": 70, "total_chunks": 99}
+{"chunks": 80, "total_chunks": 99}
+RETRY 00087 1/16 ReadTimeout
+RETRY 00092 1/16 ReadTimeout
+RETRY 00087 2/16 ReadTimeout
+RETRY 00092 2/16 ReadTimeout
+RETRY 00083 1/16 ProxyError
+RETRY 00088 1/16 ProxyError
+RETRY 00085 1/16 ProxyErrorRETRY 00081 1/16 ProxyError
+RETRY 00082 1/16 ProxyError
+RETRY 00086 1/16 ProxyError
+RETRY 00089 1/16 ProxyError
+
+RETRY 00084 1/16 ProxyError
+RETRY 00091 1/16 ProxyErrorRETRY 00090 1/16 ProxyError
+
+{"chunks": 90, "total_chunks": 99}
+{"chunks": 99, "total_chunks": 99}
+VERIFIED assets/physical-intelligence/libero/norm_stats.json
+VERIFIED params/manifest.ocdbt
+VERIFIED params/ocdbt.process_0/manifest.ocdbt
+VERIFIED params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032
+VERIFIED params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54
+VERIFIED params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7
+VERIFIED params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d
+VERIFIED params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863
+VERIFIED params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c
+VERIFIED params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622
+VERIFIED params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1
+VERIFIED params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b
+VERIFIED params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe
+VERIFIED params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6
+VERIFIED params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4
+VERIFIED params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee
+VERIFIED params/d/cadac88e3456c6982e815f3290e39b34
+VERIFIED params/_METADATA
+VERIFIED params/_sharding
+VERIFIED _CHECKPOINT_METADATA
+CONTEXTFLOW COMPLETE: all 20 files passed original Google CRC32C
+REUSING COMPLETE assets/physical-intelligence/libero/norm_stats.json
+REUSING COMPLETE params/manifest.ocdbt
+REUSING COMPLETE params/ocdbt.process_0/manifest.ocdbt
+REUSING COMPLETE params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032
+REUSING COMPLETE params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54
+REUSING COMPLETE params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7
+REUSING COMPLETE params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d
+REUSING COMPLETE params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863
+REUSING COMPLETE params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c
+REUSING COMPLETE params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622
+REUSING COMPLETE params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1
+REUSING COMPLETE params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b
+REUSING COMPLETE params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe
+REUSING COMPLETE params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6
+REUSING COMPLETE params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4
+REUSING COMPLETE params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee
+REUSING COMPLETE params/d/cadac88e3456c6982e815f3290e39b34
+REUSING COMPLETE params/_METADATA
+REUSING COMPLETE params/_sharding
+REUSING COMPLETE _CHECKPOINT_METADATA
+VERIFIED assets/physical-intelligence/libero/norm_stats.json
+VERIFIED params/manifest.ocdbt
+VERIFIED params/ocdbt.process_0/manifest.ocdbt
+VERIFIED params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032
+VERIFIED params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54
+VERIFIED params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7
+VERIFIED params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d
+VERIFIED params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863
+VERIFIED params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c
+VERIFIED params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622
+VERIFIED params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1
+VERIFIED params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b
+VERIFIED params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe
+VERIFIED params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6
+VERIFIED params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4
+VERIFIED params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee
+VERIFIED params/d/cadac88e3456c6982e815f3290e39b34
+VERIFIED params/_METADATA
+VERIFIED params/_sharding
+VERIFIED _CHECKPOINT_METADATA
+CONTEXTFLOW COMPLETE: all 20 files passed original Google CRC32C

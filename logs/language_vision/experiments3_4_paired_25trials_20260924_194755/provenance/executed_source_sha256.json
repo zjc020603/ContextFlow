@@ -1,0 +1,12 @@
+{
+  "scripts/serve_language_vision.py": "16c1f3753768ece15f49d8d8cc49b8ab6e9d0d5884bf167060cc29cbd6bb8e32",
+  "examples/libero/language_vision_experiment.py": "f49483784fd59274ab1bc978f94a9a5a4611498546f92a7cd8f313265f325ff9",
+  "examples/libero/live_vision_intervention.py": "4611c39e527e6bf1af24f983d41e121f2284f1a529a0fa1fb39ba637376628ac",
+  "examples/libero/live_vision_intervention_test.py": "43dee682507add7ae1d496fe2583afebf38eb135d901882bce38344c744d465e",
+  "scripts/experiments/launch_language_vision.py": "fdfcdd35976b3e333a64c7e374fd4edfe8801cce00f58d8743fd14577d439bc1",
+  "scripts/experiments/run_language_vision.py": "d91c706028d54ad719898038fa1c417864f2763c8fbe364270c982c7813cdcfa",
+  "scripts/experiments/audit_language_vision.py": "f5aee55da7b056920ee3b25d84ad1abb093e2179024ad922ef80bd89f6d1a043",
+  "scripts/experiments/plot_language_vision_attention.py": "393b9404c526377d9349a387d5ac3dab6bf0f81fc1bbf759ec8370bc5b6b035b",
+  "scripts/experiments/summarize_language_vision.py": "6c9342971832f77e13dacdef4b1cd84bb0fbbd436dee7f843389affb5fe18765",
+  "scripts/experiments/LANGUAGE_VISION.md": "02f294b970504f0b612a180d822aefcedfa422d3e4f0b23c134b63255e00cbd1"
+}

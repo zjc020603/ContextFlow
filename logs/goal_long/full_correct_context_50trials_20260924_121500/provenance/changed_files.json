@@ -1,0 +1,8 @@
+[
+  "examples/libero/goal_long_eval.py",
+  "examples/libero/goal_long_eval_test.py",
+  "scripts/serve_goal_long.py",
+  "scripts/run_goal_long.py",
+  "scripts/summarize_goal_long.py",
+  "scripts/GOAL_LONG_EVALUATION.md"
+]

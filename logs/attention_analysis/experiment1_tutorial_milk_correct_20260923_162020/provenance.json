@@ -1,0 +1,7 @@
+{
+  "/data/zjc/workspace/ContextFlow/logs/attention_capture/experiment0_consistency_20260923_143830/validation_attempt3/original/correct/milk/ep000_step000/capture.npz": "ff657cb0d6f6b2908d53142866e51ff97689b0d72f60b6778f8ae459a51b824c",
+  "/data/zjc/workspace/ContextFlow/logs/attention_capture/experiment0_consistency_20260923_143830/validation_attempt3/original/correct/milk/ep000_step000/layout.json": "a8f1c362f2ac07229bcc439818a9a751070a0e8108f07764db7435f0a58cdf4d",
+  "/data/zjc/workspace/ContextFlow/logs/attention_capture/experiment0_consistency_20260923_143830/observations/original/correct/milk/ep000_step000.npz": "29c89e979696cf7370e77b37c0f49b6a3369da27885ceb3f676c6505d3391011",
+  "/data/zjc/workspace/ContextFlow/scripts/attention/make_tutorial.py": "bfb03ce61f6c268d8aa3ac259d3e6bf4f96e1d9c7ae88e44d8a75f64a6226ba0",
+  "/data/zjc/workspace/ContextFlow/scripts/attention/tutorial.html": "0d842dad50cf5ca9cbae8908994fada66118a04d8b4c14a3fb46ed139d364cf6"
+}

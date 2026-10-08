@@ -1,0 +1,29 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+demo_milk__language_milk__freeze_near 5 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.4s
+demo_milk__language_milk__freeze_near 6 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.5s
+demo_milk__language_milk__freeze_near 7 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.6s
+demo_milk__language_milk__freeze_near 8 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.3s
+demo_milk__language_milk__freeze_near 9 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.9s
+demo_milk__language_milk__freeze_near 10 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.3s
+demo_milk__language_milk__freeze_near 11 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.0s
+demo_milk__language_milk__freeze_near 12 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.0s
+demo_milk__language_milk__freeze_near 13 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.6s
+demo_milk__language_milk__freeze_near 14 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.3s
+demo_milk__language_milk__freeze_near 15 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 20.9s
+demo_milk__language_milk__freeze_near 16 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.5s
+demo_milk__language_milk__freeze_near 17 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.0s
+demo_milk__language_milk__freeze_near 18 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.7s
+demo_milk__language_milk__freeze_near 19 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.8s
+demo_milk__language_milk__freeze_near 20 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.2s
+demo_milk__language_milk__freeze_near 21 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.0s
+demo_milk__language_milk__freeze_near 22 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.0s
+demo_milk__language_milk__freeze_near 23 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.6s
+demo_milk__language_milk__freeze_near 24 {'tomato_sauce_1': False, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 21.1s
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)

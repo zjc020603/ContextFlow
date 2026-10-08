@@ -1,0 +1,30 @@
+WARNING:root:Startup stage: loading checkpoint and demonstration dataset
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:root:Startup stage: policy loaded; hashing parameters
+Thread 0x00007f28fe7fc640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 331 in wait
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 629 in wait
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Current thread 0x00007f2c07afd740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jax/_src/array.py", line 627 in _value
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jax/_src/profiler.py", line 333 in wrapper
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jax/_src/array.py", line 428 in __array__
+  File "/data/zjc/workspace/ContextFlow/scripts/check_attention_capture.py", line 32 in array_hash
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_goal_long.py", line 55 in __init__
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_goal_long.py", line 234 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+WARNING:root:Startup stage: verifying historical baseline
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:websockets.server:server listening on 127.0.0.1:8135

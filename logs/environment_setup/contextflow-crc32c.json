@@ -1,0 +1,102 @@
+[
+  {
+    "path": "assets/physical-intelligence/libero/norm_stats.json",
+    "size": 4513,
+    "crc32c": "UVfCOQ=="
+  },
+  {
+    "path": "params/manifest.ocdbt",
+    "size": 118,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/manifest.ocdbt",
+    "size": 661,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032",
+    "size": 1389,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54",
+    "size": 1957704192,
+    "crc32c": "hR0Eog=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7",
+    "size": 979,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d",
+    "size": 3904,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863",
+    "size": 318886852,
+    "crc32c": "S3tAcQ=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c",
+    "size": 843619492,
+    "crc32c": "P3gY6w=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622",
+    "size": 1803,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1",
+    "size": 795287583,
+    "crc32c": "f8DheQ=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b",
+    "size": 213,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe",
+    "size": 1118330769,
+    "crc32c": "ke9rIQ=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6",
+    "size": 773254948,
+    "crc32c": "BCEYog=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4",
+    "size": 1550681447,
+    "crc32c": "9QUCUw=="
+  },
+  {
+    "path": "params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee",
+    "size": 19299585,
+    "crc32c": "AzXkTA=="
+  },
+  {
+    "path": "params/d/cadac88e3456c6982e815f3290e39b34",
+    "size": 4000,
+    "crc32c": "SGdLxw=="
+  },
+  {
+    "path": "params/_METADATA",
+    "size": 76040,
+    "crc32c": "e++vlg=="
+  },
+  {
+    "path": "params/_sharding",
+    "size": 53720,
+    "crc32c": "lTANyg=="
+  },
+  {
+    "path": "_CHECKPOINT_METADATA",
+    "size": 417,
+    "crc32c": "iNEBrw=="
+  }
+]

@@ -1,0 +1,32 @@
+INFO:root:Loading model with dtype: <class 'jax.numpy.float32'>...
+INFO:2026-09-22 15:51:34,020:jax._src.xla_bridge:945: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-09-22 15:51:34,021:jax._src.xla_bridge:945: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.1
+INFO:absl:Created BasePyTreeCheckpointHandler: pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=None
+INFO:absl:Restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 457.3 MiB/s (total bytes: 8.1 GiB) (time elapsed: 18 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:restore
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+INFO:root:Loaded norm stats from /data/zjc/workspace/ContextFlow/assets/ContextFlow/physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:Loaded norm stats from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/assets/physical-intelligence/libero
+INFO:root:Creating server (host: 10-118-231-160, bind: 0.0.0.0:8811)
+INFO:websockets.server:server listening on 0.0.0.0:8811
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 56456) opened
+INFO:root:Connection from ('127.0.0.1', 56456) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 56462) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]

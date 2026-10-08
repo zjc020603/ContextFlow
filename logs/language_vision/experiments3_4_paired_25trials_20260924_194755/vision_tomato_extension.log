@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "scripts/experiments/run_language_vision.py", line 54, in <module>
+    result = subprocess.run(command, stdout=f, stderr=subprocess.STDOUT)
+  File "scripts/experiments/run_language_vision.py", line 42, in main
+    "--demo",
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/_base.py", line 444, in result
+    return self.__get_result()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "scripts/experiments/run_language_vision.py", line 37, in worker
+    "examples.libero.language_vision_experiment",
+RuntimeError: vision_tomato_sauce_milk_mask_target_5_25 failed: /data/zjc/workspace/ContextFlow/logs/language_vision/experiments3_4_paired_25trials_20260924_194755/jobs/vision_tomato_sauce_milk_mask_target_5_25.log

@@ -199,3 +199,7 @@ errs/
 
 # Claude Code
 .claude/scheduled_tasks.lock
+
+# Machine-local caches and linked worktrees (branches are pushed separately).
+/.worktrees/
+/.model-cache/

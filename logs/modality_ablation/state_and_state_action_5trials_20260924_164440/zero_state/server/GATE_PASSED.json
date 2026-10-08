@@ -1,0 +1,8 @@
+{
+  "historical_initial_cases": 60,
+  "capture_and_prefix_cases": 12,
+  "removed_modality_invariance_cases": 8,
+  "no_context_unchanged_cases": 4,
+  "parameter_sha256": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "passed": true
+}

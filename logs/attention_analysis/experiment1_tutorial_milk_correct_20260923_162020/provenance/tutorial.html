@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一个观测，读懂 attention</title>
+<style>
+:root{--ink:#172d3c;--muted:#536777;--accent:#086e75;--paper:#f3f5f7;--line:#dce4e9}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1240px;margin:auto;padding:30px 24px 65px}h1{font-size:32px;line-height:1.3;margin:10px 0}h2{font-size:23px;margin:0 0 12px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 0 14px}.eyebrow{font-size:13px;letter-spacing:1px;color:var(--accent)}.sub,.small{color:var(--muted)}.small{font-size:13px}.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:23px;margin:18px 0}.trio,.cameras,.split{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}.cameras,.split{grid-template-columns:1fr 1fr}.concept{border-left:3px solid var(--accent);padding-left:16px}.controls{display:flex;gap:15px;flex-wrap:wrap;align-items:end}label{display:block;font-size:14px}select,button{padding:9px 11px;border:1px solid #bfcbd3;border-radius:7px;background:white;color:var(--ink);font:inherit;font-size:14px}button{cursor:pointer;background:#eaf5f3}.selected{background:#eaf5f3;border-radius:8px;padding:11px 14px;margin:14px 0}.notice{background:#fff4df;padding:12px 15px;border-radius:8px}.camera{border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}.pictures{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pictures img,.pictures canvas{display:block;width:100%;height:auto;aspect-ratio:1;border-radius:4px;image-rendering:pixelated}.colorbar{height:13px;border-radius:3px;margin-top:13px}.scale{display:flex;justify-content:space-between;font-size:12px}.hover{font-size:13px;min-height:66px;background:#f3f6f8;border-radius:6px;padding:9px;margin-top:10px;font-variant-numeric:tabular-nums}.mass{font-weight:600;color:var(--accent);margin-bottom:10px;font-variant-numeric:tabular-nums}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:left;padding:8px 5px;border-bottom:1px solid #e6ebef}th{color:var(--muted);font-weight:500}.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.bartrack{width:110px;height:8px;background:#eff3f6;border-radius:3px}.bar{height:100%;background:#27758b;border-radius:3px}.tokenbar{background:#b56828}.tokens{display:flex;flex-direction:column;gap:8px}.tokenrow{display:grid;grid-template-columns:80px 1fr 82px;align-items:center;gap:8px;font-size:13px}.tokenrow .bartrack{width:100%}.equation{background:#f1f5f7;padding:14px;border-radius:8px;font-family:ui-monospace,monospace;overflow-x:auto;font-size:14px}.static{width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap}a{color:var(--accent)}details{margin-top:14px}summary{cursor:pointer;font-weight:600}.status{font-size:13px;color:var(--muted)}@media(max-width:850px){.trio,.cameras,.split{grid-template-columns:1fr}main{padding:18px 12px}.panel{padding:17px}h1{font-size:27px}.bartrack{width:85px}}
+</style></head>
+<body><main>
+<div class="eyebrow">CONTEXTFLOW · ATTENTION 示例讲解 · 实验 1 的第一步</div>
+<h1>同一个观测，看看动作计算如何分配注意力</h1>
+<p class="sub">固定案例：原始布局 · 正确牛奶示范 · episode 0 · 环境第 0 步。复用实验 0 的记录，所有切换都不运行模型，也不让机器人移动。</p>
+<section class="panel"><h2>先分清三个“位置”</h2><div class="trio">
+<div class="concept"><h3>① 环境步：机器人走到哪了</h3><p>本例始终是第 0 步。当前画面和机器人状态不会随下方控件改变。</p></div>
+<div class="concept"><h3>② 采样步：动作生成到哪了</h3><p>固定观测下，模型从噪声开始，用 10 次更新生成一段动作。这里保存了第 0、5、9 步的内部计算。</p></div>
+<div class="concept"><h3>③ 层：这次计算到了哪层</h3><p>每个采样步内部又经过多层 Transformer。这里保存第 0、9、17 层。所有编号从 0 开始。</p></div>
+</div><p class="small">示例默认看最后一次采样更新的最后一层。attention 是该更新内部的权重；不是对最终动作的贡献分解。</p></section>
+<section class="panel"><h2>1. 固定一组计算坐标</h2><div class="controls">
+<label>采样步<select id="step"></select></label><label>Transformer 层<select id="layer"></select></label>
+<label>动作 queries<select id="scope"></select></label><button id="reset">恢复讲解默认值</button>
+</div><div id="selection" class="selected"></div><p>一个 action query 对应预测动作序列中的一个时间位置，不是某个 x/y 动作分量。默认对前 5 个位置取平均，它们对应本轮会执行的动作范围；不包含当前 state query。所有视图均对 <strong>8 个 heads 取平均</strong>。</p><p class="small">不同 head 或动作位置可能有不同分布，平均后看不到全部差异。此页面用于理解口径，不用于穷尽分析。</p></section>
+<section class="panel"><h2>2. 原图 → 16×16 权重 → 热图</h2><div class="controls">
+<label>颜色刻度<select id="scale"><option value="shared">共用绝对刻度：可以跨图比较亮度</option><option value="local">每个相机放大颜色：只方便看内部分布</option></select></label>
+<label>呈现方式<select id="display"><option value="overlay">叠加在原图上</option><option value="heat">只显示 16×16 热图</option></select></label>
+</div><p id="scale_note" class="notice"></p><div id="cameras" class="cameras"></div>
+<p class="small">每个 patch 对应输入图像的 14×14 像素，顺序为从左到右、从上到下。鼠标移动到右侧图可读出单格的精确数值。没有做平滑插值或物体分割。</p>
+<details><summary>这真的是“模型在看这些像素”吗？</summary><p>这是 action query 对带有图像位置索引的 token 的直接 attention。图像 token 已经过 SigLIP 和其他层的信息混合，不只包含本地 patch 的像素信息。因此有空间位置，但不是精确的像素因果归因。也没有在这里做跨层 attention rollout。</p></details></section>
+<section class="panel"><h2>3. 先看总量，再读局部亮色</h2><div class="split"><div><h3>全部 keys 的注意力分配</h3><p class="small">按 token 权重求和；右侧同时标出有效 token 数。它们的数量不同，不能把求和结果直接当成公平的模态重要性评分。</p><table><thead><tr><th>keys 部分</th><th class="num">数量</th><th>绝对比例条</th><th class="num">对全部 keys</th></tr></thead><tbody id="blocks"></tbody></table><p id="total" class="small"></p></div>
+<div><h3>语言中，哪些 token 分到了权重</h3><p id="language_total"></p><div id="tokens" class="tokens"></div><p id="language_scale" class="small"></p><p class="small">保留 &lt;bos&gt; 和换行符；padding 已屏蔽。百分比仍以全部 keys 为分母，不是把语言单独归一化到 100%。</p><p class="notice">直接 attention 权重低 ≠ 语言不起作用。预测动作 token 权重大，也不等于“模型只依赖自己”。value 向量、残差和其他层的信息路径都尚未包含在这个数字中。</p></div></div></section>
+<section class="panel"><h2>4. 用一个格子算明白</h2><p>恢复默认值后，找到主视角权重最大的格子。下面同时给出两个分母，避免把“图像内百分比”误当成“全部输入百分比”。</p><div id="worked" class="equation"></div><p>颜色只把权重映射成深浅。如果对每张图单独调亮，同样的亮黄色可以代表完全不同的权重；所以必须同时读刻度和该相机的总量。</p>
+<details><summary>主图对应的数组操作</summary><pre class="equation"># 原始轴：采样步、层、batch、head、query、key
+# 保存列表的下标 2 → 采样步 9 / 层 17
+# query 0 是 state；1:6 是前 5 个 action queries
+a = probabilities[2, 2, 0, :, 1:6, :].mean(axis=(0, 1))
+front_heatmap = a[0:256].reshape(16, 16)
+front_total = a[0:256].sum()</pre></details></section>
+<section class="panel"><h2>5. 推荐按这个顺序试一遍</h2><ol><li>保留默认值，读主视角、手腕图像、语言的总量。</li><li>只切换“颜色刻度”。注意图像会变亮，但百分比不变。</li><li>恢复共用刻度，固定采样步 9，把层从 0 切到 9、17：同一轮内部不同深度的计算。</li><li>固定层 17，把采样步从 0 切到 5、9：动作生成过程的不同阶段，机器人仍未移动。</li><li>最后比较第一个动作位置、前 5 个和全部 50 个的平均，观察汇总口径是否掩盖差异。</li></ol><p><strong>本例能说明如何读图，不能证明模型识别了牛奶、按位置行动或受哪个模态控制。</strong>这些问题留给之后的跨条件分析和干预。</p><div class="links"><a href="READ_ME_FIRST.md">中文逐图说明</a><a href="01_read_the_heatmap.png">图 1：原图与热图</a><a href="02_attention_budget.png">图 2：注意力分配</a><a href="03_layers_and_flow_steps.png">图 3：层与采样步</a><a href="summary.json">数值与口径</a></div></section>
+<p id="status" class="status">正在读取页面内嵌数据…</p>
+</main><script>
+'use strict';
+const DATA=__PAYLOAD__;
+const $=id=>document.getElementById(id);
+const names=['base_0_rgb','left_wrist_0_rgb'],titles=['主视角','手腕视角'];
+const loadedImages={};
+function fill(id,values,labels){values.forEach((value,i)=>{const option=document.createElement('option');option.value=value;option.textContent=labels[i];$(id).appendChild(option);});}
+fill('step',[0,1,2],DATA.steps.map(s=>`${s}（第 ${s+1} 次更新）`));
+fill('layer',[0,1,2],DATA.layers.map(l=>`${l}（第 ${l+1} 层）`));
+fill('scope',Object.keys(DATA.scopeLabels),Object.values(DATA.scopeLabels));
+$('step').value='2';$('layer').value='2';$('scope').value='first5';
+const fmt=(x,n=4)=>(100*x).toFixed(n)+'%';
+const sum=a=>a.reduce((x,y)=>x+y,0);
+let current=[];
+names.forEach((name,i)=>{const card=document.createElement('div');card.className='camera';card.innerHTML=`<h3>${titles[i]}</h3><div class="mass" id="mass${i}"></div><div class="pictures"><div><span class="small">实际输入图像</span><img id="original${i}" alt="${titles[i]}原始输入"></div><div><span class="small">当前 attention 视图</span><canvas id="canvas${i}" width="448" height="448" aria-label="${titles[i]}注意力图"></canvas></div></div><div class="colorbar" id="gradient${i}"></div><div class="scale"><span>0%</span><span id="vmax${i}"></span></div><div class="hover" id="hover${i}">移动到右侧图上，读取某个 patch 的权重。</div>`;$('cameras').appendChild(card);$('original'+i).src=DATA.images[name];$('gradient'+i).style.background='linear-gradient(to right,'+DATA.lut.filter((_,j)=>j%16===0||j===255).map(c=>`rgb(${c.join(',')})`).join(',')+')';
+$('canvas'+i).addEventListener('mousemove',event=>{const rect=event.target.getBoundingClientRect();const x=Math.min(15,Math.max(0,Math.floor((event.clientX-rect.left)/rect.width*16))),y=Math.min(15,Math.max(0,Math.floor((event.clientY-rect.top)/rect.height*16)));const value=current[i*256+y*16+x],mass=sum(current.slice(i*256,(i+1)*256));$('hover'+i).textContent=`patch 行 ${y} / 列 ${x}（从 0 计数）；像素 x=[${x*14},${(x+1)*14})、y=[${y*14},${(y+1)*14})。占全部 keys ${fmt(value,5)}；占本相机内部 ${mass?fmt(value/mass,2):'0%'}。`;});});
+function drawCamera(i){const canvas=$('canvas'+i),ctx=canvas.getContext('2d'),values=current.slice(i*256,(i+1)*256),mass=sum(values),vmax=$('scale').value==='shared'?DATA.summary.shared_color_vmax_percent:Math.max(...values)*100;
+ctx.clearRect(0,0,448,448);ctx.imageSmoothingEnabled=false;if($('display').value==='overlay')ctx.drawImage(loadedImages[names[i]],0,0,448,448);ctx.globalAlpha=$('display').value==='overlay'?0.48:1;
+values.forEach((v,j)=>{const color=DATA.lut[Math.max(0,Math.min(255,Math.round((vmax?100*v/vmax:0)*255)))];ctx.fillStyle=`rgb(${color.join(',')})`;ctx.fillRect((j%16)*28,Math.floor(j/16)*28,28,28);});ctx.globalAlpha=1;
+$('mass'+i).textContent=`相机全部 256 个 patch 合计：${fmt(mass,3)}`;$('vmax'+i).textContent=vmax.toFixed(4)+'% / patch';$('hover'+i).textContent='移动到右侧图上，读取某个 patch 的权重。';}
+function rowCell(row,text,cls=''){const cell=document.createElement('td');cell.textContent=text;cell.className=cls;row.appendChild(cell);return cell;}
+function render(){if(names.some(n=>!loadedImages[n]))return;const si=Number($('step').value),li=Number($('layer').value),scope=$('scope').value;current=DATA.views[scope][si][li];
+$('selection').textContent=`环境步固定 0 → 采样步 ${DATA.steps[si]} → 层 ${DATA.layers[li]} → 8 个 heads 平均 → ${DATA.scopeLabels[scope]}`;
+$('scale_note').textContent=$('scale').value==='shared'?'当前：两台相机、所有层/采样步/query 选项共用固定绝对刻度。主视角可能较暗，这是该刻度下的真实相对权重，不是数据丢失。':'当前：各相机按自身最大 patch 权重调亮；数值没有重新归一化。只能看内部位置分布，不能跨相机、跨层或跨采样步比较颜色亮度。';
+names.forEach((_,i)=>drawCamera(i));$('blocks').replaceChildren();
+DATA.blocks.forEach((b,i)=>{const value=sum(current.slice(b.start,b.stop)),row=document.createElement('tr');rowCell(row,DATA.blockLabels[i]);rowCell(row,DATA.summary.blocks[i].valid_tokens,'num');const cell=rowCell(row,'');const track=document.createElement('div');track.className='bartrack';const bar=document.createElement('div');bar.className='bar';bar.style.width=Math.min(100,value*100)+'%';track.appendChild(bar);cell.appendChild(track);rowCell(row,fmt(value,3),'num');$('blocks').appendChild(row);});
+$('total').textContent=`所有 keys 合计 ${fmt(sum(current),4)}（原 BF16 概率存在舍入误差；未重新归一化）。比例条的满宽代表 100%。`;
+const language=DATA.blocks.find(b=>b.kind==='language'),values=DATA.tokenIndices.map(i=>current[language.start+i]),max=Math.max(...values);$('language_total').textContent='语言全部有效 token 合计：'+fmt(sum(values),4);$('tokens').replaceChildren();
+DATA.tokens.forEach((token,i)=>{const row=document.createElement('div');row.className='tokenrow';const label=document.createElement('span');label.textContent=token;const track=document.createElement('div');track.className='bartrack';const bar=document.createElement('div');bar.className='bar tokenbar';bar.style.width=(max?values[i]/max*100:0)+'%';track.appendChild(bar);const value=document.createElement('span');value.className='num';value.textContent=fmt(values[i],4);row.append(label,track,value);$('tokens').appendChild(row);});
+$('language_scale').textContent=`本栏条形图为了可读性单独放大，满宽 = ${fmt(max,4)}；请读右侧数值，与左栏条长不能直接比较。`;
+$('status').textContent='已加载本地数据。切换仅重绘已记录的 attention，不联网、不运行模型。';}
+const peak=DATA.summary.image_peaks[0];$('worked').textContent=`默认主视角最大 patch：行 ${peak.row}，列 ${peak.col}\n占全部 keys = ${peak.patch_global_percent.toFixed(5)}%\n主视角合计 = ${peak.camera_mass_percent.toFixed(5)}%\n占主视角内部 = ${peak.patch_global_percent.toFixed(5)} ÷ ${peak.camera_mass_percent.toFixed(5)} × 100% = ${peak.patch_within_camera_percent.toFixed(2)}%`;$('worked').style.whiteSpace='pre-wrap';
+['step','layer','scope','scale','display'].forEach(id=>$(id).addEventListener('change',render));
+$('reset').addEventListener('click',()=>{$('step').value='2';$('layer').value='2';$('scope').value='first5';$('scale').value='shared';$('display').value='overlay';render();});
+names.forEach(name=>{const img=new Image();img.onload=()=>{loadedImages[name]=img;render();};img.onerror=()=>{$('status').textContent='图像加载失败，请使用完整的 index.html 文件。';};img.src=DATA.images[name];});
+</script></body></html>

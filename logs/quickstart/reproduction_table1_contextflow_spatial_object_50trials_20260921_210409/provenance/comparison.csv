@@ -1,0 +1,5 @@
+suite,task_description,successes,episodes,actual_rate_percent,paper_rate_percent,delta_percentage_points
+libero_spatial,pick up the black bowl on the cookie box and place it on the plate,43,50,86,86,0
+libero_spatial,pick up the black bowl next to the plate and place it on the plate,18,50,36,42,-6
+libero_object,pick up the milk and place it in the basket,43,50,86,76,10
+libero_object,pick up the tomato sauce and place it in the basket,47,50,94,90,4

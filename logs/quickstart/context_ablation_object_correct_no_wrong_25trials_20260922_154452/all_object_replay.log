@@ -1,0 +1,126 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+INFO:root:Replay correct milk 0: []
+INFO:root:Replay correct milk 1: ['milk_1']
+INFO:root:Replay correct milk 2: ['milk_1']
+INFO:root:Replay correct milk 3: ['milk_1']
+INFO:root:Replay correct milk 4: ['milk_1']
+INFO:root:Replay correct milk 5: ['milk_1']
+INFO:root:Replay correct milk 6: ['milk_1']
+INFO:root:Replay correct milk 7: ['milk_1']
+INFO:root:Replay correct milk 8: ['milk_1']
+INFO:root:Replay correct milk 9: []
+INFO:root:Replay correct milk 10: ['milk_1']
+INFO:root:Replay correct milk 11: ['milk_1']
+INFO:root:Replay correct milk 12: ['milk_1']
+INFO:root:Replay correct milk 13: ['milk_1']
+INFO:root:Replay correct milk 14: ['milk_1']
+INFO:root:Replay correct milk 15: ['milk_1']
+INFO:root:Replay correct milk 16: []
+INFO:root:Replay correct milk 17: []
+INFO:root:Replay correct milk 18: ['milk_1']
+INFO:root:Replay correct milk 19: ['milk_1']
+INFO:root:Replay correct milk 20: ['milk_1']
+INFO:root:Replay correct milk 21: ['milk_1']
+INFO:root:Replay correct milk 22: ['milk_1']
+INFO:root:Replay correct milk 23: ['milk_1']
+INFO:root:Replay correct milk 24: ['milk_1']
+INFO:root:Replay correct tomato_sauce 0: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 1: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 2: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 3: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 4: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 5: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 6: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 7: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 8: []
+INFO:root:Replay correct tomato_sauce 9: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 10: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 11: ['tomato_sauce_1']
+INFO:root:Replay correct tomato_sauce 12: ['tomato_sauce_1']
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Process ForkProcess-1:
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/replay_context_ablation.py", line 67, in replay
+    raise AssertionError("Replayed initial state differs from original")
+AssertionError: Replayed initial state differs from original
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Process ForkProcess-1:
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/replay_context_ablation.py", line 87, in replay
+    raise AssertionError(f"Replay diverged: {mode} {task} {row['episode_index']} {episode_error}")
+AssertionError: Replay diverged: correct tomato_sauce 13 0.005225903466538902
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+INFO:root:Replay wrong milk 0: ['cream_cheese_1']
+INFO:root:Replay wrong milk 1: ['cream_cheese_1']
+INFO:root:Replay wrong milk 2: ['cream_cheese_1']
+INFO:root:Replay wrong milk 3: ['cream_cheese_1']
+INFO:root:Replay wrong milk 4: ['cream_cheese_1']
+INFO:root:Replay wrong milk 5: ['cream_cheese_1']
+INFO:root:Replay wrong milk 6: ['cream_cheese_1']
+INFO:root:Replay wrong milk 7: ['cream_cheese_1']
+INFO:root:Replay wrong milk 8: ['cream_cheese_1']
+INFO:root:Replay wrong milk 9: ['cream_cheese_1']
+INFO:root:Replay wrong milk 10: ['cream_cheese_1']
+INFO:root:Replay wrong milk 11: ['cream_cheese_1']
+INFO:root:Replay wrong milk 12: ['cream_cheese_1']
+INFO:root:Replay wrong milk 13: ['cream_cheese_1']
+INFO:root:Replay wrong milk 14: ['cream_cheese_1']
+INFO:root:Replay wrong milk 15: ['cream_cheese_1']
+INFO:root:Replay wrong milk 16: ['cream_cheese_1']
+INFO:root:Replay wrong milk 17: ['cream_cheese_1']
+INFO:root:Replay wrong milk 18: ['cream_cheese_1']
+INFO:root:Replay wrong milk 19: ['cream_cheese_1']
+INFO:root:Replay wrong milk 20: ['cream_cheese_1']
+INFO:root:Replay wrong milk 21: ['cream_cheese_1']
+INFO:root:Replay wrong milk 22: ['cream_cheese_1']
+INFO:root:Replay wrong milk 23: ['cream_cheese_1']
+INFO:root:Replay wrong milk 24: ['cream_cheese_1']
+{
+  "wrong/milk": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "cream_cheese_1": 25
+    },
+    "max_original_trajectory_error": 0.0
+  }
+}

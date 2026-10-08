@@ -1,0 +1,23 @@
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:websockets.server:server listening on 127.0.0.1:8133
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 42542) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put the white mug on the plate and put the chocolate pudding to the right of the plate' (index=1), demo episode(s): [1]
+INFO:root:Connection from ('127.0.0.1', 42542) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 55742) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put the white mug on the left plate and put the yellow and white mug on the right plate' (index=0), demo episode(s): [0]
+INFO:root:Connection from ('127.0.0.1', 55742) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48732) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put the cream cheese in the bowl' (index=13), demo episode(s): [384]
+INFO:root:Connection from ('127.0.0.1', 48732) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48834) opened
+INFO:root:Connection from ('127.0.0.1', 48834) closed

@@ -1,0 +1,25 @@
+
+==================================== ERRORS ====================================
+__________ ERROR collecting examples/libero/context_ablation_test.py ___________
+ImportError while importing test module '/data/zjc/workspace/ContextFlow/examples/libero/context_ablation_test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+examples/libero/context_ablation_test.py:8: in <module>
+    from examples.libero import context_ablation as experiment
+E   ModuleNotFoundError: No module named 'examples'
+________ ERROR collecting examples/libero/position_intervention_test.py ________
+ImportError while importing test module '/data/zjc/workspace/ContextFlow/examples/libero/position_intervention_test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+examples/libero/position_intervention_test.py:6: in <module>
+    from examples.libero.position_intervention import apply_layout
+E   ModuleNotFoundError: No module named 'examples'
+=========================== short test summary info ============================
+ERROR examples/libero/context_ablation_test.py
+ERROR examples/libero/position_intervention_test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+2 errors in 0.18s

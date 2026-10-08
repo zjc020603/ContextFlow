@@ -1,0 +1,17 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Python: 3.8.20 (default, Oct  2 2024, 16:34:12) 
+[Clang 18.1.8 ]
+PyTorch: 1.11.0+cu113 CUDA available: True
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+LIBERO tasks: 10 held-out tasks: 8
+Task: pick up the black bowl between the plate and the ramekin and place it on the plate
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+agentview_image (128, 128, 3) pixel std: 49.89864280405459 PASS
+robot0_eye_in_hand_image (128, 128, 3) pixel std: 62.45398338847146 PASS
+LIBERO reset, init state, step, EGL render and MP4 export: PASS

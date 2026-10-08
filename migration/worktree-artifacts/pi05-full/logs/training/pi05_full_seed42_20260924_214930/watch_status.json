@@ -1,0 +1,14 @@
+{
+  "time": "2026-09-25T06:53:40.062549+08:00",
+  "training_active": false,
+  "latest_progress": "06:52:45.999 [I] Progress on: 20.0kit/20.0kit rate:11.3s/it remaining:00:00 elapsed:9:00:34 postfix:- (2720161:tqdm_logging.py:145)",
+  "latest_metrics": "Step 19900: grad_norm=0.0546, loss=0.0088, param_norm=1836.7118",
+  "saved_checkpoints": [
+    5000,
+    10000,
+    15000,
+    19999
+  ],
+  "verification_exit_code": 0,
+  "status": "complete"
+}

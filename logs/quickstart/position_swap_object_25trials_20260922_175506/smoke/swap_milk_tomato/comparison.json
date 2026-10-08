@@ -1,0 +1,95 @@
+{
+  "comparison": [
+    {
+      "language": "milk",
+      "context_mode": "correct",
+      "demo": "milk",
+      "episodes": 1,
+      "language_successes": 0,
+      "other_successes": 1,
+      "language_only": 0,
+      "other_only": 1,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "demo": "tomato_sauce",
+      "episodes": 1,
+      "language_successes": 0,
+      "other_successes": 1,
+      "language_only": 0,
+      "other_only": 1,
+      "both": 0,
+      "neither": 0
+    },
+    {
+      "language": "milk",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 1,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 1,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "language": "milk",
+      "context_mode": "wrong",
+      "demo": "tomato_sauce",
+      "episodes": 1,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "demo": "milk",
+      "episodes": 1,
+      "language_successes": 1,
+      "other_successes": 0,
+      "language_only": 1,
+      "other_only": 0,
+      "both": 0,
+      "neither": 0
+    }
+  ],
+  "paired_correct_vs_wrong": {
+    "milk": {
+      "pairs": 1,
+      "correct_language_only_to_wrong_other_only": 0,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "other_only -> neither": 1
+      }
+    },
+    "tomato_sauce": {
+      "pairs": 1,
+      "correct_language_only_to_wrong_other_only": 0,
+      "correct_other_only_to_wrong_language_only": 1,
+      "transition_counts": {
+        "other_only -> language_only": 1
+      }
+    }
+  },
+  "verified": "Matching initial simulator states, observations and per-replan noise seeds in all conditions"
+}

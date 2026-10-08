@@ -1,0 +1,13 @@
+layout,language,context_mode,episodes,demo,demo_original_position_occupant,milk_in_basket,tomato_sauce_in_basket,language_successes,demo_identity_successes,demo_position_occupant_successes,both,neither
+original,milk,correct,1,milk,milk,0,0,0,0,0,0,1
+original,milk,no,1,none,not_applicable,0,0,0,,,0,1
+original,milk,wrong,1,tomato_sauce,tomato_sauce,0,1,0,1,1,0,0
+original,tomato_sauce,correct,1,tomato_sauce,tomato_sauce,0,0,0,0,0,0,1
+original,tomato_sauce,no,1,none,not_applicable,0,0,0,,,0,1
+original,tomato_sauce,wrong,1,milk,milk,1,0,0,1,1,0,0
+swap_milk_tomato,milk,correct,1,milk,tomato_sauce,0,1,0,0,1,0,0
+swap_milk_tomato,milk,no,1,none,not_applicable,0,0,0,,,0,1
+swap_milk_tomato,milk,wrong,1,tomato_sauce,milk,0,0,0,0,0,0,1
+swap_milk_tomato,tomato_sauce,correct,1,tomato_sauce,milk,1,0,0,0,1,0,0
+swap_milk_tomato,tomato_sauce,no,1,none,not_applicable,0,0,0,,,0,1
+swap_milk_tomato,tomato_sauce,wrong,1,milk,tomato_sauce,0,1,1,0,1,0,0

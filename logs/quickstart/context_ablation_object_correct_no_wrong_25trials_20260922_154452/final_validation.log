@@ -1,0 +1,100 @@
+{
+  "comparison": [
+    {
+      "language": "milk",
+      "context_mode": "correct",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 21,
+      "other_successes": 0,
+      "language_only": 21,
+      "other_only": 0,
+      "both": 0,
+      "neither": 4
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 21,
+      "other_successes": 0,
+      "language_only": 21,
+      "other_only": 0,
+      "both": 0,
+      "neither": 4
+    },
+    {
+      "language": "milk",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "milk",
+      "context_mode": "wrong",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 22,
+      "language_only": 0,
+      "other_only": 22,
+      "both": 0,
+      "neither": 3
+    }
+  ],
+  "paired_correct_vs_wrong": {
+    "milk": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 0,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "neither -> neither": 4,
+        "language_only -> neither": 21
+      }
+    },
+    "tomato_sauce": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 19,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "language_only -> other_only": 19,
+        "language_only -> neither": 2,
+        "neither -> neither": 1,
+        "neither -> other_only": 3
+      }
+    }
+  },
+  "verified": "Matching initial simulator states, observations and per-replan noise seeds in all conditions"
+}
+Validated 150 videos/trajectories, all paired inputs, 25 exact wrong-milk replays; report written.

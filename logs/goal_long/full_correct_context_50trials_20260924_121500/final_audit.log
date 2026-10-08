@@ -1,0 +1,42 @@
+All worker parameter checks complete; auditing
+/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/subprocess.py:1885: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = _fork_exec(
+[
+  {
+    "suite": "libero_goal",
+    "split": "unseen",
+    "tasks": 2,
+    "successes": 0,
+    "trials": 100,
+    "success_rate_percent": 0.0,
+    "paper_rate_percent": 0
+  },
+  {
+    "suite": "libero_goal",
+    "split": "seen",
+    "tasks": 8,
+    "successes": 361,
+    "trials": 400,
+    "success_rate_percent": 90.25,
+    "paper_rate_percent": 90
+  },
+  {
+    "suite": "libero_10",
+    "split": "unseen",
+    "tasks": 2,
+    "successes": 0,
+    "trials": 100,
+    "success_rate_percent": 0.0,
+    "paper_rate_percent": 0
+  },
+  {
+    "suite": "libero_10",
+    "split": "seen",
+    "tasks": 8,
+    "successes": 317,
+    "trials": 400,
+    "success_rate_percent": 79.25,
+    "paper_rate_percent": 82
+  }
+]
+Statistical and video audits complete

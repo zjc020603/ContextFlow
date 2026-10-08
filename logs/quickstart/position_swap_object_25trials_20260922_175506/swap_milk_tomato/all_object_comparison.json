@@ -1,0 +1,35 @@
+{
+  "correct/milk": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "tomato_sauce_1": 25
+    }
+  },
+  "correct/tomato_sauce": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "milk_1": 17,
+      "orange_juice_1": 1
+    }
+  },
+  "no/milk": {
+    "episodes": 25,
+    "object_in_basket_counts": {}
+  },
+  "no/tomato_sauce": {
+    "episodes": 25,
+    "object_in_basket_counts": {}
+  },
+  "wrong/milk": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "milk_1": 12
+    }
+  },
+  "wrong/tomato_sauce": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "tomato_sauce_1": 24
+    }
+  }
+}

@@ -1,0 +1,21 @@
+suite,split,dataset_task_index,suite_task_id,instruction,successes,trials,success_rate_percent,wilson95_low_percent,wilson95_high_percent,demo_episode,demo_length,training_episodes_in_released_config,all_clauses_ever_true_without_full_success
+libero_goal,seen,19,0,open the middle drawer of the cabinet,50,50,100,92.86524008666413,100.0,399,136,43,0
+libero_goal,unseen,17,1,put the bowl on the stove,0,50,0,6.938893903907228e-16,7.134759913335873,392,103,0,0
+libero_goal,seen,14,2,put the wine bottle on top of the cabinet,50,50,100,92.86524008666413,100.0,385,90,47,0
+libero_goal,seen,12,3,open the top drawer and put the bowl inside,37,50,74,60.44684273515117,84.12847250644762,382,177,36,0
+libero_goal,seen,18,4,put the bowl on top of the cabinet,49,50,98,89.50455641036218,99.64607407283539,398,100,46,0
+libero_goal,seen,15,5,push the plate to the front of the stove,41,50,82,69.20394632569922,90.22980732976582,386,123,33,0
+libero_goal,seen,13,6,put the cream cheese in the bowl,45,50,90,78.63976856252035,95.65242350681096,384,112,40,0
+libero_goal,seen,16,7,turn on the stove,49,50,98,89.50455641036218,99.64607407283539,388,90,50,0
+libero_goal,unseen,10,8,put the bowl on the plate,0,50,0,6.938893903907228e-16,7.134759913335873,379,112,0,0
+libero_goal,seen,11,9,put the wine bottle on the rack,40,50,80,66.9628940677746,88.7562499842239,380,155,36,0
+libero_10,unseen,5,0,put both the alphabet soup and the tomato sauce in the basket,0,50,0,6.938893903907228e-16,7.134759913335873,8,259,0,0
+libero_10,seen,7,1,put both the cream cheese box and the butter in the basket,47,50,94,83.78290831116182,97.9385029651026,12,279,49,0
+libero_10,seen,3,2,turn on the stove and put the moka pot on it,37,50,74,60.44684273515117,84.12847250644762,6,279,41,0
+libero_10,seen,8,3,put the black bowl in the bottom drawer of the cabinet and close it,45,50,90,78.63976856252035,95.65242350681096,14,257,35,0
+libero_10,seen,0,4,put the white mug on the left plate and put the yellow and white mug on the right plate,35,50,70,56.249649535546595,80.89644649911905,0,214,38,0
+libero_10,seen,9,5,pick up the book and place it in the back compartment of the caddy,45,50,90,78.63976856252035,95.65242350681096,27,234,41,0
+libero_10,unseen,1,6,put the white mug on the plate and put the chocolate pudding to the right of the plate,0,50,0,6.938893903907228e-16,7.134759913335873,1,284,0,0
+libero_10,seen,4,7,put both the alphabet soup and the cream cheese box in the basket,47,50,94,83.78290831116182,97.9385029651026,7,272,43,0
+libero_10,seen,6,8,put both moka pots on the stove,26,50,52,38.51174489004461,65.20286471342196,10,383,29,2
+libero_10,seen,2,9,put the yellow and white mug in the microwave and close it,35,50,70,56.249649535546595,80.89644649911905,2,345,34,0

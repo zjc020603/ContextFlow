@@ -1,0 +1,19 @@
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/scripts/check_attention_capture.py", line 275, in <module>
+    run(parser.parse_args())
+  File "/data/zjc/workspace/ContextFlow/scripts/check_attention_capture.py", line 159, in run
+    layout = token_layout(model, observation)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/src/openpi/models/attention_capture.py", line 106, in token_layout
+    if model.avg_current_img
+          ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for //: 'int' and 'tuple'

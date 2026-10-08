@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "finished_at": "2026-09-25T06:55:34.408690+08:00",
+  "checkpoint": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/checkpoints/ContextFlow_pi05_full/pi05_full_seed42_20260924_214930/19999",
+  "config": "ContextFlow_pi05_full",
+  "optimizer_step": 20000,
+  "parameter_leaves": 170,
+  "parameter_count": 3622373136,
+  "all_parameters_finite": true,
+  "normalization_sha256": "c7cdcf7324a15621b9428b41ff04b4a941a7dccd229c60678eef2ed0ee4ea818",
+  "real_data_loss": 0.0042626685462892056,
+  "sampled_action_shape": [
+    1,
+    50,
+    32
+  ],
+  "denoising_steps": 10,
+  "sampled_actions_finite": true,
+  "action_min": -1.0743153095245361,
+  "action_max": 1.0134633779525757,
+  "behavioral_success_rate_measured": false,
+  "seconds": 108.40737217478454
+}

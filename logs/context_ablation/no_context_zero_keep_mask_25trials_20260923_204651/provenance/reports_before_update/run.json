@@ -1,0 +1,94 @@
+{
+  "created_at": "2026-09-22T16:10:26.881571+08:00",
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "base_git_commit": "c7d2014e59c52da50f4913ed7809c84281d435fc",
+  "suites": [
+    "libero_object"
+  ],
+  "tasks": [
+    "milk",
+    "tomato_sauce"
+  ],
+  "conditions": [
+    "correct",
+    "no",
+    "wrong"
+  ],
+  "num_trials_per_task_per_condition": 25,
+  "total_trials": 150,
+  "inference_dtype": "float32",
+  "environment_seed_formula": "7 + dataset_task_index * 1000 + episode_index",
+  "policy_noise": "fold_in(key(0), dataset_task_index, episode_index, replan_index)",
+  "termination": "280 control steps regardless of either goal",
+  "num_steps_wait": 10,
+  "replan_steps": 5,
+  "video_fps": 20,
+  "demo_episodes": {
+    "milk": 814,
+    "tomato_sauce": 821
+  },
+  "runs": {
+    "correct": {
+      "gpu": 0,
+      "port": 8810,
+      "local_files_only": false
+    },
+    "no": {
+      "gpu": 1,
+      "port": 8811,
+      "local_files_only": true
+    },
+    "wrong": {
+      "gpu": 2,
+      "port": 8812,
+      "local_files_only": false
+    }
+  },
+  "source_at_evaluation": {
+    "src/openpi/policies/context_ablation.py": "25ee75df14f80f9d43cb17f178d117c044c4a8544a1f584e5c306b66ad52706a",
+    "src/openpi/policies/policy_config.py": "9a4d491c3d840ea171f924897a9e7d2f6da8ac6fa377adae6d62bac762ce58c7",
+    "src/openpi/policies/policy_incontext.py": "a0ff5f0d88f62c3785877c2daf2aa9d6dcb59638916dd7da611340661c5f6323",
+    "examples/libero/context_ablation.py": "d0248e366e3a40bac3bc604311184caa29862353168e9f1a679cddc9e7e0a3d7",
+    "scripts/serve_policy.py": "cfb608d0a49daa4f68d04d9ff5d52192fa01fc441493b6908f1f6f80b575cd4e"
+  },
+  "execution_notes": [
+    "The no-condition server failed on Hugging Face SSL before any trial; restarted with local-only loading of the same downloaded dataset.",
+    "All three evaluators produced their complete results. The temporary correct/wrong shell controllers reported EOF after evaluation because their script was edited while active; EXIT cleanup ran and all GPUs were verified free. The shipped quickstart script is separate and passes bash -n.",
+    "An optional extra GPU content-masking invariance check was not started because automatic approval review timed out twice. CPU fallback stalled in Orbax metadata read; it was terminated. No invariance result is claimed."
+  ],
+  "verified": {
+    "completed_trials": 150,
+    "videos": 150,
+    "trajectories": 150,
+    "paired_states_observations_rng": true,
+    "all_actions_finite": true,
+    "wrong_milk_all_object_replay_max_error": 0.0,
+    "wrong_milk_cream_cheese_successes": 25,
+    "tests_passed": 9,
+    "all_experiment_and_replay_processes_finished": true,
+    "gpu_memory_after_cleanup_mib": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "source_snapshot_note": "Evaluator/policy captured after evaluation and before live all-object tracking; serving script includes local-only startup fix introduced for the no-group retry.",
+  "final_source_sha256": {
+    "README.md": "97bdb638c7510ac01bd712eb1e9d2570f9fa58b457e3f46aa277a25be22aa9c4",
+    "quickstart.sh": "aef0db8be6b53287a1e94770b784913e772be85977b0a9add59ea7d4ba6c8e6a",
+    "scripts/serve_policy.py": "cfb608d0a49daa4f68d04d9ff5d52192fa01fc441493b6908f1f6f80b575cd4e",
+    "src/openpi/policies/policy_config.py": "9a4d491c3d840ea171f924897a9e7d2f6da8ac6fa377adae6d62bac762ce58c7",
+    "src/openpi/policies/policy_incontext.py": "a0ff5f0d88f62c3785877c2daf2aa9d6dcb59638916dd7da611340661c5f6323",
+    "src/openpi/policies/context_ablation.py": "a37cf69c853495a41abc2e18048fc2c39fe0ae032a59004f7af91bd5f1451281",
+    "src/openpi/policies/context_ablation_test.py": "dc1f9d3015d8721b992c60ab83375d5b06ca719922f824c5a202e03a8e2d4e7f",
+    "examples/libero/context_ablation.py": "e1204d042345479bdf2c89f67232ec74041520d7b9bbd1453a191485708f9654",
+    "examples/libero/context_ablation_test.py": "82a2e594a73331485b6fc48e09a7f67cb043e65c9d788afad3932356565a0c99",
+    "examples/libero/replay_context_ablation.py": "7ce7da2e80b2d72686ecab67f29a16363ce10ccb0216c33f584f87c01d84fe22",
+    "examples/libero/summarize_context_ablation.py": "97fb39fcde26756cded2baa59b4d0ac49d21658311e0aed7ae66ef7ef101b929"
+  }
+}

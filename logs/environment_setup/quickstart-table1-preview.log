@@ -1,0 +1,44 @@
+
+========== ContextFlow 启动菜单 ==========
+当前为预览模式，不启动计算任务。
+1  检查环境、资源路径和 GPU
+2  进入训练 / 策略服务环境终端
+3  进入 LIBERO 模拟器环境终端
+4  启动 ContextFlow 策略服务
+5  连接已有策略服务，运行 LIBERO 评估
+6  一键评估：启动服务 → 等待就绪 → 评估 → 关闭服务
+7  计算训练集归一化统计
+8  启动新的 ContextFlow 训练
+0  退出
+
+任务集：1 Spatial  2 Object  3 Goal  4 LIBERO-10  5 Spatial + Object
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+
+任务集：libero_spatial；使用独立的新策略服务。
+结果：/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_<时间戳>/libero_spatial/libero_spatial.json
+
+运行：/data/zjc/workspace/ContextFlow/.venv/bin/python -u /data/zjc/workspace/ContextFlow/scripts/serve_policy.py --port 8000 policy:checkpoint --policy.inference_dtype=float32 --policy.config=ContextFlow --policy.dir=/data/zjc/workspace/ContextFlow/checkpoints/ContextFlow/ContextFlow_run1/19999 
+
+运行：/data/zjc/workspace/ContextFlow/examples/libero/.venv/bin/python -u /data/zjc/workspace/ContextFlow/examples/libero/main_incontext.py --host 127.0.0.1 --port 8000 --task-suite-name libero_spatial --num-trials-per-task 50 --results-out-path /data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_\<时间戳\>/libero_spatial/libero_spatial.json --video-out-path /data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_\<时间戳\>/libero_spatial/videos/libero_spatial 
+
+任务集：libero_object；使用独立的新策略服务。
+结果：/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_<时间戳>/libero_object/libero_object.json
+
+运行：/data/zjc/workspace/ContextFlow/.venv/bin/python -u /data/zjc/workspace/ContextFlow/scripts/serve_policy.py --port 8000 policy:checkpoint --policy.inference_dtype=float32 --policy.config=ContextFlow --policy.dir=/data/zjc/workspace/ContextFlow/checkpoints/ContextFlow/ContextFlow_run1/19999 
+
+运行：/data/zjc/workspace/ContextFlow/examples/libero/.venv/bin/python -u /data/zjc/workspace/ContextFlow/examples/libero/main_incontext.py --host 127.0.0.1 --port 8000 --task-suite-name libero_object --num-trials-per-task 50 --results-out-path /data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_\<时间戳\>/libero_object/libero_object.json --video-out-path /data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_\<时间戳\>/libero_object/videos/libero_object 
+
+预览完成，计划结果目录：/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_<时间戳>
+
+========== ContextFlow 启动菜单 ==========
+当前为预览模式，不启动计算任务。
+1  检查环境、资源路径和 GPU
+2  进入训练 / 策略服务环境终端
+3  进入 LIBERO 模拟器环境终端
+4  启动 ContextFlow 策略服务
+5  连接已有策略服务，运行 LIBERO 评估
+6  一键评估：启动服务 → 等待就绪 → 评估 → 关闭服务
+7  计算训练集归一化统计
+8  启动新的 ContextFlow 训练
+0  退出

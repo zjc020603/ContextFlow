@@ -1,0 +1,162 @@
+[
+  {
+    "task_index": 19,
+    "demo_episode": 399,
+    "original_length": 136,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 17,
+    "demo_episode": 392,
+    "original_length": 103,
+    "sampled_state_action_points": 103,
+    "terminal_state_action_repetitions": 25,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 14,
+    "demo_episode": 385,
+    "original_length": 90,
+    "sampled_state_action_points": 90,
+    "terminal_state_action_repetitions": 38,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 12,
+    "demo_episode": 382,
+    "original_length": 177,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 18,
+    "demo_episode": 398,
+    "original_length": 100,
+    "sampled_state_action_points": 100,
+    "terminal_state_action_repetitions": 28,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 15,
+    "demo_episode": 386,
+    "original_length": 123,
+    "sampled_state_action_points": 123,
+    "terminal_state_action_repetitions": 5,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 13,
+    "demo_episode": 384,
+    "original_length": 112,
+    "sampled_state_action_points": 112,
+    "terminal_state_action_repetitions": 16,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 16,
+    "demo_episode": 388,
+    "original_length": 90,
+    "sampled_state_action_points": 90,
+    "terminal_state_action_repetitions": 38,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 10,
+    "demo_episode": 379,
+    "original_length": 112,
+    "sampled_state_action_points": 112,
+    "terminal_state_action_repetitions": 16,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 11,
+    "demo_episode": 380,
+    "original_length": 155,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 5,
+    "demo_episode": 8,
+    "original_length": 259,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 7,
+    "demo_episode": 12,
+    "original_length": 279,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 3,
+    "demo_episode": 6,
+    "original_length": 279,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 8,
+    "demo_episode": 14,
+    "original_length": 257,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 0,
+    "demo_episode": 0,
+    "original_length": 214,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 9,
+    "demo_episode": 27,
+    "original_length": 234,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 1,
+    "demo_episode": 1,
+    "original_length": 284,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 4,
+    "demo_episode": 7,
+    "original_length": 272,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 6,
+    "demo_episode": 10,
+    "original_length": 383,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  },
+  {
+    "task_index": 2,
+    "demo_episode": 2,
+    "original_length": 345,
+    "sampled_state_action_points": 128,
+    "terminal_state_action_repetitions": 0,
+    "loader_behavior": "uniform sampling; repeat terminal state/action when shorter than 128; original masks unchanged"
+  }
+]

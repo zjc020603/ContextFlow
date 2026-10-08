@@ -1,0 +1,1351 @@
+{
+  "n_per_condition": 25,
+  "physical_rollouts": 350,
+  "conditions": [
+    {
+      "condition": "demo_milk__language_empty__normal",
+      "demo": "milk",
+      "language": "empty",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 13,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 8,
+        "milk_1": 17
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 24,
+      "demo_object_grasp": 17,
+      "demo_object_lift": 16,
+      "demo_object_basket": 13,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 11,
+        "gained": 0,
+        "unchanged": 14,
+        "exact_mcnemar_p_unadjusted": 0.0009765625
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 17,
+      "baseline_object_lift": 16,
+      "baseline_object_basket": 13,
+      "paired_baseline_object_basket": {
+        "lost": 11,
+        "gained": 0,
+        "unchanged": 14,
+        "exact_mcnemar_p_unadjusted": 0.0009765625
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 13
+      },
+      "mean_paired_eef_path_difference_m": 0.20211846254011195
+    },
+    {
+      "condition": "demo_milk__language_milk__freeze_near",
+      "demo": "milk",
+      "language": "milk",
+      "vision": "freeze_near",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 24,
+        "milk_1": 1
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 1,
+      "demo_object_lift": 0,
+      "demo_object_basket": 0,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 24,
+        "gained": 0,
+        "unchanged": 1,
+        "exact_mcnemar_p_unadjusted": 1.1920928955078125e-07
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 1,
+      "baseline_object_lift": 0,
+      "baseline_object_basket": 0,
+      "paired_baseline_object_basket": {
+        "lost": 24,
+        "gained": 0,
+        "unchanged": 1,
+        "exact_mcnemar_p_unadjusted": 1.1920928955078125e-07
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 0
+      },
+      "mean_paired_eef_path_difference_m": 0.4114102334827765,
+      "freeze_steps": [
+        45,
+        35,
+        35,
+        40,
+        35,
+        40,
+        35,
+        40,
+        40,
+        35,
+        35,
+        40,
+        35,
+        35,
+        40,
+        35,
+        45,
+        30,
+        40,
+        40,
+        40,
+        40,
+        40,
+        35,
+        40
+      ],
+      "baseline_grasp_steps": [
+        null,
+        50,
+        50,
+        52,
+        49,
+        52,
+        51,
+        54,
+        54,
+        47,
+        171,
+        51,
+        48,
+        56,
+        113,
+        51,
+        117,
+        46,
+        54,
+        59,
+        47,
+        57,
+        55,
+        47,
+        109
+      ]
+    },
+    {
+      "condition": "demo_milk__language_milk__mask_background",
+      "demo": "milk",
+      "language": "milk",
+      "vision": "mask_background",
+      "n": 25,
+      "milk_in_basket": 21,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 3,
+        "milk_1": 22
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 24,
+      "demo_object_grasp": 22,
+      "demo_object_lift": 22,
+      "demo_object_basket": 21,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 3,
+        "gained": 0,
+        "unchanged": 22,
+        "exact_mcnemar_p_unadjusted": 0.25
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 22,
+      "baseline_object_lift": 22,
+      "baseline_object_basket": 21,
+      "paired_baseline_object_basket": {
+        "lost": 3,
+        "gained": 0,
+        "unchanged": 22,
+        "exact_mcnemar_p_unadjusted": 0.25
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 21
+      },
+      "mean_paired_eef_path_difference_m": 0.04296274221708094,
+      "background_nonrectangle_views": 308,
+      "area_capped_views": 5,
+      "views_with_robot_occluded": 0,
+      "mean_robot_pixels_occluded": 0.0,
+      "mean_masked_pixels": 2403.1925
+    },
+    {
+      "condition": "demo_milk__language_milk__mask_other",
+      "demo": "milk",
+      "language": "milk",
+      "vision": "mask_other",
+      "n": 25,
+      "milk_in_basket": 20,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "milk_1": 21,
+        "none": 4
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 21,
+      "demo_object_lift": 22,
+      "demo_object_basket": 20,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 4,
+        "gained": 0,
+        "unchanged": 21,
+        "exact_mcnemar_p_unadjusted": 0.125
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 21,
+      "baseline_object_lift": 22,
+      "baseline_object_basket": 20,
+      "paired_baseline_object_basket": {
+        "lost": 4,
+        "gained": 0,
+        "unchanged": 21,
+        "exact_mcnemar_p_unadjusted": 0.125
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 20
+      },
+      "mean_paired_eef_path_difference_m": 0.058467520995227985,
+      "background_nonrectangle_views": 1,
+      "area_capped_views": 15,
+      "views_with_robot_occluded": 2073,
+      "mean_robot_pixels_occluded": 91.70857142857143,
+      "mean_masked_pixels": 1532.7167857142856
+    },
+    {
+      "condition": "demo_milk__language_milk__mask_target",
+      "demo": "milk",
+      "language": "milk",
+      "vision": "mask_target",
+      "n": 25,
+      "milk_in_basket": 2,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "orange_juice_1": 3,
+        "none": 17,
+        "milk_1": 5
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 5,
+      "demo_object_lift": 4,
+      "demo_object_basket": 2,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 22,
+        "gained": 0,
+        "unchanged": 3,
+        "exact_mcnemar_p_unadjusted": 4.76837158203125e-07
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 5,
+      "baseline_object_lift": 4,
+      "baseline_object_basket": 2,
+      "paired_baseline_object_basket": {
+        "lost": 22,
+        "gained": 0,
+        "unchanged": 3,
+        "exact_mcnemar_p_unadjusted": 4.76837158203125e-07
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 2
+      },
+      "mean_paired_eef_path_difference_m": 0.2477793771532293,
+      "background_nonrectangle_views": 0,
+      "area_capped_views": 0,
+      "views_with_robot_occluded": 2210,
+      "mean_robot_pixels_occluded": 106.78285714285714,
+      "mean_masked_pixels": 1106.88
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "demo": "milk",
+      "language": "milk",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 24,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 1,
+        "milk_1": 24
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 24,
+      "demo_object_lift": 24,
+      "demo_object_basket": 24,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 24,
+      "baseline_object_lift": 24,
+      "baseline_object_basket": 24,
+      "paired_baseline_object_basket": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 24
+      },
+      "mean_paired_eef_path_difference_m": 0.0
+    },
+    {
+      "condition": "demo_milk__language_tomato_sauce__normal",
+      "demo": "milk",
+      "language": "tomato_sauce",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 24,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 1,
+        "milk_1": 24
+      },
+      "first_region_counts": {
+        "milk_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 24,
+      "demo_object_lift": 24,
+      "demo_object_basket": 24,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "baseline_observed_target_counts": {
+        "milk_1": 25
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 24,
+      "baseline_object_lift": 24,
+      "baseline_object_basket": 24,
+      "paired_baseline_object_basket": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 25,
+        "baseline_basket": 24,
+        "intervention_basket": 24
+      },
+      "mean_paired_eef_path_difference_m": 0.04796793733603058
+    },
+    {
+      "condition": "demo_tomato_sauce__language_empty__normal",
+      "demo": "tomato_sauce",
+      "language": "empty",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 18,
+      "first_grasp_counts": {
+        "tomato_sauce_1": 22,
+        "orange_juice_1": 1,
+        "none": 2
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 22,
+      "demo_object_lift": 22,
+      "demo_object_basket": 18,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 7,
+        "gained": 2,
+        "unchanged": 16,
+        "exact_mcnemar_p_unadjusted": 0.1796875
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 24,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 21,
+      "baseline_object_lift": 21,
+      "baseline_object_basket": 17,
+      "paired_baseline_object_basket": {
+        "lost": 8,
+        "gained": 1,
+        "unchanged": 16,
+        "exact_mcnemar_p_unadjusted": 0.0390625
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 17
+      },
+      "mean_paired_eef_path_difference_m": 0.12875239456075382
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__freeze_near",
+      "demo": "tomato_sauce",
+      "language": "milk",
+      "vision": "freeze_near",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 0,
+      "first_grasp_counts": {
+        "none": 25
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 0,
+      "demo_object_lift": 1,
+      "demo_object_basket": 0,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 23,
+        "gained": 0,
+        "unchanged": 2,
+        "exact_mcnemar_p_unadjusted": 2.384185791015625e-07
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 0,
+      "baseline_object_lift": 0,
+      "baseline_object_basket": 0,
+      "paired_baseline_object_basket": {
+        "lost": 24,
+        "gained": 0,
+        "unchanged": 1,
+        "exact_mcnemar_p_unadjusted": 1.1920928955078125e-07
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 0
+      },
+      "mean_paired_eef_path_difference_m": 0.2692671618709342,
+      "freeze_steps": [
+        45,
+        35,
+        40,
+        35,
+        40,
+        35,
+        40,
+        40,
+        35,
+        35,
+        40,
+        35,
+        125,
+        40,
+        40,
+        35,
+        40,
+        35,
+        40,
+        40,
+        40,
+        40,
+        40,
+        35,
+        40
+      ],
+      "baseline_grasp_steps": [
+        125,
+        95,
+        98,
+        51,
+        100,
+        null,
+        52,
+        50,
+        95,
+        93,
+        164,
+        51,
+        null,
+        139,
+        97,
+        91,
+        50,
+        90,
+        103,
+        188,
+        140,
+        56,
+        105,
+        194,
+        54
+      ]
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__mask_background",
+      "demo": "tomato_sauce",
+      "language": "milk",
+      "vision": "mask_background",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 25,
+      "first_grasp_counts": {
+        "tomato_sauce_1": 23,
+        "none": 2
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 23,
+      "demo_object_lift": 25,
+      "demo_object_basket": 25,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 0,
+        "gained": 2,
+        "unchanged": 23,
+        "exact_mcnemar_p_unadjusted": 0.5
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 24,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 22,
+      "baseline_object_lift": 24,
+      "baseline_object_basket": 24,
+      "paired_baseline_object_basket": {
+        "lost": 1,
+        "gained": 1,
+        "unchanged": 23,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 24
+      },
+      "mean_paired_eef_path_difference_m": 0.04505069267623653,
+      "background_nonrectangle_views": 170,
+      "area_capped_views": 0,
+      "views_with_robot_occluded": 0,
+      "mean_robot_pixels_occluded": 0.0,
+      "mean_masked_pixels": 2430.5714285714284
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__mask_other",
+      "demo": "tomato_sauce",
+      "language": "milk",
+      "vision": "mask_other",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 20,
+      "first_grasp_counts": {
+        "none": 4,
+        "tomato_sauce_1": 21
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 21,
+      "demo_object_lift": 22,
+      "demo_object_basket": 20,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 5,
+        "gained": 2,
+        "unchanged": 18,
+        "exact_mcnemar_p_unadjusted": 0.453125
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 24,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 20,
+      "baseline_object_lift": 21,
+      "baseline_object_basket": 19,
+      "paired_baseline_object_basket": {
+        "lost": 6,
+        "gained": 1,
+        "unchanged": 18,
+        "exact_mcnemar_p_unadjusted": 0.125
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 19
+      },
+      "mean_paired_eef_path_difference_m": 0.08118226757565493,
+      "background_nonrectangle_views": 0,
+      "area_capped_views": 4,
+      "views_with_robot_occluded": 1731,
+      "mean_robot_pixels_occluded": 176.65178571428572,
+      "mean_masked_pixels": 1154.6778571428572
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__mask_target",
+      "demo": "tomato_sauce",
+      "language": "milk",
+      "vision": "mask_target",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 7,
+      "first_grasp_counts": {
+        "none": 14,
+        "tomato_sauce_1": 11
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 23,
+      "demo_object_grasp": 11,
+      "demo_object_lift": 11,
+      "demo_object_basket": 7,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 17,
+        "gained": 1,
+        "unchanged": 7,
+        "exact_mcnemar_p_unadjusted": 0.00014495849609375
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 24,
+      "baseline_object_contact": 22,
+      "baseline_object_grasp": 10,
+      "baseline_object_lift": 10,
+      "baseline_object_basket": 6,
+      "paired_baseline_object_basket": {
+        "lost": 18,
+        "gained": 0,
+        "unchanged": 7,
+        "exact_mcnemar_p_unadjusted": 7.62939453125e-06
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 6
+      },
+      "mean_paired_eef_path_difference_m": 0.10331341834187535,
+      "background_nonrectangle_views": 8,
+      "area_capped_views": 8,
+      "views_with_robot_occluded": 2143,
+      "mean_robot_pixels_occluded": 109.38071428571429,
+      "mean_masked_pixels": 2469.7089285714287
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "demo": "tomato_sauce",
+      "language": "milk",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 23,
+      "first_grasp_counts": {
+        "tomato_sauce_1": 23,
+        "none": 1,
+        "chocolate_pudding_1": 1
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 23,
+      "demo_object_lift": 25,
+      "demo_object_basket": 23,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 25,
+      "baseline_object_contact": 25,
+      "baseline_object_grasp": 24,
+      "baseline_object_lift": 25,
+      "baseline_object_basket": 24,
+      "paired_baseline_object_basket": {
+        "lost": 0,
+        "gained": 0,
+        "unchanged": 25,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 23
+      },
+      "mean_paired_eef_path_difference_m": 0.0
+    },
+    {
+      "condition": "demo_tomato_sauce__language_tomato_sauce__normal",
+      "demo": "tomato_sauce",
+      "language": "tomato_sauce",
+      "vision": "normal",
+      "n": 25,
+      "milk_in_basket": 0,
+      "tomato_in_basket": 22,
+      "first_grasp_counts": {
+        "tomato_sauce_1": 24,
+        "none": 1
+      },
+      "first_region_counts": {
+        "tomato_sauce_1": 25
+      },
+      "demo_object_approach": 25,
+      "demo_object_contact": 25,
+      "demo_object_grasp": 24,
+      "demo_object_lift": 25,
+      "demo_object_basket": 22,
+      "paired_demo_basket_vs_milk_normal": {
+        "lost": 3,
+        "gained": 2,
+        "unchanged": 20,
+        "exact_mcnemar_p_unadjusted": 1.0
+      },
+      "baseline_observed_target_counts": {
+        "tomato_sauce_1": 24,
+        "chocolate_pudding_1": 1
+      },
+      "baseline_object_approach": 24,
+      "baseline_object_contact": 24,
+      "baseline_object_grasp": 23,
+      "baseline_object_lift": 24,
+      "baseline_object_basket": 21,
+      "paired_baseline_object_basket": {
+        "lost": 4,
+        "gained": 1,
+        "unchanged": 20,
+        "exact_mcnemar_p_unadjusted": 0.375
+      },
+      "sensitivity_excluding_baseline_distractor": {
+        "n": 24,
+        "baseline_basket": 23,
+        "intervention_basket": 21
+      },
+      "mean_paired_eef_path_difference_m": 0.06052128476881399
+    }
+  ],
+  "same_observation_language_actions": [
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.015637557913780853,
+      "first5_max_abs": 0.04509193506818182,
+      "first5_translation_l2_mean": 0.04078245447207528
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.07666068230474034,
+      "first5_max_abs": 0.20243383435811857,
+      "first5_translation_l2_mean": 0.20223049725979872
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.008756169731592869,
+      "first5_max_abs": 0.029765892669699368,
+      "first5_translation_l2_mean": 0.02148764808444855
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.024195729195442033,
+      "first5_max_abs": 0.08210322469785344,
+      "first5_translation_l2_mean": 0.05629691440156405
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.00791733212810513,
+      "first5_max_abs": 0.030355224858666707,
+      "first5_translation_l2_mean": 0.018990669033538975
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.03786730827423264,
+      "first5_max_abs": 0.09087789241703448,
+      "first5_translation_l2_mean": 0.09878342929348334
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.01452766435834809,
+      "first5_max_abs": 0.03885769578463932,
+      "first5_translation_l2_mean": 0.0352385870123283
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.0354918820437354,
+      "first5_max_abs": 0.10863046697510054,
+      "first5_translation_l2_mean": 0.08358027091596285
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.009640186648118094,
+      "first5_max_abs": 0.027488956202108228,
+      "first5_translation_l2_mean": 0.02486495226414854
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.08027284465627753,
+      "first5_max_abs": 0.21609463731710515,
+      "first5_translation_l2_mean": 0.2110053235766038
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.019394344298521368,
+      "first5_max_abs": 0.05871363818037001,
+      "first5_translation_l2_mean": 0.050825322072135505
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.09959065930747026,
+      "first5_max_abs": 0.30088478648196904,
+      "first5_translation_l2_mean": 0.2600637278881047
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.016216887482915582,
+      "first5_max_abs": 0.05128884865160149,
+      "first5_translation_l2_mean": 0.03935596530468518
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.020604362399289797,
+      "first5_max_abs": 0.05189502237762231,
+      "first5_translation_l2_mean": 0.053556155864113074
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.015671792159369754,
+      "first5_max_abs": 0.04523030291299707,
+      "first5_translation_l2_mean": 0.038184303328579125
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.04645999691822425,
+      "first5_max_abs": 0.10432402314005332,
+      "first5_translation_l2_mean": 0.12011348161483289
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.025789225146952928,
+      "first5_max_abs": 0.1254681232818684,
+      "first5_translation_l2_mean": 0.031015073198326117
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep004_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.33927317202764384,
+      "first5_max_abs": 1.9937404965229553,
+      "first5_translation_l2_mean": 0.09375066958698068
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.3303314682122486,
+      "first5_max_abs": 1.953630839075886,
+      "first5_translation_l2_mean": 0.013047963221187679
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep000_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.34419728617708734,
+      "first5_max_abs": 1.9585218277546699,
+      "first5_translation_l2_mean": 0.2451988956064997
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.002613080275050169,
+      "first5_max_abs": 0.00795071865939756,
+      "first5_translation_l2_mean": 0.006509068114344147
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.3332048629128156,
+      "first5_max_abs": 1.9705037879868392,
+      "first5_translation_l2_mean": 0.013485657409614623
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.013841120752760604,
+      "first5_max_abs": 0.04617210527445792,
+      "first5_translation_l2_mean": 0.03236407091819723
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep002_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.08174449630080906,
+      "first5_max_abs": 0.21438570942658752,
+      "first5_translation_l2_mean": 0.21459709714431638
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0007569722350147901,
+      "first5_max_abs": 0.002561920921445804,
+      "first5_translation_l2_mean": 0.0008156815012080925
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.003959064196525477,
+      "first5_max_abs": 0.011696339282420129,
+      "first5_translation_l2_mean": 0.009184912013949543
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.3299279912830096,
+      "first5_max_abs": 1.9502460988257586,
+      "first5_translation_l2_mean": 0.03243032472693781
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep001_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.58462336467096,
+      "first5_max_abs": 1.9951968861390366,
+      "first5_translation_l2_mean": 0.11031414666538715
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.004857844563951404,
+      "first5_max_abs": 0.012655194587147145,
+      "first5_translation_l2_mean": 0.01236924637714829
+    },
+    {
+      "condition": "demo_tomato_sauce__language_milk__normal",
+      "observation": "ep003_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.04895089280925658,
+      "first5_max_abs": 0.14071342252462749,
+      "first5_translation_l2_mean": 0.12630260963513315
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0016237594608919691,
+      "first5_max_abs": 0.00320032019937197,
+      "first5_translation_l2_mean": 0.003568769488792224
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.01746702698796445,
+      "first5_max_abs": 0.029993338134880365,
+      "first5_translation_l2_mean": 0.044858961527884225
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.010503913193438477,
+      "first5_max_abs": 0.04004661571312296,
+      "first5_translation_l2_mean": 0.025073236776726394
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.028434361877412936,
+      "first5_max_abs": 0.12194185043199121,
+      "first5_translation_l2_mean": 0.0621702869573054
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.00609237351880467,
+      "first5_max_abs": 0.015566920490406533,
+      "first5_translation_l2_mean": 0.01568810642241803
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.0785253302586176,
+      "first5_max_abs": 0.15927823096190746,
+      "first5_translation_l2_mean": 0.20660005857869895
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.014635794010714647,
+      "first5_max_abs": 0.04548766523863712,
+      "first5_translation_l2_mean": 0.03701965575601683
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.028790292450806863,
+      "first5_max_abs": 0.11316705729944293,
+      "first5_translation_l2_mean": 0.06485076281724811
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0013784292539061513,
+      "first5_max_abs": 0.0029393787504335966,
+      "first5_translation_l2_mean": 0.0026328851592922657
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.022115567993465125,
+      "first5_max_abs": 0.05122236514481171,
+      "first5_translation_l2_mean": 0.05639091197704231
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.001241183245608894,
+      "first5_max_abs": 0.0029475821797185775,
+      "first5_translation_l2_mean": 0.002212372627221312
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.01572864715286383,
+      "first5_max_abs": 0.03573695547255454,
+      "first5_translation_l2_mean": 0.03964383831447339
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.013463695115077402,
+      "first5_max_abs": 0.04553958694350152,
+      "first5_translation_l2_mean": 0.03291217190789613
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.029829869675661373,
+      "first5_max_abs": 0.12426996115364847,
+      "first5_translation_l2_mean": 0.06600839142922284
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.01276145816283712,
+      "first5_max_abs": 0.03718664515774939,
+      "first5_translation_l2_mean": 0.03250289110695372
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.03278914575290692,
+      "first5_max_abs": 0.11137820950622268,
+      "first5_translation_l2_mean": 0.0842541453586489
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0009845301295661097,
+      "first5_max_abs": 0.0030107405061225445,
+      "first5_translation_l2_mean": 0.001953230708993436
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep004_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.009712566861003828,
+      "first5_max_abs": 0.04465179801499339,
+      "first5_translation_l2_mean": 0.01907725686022984
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.008774409920047691,
+      "first5_max_abs": 0.019527966483330772,
+      "first5_translation_l2_mean": 0.022659170476242173
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep000_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.058744692698388244,
+      "first5_max_abs": 0.1792251078842061,
+      "first5_translation_l2_mean": 0.14960664745848404
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0009261834247816647,
+      "first5_max_abs": 0.001756259284010464,
+      "first5_translation_l2_mean": 0.0016130490925361917
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.008896174605121081,
+      "first5_max_abs": 0.030828906273357326,
+      "first5_translation_l2_mean": 0.019637692017504454
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step000",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.015162437634274837,
+      "first5_max_abs": 0.05213922079278305,
+      "first5_translation_l2_mean": 0.037284106111122886
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep002_step000",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.0426564466745128,
+      "first5_max_abs": 0.11622366005310375,
+      "first5_translation_l2_mean": 0.10943916283094668
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.001960337855545513,
+      "first5_max_abs": 0.0068712481141962045,
+      "first5_translation_l2_mean": 0.004759527728984578
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.002796101921864529,
+      "first5_max_abs": 0.006847066953576175,
+      "first5_translation_l2_mean": 0.005438892736712772
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step160",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.0007323637664511945,
+      "first5_max_abs": 0.0015799227648206626,
+      "first5_translation_l2_mean": 0.0013039231934826156
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep001_step160",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.0031251260128633642,
+      "first5_max_abs": 0.006304513058133648,
+      "first5_translation_l2_mean": 0.005104963782864051
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step080",
+      "comparison": "tomato_sauce-milk",
+      "first5_rmse_all7": 0.002452876422104391,
+      "first5_max_abs": 0.006457899600019967,
+      "first5_translation_l2_mean": 0.005771340091614056
+    },
+    {
+      "condition": "demo_milk__language_milk__normal",
+      "observation": "ep003_step080",
+      "comparison": "empty-milk",
+      "first5_rmse_all7": 0.02735650283757679,
+      "first5_max_abs": 0.05849998544607904,
+      "first5_translation_l2_mean": 0.07006741735558768
+    }
+  ],
+  "initial_target_mask_attention_TV": {
+    "milk": {
+      "median_front_wrist": [
+        0.01371733645069708,
+        0.015388667881234342
+      ],
+      "per_episode": [
+        [
+          0.013597359363375696,
+          0.015388667881234342
+        ],
+        [
+          0.016253180540701267,
+          0.02144063473588509
+        ],
+        [
+          0.016109130190529296,
+          0.019575094922862725
+        ],
+        [
+          0.01371733645069708,
+          0.012290802765258296
+        ],
+        [
+          0.012373725554084392,
+          0.01145620657005739
+        ]
+      ]
+    },
+    "tomato_sauce": {
+      "median_front_wrist": [
+        0.027963433885865092,
+        0.030036530209496152
+      ],
+      "per_episode": [
+        [
+          0.021706821575658907,
+          0.029793189761798913
+        ],
+        [
+          0.0298277629397469,
+          0.030036530209496152
+        ],
+        [
+          0.03396368937747889,
+          0.03388318224941561
+        ],
+        [
+          0.026243301930923005,
+          0.03185653079857227
+        ],
+        [
+          0.027963433885865092,
+          0.029265632464664935
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "host": "127.0.0.1",
+  "port": 8101,
+  "mode": "no",
+  "num_trials_per_task": 25,
+  "output_dir": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original",
+  "seed": 7,
+  "policy_seed": 0,
+  "max_steps": 280,
+  "num_steps_wait": 10,
+  "replan_steps": 5,
+  "scene_task": "tomato_sauce",
+  "layout": "original",
+  "verify_interventions": true,
+  "tasks": {
+    "milk": {
+      "id": 7,
+      "index": 25,
+      "description": "pick up the milk and place it in the basket"
+    },
+    "tomato_sauce": {
+      "id": 5,
+      "index": 28,
+      "description": "pick up the tomato sauce and place it in the basket"
+    }
+  },
+  "termination": "fixed horizon; neither goal terminates early",
+  "success_measure": "LIBERO In predicate at any post-action step",
+  "video_fps": 20
+}

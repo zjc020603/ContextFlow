@@ -1,0 +1,5 @@
+suite,split,tasks,successes,trials,success_rate_percent,paper_rate_percent
+libero_goal,unseen,2,0,100,0.0,0
+libero_goal,seen,8,361,400,90.25,90
+libero_10,unseen,2,0,100,0.0,0
+libero_10,seen,8,317,400,79.25,82

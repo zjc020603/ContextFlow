@@ -1,0 +1,7 @@
+{
+  "fresh_server_per_suite": "passed",
+  "policy_state_reset": "passed",
+  "port_reuse": "passed",
+  "cleanup": "passed",
+  "directory_collision": "passed"
+}

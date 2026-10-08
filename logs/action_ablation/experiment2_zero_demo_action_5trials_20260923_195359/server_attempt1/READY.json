@@ -1,0 +1,12 @@
+{
+  "context_ablation_protocol": 1,
+  "demo_action_intervention": "zero_compressed_demo_action_keep_mask",
+  "baseline_gate_passed": true,
+  "attention_environment_steps": [
+    0,
+    80,
+    160
+  ],
+  "position_mask_preserved": true,
+  "ood_intervention": true
+}

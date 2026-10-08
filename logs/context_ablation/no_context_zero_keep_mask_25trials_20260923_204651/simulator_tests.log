@@ -1,0 +1,30 @@
+.........                                                                [100%]
+=============================== warnings summary ===============================
+examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:53
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:53: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+    ROBOSUITE_DEFAULT_LOGGER.warn("No private macro file found!")
+
+examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:54
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:54: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+    ROBOSUITE_DEFAULT_LOGGER.warn("It is recommended to use a private macro file")
+
+examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:55
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/macros.py:55: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead
+    ROBOSUITE_DEFAULT_LOGGER.warn("To setup, run: python {}/scripts/setup_macros.py".format(robosuite.__path__[0]))
+
+examples/libero/.venv/lib/python3.8/site-packages/llvmlite/binding/ffi.py:175
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/llvmlite/binding/ffi.py:175: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import resource_filename
+
+examples/libero/.venv/lib/python3.8/site-packages/pkg_resources/__init__.py:3154
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/pkg_resources/__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+examples/libero/.venv/lib/python3.8/site-packages/pkg_resources/__init__.py:3154
+  /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/pkg_resources/__init__.py:3154: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+9 passed, 6 warnings in 1.45s

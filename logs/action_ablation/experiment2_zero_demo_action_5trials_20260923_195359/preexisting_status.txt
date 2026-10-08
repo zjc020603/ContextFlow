@@ -1,0 +1,20 @@
+ M README.md
+ M examples/libero/context_ablation.py
+ M examples/libero/context_ablation_test.py
+ M examples/libero/replay_context_ablation.py
+ M quickstart.sh
+ M src/openpi/models/contextflow.py
+ M src/openpi/models/gemma.py
+ M src/openpi/policies/policy_incontext.py
+?? examples/libero/position_ablation.py
+?? examples/libero/position_intervention.py
+?? examples/libero/position_intervention_test.py
+?? examples/libero/prepare_attention_observations.py
+?? examples/libero/prepare_attention_timeline.py
+?? examples/libero/summarize_position_ablation.py
+?? examples/libero/summarize_position_ablation_test.py
+?? scripts/attention/
+?? scripts/check_attention_capture.py
+?? scripts/check_attention_capture_test.py
+?? src/openpi/models/attention_capture.py
+?? src/openpi/models/attention_capture_test.py

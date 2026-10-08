@@ -1,0 +1,88 @@
+{
+  "baseline": "/data/zjc/workspace/ContextFlow/logs/quickstart/context_ablation_object_correct_no_wrong_25trials_20260922_154452",
+  "new_rollouts": "/data/zjc/workspace/ContextFlow/logs/context_ablation/no_context_zero_keep_mask_25trials_20260923_204651/rollouts",
+  "intervention": "zero_all_encoded_demo_tokens_keep_mask",
+  "comparison": [
+    {
+      "task": "milk",
+      "condition": "correct",
+      "episodes": 25,
+      "milk_in_basket": 21,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 21,
+      "other_successes": 0
+    },
+    {
+      "task": "milk",
+      "condition": "no_zero_keep_mask",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 0
+    },
+    {
+      "task": "milk",
+      "condition": "wrong",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 0
+    },
+    {
+      "task": "milk",
+      "condition": "no_masked_legacy",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 0
+    },
+    {
+      "task": "tomato_sauce",
+      "condition": "correct",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 21,
+      "language_successes": 21,
+      "other_successes": 0
+    },
+    {
+      "task": "tomato_sauce",
+      "condition": "no_zero_keep_mask",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 0
+    },
+    {
+      "task": "tomato_sauce",
+      "condition": "wrong",
+      "episodes": 25,
+      "milk_in_basket": 22,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 22
+    },
+    {
+      "task": "tomato_sauce",
+      "condition": "no_masked_legacy",
+      "episodes": 25,
+      "milk_in_basket": 0,
+      "tomato_sauce_in_basket": 0,
+      "language_successes": 0,
+      "other_successes": 0
+    }
+  ],
+  "new_no_scene_objects_in_basket": {
+    "milk": {},
+    "tomato_sauce": {}
+  },
+  "verified_pairs": 50,
+  "attention_captures": 150,
+  "old_no_data_preserved": true,
+  "new_vs_old_first_action_changed_episodes": 50,
+  "scope": "original per-language scenes only; fixed tomato scene/position-swap no-context NOT rerun"
+}

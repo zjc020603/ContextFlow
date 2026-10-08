@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/data/zjc/workspace/models/openpi/openpi-assets/checkpoints/pi0_base",
+  "arrays": 50,
+  "parameters": 3238048528,
+  "bytes": 12952194112,
+  "orbax_restore": "passed",
+  "finite_samples": "passed"
+}

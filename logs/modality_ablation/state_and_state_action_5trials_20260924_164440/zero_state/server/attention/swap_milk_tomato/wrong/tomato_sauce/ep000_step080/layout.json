@@ -1,0 +1,147 @@
+{
+  "blocks": [
+    {
+      "name": "base_0_rgb",
+      "kind": "current_image",
+      "start": 0,
+      "stop": 256
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 256,
+      "stop": 512
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 512,
+      "stop": 768
+    },
+    {
+      "name": "language",
+      "kind": "language",
+      "start": 768,
+      "stop": 816
+    },
+    {
+      "name": "base_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 816,
+      "stop": 848
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 848,
+      "stop": 880
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 880,
+      "stop": 912
+    },
+    {
+      "name": "demo_states",
+      "kind": "demo_states",
+      "start": 912,
+      "stop": 944
+    },
+    {
+      "name": "demo_actions",
+      "kind": "demo_actions",
+      "start": 944,
+      "stop": 976
+    },
+    {
+      "name": "current_state",
+      "kind": "current_state",
+      "start": 976,
+      "stop": 977
+    },
+    {
+      "name": "predicted_actions",
+      "kind": "predicted_actions",
+      "start": 977,
+      "stop": 1027
+    }
+  ],
+  "prefix_size": 976,
+  "key_size": 1027,
+  "query_layout": {
+    "current_state": [
+      0,
+      1
+    ],
+    "predicted_actions": [
+      1,
+      51
+    ]
+  },
+  "instruction": "pick up the tomato sauce and place it in the basket",
+  "context": {
+    "mode": "wrong",
+    "task_index": 28,
+    "demo_task_index": 25,
+    "rng_components": [
+      0,
+      28,
+      0,
+      16
+    ],
+    "selected_episode": [
+      814
+    ]
+  },
+  "modality_intervention": "zero_compressed_demo_state_keep_mask",
+  "prefix_intervention_checks": {
+    "prefix_shape": [
+      1,
+      976,
+      2048
+    ],
+    "zeroed_blocks": [
+      {
+        "kind": "demo_states",
+        "start": 912,
+        "stop": 944
+      }
+    ],
+    "non_ablated_tokens_exact": true,
+    "mask_and_positions_exact": true,
+    "valid_prefix_tokens": 653,
+    "first_action_position_id": 654
+  },
+  "attention_checks": {
+    "attention_shape": [
+      3,
+      3,
+      1,
+      8,
+      51,
+      1027
+    ],
+    "row_sum_max_error": 0.0023588743060827255,
+    "row_sum_tolerance": 0.004,
+    "masked_key_max": 0.0,
+    "block_mass": {
+      "current_image/base_0_rgb": 0.06375321745872498,
+      "current_image/left_wrist_0_rgb": 0.12739810347557068,
+      "current_image/right_wrist_0_rgb": 0.0,
+      "language/language": 0.009908557869493961,
+      "demo_image_latents/base_0_rgb": 0.1675684154033661,
+      "demo_image_latents/left_wrist_0_rgb": 0.08772052824497223,
+      "demo_image_latents/right_wrist_0_rgb": 0.0,
+      "demo_states/demo_states": 0.012963392771780491,
+      "demo_actions/demo_actions": 0.16442228853702545,
+      "current_state/current_state": 0.0033777838107198477,
+      "predicted_actions/predicted_actions": 0.36287781596183777
+    }
+  },
+  "processed_input_sha256": "7af05c6134f0a399f219a7f67c8c49ddc23c1fe2171c724dc52f00afb9933a2a",
+  "rng_key": [
+    1284366892,
+    2925712564
+  ]
+}

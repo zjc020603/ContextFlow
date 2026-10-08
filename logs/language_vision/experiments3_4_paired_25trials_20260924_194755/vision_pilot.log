@@ -1,0 +1,21 @@
+FINISHED vision_milk_milk_mask_other_0_5
+FINISHED vision_milk_milk_freeze_near_0_5
+FINISHED vision_milk_milk_mask_target_0_5
+FINISHED vision_tomato_sauce_milk_mask_target_0_5
+FINISHED vision_tomato_sauce_milk_mask_other_0_5
+FINISHED vision_tomato_sauce_milk_freeze_near_0_5
+FINISHED vision_tomato_sauce_milk_mask_background_0_5
+Traceback (most recent call last):
+  File "scripts/experiments/run_language_vision.py", line 49, in <module>
+    main(p.parse_args())
+  File "scripts/experiments/run_language_vision.py", line 39, in main
+    future.result()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "scripts/experiments/run_language_vision.py", line 34, in worker
+    raise RuntimeError(f'{label} failed: {log}')
+RuntimeError: vision_milk_milk_mask_background_0_5 failed: /data/zjc/workspace/ContextFlow/logs/language_vision/experiments3_4_paired_25trials_20260924_194755/jobs/vision_milk_milk_mask_background_0_5.log

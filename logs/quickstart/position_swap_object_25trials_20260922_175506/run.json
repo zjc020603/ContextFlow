@@ -1,0 +1,105 @@
+{
+  "created_at": "2026-09-22T17:55:06.020146+08:00",
+  "git_base": "3a1e51041df0be196acfe4d6ebad7da67542e3dd",
+  "scene": "tomato_sauce",
+  "layouts": [
+    "original",
+    "swap_milk_tomato"
+  ],
+  "languages": [
+    "milk",
+    "tomato_sauce"
+  ],
+  "context_modes": [
+    "correct",
+    "no",
+    "wrong"
+  ],
+  "trials_per_cell": 25,
+  "total_episodes": 300,
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "inference_dtype": "float32",
+  "seed": 7,
+  "policy_seed": 0,
+  "max_steps": 280,
+  "settling_steps": 10,
+  "status": "completed; all 300 episodes audited",
+  "full_started_at": "2026-09-22T18:03:49.714356+08:00",
+  "initializations_validated": 50,
+  "smoke_episodes": 12,
+  "tests_passed": 15,
+  "parallel_workers": [
+    {
+      "layout": "original",
+      "mode": "correct",
+      "gpu": 0,
+      "port": 8100
+    },
+    {
+      "layout": "original",
+      "mode": "no",
+      "gpu": 1,
+      "port": 8101
+    },
+    {
+      "layout": "original",
+      "mode": "wrong",
+      "gpu": 2,
+      "port": 8102
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "gpu": 3,
+      "port": 8103
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "gpu": 4,
+      "port": 8104
+    },
+    {
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "gpu": 5,
+      "port": 8105
+    }
+  ],
+  "execution_notes": [
+    "Initial validation rejected the unmodified layout because the source state naturally drops the objects about 3.5 cm. Height allowance changed from 3 to 8 cm; linear/angular settling velocity, XY drift, orientation and penetration checks all retained. All 50 states passed before policy rollouts.",
+    "An auxiliary replay approval timed out once; one retry was accepted.",
+    "Auxiliary replay initially diverged by 3.696e-5 after an unnecessary second flat-state restore following settling. Removed that restore; reproducing the original initialization and verifying the saved snapshot yields exactly zero trajectory error. Formal evaluation initialization was unchanged.",
+    "Six independent policy servers (GPUs 0..5) execute layout/context cells; fixed per-request seeds and demo indices pair conditions. Smoke/full milk episode 0 actions and object trajectories match exactly in all six cells.",
+    "Local .cache audit script initially lacked project root on PYTHONPATH; fixed invocation and full audit/report succeeded. Published python -m entrypoints are unaffected.",
+    "Post-run GPU resource query hit an automatic-approval timeout; owned policy processes independently verified absent, and all six worker exit codes were zero. The single retry was rejected because the automatic approval service connection failed. No final GPU memory reading was obtained; no further query attempted."
+  ],
+  "replay_verified": {
+    "source": "smoke/swap_milk_tomato/correct/milk episode 0",
+    "max_original_trajectory_error": 0.0
+  },
+  "verified": {
+    "episodes": 300,
+    "videos": 300,
+    "trajectories": 300,
+    "video_fps": 20,
+    "video_frames": 280,
+    "finite_actions": true,
+    "exact_xy_only_intervention": true,
+    "paired_states_observations_rng_demo_episodes": true,
+    "smoke_full_exact_repeats": 12,
+    "owned_policy_processes_exited": true,
+    "final_gpu_memory_query": "not obtained: approval service connection failure"
+  },
+  "audited_at": "2026-09-22T18:17:42.008995+08:00",
+  "completed_at": "2026-09-22T18:20:05.623597+08:00",
+  "worker_exit_codes": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "final_source_note": "Final snapshot adds tests/docs/replay fix/summary checks; evaluator differs from evaluated snapshot only by a clarifying comment after all workers finished."
+}

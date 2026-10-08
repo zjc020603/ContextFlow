@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "completed_at": "2026-09-24T21:33:02.737431+08:00",
+  "physical_rollouts": 350,
+  "conditions": 14,
+  "trials_per_condition": 25,
+  "language_rollouts": 150,
+  "vision_rollouts_including_shared_baselines": 250,
+  "shared_baseline_rollouts": 50,
+  "attention_records": 270,
+  "full_attention_records": 126,
+  "mean_attention_exact_checks": 126,
+  "historical_action_and_state_traces_exact": 50,
+  "parameter_sha256": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "servers_stopped": true,
+  "unit_tests": 8,
+  "language_vision_does_not_depend_on_experiment2": true,
+  "reports": [
+    "EXPERIMENT_RESULTS.md",
+    "CODE_CHANGES.md"
+  ],
+  "failed_attempts_excluded": true
+}

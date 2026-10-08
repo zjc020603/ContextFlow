@@ -1,0 +1,9 @@
+{
+  "port": 8231,
+  "output": "/data/zjc/workspace/ContextFlow/logs/language_vision/experiments3_4_paired_25trials_20260924_194755",
+  "demo": "tomato_sauce",
+  "language": "milk",
+  "vision": "freeze_near",
+  "start": 0,
+  "stop": 5
+}

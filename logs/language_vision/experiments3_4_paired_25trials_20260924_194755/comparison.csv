@@ -1,0 +1,15 @@
+condition,n,milk_in_basket,tomato_in_basket,demo_object_contact,demo_object_grasp,demo_object_lift,demo_object_basket,baseline_object_basket,mean_paired_eef_path_difference_m
+demo_milk__language_empty__normal,25,13,0,24,17,16,13,13,0.20211846254011195
+demo_milk__language_milk__freeze_near,25,0,0,25,1,0,0,0,0.4114102334827765
+demo_milk__language_milk__mask_background,25,21,0,24,22,22,21,21,0.04296274221708094
+demo_milk__language_milk__mask_other,25,20,0,25,21,22,20,20,0.058467520995227985
+demo_milk__language_milk__mask_target,25,2,0,25,5,4,2,2,0.2477793771532293
+demo_milk__language_milk__normal,25,24,0,25,24,24,24,24,0.0
+demo_milk__language_tomato_sauce__normal,25,24,0,25,24,24,24,24,0.04796793733603058
+demo_tomato_sauce__language_empty__normal,25,0,18,25,22,22,18,17,0.12875239456075382
+demo_tomato_sauce__language_milk__freeze_near,25,0,0,25,0,1,0,0,0.2692671618709342
+demo_tomato_sauce__language_milk__mask_background,25,0,25,25,23,25,25,24,0.04505069267623653
+demo_tomato_sauce__language_milk__mask_other,25,0,20,25,21,22,20,19,0.08118226757565493
+demo_tomato_sauce__language_milk__mask_target,25,0,7,23,11,11,7,6,0.10331341834187535
+demo_tomato_sauce__language_milk__normal,25,0,23,25,23,25,23,24,0.0
+demo_tomato_sauce__language_tomato_sauce__normal,25,0,22,25,24,25,22,21,0.06052128476881399

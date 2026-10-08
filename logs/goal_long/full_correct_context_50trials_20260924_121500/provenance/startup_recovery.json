@@ -1,0 +1,24 @@
+{
+  "worker": 5,
+  "controller_pid": 1108565,
+  "stalled_pid": 1191699,
+  "reason": "No readiness progress for over 8 minutes; busy background thread during initialization; no evaluation episodes started",
+  "controller_dispatch_temporarily_paused": false,
+  "existing_evaluations_continue": true,
+  "time": "2026-09-24T12:56:38.276171+08:00",
+  "replacement_pid": 1296751,
+  "physical_gpu": 0,
+  "startup_attempt2_pid": 1252480,
+  "diagnosis": "Repeated startup stall materializing JAX GPU arrays for parameter hash on physical GPU5; exact underlying cause unknown. No task started on either failed attempt.",
+  "resumed_unix": 1790226304.1371593,
+  "cleanup_completed": true,
+  "finished_workers": 8,
+  "finished_tasks": 20,
+  "cleanup_stopped_pids": [
+    1296751,
+    1191700,
+    1191701
+  ],
+  "cleanup_note": "Original controller retained pre-restart worker5 PID; replacement supervisor cleaned remaining owned services after all tasks and final parameter hashes completed.",
+  "ended_unix": 1790227475.2699358
+}

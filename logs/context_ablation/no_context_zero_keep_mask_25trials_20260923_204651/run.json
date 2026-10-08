@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "intervention": "zero_all_encoded_demo_tokens_keep_mask",
+  "trials_per_task": 25,
+  "tasks": [
+    "milk",
+    "tomato_sauce"
+  ],
+  "scene_task": "per_language",
+  "layout": "original",
+  "baseline": "logs/quickstart/context_ablation_object_correct_no_wrong_25trials_20260922_154452",
+  "seed": 7,
+  "policy_seed": 0,
+  "port": 8123,
+  "model_gpu": 2,
+  "simulator_gpu": 3,
+  "max_steps": 280,
+  "replan_steps": 5,
+  "attention_steps": [
+    0,
+    80,
+    160
+  ],
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "episodes": 50,
+  "captures": 150,
+  "server_stopped": true,
+  "completed_at": "2026-09-23T21:50:28.554528+08:00",
+  "rollout_seconds": 1035.5546193886548,
+  "comparison": "comparison.json",
+  "results_report": "EXPERIMENT_RESULTS.md",
+  "code_report": "CODE_CHANGES.md"
+}

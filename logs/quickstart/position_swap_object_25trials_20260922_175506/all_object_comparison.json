@@ -1,0 +1,98 @@
+{
+  "original/correct/milk": {
+    "tomato_sauce_1": 0,
+    "milk_1": 24,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "original/correct/tomato_sauce": {
+    "tomato_sauce_1": 22,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "original/no/milk": {
+    "tomato_sauce_1": 0,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "original/no/tomato_sauce": {
+    "tomato_sauce_1": 0,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "original/wrong/milk": {
+    "tomato_sauce_1": 23,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 1,
+    "bbq_sauce_1": 0
+  },
+  "original/wrong/tomato_sauce": {
+    "tomato_sauce_1": 0,
+    "milk_1": 24,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/correct/milk": {
+    "tomato_sauce_1": 25,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/correct/tomato_sauce": {
+    "tomato_sauce_1": 0,
+    "milk_1": 17,
+    "butter_1": 0,
+    "orange_juice_1": 1,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/no/milk": {
+    "tomato_sauce_1": 0,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/no/tomato_sauce": {
+    "tomato_sauce_1": 0,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/wrong/milk": {
+    "tomato_sauce_1": 0,
+    "milk_1": 12,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  },
+  "swap_milk_tomato/wrong/tomato_sauce": {
+    "tomato_sauce_1": 24,
+    "milk_1": 0,
+    "butter_1": 0,
+    "orange_juice_1": 0,
+    "chocolate_pudding_1": 0,
+    "bbq_sauce_1": 0
+  }
+}

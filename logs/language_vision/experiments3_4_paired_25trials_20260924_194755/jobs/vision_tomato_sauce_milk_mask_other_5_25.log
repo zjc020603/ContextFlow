@@ -1,0 +1,26 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+demo_tomato_sauce__language_milk__mask_other 5 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.5s
+demo_tomato_sauce__language_milk__mask_other 6 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.4s
+demo_tomato_sauce__language_milk__mask_other 7 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 24.1s
+demo_tomato_sauce__language_milk__mask_other 8 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.5s
+demo_tomato_sauce__language_milk__mask_other 9 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.5s
+demo_tomato_sauce__language_milk__mask_other 10 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.5s
+demo_tomato_sauce__language_milk__mask_other 11 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 22.4s
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/language_vision_experiment.py", line 179, in <module>
+    grasps.append(grasp)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/language_vision_experiment.py", line 72, in run
+    if target not in ("milk_1", "tomato_sauce_1"):
+ValueError: Baseline ep12 has no observed target contact: chocolate_pudding_1

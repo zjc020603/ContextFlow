@@ -1,0 +1,11 @@
+[
+  "README.md",
+  "src/openpi/models/gemma.py",
+  "src/openpi/models/contextflow.py",
+  "src/openpi/models/attention_capture.py",
+  "src/openpi/models/attention_capture_test.py",
+  "src/openpi/policies/policy_incontext.py",
+  "examples/libero/prepare_attention_observations.py",
+  "scripts/check_attention_capture.py",
+  "scripts/check_attention_capture_test.py"
+]

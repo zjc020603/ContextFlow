@@ -1,0 +1,8 @@
+Python: 3.11.16 (main, Sep  1 2026, 14:18:37) [Clang 22.1.3 ]
+JAX: 0.5.0 [CudaDevice(id=0)]
+JAX GPU JIT matrix multiply: PASS
+PyTorch: 2.6.0+cu124 CUDA: 12.4
+PyTorch GPU matrix multiply: PASS
+ContextFlow Perceiver forward: (1, 4, 64) PASS
+ContextFlow config: ContextFlow batch_size: 32
+LeRobot dataset import: PASS

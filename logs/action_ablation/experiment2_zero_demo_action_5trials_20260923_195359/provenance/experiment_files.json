@@ -1,0 +1,9 @@
+[
+  "src/openpi/models/demo_action_ablation.py",
+  "src/openpi/models/demo_action_ablation_test.py",
+  "scripts/serve_demo_action_ablation.py",
+  "scripts/summarize_demo_action_ablation.py",
+  "examples/libero/demo_action_ablation.py",
+  "scripts/DEMO_ACTION_ABLATION.md",
+  "examples/libero/context_ablation.py"
+]

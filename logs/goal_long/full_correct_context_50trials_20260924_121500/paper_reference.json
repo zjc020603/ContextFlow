@@ -1,0 +1,30 @@
+{
+  "url": "https://arxiv.org/html/2609.06852v1",
+  "sections": [
+    "4.1",
+    "Table S3",
+    "Table S4"
+  ],
+  "unseen_dataset_task_indices": {
+    "libero_goal": [
+      10,
+      17
+    ],
+    "libero_10": [
+      1,
+      5
+    ]
+  },
+  "paper_suite_success_rates_percent": {
+    "libero_goal": {
+      "seen": 90,
+      "unseen": 0
+    },
+    "libero_10": {
+      "seen": 82,
+      "unseen": 0
+    }
+  },
+  "training": "All four suites, excluding two predefined task descriptions per suite",
+  "trials_per_task": 50
+}

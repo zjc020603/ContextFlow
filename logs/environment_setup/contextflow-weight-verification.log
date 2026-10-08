@@ -1,0 +1,4 @@
+Restoring checkpoint: /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999
+Restored 179 arrays; 2170151696 parameters; 7.504 GiB
+ContextFlow parameter shapes match current config: PASS
+CHECKPOINT VERIFIED

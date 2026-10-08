@@ -1,0 +1,51 @@
+2026-09-24 12:20:56,632 GPU 0 starts task 17 put the bowl on the stove
+2026-09-24 12:21:52,640 GPU 3 starts task 1 put the white mug on the plate and put the chocolate pudding to the right of the plate
+2026-09-24 12:22:02,640 GPU 1 starts task 10 put the bowl on the plate
+2026-09-24 12:22:10,641 GPU 2 starts task 5 put both the alphabet soup and the tomato sauce in the basket
+2026-09-24 12:36:25,969 DONE task 17 unseen: 0/50
+2026-09-24 12:37:45,345 DONE task 10 unseen: 0/50
+2026-09-24 12:46:22,225 DONE task 1 unseen: 0/50
+2026-09-24 12:48:10,043 DONE task 5 unseen: 0/50
+2026-09-24 12:48:10,044 ALL FOUR UNSEEN TASKS COMPLETE. Starting 16 seen tasks.
+2026-09-24 12:48:10,045 GPU 0 starts task 7 put both the cream cheese box and the butter in the basket
+2026-09-24 12:48:10,045 GPU 1 starts task 3 turn on the stove and put the moka pot on it
+2026-09-24 12:48:10,045 GPU 2 starts task 8 put the black bowl in the bottom drawer of the cabinet and close it
+2026-09-24 12:48:10,046 GPU 3 starts task 0 put the white mug on the left plate and put the yellow and white mug on the right plate
+2026-09-24 12:49:06,056 GPU 4 starts task 9 pick up the book and place it in the back compartment of the caddy
+2026-09-24 12:49:20,058 GPU 6 starts task 4 put both the alphabet soup and the cream cheese box in the basket
+2026-09-24 12:49:50,062 GPU 7 starts task 6 put both moka pots on the stove
+2026-09-24 13:05:04,137 GPU 5 starts task 2 put the yellow and white mug in the microwave and close it
+2026-09-24 13:05:04,138 DONE task 4 seen: 47/50
+2026-09-24 13:05:04,138 DONE task 3 seen: 37/50
+2026-09-24 13:05:04,138 DONE task 9 seen: 45/50
+2026-09-24 13:05:04,138 GPU 6 starts task 19 open the middle drawer of the cabinet
+2026-09-24 13:05:04,139 DONE task 8 seen: 45/50
+2026-09-24 13:05:04,139 GPU 1 starts task 14 put the wine bottle on top of the cabinet
+2026-09-24 13:05:04,139 DONE task 7 seen: 47/50
+2026-09-24 13:05:04,139 GPU 4 starts task 12 open the top drawer and put the bowl inside
+2026-09-24 13:05:04,139 GPU 2 starts task 18 put the bowl on top of the cabinet
+2026-09-24 13:05:04,139 GPU 0 starts task 15 push the plate to the front of the stove
+2026-09-24 13:05:35,831 DONE task 0 seen: 35/50
+2026-09-24 13:05:35,831 GPU 3 starts task 13 put the cream cheese in the bowl
+2026-09-24 13:10:53,845 DONE task 18 seen: 49/50
+2026-09-24 13:10:53,845 GPU 2 starts task 16 turn on the stove
+2026-09-24 13:11:22,920 DONE task 14 seen: 50/50
+2026-09-24 13:11:22,920 GPU 1 starts task 11 put the wine bottle on the rack
+2026-09-24 13:12:02,965 DONE task 19 seen: 50/50
+2026-09-24 13:12:06,901 DONE task 6 seen: 26/50
+2026-09-24 13:12:29,870 DONE task 13 seen: 45/50
+2026-09-24 13:15:10,023 DONE task 15 seen: 41/50
+2026-09-24 13:16:29,503 DONE task 16 seen: 49/50
+2026-09-24 13:16:42,746 DONE task 12 seen: 37/50
+2026-09-24 13:20:20,480 DONE task 11 seen: 40/50
+2026-09-24 13:22:48,475 DONE task 2 seen: 35/50
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/zjc/workspace/ContextFlow/scripts/run_goal_long.py", line 210, in <module>
+    run(p.parse_args())
+  File "/data/zjc/workspace/ContextFlow/scripts/run_goal_long.py", line 201, in run
+    worker.stop()
+  File "/data/zjc/workspace/ContextFlow/scripts/run_goal_long.py", line 135, in stop
+    raise RuntimeError("PID no longer identifies our server")
+RuntimeError: PID no longer identifies our server

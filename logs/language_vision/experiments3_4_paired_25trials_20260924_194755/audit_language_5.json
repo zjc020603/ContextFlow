@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "conditions": 6,
+  "episodes": 30,
+  "paired_initial_states_and_observations_exact": true,
+  "all_56_noise_hashes_paired": true,
+  "demo_inputs_constant": true,
+  "language_only_initial_nonlanguage_inputs_exact": true,
+  "historical_280_action_and_state_traces_exact": 10,
+  "freeze_prefix_and_stale_images_checked": [],
+  "attention_checks": 212
+}

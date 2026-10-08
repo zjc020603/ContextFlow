@@ -1,0 +1,351 @@
+diff --git a/README.md b/README.md
+index 0bd830b..6a539af 100644
+--- a/README.md
++++ b/README.md
+@@ -109,6 +109,31 @@ end-effector/gripper trajectories, object positions, and per-step goal predicate
+ in `<condition>/trajectories/`. Each episode also records its actual demonstration
+ and random seeds. This launcher uses local-only demonstration loading.
+ 
++Choose **10** for the position control experiment. It fixes the tomato-sauce
++scene and its initial-state indices, then crosses two instructions (milk / tomato
++sauce), three context modes, and two layouts (original / milk and tomato sauce
++swapped). The default 25 trials per cell produce 300 episodes. Original-layout
++baselines are evaluated again in this fixed scene; they are not the earlier
++two-scene experiment or Table 1 results.
++
++Positions are changed at runtime after restoring the LIBERO initial state. Only
++the two objects' XY coordinates are exchanged; each keeps its own height and
++orientation, and both target velocities are zeroed in both layouts before ten
++settling steps. Physical initialization checks reject unstable layouts. The
++original demonstration images, states and actions remain unchanged. Initial
++states are shared across instructions and conditions; action noise is paired
++across contexts/layouts within each instruction. LIBERO source files and model
++weights are unchanged.
++
++Outputs are grouped as `<run>/<layout>/<context>/videos/<instruction>/`, alongside
++initial-view PNGs, trajectories of every scene object, and intervention metadata.
++The root `comparison.csv` / `comparison.json` distinguish placement of the demo
++object from placement of the object occupying the demo's original location.
++These are behavioral measurements, not automatic labels for the model's internal
++mechanism. Saved actions can be checked with
++`python -m examples.libero.replay_context_ablation <run>/<layout>` in the LIBERO
++environment. This restores and verifies the intervened initial state.
++
+ The policy server and simulator can run on separate machines; set `--host` on the evaluation client to the server address. To test the server with random observations, see the [simple client](examples/simple_client/README.md).
+ 
+ ## Real-World Dataset
+diff --git a/examples/libero/context_ablation.py b/examples/libero/context_ablation.py
+index c575105..dfd055e 100644
+--- a/examples/libero/context_ablation.py
++++ b/examples/libero/context_ablation.py
+@@ -18,6 +18,7 @@ from openpi_client import websocket_client_policy
+ import tyro
+ 
+ from examples.libero import main_incontext as baseline
++from examples.libero import position_intervention as intervention
+ 
+ TASKS = {
+     "milk": "pick up the milk and place it in the basket",
+@@ -38,6 +39,8 @@ class Args:
+     max_steps: int = 280
+     num_steps_wait: int = 10
+     replan_steps: int = 5
++    scene_task: Literal["per_language", "tomato_sauce"] = "per_language"
++    layout: Literal["original", "swap_milk_tomato"] = "original"
+     # Validate identical observations/noise across interventions before rollouts.
+     verify_interventions: bool = False
+ 
+@@ -103,6 +106,8 @@ def verify(client, request):
+ def run(args):
+     if not 1 <= args.num_trials_per_task <= 50 or args.replan_steps < 1 or args.max_steps < 1:
+         raise ValueError("Trials must be 1..50; steps must be positive")
++    if args.layout != "original" and args.scene_task != "tomato_sauce":
++        raise ValueError("Position swaps require the fixed tomato-sauce scene")
+     suite = benchmark.get_benchmark_dict()["libero_object"]()
+     mapping = baseline.get_task_to_index_mapping(baseline.LIBERO_TASKS_JSONL)
+     tasks = {}
+@@ -141,22 +146,34 @@ def run(args):
+         for name, task in tasks.items():
+             other = next(key for key in TASKS if key != name)
+             demo_task = tasks[other]["index"] if mode == "wrong" else task["index"]
+-            env, _ = baseline._get_libero_env(suite.get_task(task["id"]), 256, args.seed)
++            scene_name = name if args.scene_task == "per_language" else args.scene_task
++            scene = tasks[scene_name]
++            env, _ = baseline._get_libero_env(suite.get_task(scene["id"]), 256, args.seed)
+             try:
+-                initial_states = suite.get_task_init_states(task["id"])
++                initial_states = suite.get_task_init_states(scene["id"])
+                 for episode in range(args.num_trials_per_task):
+                     started = time.monotonic()
+-                    env_seed = args.seed + task["index"] * 1000 + episode
++                    env_seed = args.seed + scene["index"] * 1000 + episode
+                     np.random.seed(env_seed)
+                     env.seed(env_seed)
+                     env.reset()
+                     obs = env.set_init_state(initial_states[episode])
++                    layout_info = None
++                    if args.scene_task != "per_language":
++                        obs, layout_info = intervention.apply_layout(env, args.layout)
+                     for _ in range(args.num_steps_wait):
+                         obs, _, _, _ = env.step(baseline.LIBERO_DUMMY_ACTION)
++                    if layout_info is not None:
++                        intervention.validate_settled(env, layout_info)
+                     initial_inside, _ = object_status(env)
+                     if any(initial_inside.values()):
+                         raise ValueError("An object is already in the basket before intervention")
+                     initial_state = env.get_sim_state().copy()
++                    preview = None
++                    if layout_info is not None:
++                        preview = directory / "initial_views" / name / f"ep{episode:03d}.png"
++                        preview.parent.mkdir(parents=True, exist_ok=True)
++                        imageio.imwrite(preview, image_for_policy(obs, "agentview_image"))
+                     observation_hash = hashlib.sha256()
+                     for key in (
+                         "agentview_image",
+@@ -171,6 +188,8 @@ def run(args):
+                     scene_ever = dict.fromkeys(scene_object_status(env), False)
+                     first = dict.fromkeys(TASKS, None)
+                     frames, actions, states, positions, predicates, context_records = [], [], [], [], [], []
++                    scene_names = list(scene_ever)
++                    scene_positions, scene_predicates = [], []
+                     checks = {}
+                     for step in range(args.max_steps):
+                         if not plan:
+@@ -191,11 +210,18 @@ def run(args):
+                         action = plan.popleft()
+                         obs, _, _, _ = env.step(action.tolist())
+                         inside, pos = object_status(env)
+-                        for key, value in scene_object_status(env).items():
++                        scene_inside = scene_object_status(env)
++                        scene_predicates.append([scene_inside[key] for key in scene_names])
++                        scene_positions.append(
++                            np.stack(
++                                [env.env.object_states_dict[key].get_geom_state()["pos"].copy() for key in scene_names]
++                            )
++                        )
++                        for key, value in scene_inside.items():
+                             scene_ever[key] = scene_ever[key] or value
+-                        # Cross-check custom language metric against the original environment goal.
+-                        if bool(env.check_success()) != inside[name]:
+-                            raise AssertionError("Language metric disagrees with LIBERO goal")
++                        # Cross-check the original scene goal independently of the supplied language.
++                        if bool(env.check_success()) != inside[scene_name]:
++                            raise AssertionError("Scene goal metric disagrees with LIBERO goal")
+                         for key in TASKS:
+                             if inside[key] and first[key] is None:
+                                 first[key] = step + 1
+@@ -220,10 +246,19 @@ def run(args):
+                         object_positions=positions,
+                         object_names=list(TASKS),
+                         in_basket=predicates,
++                        scene_object_names=scene_names,
++                        scene_object_positions=scene_positions,
++                        scene_in_basket=scene_predicates,
+                     )
+                     record = {
+                         "task": name,
+                         **task,
++                        "scene_task": scene_name,
++                        "scene_id": scene["id"],
++                        "scene_dataset_index": scene["index"],
++                        "layout": args.layout,
++                        "position_intervention": layout_info,
++                        "initial_view": str(preview.relative_to(root)) if preview is not None else None,
+                         "episode_index": episode,
+                         "initial_state_index": episode,
+                         "environment_seed": env_seed,
+diff --git a/examples/libero/context_ablation_test.py b/examples/libero/context_ablation_test.py
+index e578c2b..f56cd90 100644
+--- a/examples/libero/context_ablation_test.py
++++ b/examples/libero/context_ablation_test.py
+@@ -3,11 +3,13 @@ from types import SimpleNamespace
+ from unittest import mock
+ 
+ import numpy as np
++import pytest
+ 
+ from examples.libero import context_ablation as experiment
+ 
+ 
+-def test_wrong_context_records_both_goals_and_runs_full_horizon(monkeypatch, tmp_path):
++@pytest.mark.parametrize("fixed_scene", [False, True])
++def test_wrong_context_records_both_goals_and_runs_full_horizon(monkeypatch, tmp_path, fixed_scene):
+     descriptions = list(experiment.TASKS.values())
+     suite = mock.Mock(n_tasks=2)
+     suite.get_task.side_effect = lambda index: SimpleNamespace(language=descriptions[index])
+@@ -31,6 +33,8 @@ def test_wrong_context_records_both_goals_and_runs_full_horizon(monkeypatch, tmp
+         env.get_sim_state.return_value = np.zeros(8)
+         env.step.return_value = (observation, 1, True, {})
+         env.check_success.return_value = True
++        env.env.object_states_dict = {"cream_cheese_1": mock.Mock()}
++        env.env.object_states_dict["cream_cheese_1"].get_geom_state.return_value = {"pos": np.zeros(3)}
+         envs.append(env)
+         return env, ""
+ 
+@@ -39,11 +43,17 @@ def test_wrong_context_records_both_goals_and_runs_full_horizon(monkeypatch, tmp
+         experiment,
+         "object_status",
+         lambda env: (
+-            dict.fromkeys(experiment.TASKS, env.step.call_count > 0),
++            {
++                name: env.step.call_count > 0 and (not fixed_scene or name == "tomato_sauce")
++                for name in experiment.TASKS
++            },
+             {name: np.zeros(3) for name in experiment.TASKS},
+         ),
+     )
+     monkeypatch.setattr(experiment, "scene_object_status", lambda env: {"cream_cheese_1": env.step.call_count > 0})
++    monkeypatch.setattr(experiment.intervention, "apply_layout", lambda env, layout: (observation, {}))
++    monkeypatch.setattr(experiment.intervention, "validate_settled", lambda env, meta: meta)
++    monkeypatch.setattr(experiment.imageio, "imwrite", mock.Mock())
+     client = mock.Mock()
+     client.get_server_metadata.return_value = {"context_ablation_protocol": 1}
+ 
+@@ -64,14 +74,26 @@ def test_wrong_context_records_both_goals_and_runs_full_horizon(monkeypatch, tmp
+     monkeypatch.setattr(experiment.websocket_client_policy, "WebsocketClientPolicy", lambda *args: client)
+     monkeypatch.setattr(experiment.imageio, "mimwrite", mock.Mock())
+     experiment.run(
+-        experiment.Args(mode="wrong", num_trials_per_task=1, max_steps=2, num_steps_wait=0, output_dir=str(tmp_path))
++        experiment.Args(
++            mode="wrong",
++            num_trials_per_task=1,
++            max_steps=2,
++            num_steps_wait=0,
++            output_dir=str(tmp_path),
++            scene_task="tomato_sauce" if fixed_scene else "per_language",
++            layout="swap_milk_tomato" if fixed_scene else "original",
++        )
+     )
+     rows = [json.loads(line) for line in (tmp_path / "wrong/episodes.jsonl").read_text().splitlines()]
+     assert len(rows) == 2
+     for row in rows:
+-        assert row["outcome"] == "both"
+-        assert row["language_success"]
+-        assert row["other_success"]
++        if fixed_scene:
++            assert row["scene_id"] == 1
++            assert row["outcome"] == ("other_only" if row["task"] == "milk" else "language_only")
++        else:
++            assert row["outcome"] == "both"
++            assert row["language_success"]
++            assert row["other_success"]
+         assert row["steps"] == 2
+         assert row["scene_ever_in_basket"]["cream_cheese_1"]
+     for env in envs:
+diff --git a/examples/libero/replay_context_ablation.py b/examples/libero/replay_context_ablation.py
+index ce1a478..7333ab4 100644
+--- a/examples/libero/replay_context_ablation.py
++++ b/examples/libero/replay_context_ablation.py
+@@ -12,6 +12,7 @@ from libero.libero import benchmark
+ import numpy as np
+ 
+ from examples.libero import main_incontext as baseline
++from examples.libero import position_intervention as intervention
+ 
+ 
+ def replay(root, *, resume=False, selected_mode=None, selected_task=None):
+@@ -34,7 +35,7 @@ def replay(root, *, resume=False, selected_mode=None, selected_task=None):
+             if selected_task is not None and task != selected_task:
+                 continue
+             task_rows = [row for row in rows if row["task"] == task]
+-            task_id = task_rows[0]["id"]
++            task_id = task_rows[0].get("scene_id", task_rows[0]["id"])
+             env, _ = baseline._get_libero_env(suite.get_task(task_id), 256, config["seed"])
+             try:
+                 initial_states = suite.get_task_init_states(task_id)
+@@ -58,11 +59,21 @@ def replay(root, *, resume=False, selected_mode=None, selected_task=None):
+                     env.seed(row["environment_seed"])
+                     env.reset()
+                     env.set_init_state(initial_states[row["initial_state_index"]])
++                    layout_info = row.get("position_intervention")
++                    if layout_info is not None:
++                        _, recreated = intervention.apply_layout(env, row["layout"])
++                        if recreated["source_state_sha256"] != layout_info["source_state_sha256"]:
++                            raise AssertionError("Replay source state differs")
+                     for _ in range(config["num_steps_wait"]):
+                         env.step(baseline.LIBERO_DUMMY_ACTION)
+                     digest = hashlib.sha256(env.get_sim_state().tobytes()).hexdigest()
+                     if digest != row["initial_state_sha256"]:
+                         raise AssertionError("Replayed initial state differs from original")
++                    if layout_info is not None:
++                        with np.load(root / row["trajectory"]) as saved:
++                            np.testing.assert_array_equal(env.get_sim_state(), saved["initial_sim_state"])
++                            # Preserve solver/controller state from the identical initialization flow.
++                            # A second set_state/forward here changes warm-start state outside the flat snapshot.
+                     ever = dict.fromkeys(names, False)
+                     first = dict.fromkeys(names, None)
+                     positions = {
+diff --git a/quickstart.sh b/quickstart.sh
+index 48ec3ca..eaebeea 100755
+--- a/quickstart.sh
++++ b/quickstart.sh
+@@ -368,9 +368,15 @@ qs_action() (
+             printf '开始 ContextFlow 训练，共 20,000 步；W&B 模式：%s。\n' "$WANDB_MODE"
+             qs_run train "$QS_ROOT/.venv/bin/python" -u "$QS_ROOT/scripts/train.py" ContextFlow --exp-name "$exp" --batch-size "$batch"
+             ;;
+-        9)
++        9|10)
+             qs_number QS_TRIALS '每个任务、每种 context 的评估次数' 25 1 50 || return
+             QS_RUN_NAME="context_ablation_object_correct_no_wrong_${QS_TRIALS}trials"
++            local experiment_module=examples.libero.context_ablation summary_module=examples.libero.summarize_context_ablation
++            if [[ "$action" == 10 ]]; then
++                QS_RUN_NAME="position_swap_object_${QS_TRIALS}trials"
++                experiment_module=examples.libero.position_ablation
++                summary_module=examples.libero.summarize_position_ablation
++            fi
+             qs_activate train && qs_dataset && qs_checkpoint && qs_gpu || return
+             qs_number QS_PORT '策略服务端口' 8000 1 65535 || return
+             qs_require "$QS_ROOT/examples/libero/.venv/bin/python" || return
+@@ -378,14 +384,14 @@ qs_action() (
+             QS_SERVER+=(--policy.context-ablation --policy.local-files-only)
+             if ((QS_DRY_RUN)); then
+                 qs_print_command "${QS_SERVER[@]}"
+-                qs_print_command "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.context_ablation \
++                qs_print_command "$QS_ROOT/examples/libero/.venv/bin/python" -m "$experiment_module" \
+                     --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" --output-dir '<运行目录>'
+                 return
+             fi
+             qs_logs || return
+-            "$QS_ROOT/.venv/bin/python" - "$QS_LOG_DIR" "$QS_CHECKPOINT" "$QS_TRIALS" "$QS_PORT" <<'PY'
++            "$QS_ROOT/.venv/bin/python" - "$QS_LOG_DIR" "$QS_CHECKPOINT" "$QS_TRIALS" "$QS_PORT" "$action" <<'PY'
+ import datetime, json, pathlib, sys
+-root, checkpoint, trials, port = sys.argv[1:]
++root, checkpoint, trials, port, action = sys.argv[1:]
+ (pathlib.Path(root) / 'run.json').write_text(json.dumps({
+     'created_at': datetime.datetime.now().astimezone().isoformat(),
+     'checkpoint': str(pathlib.Path(checkpoint).resolve()), 'inference_dtype': 'float32',
+@@ -393,16 +399,22 @@ root, checkpoint, trials, port = sys.argv[1:]
+     'conditions': ['correct', 'no', 'wrong'], 'tasks': ['milk', 'tomato_sauce'],
+     'client_seed': 7, 'paired_policy_seed': 0, 'max_steps': 280,
+     'termination': 'fixed horizon; both In predicates checked every step',
++    'scene': 'tomato_sauce' if action == '10' else 'per_language',
++    'layouts': ['original', 'swap_milk_tomato'] if action == '10' else ['original'],
+ }, indent=2) + '\n')
+ PY
+             qs_port_free || return
+             qs_start server "${QS_SERVER[@]}" || return
+             qs_wait_server "$QS_PID" || return
+             qs_activate libero || return
+-            qs_run context_ablation "$QS_ROOT/examples/libero/.venv/bin/python" -u -m examples.libero.context_ablation \
++            if [[ "$action" == 10 ]]; then
++                qs_run initialization_validation "$QS_ROOT/examples/libero/.venv/bin/python" -u -m "$experiment_module" \
++                    --validate-only --num-trials-per-task "$QS_TRIALS" --output-dir "$QS_LOG_DIR" || return
++            fi
++            qs_run context_ablation "$QS_ROOT/examples/libero/.venv/bin/python" -u -m "$experiment_module" \
+                 --host "$QS_HOST" --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" \
+                 --output-dir "$QS_LOG_DIR" --verify-interventions || return
+-            "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.summarize_context_ablation "$QS_LOG_DIR"
++            "$QS_ROOT/examples/libero/.venv/bin/python" -m "$summary_module" "$QS_LOG_DIR"
+             ;;
+         *) printf '请输入菜单中的编号。\n'; return 1 ;;
+     esac
+@@ -426,7 +438,8 @@ qs_main() {
+             '3  进入 LIBERO 模拟器环境终端' '4  启动 ContextFlow 策略服务' \
+             '5  连接已有策略服务，运行 LIBERO 评估' '6  一键评估：启动服务 → 等待就绪 → 评估 → 关闭服务' \
+             '7  计算训练集归一化统计' '8  启动新的 ContextFlow 训练' \
+-            '9  牛奶 / 番茄酱 correct / no / wrong context 对照实验' '0  退出'
++            '9  牛奶 / 番茄酱 correct / no / wrong context 对照实验' \
++            '10 固定番茄酱场景：原布局 / 交换位置 × correct / no / wrong context' '0  退出'
+         read -r -p '输入编号并回车：' choice || break
+         [[ "$choice" != 0 ]] || break
+         qs_action "$choice"

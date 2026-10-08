@@ -1,0 +1,64 @@
+{
+  "completed_at": "2026-09-21T21:23:36.646586+08:00",
+  "total_episodes": 200,
+  "successes": 151,
+  "success_rate_percent": 75.5,
+  "paper_success_rate_percent": 73.5,
+  "delta_percentage_points": 2.0,
+  "execution_errors": 0,
+  "videos": 200,
+  "tasks": [
+    {
+      "task_id": 3,
+      "task_description": "pick up the black bowl on the cookie box and place it on the plate",
+      "episodes": 50,
+      "successes": 43,
+      "success_rate": 0.86,
+      "category": "unseen",
+      "suite": "libero_spatial",
+      "paper_rate_percent": 86,
+      "actual_rate_percent": 86,
+      "delta_percentage_points": 0
+    },
+    {
+      "task_id": 8,
+      "task_description": "pick up the black bowl next to the plate and place it on the plate",
+      "episodes": 50,
+      "successes": 18,
+      "success_rate": 0.36,
+      "category": "unseen",
+      "suite": "libero_spatial",
+      "paper_rate_percent": 42,
+      "actual_rate_percent": 36,
+      "delta_percentage_points": -6
+    },
+    {
+      "task_id": 7,
+      "task_description": "pick up the milk and place it in the basket",
+      "episodes": 50,
+      "successes": 43,
+      "success_rate": 0.86,
+      "category": "unseen",
+      "suite": "libero_object",
+      "paper_rate_percent": 76,
+      "actual_rate_percent": 86,
+      "delta_percentage_points": 10
+    },
+    {
+      "task_id": 5,
+      "task_description": "pick up the tomato sauce and place it in the basket",
+      "episodes": 50,
+      "successes": 47,
+      "success_rate": 0.94,
+      "category": "unseen",
+      "suite": "libero_object",
+      "paper_rate_percent": 90,
+      "actual_rate_percent": 94,
+      "delta_percentage_points": 4
+    }
+  ],
+  "suite_rates_percent": {
+    "libero_spatial": 61,
+    "libero_object": 90
+  }
+}

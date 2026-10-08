@@ -109,7 +109,74 @@ end-effector/gripper trajectories, object positions, and per-step goal predicate
 in `<condition>/trajectories/`. Each episode also records its actual demonstration
 and random seeds. This launcher uses local-only demonstration loading.
 
+Choose **10** for the position control experiment. It fixes the tomato-sauce
+scene and its initial-state indices, then crosses two instructions (milk / tomato
+sauce), three context modes, and two layouts (original / milk and tomato sauce
+swapped). The default 25 trials per cell produce 300 episodes. Original-layout
+baselines are evaluated again in this fixed scene; they are not the earlier
+two-scene experiment or Table 1 results.
+
+Positions are changed at runtime after restoring the LIBERO initial state. Only
+the two objects' XY coordinates are exchanged; each keeps its own height and
+orientation, and both target velocities are zeroed in both layouts before ten
+settling steps. Physical initialization checks reject unstable layouts. The
+original demonstration images, states and actions remain unchanged. Initial
+states are shared across instructions and conditions; action noise is paired
+across contexts/layouts within each instruction. LIBERO source files and model
+weights are unchanged.
+
+Outputs are grouped as `<run>/<layout>/<context>/videos/<instruction>/`, alongside
+initial-view PNGs, trajectories of every scene object, and intervention metadata.
+The root `comparison.csv` / `comparison.json` distinguish placement of the demo
+object from placement of the object occupying the demo's original location.
+These are behavioral measurements, not automatic labels for the model's internal
+mechanism. Saved actions can be checked with
+`python -m examples.libero.replay_context_ablation <run>/<layout>` in the LIBERO
+environment. This restores and verifies the intervened initial state.
+
 The policy server and simulator can run on separate machines; set `--host` on the evaluation client to the server address. To test the server with random observations, see the [simple client](examples/simple_client/README.md).
+
+## Attention capture consistency check (experiment 0)
+
+Before interpreting attention, compare ordinary inference with opt-in recording
+on identical observations, demonstrations, masks, and action noise. This check
+reuses a completed position-control run; it does not execute new policy actions.
+
+```bash
+# Select an existing position-control run and a new output directory.
+SOURCE_RUN=logs/quickstart/position_swap_object_25trials_YYYYMMDD_HHMMSS
+CHECK_RUN=logs/attention_capture/experiment0_$(date +%Y%m%d_%H%M%S)
+source scripts/activate_env.sh libero
+python -m examples.libero.prepare_attention_observations \
+  --source "$SOURCE_RUN" --output "$CHECK_RUN/observations"
+
+source scripts/activate_env.sh train
+python scripts/check_attention_capture.py \
+  --observations "$CHECK_RUN/observations" --output "$CHECK_RUN/validation" \
+  --checkpoint /path/to/ContextFlow_run1/19999
+```
+
+Defaults cover both layouts, both instructions, and correct/no/wrong context:
+5 initial-state indices × 3 pre-inference control steps (0, 80, 160) × 12 cells =
+180 comparisons. A 12-case gate runs first; `--smoke-only` stops after this gate.
+Replay checks initial observations and saved robot/object trajectories before
+exporting inputs. Within each comparison, both inference paths share the exact
+preprocessed tensors and PRNG key. Later observations can differ across context
+conditions because they come from each condition's original rollout.
+
+Recording captures Gemma's suffix attention at layers 0/9/17 and flow steps
+0/5/9 (zero-based), preserving all heads and queries. `capture.npz` contains raw
+probabilities, initial action noise, and both complete action outputs;
+`layout.json` maps keys to current-image patches, language tokens, compressed
+demonstration tokens, and state/action tokens. Demo image latents are **not**
+individual image patches. SigLIP and Perceiver internals are outside this check.
+
+`pairs.jsonl` records input hashes, selected demos, masks, and per-case results;
+`results.json` is written only after all comparisons pass. Actions must be
+bitwise equal, masked attention must be zero, and model parameter hashes must
+match. We retain the existing float32 weight loading and bfloat16 Gemma compute;
+only attention row sums allow the corresponding rounding tolerance. This is an
+instrumentation check, not evidence of which modality causes a behavior.
 
 ## Real-World Dataset
 
@@ -137,3 +204,30 @@ The real-world ALOHA dataset is available on Hugging Face: [vo2yager/aloha_incon
 ## Acknowledgements
 
 This repository is a fork of [openpi](https://github.com/Physical-Intelligence/openpi). We thank the Physical Intelligence team for open-sourcing the π₀ model, and the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) team for the benchmark.
+
+
+## Cluster migration snapshot (2026-10-08)
+
+This fork preserves the ContextFlow reproduction and follow-up experiments. The
+full pretrained backbone variants remain separate branches:
+`experiment/pi0-full-contextflow` and `experiment/pi05-full-contextflow`.
+
+```bash
+git clone --recurse-submodules https://github.com/zjc020603/ContextFlow.git
+cd ContextFlow
+git worktree add -b experiment/pi0-full-contextflow .worktrees/pi0-full origin/experiment/pi0-full-contextflow
+git worktree add -b experiment/pi05-full-contextflow .worktrees/pi05-full origin/experiment/pi05-full-contextflow
+```
+
+See [environment setup](ENVIRONMENT_SETUP.md), [evaluation report](EVALUATION_REPORT.md),
+and [migration inventory](migration/snapshot_manifest.json). Installed package
+snapshots are in `migration/environments`; previously local helper scripts are
+preserved in `migration/local-tools` (some retain original machine paths).
+
+A Git clone alone does **not** restore ignored checkpoints, model/data directories,
+or virtual environments. The inventory records the backup status of large
+experimental artifacts. All public and locally trained model checkpoints are
+excluded from this migration by request; the local pi05 fine-tuned weights cannot
+be recovered by downloading the public base model. The old cluster's files remain
+untouched. Recreate environments and LIBERO path configuration on the new cluster
+rather than relying on old absolute paths.

@@ -1,0 +1,11 @@
+{
+  "gpu": 5,
+  "physical_gpu": 0,
+  "server_pid": 1296751,
+  "port": 8135,
+  "cpu_affinity": "120-143",
+  "replaced_pids": [
+    1191699,
+    1252480
+  ]
+}

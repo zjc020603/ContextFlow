@@ -1,0 +1,41 @@
+{
+  "config": {
+    "task_suite_name": "libero_object",
+    "num_trials_per_task": 25,
+    "seed": 7,
+    "unseen_only": true,
+    "unseen_task_index": -1,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "num_steps_wait": 10,
+    "video_fps": 20
+  },
+  "per_task_results": [
+    {
+      "task_id": 5,
+      "task_description": "pick up the tomato sauce and place it in the basket",
+      "episodes": 25,
+      "successes": 25,
+      "success_rate": 1.0,
+      "category": "unseen"
+    },
+    {
+      "task_id": 7,
+      "task_description": "pick up the milk and place it in the basket",
+      "episodes": 25,
+      "successes": 22,
+      "success_rate": 0.88,
+      "category": "unseen"
+    }
+  ],
+  "summary": {
+    "total_episodes": 50,
+    "total_successes": 47,
+    "total_success_rate": 0.94,
+    "seen_success_rate": 0.0,
+    "unseen_success_rate": 0.94,
+    "num_seen_tasks": 0,
+    "num_unseen_tasks": 2,
+    "num_tasks_evaluated": 2
+  }
+}

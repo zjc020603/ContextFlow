@@ -1,0 +1,70 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Replayed original/correct/milk/ep000: error=0.0, snapshots=3
+Replayed original/correct/milk/ep001: error=0.0, snapshots=3
+Replayed original/correct/milk/ep002: error=0.0, snapshots=3
+Replayed original/correct/milk/ep003: error=0.0, snapshots=3
+Replayed original/correct/milk/ep004: error=0.0, snapshots=3
+Replayed original/correct/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed original/correct/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed original/correct/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed original/correct/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed original/correct/tomato_sauce/ep004: error=0.0, snapshots=3
+Replayed original/no/milk/ep000: error=0.0, snapshots=3
+Replayed original/no/milk/ep001: error=0.0, snapshots=3
+Replayed original/no/milk/ep002: error=0.0, snapshots=3
+Replayed original/no/milk/ep003: error=0.0, snapshots=3
+Replayed original/no/milk/ep004: error=0.0, snapshots=3
+Replayed original/no/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed original/no/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed original/no/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed original/no/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed original/no/tomato_sauce/ep004: error=0.0, snapshots=3
+Replayed original/wrong/milk/ep000: error=0.0, snapshots=3
+Replayed original/wrong/milk/ep001: error=0.0, snapshots=3
+Replayed original/wrong/milk/ep002: error=0.0, snapshots=3
+Replayed original/wrong/milk/ep003: error=0.0, snapshots=3
+Replayed original/wrong/milk/ep004: error=0.0, snapshots=3
+Replayed original/wrong/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed original/wrong/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed original/wrong/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed original/wrong/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed original/wrong/tomato_sauce/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/milk/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/milk/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/milk/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/milk/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/milk/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/correct/tomato_sauce/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/milk/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/milk/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/milk/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/milk/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/milk/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/no/tomato_sauce/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/milk/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/milk/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/milk/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/milk/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/milk/ep004: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/tomato_sauce/ep000: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/tomato_sauce/ep001: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/tomato_sauce/ep002: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/tomato_sauce/ep003: error=0.0, snapshots=3
+Replayed swap_milk_tomato/wrong/tomato_sauce/ep004: error=0.0, snapshots=3
+Exported 180 verified observation snapshots

@@ -1,0 +1,107 @@
+[
+  {
+    "episode": 0,
+    "mode": "correct",
+    "bottom_quarter_median_percent": 78.86629013203603,
+    "minimum_percent": 68.14119729312998,
+    "maximum_percent": 87.1709845549917
+  },
+  {
+    "episode": 0,
+    "mode": "no",
+    "bottom_quarter_median_percent": 16.07452823708323,
+    "minimum_percent": 8.385901488440723,
+    "maximum_percent": 40.04562383940931
+  },
+  {
+    "episode": 0,
+    "mode": "wrong",
+    "bottom_quarter_median_percent": 70.3526740688761,
+    "minimum_percent": 43.15508949299412,
+    "maximum_percent": 88.56247825876132
+  },
+  {
+    "episode": 1,
+    "mode": "correct",
+    "bottom_quarter_median_percent": 69.32591868415265,
+    "minimum_percent": 48.22424785797648,
+    "maximum_percent": 84.98606750656421
+  },
+  {
+    "episode": 1,
+    "mode": "no",
+    "bottom_quarter_median_percent": 12.915054357872025,
+    "minimum_percent": 8.215079563858955,
+    "maximum_percent": 41.328772042901285
+  },
+  {
+    "episode": 1,
+    "mode": "wrong",
+    "bottom_quarter_median_percent": 69.34497243294182,
+    "minimum_percent": 43.00948873361173,
+    "maximum_percent": 86.99929232727676
+  },
+  {
+    "episode": 2,
+    "mode": "correct",
+    "bottom_quarter_median_percent": 69.66702816160702,
+    "minimum_percent": 48.89689903910348,
+    "maximum_percent": 86.59292079705331
+  },
+  {
+    "episode": 2,
+    "mode": "no",
+    "bottom_quarter_median_percent": 13.286357037930019,
+    "minimum_percent": 7.645629141932789,
+    "maximum_percent": 29.71635956590413
+  },
+  {
+    "episode": 2,
+    "mode": "wrong",
+    "bottom_quarter_median_percent": 69.67093632981542,
+    "minimum_percent": 41.99080465512769,
+    "maximum_percent": 87.97012823365827
+  },
+  {
+    "episode": 3,
+    "mode": "correct",
+    "bottom_quarter_median_percent": 66.22626597868609,
+    "minimum_percent": 49.85710410738368,
+    "maximum_percent": 85.77224954769495
+  },
+  {
+    "episode": 3,
+    "mode": "no",
+    "bottom_quarter_median_percent": 13.723937891404853,
+    "minimum_percent": 5.9691342055357755,
+    "maximum_percent": 39.784629380740434
+  },
+  {
+    "episode": 3,
+    "mode": "wrong",
+    "bottom_quarter_median_percent": 61.97550208333611,
+    "minimum_percent": 42.90653616603103,
+    "maximum_percent": 86.31967834649153
+  },
+  {
+    "episode": 4,
+    "mode": "correct",
+    "bottom_quarter_median_percent": 68.41969696737277,
+    "minimum_percent": 52.91935743687476,
+    "maximum_percent": 86.39769416151466
+  },
+  {
+    "episode": 4,
+    "mode": "no",
+    "bottom_quarter_median_percent": 16.645645263842603,
+    "minimum_percent": 7.908141308265608,
+    "maximum_percent": 45.921010364499324
+  },
+  {
+    "episode": 4,
+    "mode": "wrong",
+    "bottom_quarter_median_percent": 70.31840642399203,
+    "minimum_percent": 42.439670366562105,
+    "maximum_percent": 88.09747272871078
+  }
+]

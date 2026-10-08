@@ -1,0 +1,23 @@
+{
+  "src/openpi/models/demo_modality_ablation.py": "9afd141beb4081874b270e850d8cd597e697c3074724f96bb764027cc1f1b270",
+  "src/openpi/models/demo_modality_ablation_test.py": "f8480d7f4e153880ddcc291efff0fa9f8c4413b3577d4dcb61c0b7c018c9e713",
+  "scripts/serve_demo_modality_ablation.py": "cb99f686c07e25de9cd789c56da036fec105d3872542548cbcf4cf4841a49dec",
+  "scripts/summarize_demo_modality_ablation.py": "fb1a040cc4439a2e70b4a1ffb27608f26c564b13bd0696d46fef9cb78aa7e839",
+  "examples/libero/demo_modality_ablation.py": "83793a7225f7b02ed884924e35f0532c43925ce9700a78a4defbdf5caaf16f35",
+  "scripts/DEMO_MODALITY_ABLATION.md": "bb91dc0d223f642bc0b7c2c4544f92d0e6a25ec3b978f90f3da90d30a7c91c8b",
+  "src/openpi/models/contextflow.py": "506b80d027006b9dc0cd6c4cef43ea119de35f6fcf3802eb1bb017f948044f2c",
+  "src/openpi/models/gemma.py": "78fd7f4e2b83e8a80b6dff8e556a3321feb70008544a709873aba757f5270a68",
+  "src/openpi/models/model.py": "6642d7bfd94d2e82b99e367caa988304d2817f36bbc42d8f76c90cc39e6d9f4b",
+  "src/openpi/models/attention_capture.py": "9f6347faf0cf076c9f2c1e6fe3d5ba9584381f019d018f653e5cfa4af4208c60",
+  "src/openpi/policies/policy_incontext.py": "9d94bab3f8cf23e79d30563f921b836983730b79717e881de0edd2a866b9e7bd",
+  "src/openpi/policies/context_ablation.py": "a37cf69c853495a41abc2e18048fc2c39fe0ae032a59004f7af91bd5f1451281",
+  "src/openpi/policies/policy_config.py": "9a4d491c3d840ea171f924897a9e7d2f6da8ac6fa377adae6d62bac762ce58c7",
+  "src/openpi/transforms.py": "817eda32a8a46e0300848f68ee8e8392f4399768662bb73e1f91914c98ee4cce",
+  "examples/libero/context_ablation.py": "89c18ce2cf721eb43cab21aefbab7daea94666186b678b9e4908df2a1a4ef92f",
+  "examples/libero/main_incontext.py": "a2bdb619f6b0af329e3554cc81e1897a53993d64adb57b25e02e4d3f08002fb6",
+  "examples/libero/position_intervention.py": "5edb7ba3303576e6787f0a6ae9857eb65800f606b9078dbe82c31867c01f233a",
+  "scripts/serve_demo_action_ablation.py": "2d8356fbfbc5a028f412a93160e617b4ee7fc3d98a1bd6704439d5a664542084",
+  "scripts/check_attention_capture.py": "b242bd076f3aea507f9941d9635c50bc6c6c679726158b3af6235b9317098c9b",
+  "scripts/summarize_demo_action_ablation.py": "c6743b46fff4545e6fc16b8c084233105780c5f4d29c3f96d5a48e2218e6ca63",
+  "examples/libero/summarize_position_ablation.py": "8809952723d4ca71b9c19bfd786b4f660129a7b3773abee27cfb5706104b23da"
+}

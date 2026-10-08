@@ -1,0 +1,99 @@
+............................F
+=================================== FAILURES ===================================
+_____________ test_selective_loader_vs_paligemma_loader_difference _____________
+
+    @pytest.mark.manual
+    def test_selective_loader_vs_paligemma_loader_difference():
+        """Test that SelectiveVisionAndProjectionsLoader loads more components than VisionEncoderOnlyLoader.
+    
+        This test ensures that:
+        1. SelectiveVisionAndProjectionsLoader loads projections (unlike VisionEncoderOnlyLoader)
+        2. Both loaders handle vision encoder and embedder correctly
+        3. Both loaders randomly initialize LLM layers
+        """
+        # Create model
+        from openpi.models import contextflow
+        config = contextflow.ContextFlowConfig(
+            prompt_expert_variant="gemma_300m_v2",
+            action_expert_variant="gemma_300m_lora",
+            sample_frames=8,
+            sample_actions=128,
+        )
+    
+        key = jax.random.key(42)
+        model = config.create(key)
+        random_params = nnx.state(model, nnx.Param)
+    
+        # Load with both loaders
+        selective_loader = weight_loaders.SelectiveVisionAndProjectionsLoader(
+            params_path="s3://openpi-assets/checkpoints/pi0_base/params",
+            verbose=False
+        )
+        vision_only_loader = weight_loaders.VisionEncoderOnlyLoader(
+            verbose=False,
+            include_embedder=True
+        )
+    
+>       selective_params = selective_loader.load(random_params)
+
+src/openpi/training/config_libero_test.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/openpi/training/weight_loaders.py:266: in load
+    flat_ref = flax.traverse_util.flatten_dict(params, sep="/")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+xs = State({
+  'PaliGemma': {
+    'img': {
+      'Transformer': {
+        'encoder_norm': {
+          'bias': VariableState...1478, -0.11915696, -0.05881187, ..., -0.14368466,
+               0.25462672, -0.04877939]], dtype=float32)
+    )
+  }
+})
+keep_empty_nodes = False, is_leaf = None, sep = '/'
+
+    def flatten_dict(xs, keep_empty_nodes=False, is_leaf=None, sep=None):
+      """Flatten a nested dictionary.
+    
+      The nested keys are flattened to a tuple.
+      See ``unflatten_dict`` on how to restore the
+      nested dictionary structure.
+    
+      Example::
+    
+        >>> from flax.traverse_util import flatten_dict
+    
+        >>> xs = {'foo': 1, 'bar': {'a': 2, 'b': {}}}
+        >>> flat_xs = flatten_dict(xs)
+        >>> flat_xs
+        {('foo',): 1, ('bar', 'a'): 2}
+    
+      Note that empty dictionaries are ignored and
+      will not be restored by ``unflatten_dict``.
+    
+      Args:
+        xs: a nested dictionary
+        keep_empty_nodes: replaces empty dictionaries
+          with ``traverse_util.empty_node``.
+        is_leaf: an optional function that takes the
+          next nested dictionary and nested keys and
+          returns True if the nested dictionary is a
+          leaf (i.e., should not be flattened further).
+        sep: if specified, then the keys of the returned
+          dictionary will be ``sep``-joined strings (if
+          ``None``, then keys will be tuples).
+      Returns:
+        The flattened dictionary.
+      """
+>     assert isinstance(
+        xs, (flax.core.FrozenDict, dict)
+      ), f'expected (frozen)dict; got {type(xs)}'
+E     AssertionError: expected (frozen)dict; got <class 'flax.nnx.statelib.State'>
+
+../../.venv/lib/python3.11/site-packages/flax/traverse_util.py:114: AssertionError
+=========================== short test summary info ============================
+FAILED src/openpi/training/config_libero_test.py::test_selective_loader_vs_paligemma_loader_difference
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 28 passed in 147.45s (0:02:27)

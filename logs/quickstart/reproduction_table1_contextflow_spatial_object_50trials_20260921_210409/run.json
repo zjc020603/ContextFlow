@@ -1,0 +1,18 @@
+{
+  "config": "ContextFlow",
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "num_trials_per_task": 50,
+  "client_seed": 7,
+  "policy_rng_initial_seed_per_suite": 0,
+  "fresh_server_per_suite": true,
+  "video_fps": 20,
+  "suites": [
+    "libero_spatial",
+    "libero_object"
+  ],
+  "results": {
+    "libero_spatial": "libero_spatial/libero_spatial.json",
+    "libero_object": "libero_object/libero_object.json"
+  },
+  "provenance": "provenance/manifest.json"
+}

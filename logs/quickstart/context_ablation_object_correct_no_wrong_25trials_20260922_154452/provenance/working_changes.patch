@@ -1,0 +1,210 @@
+diff --git a/README.md b/README.md
+index e4ab804..0bd830b 100644
+--- a/README.md
++++ b/README.md
+@@ -93,6 +93,22 @@ defaults to `checkpoints/ContextFlow/ContextFlow_run1/19999`.
+ Logs and results are saved under descriptive, timestamped `logs/quickstart/`
+ directories. Videos are grouped by task instruction and exported at 20 FPS.
+ 
++Choose **9** for the milk / tomato-sauce context experiment. Both are held-out
++LIBERO-Object tasks. The launcher runs each language instruction with its own
++demonstration (`correct`), all demonstration masks disabled (`no`), and the other
++task's demonstration (`wrong`). Language and live observations remain unchanged.
++Each condition uses the same initial states and per-replan random seeds. It runs
++a fixed 280 control steps, checking both objects' LIBERO `In` predicates each step;
++neither goal ends a trial early. Results distinguish `language_only`, `other_only`,
++`both`, and `neither`, with paired transition counts in `comparison.json`.
++This is a separate intervention protocol, not the original Table 1 evaluation.
++The two task scenes differ, so comparisons are paired within each language/task.
++
++Videos are stored under `<run>/<condition>/videos/<instruction>/`, with actions,
++end-effector/gripper trajectories, object positions, and per-step goal predicates
++in `<condition>/trajectories/`. Each episode also records its actual demonstration
++and random seeds. This launcher uses local-only demonstration loading.
++
+ The policy server and simulator can run on separate machines; set `--host` on the evaluation client to the server address. To test the server with random observations, see the [simple client](examples/simple_client/README.md).
+ 
+ ## Real-World Dataset
+diff --git a/quickstart.sh b/quickstart.sh
+index d8fba0b..48ec3ca 100755
+--- a/quickstart.sh
++++ b/quickstart.sh
+@@ -368,6 +368,42 @@ qs_action() (
+             printf '开始 ContextFlow 训练，共 20,000 步；W&B 模式：%s。\n' "$WANDB_MODE"
+             qs_run train "$QS_ROOT/.venv/bin/python" -u "$QS_ROOT/scripts/train.py" ContextFlow --exp-name "$exp" --batch-size "$batch"
+             ;;
++        9)
++            qs_number QS_TRIALS '每个任务、每种 context 的评估次数' 25 1 50 || return
++            QS_RUN_NAME="context_ablation_object_correct_no_wrong_${QS_TRIALS}trials"
++            qs_activate train && qs_dataset && qs_checkpoint && qs_gpu || return
++            qs_number QS_PORT '策略服务端口' 8000 1 65535 || return
++            qs_require "$QS_ROOT/examples/libero/.venv/bin/python" || return
++            qs_server_command
++            QS_SERVER+=(--policy.context-ablation --policy.local-files-only)
++            if ((QS_DRY_RUN)); then
++                qs_print_command "${QS_SERVER[@]}"
++                qs_print_command "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.context_ablation \
++                    --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" --output-dir '<运行目录>'
++                return
++            fi
++            qs_logs || return
++            "$QS_ROOT/.venv/bin/python" - "$QS_LOG_DIR" "$QS_CHECKPOINT" "$QS_TRIALS" "$QS_PORT" <<'PY'
++import datetime, json, pathlib, sys
++root, checkpoint, trials, port = sys.argv[1:]
++(pathlib.Path(root) / 'run.json').write_text(json.dumps({
++    'created_at': datetime.datetime.now().astimezone().isoformat(),
++    'checkpoint': str(pathlib.Path(checkpoint).resolve()), 'inference_dtype': 'float32',
++    'num_trials_per_task_per_condition': int(trials), 'port': int(port),
++    'conditions': ['correct', 'no', 'wrong'], 'tasks': ['milk', 'tomato_sauce'],
++    'client_seed': 7, 'paired_policy_seed': 0, 'max_steps': 280,
++    'termination': 'fixed horizon; both In predicates checked every step',
++}, indent=2) + '\n')
++PY
++            qs_port_free || return
++            qs_start server "${QS_SERVER[@]}" || return
++            qs_wait_server "$QS_PID" || return
++            qs_activate libero || return
++            qs_run context_ablation "$QS_ROOT/examples/libero/.venv/bin/python" -u -m examples.libero.context_ablation \
++                --host "$QS_HOST" --port "$QS_PORT" --num-trials-per-task "$QS_TRIALS" \
++                --output-dir "$QS_LOG_DIR" --verify-interventions || return
++            "$QS_ROOT/examples/libero/.venv/bin/python" -m examples.libero.summarize_context_ablation "$QS_LOG_DIR"
++            ;;
+         *) printf '请输入菜单中的编号。\n'; return 1 ;;
+     esac
+ )
+@@ -389,7 +425,8 @@ qs_main() {
+         printf '%s\n' '1  检查环境、资源路径和 GPU' '2  进入训练 / 策略服务环境终端' \
+             '3  进入 LIBERO 模拟器环境终端' '4  启动 ContextFlow 策略服务' \
+             '5  连接已有策略服务，运行 LIBERO 评估' '6  一键评估：启动服务 → 等待就绪 → 评估 → 关闭服务' \
+-            '7  计算训练集归一化统计' '8  启动新的 ContextFlow 训练' '0  退出'
++            '7  计算训练集归一化统计' '8  启动新的 ContextFlow 训练' \
++            '9  牛奶 / 番茄酱 correct / no / wrong context 对照实验' '0  退出'
+         read -r -p '输入编号并回车：' choice || break
+         [[ "$choice" != 0 ]] || break
+         qs_action "$choice"
+diff --git a/scripts/serve_policy.py b/scripts/serve_policy.py
+index d9bccfa..c60ca6f 100644
+--- a/scripts/serve_policy.py
++++ b/scripts/serve_policy.py
+@@ -41,6 +41,10 @@ class Checkpoint:
+     dir: str
+     # Optional: Override inference dtype (e.g., "float32", "bfloat16"). Defaults to bfloat16 if not specified.
+     inference_dtype: str | None = None
++    # Enable paired correct/no/wrong demonstration evaluation requests.
++    context_ablation: bool = False
++    # Use the already-downloaded LIBERO demo dataset without contacting Hugging Face.
++    local_files_only: bool = False
+ 
+ 
+ @dataclasses.dataclass
+@@ -105,12 +109,20 @@ def create_policy_from_checkpoint(
+     train_config = _config.get_config(checkpoint.config)
+     use_incontext = loader == LoaderMode.INCONTEXT or (loader == LoaderMode.AUTO and _is_incontext_config(train_config))
+ 
++    if checkpoint.local_files_only:
++        if not use_incontext or not hasattr(train_config.data, "policy_local_files_only"):
++            raise ValueError("This config does not support local-only demonstration loading")
++        train_config = dataclasses.replace(
++            train_config, data=dataclasses.replace(train_config.data, policy_local_files_only=True)
++        )
++
+     if use_incontext:
+         return _policy_config.create_trained_policy_incontext(
+             train_config,
+             checkpoint.dir,
+             default_prompt=default_prompt,
+             inference_dtype=checkpoint.inference_dtype,
++            context_ablation=checkpoint.context_ablation,
+         )
+ 
+     return _policy_config.create_trained_policy(
+diff --git a/src/openpi/policies/policy_config.py b/src/openpi/policies/policy_config.py
+index 8997af9..4e16b2e 100644
+--- a/src/openpi/policies/policy_config.py
++++ b/src/openpi/policies/policy_config.py
+@@ -77,6 +77,7 @@ def create_trained_policy_incontext(
+     default_prompt: str | None = None,
+     norm_stats: dict[str, transforms.NormStats] | None = None,
+     inference_dtype: str | None = None,
++    context_ablation: bool = False,
+ ) -> _policy.Policy:
+     """Create a policy from a trained checkpoint.
+ 
+@@ -141,6 +142,7 @@ def create_trained_policy_incontext(
+ 
+     return _policy_incontext.PolicyIncontext(
+         model,
++        context_ablation=context_ablation,
+         # TODO: check the transforms here, if it is the same as the one in the training
+         transforms=input_transforms,
+         output_transforms=[
+diff --git a/src/openpi/policies/policy_incontext.py b/src/openpi/policies/policy_incontext.py
+index c1a8d4b..77508b4 100644
+--- a/src/openpi/policies/policy_incontext.py
++++ b/src/openpi/policies/policy_incontext.py
+@@ -12,6 +12,7 @@ from openpi_client import base_policy as _base_policy
+ from typing_extensions import override
+ 
+ from openpi import transforms as _transforms
++from openpi.policies import context_ablation as _context_ablation
+ from openpi.models import model as _model
+ from openpi.shared import array_typing as at
+ from openpi.shared import nnx_utils
+@@ -29,6 +30,7 @@ class PolicyIncontext(BasePolicy):
+         output_transforms: Sequence[_transforms.DataTransformFn] = (),
+         sample_kwargs: dict[str, Any] | None = None,
+         metadata: dict[str, Any] | None = None,
++        context_ablation: bool = False,
+     ):
+         self._sample_actions = nnx_utils.module_jit(model.sample_actions)
+         # self._sample_actions = model.sample_actions
+@@ -37,19 +39,34 @@ class PolicyIncontext(BasePolicy):
+         self._rng = rng or jax.random.key(0)
+         self._sample_kwargs = sample_kwargs or {}
+         self._metadata = metadata or {}
++        self._context_ablation = context_ablation
++        if context_ablation:
++            self._metadata = {**self._metadata, "context_ablation_protocol": 1}
+         
+     @override
+     def infer(self, obs: dict) -> dict:  # type: ignore[misc]
+         # Make a copy since transformations may modify the inputs in place.
+         inputs = jax.tree.map(lambda x: x, obs)
++        experiment = inputs.pop("context_ablation", None)
++        context_info = None
++        if experiment is not None:
++            if not self._context_ablation:
++                raise ValueError("Start the server with --policy.context-ablation for context experiments")
++            inputs, context_info, sample_rng = _context_ablation.prepare_request(inputs, experiment)
+         # TODO: The _input_transform should be consistent with the one
+         # used in transform_dataset. The definition of _input_transform is in create_trained_policy_incontext
+         inputs = self._input_transform(inputs) 
++        if context_info is not None:
++            context_info["selected_episode"] = np.asarray(inputs["selected_episode"]).tolist()
++            if context_info["mode"] == "no":
++                inputs = _context_ablation.mask_demonstration(inputs)
++                context_info["selected_episode"] = []
+         
+         # Make a batch and convert to jax.Array.
+         inputs = jax.tree.map(lambda x: jnp.asarray(x)[np.newaxis, ...], inputs)
+ 
+-        self._rng, sample_rng = jax.random.split(self._rng)
++        if context_info is None:
++            self._rng, sample_rng = jax.random.split(self._rng)
+         outputs = {
+             "state": inputs["state"],
+             "actions": self._sample_actions(sample_rng, _model.ObservationIncontext.from_dict(inputs), **self._sample_kwargs),
+@@ -57,7 +74,12 @@ class PolicyIncontext(BasePolicy):
+ 
+         # Unbatch and convert to np.ndarray.
+         outputs = jax.tree.map(lambda x: np.asarray(x[0, ...]), outputs)
+-        return self._output_transform(outputs)
++        outputs = self._output_transform(outputs)
++        if context_info is not None:
++            if not np.isfinite(outputs["actions"]).all():
++                raise FloatingPointError("Nonfinite actions in context ablation")
++            outputs["context_ablation"] = context_info
++        return outputs
+ 
+     @property
+     def metadata(self) -> dict[str, Any]:

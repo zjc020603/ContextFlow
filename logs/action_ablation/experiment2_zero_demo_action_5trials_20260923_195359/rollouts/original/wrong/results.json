@@ -1,0 +1,19 @@
+{
+  "milk": {
+    "episodes": 5,
+    "language_successes": 0,
+    "other_successes": 4,
+    "outcomes": {
+      "other_only": 4,
+      "neither": 1
+    }
+  },
+  "tomato_sauce": {
+    "episodes": 5,
+    "language_successes": 0,
+    "other_successes": 5,
+    "outcomes": {
+      "other_only": 5
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "variants": [
+    "zero_state",
+    "zero_state_action"
+  ],
+  "trials_per_cell": 5,
+  "layouts": [
+    "original",
+    "swap_milk_tomato"
+  ],
+  "languages": [
+    "milk",
+    "tomato_sauce"
+  ],
+  "context": [
+    "correct",
+    "wrong"
+  ],
+  "scene_task": "tomato_sauce",
+  "new_rollouts_expected": 80,
+  "attention_expected": 240,
+  "baseline": "logs/quickstart/position_swap_object_25trials_20260922_175506",
+  "action_reference": "logs/action_ablation/experiment2_zero_demo_action_5trials_20260923_195359",
+  "model_gpus": {
+    "zero_state": 2,
+    "zero_state_action": 4
+  },
+  "simulator_gpus": {
+    "zero_state": 3,
+    "zero_state_action": 5
+  },
+  "ports": {
+    "zero_state": 8124,
+    "zero_state_action": 8125
+  },
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "parameter_sha256": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "new_rollouts": 80,
+  "captures": 240,
+  "servers_stopped": true,
+  "completed_at": "2026-09-24T17:09:21.428212+08:00",
+  "trial_seconds": {
+    "zero_state": 881.5856403093785,
+    "zero_state_action": 878.8551478013396
+  },
+  "reports": [
+    "EXPERIMENT_RESULTS.md",
+    "CODE_CHANGES.md"
+  ]
+}

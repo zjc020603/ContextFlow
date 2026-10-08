@@ -1,0 +1,14 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+demo_tomato_sauce__language_milk__mask_background 0 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 27.0s
+demo_tomato_sauce__language_milk__mask_background 1 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 24.1s
+demo_tomato_sauce__language_milk__mask_background 2 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 24.3s
+demo_tomato_sauce__language_milk__mask_background 3 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 23.7s
+demo_tomato_sauce__language_milk__mask_background 4 {'tomato_sauce_1': True, 'milk_1': False, 'butter_1': False, 'orange_juice_1': False, 'chocolate_pudding_1': False, 'bbq_sauce_1': False} 23.9s
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)

@@ -1,0 +1,75 @@
+{
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "config": "ContextFlow",
+  "inference_dtype": "float32",
+  "jax_default_matmul_precision": "float32",
+  "num_trials_per_task": 50,
+  "client_seed": 7,
+  "policy_rng_initial_seed": 0,
+  "policy_instances": "one independent server per suite",
+  "num_flow_steps": 10,
+  "action_horizon": 50,
+  "replan_steps": 5,
+  "sample_frames": 8,
+  "sample_states_and_actions": 128,
+  "demo_selection": "first episode of the same task; fixed for test split by existing InjectDemoFromCustomDataset",
+  "git_commit": "c6dee891f0afd520aec5a8869891e9b06b99f856",
+  "dataset_revision": {
+    "repo": "physical-intelligence/libero",
+    "revision": "v2.0",
+    "commit": "9dfa69510ea9e1613fc54112bc706444b686a231",
+    "files": 1699,
+    "verified": true
+  },
+  "runs": {
+    "libero_spatial": "/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_20260921_210409/libero_spatial",
+    "libero_object": "/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_20260921_210409/libero_object"
+  },
+  "paper_url": "https://arxiv.org/html/2609.06852v1",
+  "paper_rates_percent": {
+    "spatial_cookie_box": 86,
+    "spatial_next_to_plate": 42,
+    "object_milk": 76,
+    "object_tomato_sauce": 90,
+    "spatial_average": 64,
+    "object_average": 83,
+    "overall_average": 73.5
+  },
+  "normalization_path": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/assets/physical-intelligence/libero/norm_stats.json",
+  "source_sha256": {
+    "scripts/serve_policy.py": "3ff91bd9e4eeabc42d0218a1fad0180db7a9f61434013b7611ca64f0678953e2",
+    "examples/libero/main_incontext.py": "5d676d6cccbc4988323a117a9acec955bfc35ecd698dedcece23aa8cbf9b8b82",
+    "src/openpi/models/contextflow.py": "fc584684bf5a96c0d7950a171e4f72ca060668c2cab41b4952a8a00e69bdac6b",
+    "src/openpi/models/gemma.py": "d4fe16eae920e000ce8c19a33f00776faf69e343ff3267d5ac7bf0347a3bf19a",
+    "src/openpi/training/config_libero.py": "4164c9e8cf45afec0780892dbb4d31199759a8a4dd0c2e26535b87f43dbf6b21",
+    "src/openpi/transforms.py": "817eda32a8a46e0300848f68ee8e8392f4399768662bb73e1f91914c98ee4cce",
+    "src/openpi/training/custom_dataset.py": "6c3262a2b88095d45ad9666782839c80ea3df74c0c681b91d8048cdd67d379dc"
+  },
+  "demo_episodes": {
+    "pick up the black bowl on the cookie box and place it on the plate": {
+      "dataset_task_index": 35,
+      "episode": 1278,
+      "suite": "libero_spatial"
+    },
+    "pick up the black bowl next to the plate and place it on the plate": {
+      "dataset_task_index": 36,
+      "episode": 1280,
+      "suite": "libero_spatial"
+    },
+    "pick up the tomato sauce and place it in the basket": {
+      "dataset_task_index": 28,
+      "episode": 821,
+      "suite": "libero_object"
+    },
+    "pick up the milk and place it in the basket": {
+      "dataset_task_index": 25,
+      "episode": 814,
+      "suite": "libero_object"
+    }
+  },
+  "video_postprocessing": {
+    "original_fps": 10,
+    "current_fps": 20,
+    "record": "video_timing_update.json"
+  }
+}

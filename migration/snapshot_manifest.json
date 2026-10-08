@@ -1,0 +1,221 @@
+{
+  "snapshot_date": "2026-10-08",
+  "destination": "https://github.com/zjc020603/ContextFlow",
+  "worktrees": [
+    {
+      "path": ".",
+      "branch": "main",
+      "source_head": "3a1e51041df0be196acfe4d6ebad7da67542e3dd"
+    },
+    {
+      "path": ".worktrees/pi0-full",
+      "branch": "experiment/pi0-full-contextflow",
+      "source_head": "8088413aeaf5666b149f1a929a2c4480bbd51465"
+    },
+    {
+      "path": ".worktrees/pi05-full",
+      "branch": "experiment/pi05-full-contextflow",
+      "source_head": "597539deeb868bea72c8e2ee34f054a71e32bcce"
+    }
+  ],
+  "local_tools": [
+    {
+      "original": ".cache/audit_attention_timeline.py",
+      "archived_as": "migration/local-tools/audit_attention_timeline.py",
+      "sha256": "bd98308b88431046a4c9163ce58f17e061781e72d5fbad24ec2a90554b24fcaf"
+    },
+    {
+      "original": ".cache/audit_goal_long_videos.py",
+      "archived_as": "migration/local-tools/audit_goal_long_videos.py",
+      "sha256": "837ea9ccdab93d6b4d32b5b391542bf60a2454cad90236c27fa812c550cde27c"
+    },
+    {
+      "original": ".cache/audit_position_run.py",
+      "archived_as": "migration/local-tools/audit_position_run.py",
+      "sha256": "6153e3aa6a7b050962c02d33012e4c9eb1bae883db066cd0c2076bf24a129325"
+    },
+    {
+      "original": ".cache/audit_timeline_frames.py",
+      "archived_as": "migration/local-tools/audit_timeline_frames.py",
+      "sha256": "e4421ec2f702ad945d7fffb2c96f8743cc7c41b153e56b764b9979271dfae62c"
+    },
+    {
+      "original": ".cache/check_attention_timeline.cjs",
+      "archived_as": "migration/local-tools/check_attention_timeline.cjs",
+      "sha256": "b53dfc0a1f2459766d58464be2d0bfceaa854479af8ac2c929ad75092236ce52"
+    },
+    {
+      "original": ".cache/check_attention_tutorial.cjs",
+      "archived_as": "migration/local-tools/check_attention_tutorial.cjs",
+      "sha256": "6540b3650af8ff07d90cb6e35dea15ef973e740d883d906b6a9ac315a67d285c"
+    },
+    {
+      "original": ".cache/check_context_comparison.cjs",
+      "archived_as": "migration/local-tools/check_context_comparison.cjs",
+      "sha256": "58198c830a5f1da703c09f12e418c3c340c7493cb802e27e8ecf7b958691e6ce"
+    },
+    {
+      "original": ".cache/check_context_masking.py",
+      "archived_as": "migration/local-tools/check_context_masking.py",
+      "sha256": "352e1f8cf7bd0c0a871899f8572fd44566ab9014231c8fa651e2120391986a8c"
+    },
+    {
+      "original": ".cache/check_libero_environment.py",
+      "archived_as": "migration/local-tools/check_libero_environment.py",
+      "sha256": "7fcb05be4dc73b9c7fca908234578c650e56915f518a15ac783c2d2ea3fe8107"
+    },
+    {
+      "original": ".cache/check_main_environment.py",
+      "archived_as": "migration/local-tools/check_main_environment.py",
+      "sha256": "384e52bb05c7b6dba3d01a3b24ebff250582924de208fb12f8f24a5d0d897d44"
+    },
+    {
+      "original": ".cache/download_assets.py",
+      "archived_as": "migration/local-tools/download_assets.py",
+      "sha256": "f28d1c5f63c4ab05d60c6e4eaf1b5a62c068c3cba1a5155d7041dac63bd6eb23"
+    },
+    {
+      "original": ".cache/download_contextflow.py",
+      "archived_as": "migration/local-tools/download_contextflow.py",
+      "sha256": "eac82279b39a27c3ea8ad0780e58e692a858e97d44eff61b0959b6d912ee3bb2"
+    },
+    {
+      "original": ".cache/download_libero_torch.py",
+      "archived_as": "migration/local-tools/download_libero_torch.py",
+      "sha256": "d56854bf1d396ef007e9fc16984dfc9cef265b890c51c6b17968b40eb8921b25"
+    },
+    {
+      "original": ".cache/finalize_attention_report.py",
+      "archived_as": "migration/local-tools/finalize_attention_report.py",
+      "sha256": "c176b9c840eae84807f26c1f3766a9d44f867b12bfc8b16a1f486b867a6e3914"
+    },
+    {
+      "original": ".cache/finalize_attention_timeline.py",
+      "archived_as": "migration/local-tools/finalize_attention_timeline.py",
+      "sha256": "7324b55c5c7c954314cc579d1009ed6b77e43767a4051a94aab8b50ef9ff9e7f"
+    },
+    {
+      "original": ".cache/finalize_context_ablation.py",
+      "archived_as": "migration/local-tools/finalize_context_ablation.py",
+      "sha256": "225ea66ef9e08e5c8df4869bd3e38fe8141db0ddaf5357be5007c0dd81b09d24"
+    },
+    {
+      "original": ".cache/finalize_language_vision.py",
+      "archived_as": "migration/local-tools/finalize_language_vision.py",
+      "sha256": "cfe281440a125bf42d5c9a83d2c97beecda72bf65da3bd4bbd681f76d58e87a7"
+    },
+    {
+      "original": ".cache/finalize_reproduction.py",
+      "archived_as": "migration/local-tools/finalize_reproduction.py",
+      "sha256": "090379953726cf6de54cccb5aef210f18b76379a2228bcb8c0a53ed1d1fc89de"
+    },
+    {
+      "original": ".cache/goal_long_finalize.py",
+      "archived_as": "migration/local-tools/goal_long_finalize.py",
+      "sha256": "2a2eeded49772a82dcf7c4c12eadc5168b9da5f0ed6c8ba4832aa25ad09e79a7"
+    },
+    {
+      "original": ".cache/goal_long_recovery.py",
+      "archived_as": "migration/local-tools/goal_long_recovery.py",
+      "sha256": "d7f382d09158a03f9d25a54839e1ad6fdef83d581088ef55dec51090c29b22ab"
+    },
+    {
+      "original": ".cache/monitor_reproduction.py",
+      "archived_as": "migration/local-tools/monitor_reproduction.py",
+      "sha256": "bc9eab0ed216a414f3266916fce81d2801c3566ead78f08633329a3e4b8b236b"
+    },
+    {
+      "original": ".cache/organize_reproduction.py",
+      "archived_as": "migration/local-tools/organize_reproduction.py",
+      "sha256": "91c380dc11817c506db1aa970a26f929836f80f27fd877867c2c9c6381589952"
+    },
+    {
+      "original": ".cache/probe_visual.py",
+      "archived_as": "migration/local-tools/probe_visual.py",
+      "sha256": "6582b6f603224dc28af12975fb1957cba5934d0e030c06242d4a7a53f5d4ff8f"
+    },
+    {
+      "original": ".cache/report_position_run.py",
+      "archived_as": "migration/local-tools/report_position_run.py",
+      "sha256": "d45b0879f3cbaedd8583ccc8cee44b0bd9472f3f13ed61db86a3a7835482790e"
+    },
+    {
+      "original": ".cache/run_context_condition.sh",
+      "archived_as": "migration/local-tools/run_context_condition.sh",
+      "sha256": "c68285a7c48ad594eee761f20f34325d31154ae324779f283b3b02258c73cb74"
+    },
+    {
+      "original": ".cache/run_demo_modality_trial.sh",
+      "archived_as": "migration/local-tools/run_demo_modality_trial.sh",
+      "sha256": "99ad4491df02f70b9a1bd12bf56457ac70ea5b752f5a9fd0a30b9a909f2fea2d"
+    },
+    {
+      "original": ".cache/run_no_context_zero.sh",
+      "archived_as": "migration/local-tools/run_no_context_zero.sh",
+      "sha256": "7cc12ea077a12bc067fd292940c57f9556c7d6dc7a3e4a1e1ce08135e0024c0e"
+    },
+    {
+      "original": ".cache/run_position_cell.sh",
+      "archived_as": "migration/local-tools/run_position_cell.sh",
+      "sha256": "0bd0cdd65fb23c92cbce3f08ebc533bde8be0a0dd5d8b6cb5158a76aa0b9dcce"
+    },
+    {
+      "original": ".cache/start_language_vision.py",
+      "archived_as": "migration/local-tools/start_language_vision.py",
+      "sha256": "03e137800767749d9c6eb6333e0102658be2af770306ce0f32550e70ae6eac35"
+    },
+    {
+      "original": ".cache/update_no_context_reports.py",
+      "archived_as": "migration/local-tools/update_no_context_reports.py",
+      "sha256": "0960f9ef64c8f177cec5e61e4265e56c797712e0d7f7d8fc477f1910bc88985b"
+    },
+    {
+      "original": ".cache/validate_language_vision.cjs",
+      "archived_as": "migration/local-tools/validate_language_vision.cjs",
+      "sha256": "81683e907eb6e3d005fee1d5ddeae2cb208019866ce152ee9e8921c9d2afd7a8"
+    },
+    {
+      "original": ".cache/validate_language_vision_videos.py",
+      "archived_as": "migration/local-tools/validate_language_vision_videos.py",
+      "sha256": "5b21d99b20aa5efc969366d3c53bbd4ad23d9293788bd64ea5ba76aea4bf37c1"
+    },
+    {
+      "original": ".cache/verify_downloaded_models.py",
+      "archived_as": "migration/local-tools/verify_downloaded_models.py",
+      "sha256": "b52b40080143f85920914150c6fe30ba5fb147442f77b6ede9ca4e2a32044616"
+    }
+  ],
+  "external_resources": [
+    "/data/zjc/workspace/datasets",
+    "/data/zjc/workspace/models"
+  ],
+  "large_artifacts_pending": {
+    "experiment_numeric_arrays_and_videos": "about 12.9 GB; upload method pending"
+  },
+  "excluded_from_public_upload": [
+    "authentication credentials and private keys"
+  ],
+  "status": "preparing; not a complete migration backup",
+  "excluded_from_migration": [
+    "public downloadable pretrained/released model weights",
+    "rebuildable virtual environments and dependency caches",
+    "all locally trained checkpoints (explicit user choice)"
+  ],
+  "verification": {
+    "focused_tests_passed": 20,
+    "public_upload_secret_scan": "passed (3444 source/report files plus staged-file scan)",
+    "notes": "Source/report snapshot validated. Large experimental arrays and videos still require separate upload. All model checkpoints are excluded by user choice."
+  },
+  "excluded_local_training_output": {
+    "publicly_redownloadable": false,
+    "steps": [
+      5000,
+      10000,
+      15000,
+      19999
+    ],
+    "per_step_params_GiB": 12.51,
+    "per_step_training_state_GiB": 20.34,
+    "retention": "excluded by user request; original files retained on old cluster"
+  }
+}

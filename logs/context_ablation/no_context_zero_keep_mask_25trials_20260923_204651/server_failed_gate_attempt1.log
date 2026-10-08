@@ -1,0 +1,32 @@
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_no_context_zero.py", line 294, in <module>
+    policy = ZeroPolicy(args)
+             ^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_no_context_zero.py", line 79, in __init__
+    self.gate(baseline, Path(args.source))
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_no_context_zero.py", line 146, in gate
+    assert array_hash(inputs) == array_hash(new_inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero

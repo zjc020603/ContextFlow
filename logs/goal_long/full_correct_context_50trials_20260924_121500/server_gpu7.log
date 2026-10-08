@@ -1,0 +1,15 @@
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:websockets.server:server listening on 127.0.0.1:8137
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 47726) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put both moka pots on the stove' (index=6), demo episode(s): [10]
+INFO:root:Connection from ('127.0.0.1', 47726) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 35178) opened
+INFO:root:Connection from ('127.0.0.1', 35178) closed

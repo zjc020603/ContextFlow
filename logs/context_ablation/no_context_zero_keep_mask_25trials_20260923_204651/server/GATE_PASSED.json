@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "historical_baselines": 6,
+  "zero_intervention_checks": 2,
+  "parameter_sha256": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4"
+}

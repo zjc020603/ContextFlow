@@ -1,0 +1,23 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/language_vision_experiment.py", line 179, in <module>
+    run(p.parse_args())
+  File "/data/zjc/workspace/ContextFlow/examples/libero/language_vision_experiment.py", line 93, in run
+    request, masks, mask_info = intervene(env, request, target, other, args.vision)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/live_vision_intervention.py", line 79, in intervene
+    mask = background_mask(target_mask, np.isin(ids, forbidden_ids))
+  File "/data/zjc/workspace/ContextFlow/examples/libero/live_vision_intervention.py", line 44, in background_mask
+    raise ValueError(f'Not enough visible background pixels: {len(xx)} < {count}')
+ValueError: Not enough visible background pixels: 3178 < 5733
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

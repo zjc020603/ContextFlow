@@ -1,0 +1,38 @@
+{
+  "milk/correct": {
+    "pairs": 25,
+    "demo_object": "milk",
+    "original_demo_only_to_swapped_old_position_occupant_only": 24,
+    "original_demo_only_to_swapped_same_demo_only": 0
+  },
+  "milk/no": {
+    "pairs": 25,
+    "demo_object": null,
+    "original_demo_only_to_swapped_old_position_occupant_only": null,
+    "original_demo_only_to_swapped_same_demo_only": null
+  },
+  "milk/wrong": {
+    "pairs": 25,
+    "demo_object": "tomato_sauce",
+    "original_demo_only_to_swapped_old_position_occupant_only": 11,
+    "original_demo_only_to_swapped_same_demo_only": 0
+  },
+  "tomato_sauce/correct": {
+    "pairs": 25,
+    "demo_object": "tomato_sauce",
+    "original_demo_only_to_swapped_old_position_occupant_only": 15,
+    "original_demo_only_to_swapped_same_demo_only": 0
+  },
+  "tomato_sauce/no": {
+    "pairs": 25,
+    "demo_object": null,
+    "original_demo_only_to_swapped_old_position_occupant_only": null,
+    "original_demo_only_to_swapped_same_demo_only": null
+  },
+  "tomato_sauce/wrong": {
+    "pairs": 25,
+    "demo_object": "milk",
+    "original_demo_only_to_swapped_old_position_occupant_only": 23,
+    "original_demo_only_to_swapped_same_demo_only": 0
+  }
+}

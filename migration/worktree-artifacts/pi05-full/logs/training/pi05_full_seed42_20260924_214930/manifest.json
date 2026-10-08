@@ -1,0 +1,90 @@
+{
+  "experiment": "pi05_full_seed42_20260924_214930",
+  "created": "2026-09-24T21:49:30.477355+08:00",
+  "git_commit": "597539deeb868bea72c8e2ee34f054a71e32bcce",
+  "branch": "experiment/pi05-full-contextflow",
+  "cwd": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full",
+  "command": [
+    "/data/zjc/workspace/ContextFlow/.venv/bin/python",
+    "scripts/train.py",
+    "ContextFlow_pi05_full",
+    "--exp-name",
+    "pi05_full_seed42_20260924_214930",
+    "--batch-size",
+    "32",
+    "--fsdp-devices",
+    "8",
+    "--num-train-steps",
+    "20000",
+    "--seed",
+    "42",
+    "--data.local-files-only",
+    "--no-wandb-enabled",
+    "--weight-loader.params-path",
+    "/data/zjc/workspace/ContextFlow/.model-cache/openpi-assets/checkpoints/pi05_base/params"
+  ],
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "0,1,2,3,4,5,6,7",
+    "LEROBOT_HOME": "/data/zjc/workspace/datasets",
+    "HF_DATASETS_CACHE": "/data/zjc/workspace/datasets/.cache/huggingface/datasets",
+    "OPENPI_DATA_HOME": "/data/zjc/workspace/models/openpi",
+    "HF_HUB_OFFLINE": "1",
+    "PYTHONPATH": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src:/data/zjc/workspace/ContextFlow/.worktrees/pi05-full:/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/packages/openpi-client/src",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+    "JAX_DEFAULT_MATMUL_PRECISION": "float32",
+    "PYTHONUNBUFFERED": "1",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "initial_checkpoint_source": "gs://openpi-assets/checkpoints/pi05_base/params",
+  "initial_checkpoint_local": "/data/zjc/workspace/ContextFlow/.model-cache/openpi-assets/checkpoints/pi05_base/params",
+  "dataset": "/data/zjc/workspace/datasets/physical-intelligence/libero",
+  "heldout_tasks": [
+    "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+    "put both the alphabet soup and the tomato sauce in the basket",
+    "put the bowl on the plate",
+    "put the bowl on the stove",
+    "pick up the milk and place it in the basket",
+    "pick up the tomato sauce and place it in the basket",
+    "pick up the black bowl on the cookie box and place it on the plate",
+    "pick up the black bowl next to the plate and place it on the plate"
+  ],
+  "training_episodes": 1350,
+  "training_frames": 223060,
+  "training_unique_instructions": 32,
+  "episode_metadata_sha256": "0479a2ced6117700e4638a1da54dccd9f60ae5f47485ea6d91390c869befcf08",
+  "normalization_sha256": "c7cdcf7324a15621b9428b41ff04b4a941a7dccd229c60678eef2ed0ee4ea818",
+  "checkpoint_directory": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/checkpoints/ContextFlow_pi05_full/pi05_full_seed42_20260924_214930",
+  "log": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/logs/training/pi05_full_seed42_20260924_214930/train.log",
+  "expected_final_checkpoint": "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/checkpoints/ContextFlow_pi05_full/pi05_full_seed42_20260924_214930/19999",
+  "evaluation_plan": "Table 1 four unseen Spatial/Object tasks; paired correct/no/wrong context evaluation; matched full pi0 comparison later.",
+  "pid": 2720161,
+  "evaluation_protocol": {
+    "paper": "https://arxiv.org/html/2609.06852v1",
+    "table": "Table 1",
+    "suites": [
+      "libero_spatial",
+      "libero_object"
+    ],
+    "heldout_tasks_per_suite": 2,
+    "trials_per_task": 50,
+    "total_trials_per_condition": 200,
+    "initial_evaluation_seed": 7,
+    "checkpoint_selection": "final step 19999, no selection by held-out success",
+    "adaptation": "demonstration conditioning only, no held-out gradient updates",
+    "additional_experiments": [
+      "paired correct/no/wrong demonstration interventions on the same checkpoint",
+      "matched full pi0 + ContextFlow backbone comparison"
+    ],
+    "interpretation": "Overall success and the correct-minus-no-context gain must be reported separately. No-context inference ablation is not a separately trained native pi05 baseline. Full pretrained VLM and full fine-tuning intentionally differ from the original ContextFlow recipe."
+  },
+  "save_interval": 5000,
+  "keep_period": 5000,
+  "startup_verification": {
+    "time": "2026-09-24T21:55:04.958708+08:00",
+    "status": "optimizer updates observed; training running in background",
+    "first_step_metrics": "Step 0: grad_norm=17.7539, loss=0.2784, param_norm=1832.8230",
+    "latest_progress": "21:55:00.751 [I] Progress on: 26.0it/20.0kit rate:1.7s/it remaining:9:32:33 elapsed:02:49 postfix:- (2720161:tqdm_logging.py:145)",
+    "gpu_memory_mib_approx": 37400,
+    "checkpoint_completed": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": 2,
+  "status": "complete",
+  "intervention": "zero_compressed_demo_action_keep_mask",
+  "trials_per_cell": 5,
+  "new_rollouts": 40,
+  "baseline": "logs/quickstart/position_swap_object_25trials_20260922_175506",
+  "capture_source": "logs/attention_capture/experiment0_consistency_20260923_143830",
+  "warning": "Pilot; possible out-of-distribution intervention; no training.",
+  "server": "server_attempt1",
+  "port": 8122,
+  "inference_gpu": 2,
+  "simulator_gpu": 3,
+  "completed_at": "2026-09-23T20:20:15.632974+08:00",
+  "attention_records": 120,
+  "rollout_seconds": 874.1144831236452,
+  "server_stopped": true
+}

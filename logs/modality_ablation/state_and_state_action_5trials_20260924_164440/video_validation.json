@@ -1,0 +1,402 @@
+[
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "fps": 20,
+    "frames": 280
+  },
+  {
+    "path": "zero_state_action/rollouts/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "fps": 20,
+    "frames": 280
+  }
+]

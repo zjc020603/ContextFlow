@@ -1,0 +1,9 @@
+task,condition,episodes,milk_in_basket,tomato_sauce_in_basket,language_successes,other_successes
+milk,correct,25,21,0,21,0
+milk,no_zero_keep_mask,25,0,0,0,0
+milk,wrong,25,0,0,0,0
+milk,no_masked_legacy,25,0,0,0,0
+tomato_sauce,correct,25,0,21,21,0
+tomato_sauce,no_zero_keep_mask,25,0,0,0,0
+tomato_sauce,wrong,25,22,0,0,22
+tomato_sauce,no_masked_legacy,25,0,0,0,0

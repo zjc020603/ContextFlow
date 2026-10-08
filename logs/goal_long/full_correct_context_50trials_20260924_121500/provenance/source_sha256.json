@@ -1,0 +1,20 @@
+{
+  "examples/libero/goal_long_eval.py": "b894abe5db038e88564fcd4242848d0a866f891bebeef98d52984343b0c54a27",
+  "examples/libero/goal_long_eval_test.py": "12bb3455810ee6f4f2a2f9265ddd9eae8f75c734d7d5536c368a6b840caac51a",
+  "examples/libero/main_incontext.py": "a2bdb619f6b0af329e3554cc81e1897a53993d64adb57b25e02e4d3f08002fb6",
+  "scripts/GOAL_LONG_EVALUATION.md": "0f4f2b92b810fec3da75dfbab18aa0bcf7c75a1f2388290ea6072894eed9780f",
+  "scripts/activate_env.sh": "bce403cfbcf2bb4da640a5d60a2a49ecab8b10d03a5dc33e6e45306f1a7cbfd1",
+  "scripts/check_attention_capture.py": "b242bd076f3aea507f9941d9635c50bc6c6c679726158b3af6235b9317098c9b",
+  "scripts/run_goal_long.py": "8934fc55ee09b2c184a14c87d0c41f64762b72b0920140496a592b2ea3c820b8",
+  "scripts/serve_goal_long.py": "fe6c0a8ba75f06b5e12b7f3c55e40dbe1a20a6137eed6da61174bc262a177df8",
+  "scripts/summarize_goal_long.py": "5f1235d5536e346b149bf523f498fcf25050853edb2beba612b328494245a7e7",
+  "src/openpi/models/attention_capture.py": "9f6347faf0cf076c9f2c1e6fe3d5ba9584381f019d018f653e5cfa4af4208c60",
+  "src/openpi/models/contextflow.py": "506b80d027006b9dc0cd6c4cef43ea119de35f6fcf3802eb1bb017f948044f2c",
+  "src/openpi/models/gemma.py": "78fd7f4e2b83e8a80b6dff8e556a3321feb70008544a709873aba757f5270a68",
+  "src/openpi/models/model.py": "6642d7bfd94d2e82b99e367caa988304d2817f36bbc42d8f76c90cc39e6d9f4b",
+  "src/openpi/policies/policy_config.py": "9a4d491c3d840ea171f924897a9e7d2f6da8ac6fa377adae6d62bac762ce58c7",
+  "src/openpi/policies/policy_incontext.py": "9d94bab3f8cf23e79d30563f921b836983730b79717e881de0edd2a866b9e7bd",
+  "src/openpi/training/config_libero.py": "4164c9e8cf45afec0780892dbb4d31199759a8a4dd0c2e26535b87f43dbf6b21",
+  "src/openpi/training/custom_dataset.py": "6c3262a2b88095d45ad9666782839c80ea3df74c0c681b91d8048cdd67d379dc",
+  "src/openpi/transforms.py": "817eda32a8a46e0300848f68ee8e8392f4399768662bb73e1f91914c98ee4cce"
+}

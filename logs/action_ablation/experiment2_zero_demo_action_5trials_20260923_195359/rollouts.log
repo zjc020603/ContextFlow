@@ -1,0 +1,56 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+INFO:root:Waiting for server at ws://127.0.0.1:8122...
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+INFO:root:correct milk 1/5: language_only (23.2s)
+INFO:root:correct milk 2/5: language_only (22.6s)
+INFO:root:correct milk 3/5: language_only (22.0s)
+INFO:root:correct milk 4/5: language_only (21.8s)
+INFO:root:correct milk 5/5: language_only (22.0s)
+INFO:root:correct tomato_sauce 1/5: neither (22.1s)
+INFO:root:correct tomato_sauce 2/5: language_only (21.8s)
+INFO:root:correct tomato_sauce 3/5: language_only (21.9s)
+INFO:root:correct tomato_sauce 4/5: neither (22.1s)
+INFO:root:correct tomato_sauce 5/5: language_only (21.9s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+INFO:root:Waiting for server at ws://127.0.0.1:8122...
+INFO:root:wrong milk 1/5: other_only (21.9s)
+INFO:root:wrong milk 2/5: neither (22.1s)
+INFO:root:wrong milk 3/5: other_only (21.7s)
+INFO:root:wrong milk 4/5: other_only (21.7s)
+INFO:root:wrong milk 5/5: other_only (21.8s)
+INFO:root:wrong tomato_sauce 1/5: other_only (21.6s)
+INFO:root:wrong tomato_sauce 2/5: other_only (21.9s)
+INFO:root:wrong tomato_sauce 3/5: other_only (21.7s)
+INFO:root:wrong tomato_sauce 4/5: other_only (21.8s)
+INFO:root:wrong tomato_sauce 5/5: other_only (21.7s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+INFO:root:Waiting for server at ws://127.0.0.1:8122...
+INFO:root:correct milk 1/5: neither (21.7s)
+INFO:root:correct milk 2/5: other_only (21.8s)
+INFO:root:correct milk 3/5: other_only (22.0s)
+INFO:root:correct milk 4/5: neither (21.9s)
+INFO:root:correct milk 5/5: other_only (21.9s)
+INFO:root:correct tomato_sauce 1/5: other_only (21.6s)
+INFO:root:correct tomato_sauce 2/5: other_only (21.9s)
+INFO:root:correct tomato_sauce 3/5: other_only (21.6s)
+INFO:root:correct tomato_sauce 4/5: neither (21.7s)
+INFO:root:correct tomato_sauce 5/5: other_only (21.8s)
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+INFO:root:Waiting for server at ws://127.0.0.1:8122...
+INFO:root:wrong milk 1/5: language_only (21.8s)
+INFO:root:wrong milk 2/5: language_only (21.7s)
+INFO:root:wrong milk 3/5: neither (21.6s)
+INFO:root:wrong milk 4/5: language_only (21.6s)
+INFO:root:wrong milk 5/5: language_only (21.7s)
+INFO:root:wrong tomato_sauce 1/5: language_only (21.6s)
+INFO:root:wrong tomato_sauce 2/5: language_only (21.8s)
+INFO:root:wrong tomato_sauce 3/5: language_only (21.8s)
+INFO:root:wrong tomato_sauce 4/5: neither (21.8s)
+INFO:root:wrong tomato_sauce 5/5: language_only (21.6s)

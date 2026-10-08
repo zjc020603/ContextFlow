@@ -1,0 +1,29 @@
+usage: serve_policy.py [-h] [OPTIONS] [{policy:checkpoint,policy:default}]
+
+Arguments for the serve_policy script.
+
+╭─ options ──────────────────────────────────────────────────────────────────╮
+│ -h, --help              show this help message and exit                    │
+│ --env {LIBERO}          Environment to serve the policy for. This is only  │
+│                         used when serving default policies. (default:      │
+│                         LIBERO)                                            │
+│ --default-prompt {None}|STR                                                │
+│                         If provided, will be used in case the "prompt" key │
+│                         is not present in the data, or if the model        │
+│                         doesn't have a default prompt. (default: None)     │
+│ --loader {AUTO,NORMAL,INCONTEXT}                                           │
+│                         Policy loader to use. Auto chooses the in-context  │
+│                         loader for in-context model configs. (default:     │
+│                         AUTO)                                              │
+│ --port INT              Port to serve the policy on. (default: 8000)       │
+│ --record, --no-record   Record the policy's behavior for debugging.        │
+│                         (default: False)                                   │
+╰────────────────────────────────────────────────────────────────────────────╯
+╭─ optional subcommands ─────────────────────────────────────────────────────╮
+│ Specifies how to load the policy. If not provided, the default policy for  │
+│ the environment will be used.  (default: policy:default)                   │
+│ ────────────────────────────────────────────────────────────────────────── │
+│ [{policy:checkpoint,policy:default}]                                       │
+│     policy:checkpoint   Load a policy from a trained checkpoint.           │
+│     policy:default      Use the default policy for the given environment.  │
+╰────────────────────────────────────────────────────────────────────────────╯

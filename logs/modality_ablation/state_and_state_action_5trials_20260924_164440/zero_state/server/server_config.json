@@ -1,0 +1,13 @@
+{
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "source": "logs/attention_capture/experiment0_consistency_20260923_143830",
+  "intervention": "zero_compressed_demo_state_keep_mask",
+  "weight_dtype": "float32",
+  "gemma_dtype": "bfloat16",
+  "model_config": "DemoModalityAblationConfig(action_dim=32, action_horizon=50, max_token_len=48, use_action_state_prompts=True, use_image_prompts=True, use_text_prompts=True, sample_episodes=1, dtype='bfloat16', paligemma_variant=None, prompt_expert_variant='gemma_300m_v2', action_expert_variant='gemma_300m_lora', sample_frames=8, sample_actions=128, random_select=True, avg_current_img=False, num_image_queries=32, num_state_queries=32, num_action_queries=32, num_attn_heads=8, num_image_compressor_layers=4, num_state_compressor_layers=2, num_action_compressor_layers=2, compress_state_action_prompts=True, ablation='state')",
+  "parameter_sha256": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "jax": "0.5.0",
+  "devices": [
+    "cuda:0"
+  ]
+}

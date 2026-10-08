@@ -1,0 +1,50 @@
+ M README.md
+ M examples/libero/context_ablation.py
+ M examples/libero/context_ablation_test.py
+ M examples/libero/replay_context_ablation.py
+ M quickstart.sh
+ M src/openpi/models/contextflow.py
+ M src/openpi/models/gemma.py
+ M src/openpi/policies/policy_incontext.py
+?? .worktrees/
+?? examples/libero/demo_action_ablation.py
+?? examples/libero/demo_modality_ablation.py
+?? examples/libero/goal_long_eval.py
+?? examples/libero/goal_long_eval_test.py
+?? examples/libero/language_vision_experiment.py
+?? examples/libero/live_vision_intervention.py
+?? examples/libero/no_context_zero.py
+?? examples/libero/position_ablation.py
+?? examples/libero/position_intervention.py
+?? examples/libero/position_intervention_test.py
+?? examples/libero/prepare_attention_observations.py
+?? examples/libero/prepare_attention_timeline.py
+?? examples/libero/summarize_position_ablation.py
+?? examples/libero/summarize_position_ablation_test.py
+?? scripts/DEMO_ACTION_ABLATION.md
+?? scripts/DEMO_MODALITY_ABLATION.md
+?? scripts/GOAL_LONG_EVALUATION.md
+?? scripts/NO_CONTEXT_ZERO.md
+?? scripts/attention/
+?? scripts/check_attention_capture.py
+?? scripts/check_attention_capture_test.py
+?? scripts/export_goal_long_demos.py
+?? scripts/run_goal_long.py
+?? scripts/serve_demo_action_ablation.py
+?? scripts/serve_demo_modality_ablation.py
+?? scripts/serve_goal_long.py
+?? scripts/serve_goal_long_viewer.py
+?? scripts/serve_language_vision.py
+?? scripts/serve_no_context_zero.py
+?? scripts/summarize_demo_action_ablation.py
+?? scripts/summarize_demo_modality_ablation.py
+?? scripts/summarize_goal_long.py
+?? scripts/summarize_no_context_zero.py
+?? src/openpi/models/attention_capture.py
+?? src/openpi/models/attention_capture_test.py
+?? src/openpi/models/demo_action_ablation.py
+?? src/openpi/models/demo_action_ablation_test.py
+?? src/openpi/models/demo_context_zero.py
+?? src/openpi/models/demo_context_zero_test.py
+?? src/openpi/models/demo_modality_ablation.py
+?? src/openpi/models/demo_modality_ablation_test.py

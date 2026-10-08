@@ -1,0 +1,2 @@
+episode_003.html: all 281 control/anchor image pairs validated across 6 panels; 36 layer/flow/color/display combinations; step 83 and terminal 280; page switch and 20Hz playback passed (498348 draws).
+Script/DOM/canvas simulation only; actual browser rendering and speed are not measured.

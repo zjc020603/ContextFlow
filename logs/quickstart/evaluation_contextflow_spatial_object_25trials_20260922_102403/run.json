@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-09-22T10:24:03.438013+08:00",
+  "config": "ContextFlow",
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "gpu": "0",
+  "port": 8000,
+  "suites": [
+    "libero_spatial",
+    "libero_object"
+  ],
+  "num_trials_per_task": 25,
+  "client_seed": 7,
+  "policy_rng_initial_seed_per_suite": 0,
+  "fresh_server_per_suite": true,
+  "inference_dtype": "float32",
+  "video_fps": 20,
+  "results": {
+    "libero_spatial": "libero_spatial/libero_spatial.json",
+    "libero_object": "libero_object/libero_object.json"
+  }
+}

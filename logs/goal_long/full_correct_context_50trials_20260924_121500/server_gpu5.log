@@ -1,0 +1,21 @@
+WARNING:root:Startup stage: loading checkpoint and demonstration dataset
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:root:Startup stage: policy loaded; hashing parameters
+WARNING:root:Startup stage: verifying historical baseline
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:websockets.server:server listening on 127.0.0.1:8135
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 52196) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put the yellow and white mug in the microwave and close it' (index=2), demo episode(s): [2]
+INFO:root:Connection from ('127.0.0.1', 52196) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 57846) opened
+INFO:root:Connection from ('127.0.0.1', 57846) closed

@@ -1,0 +1,6 @@
+{
+  "gpu": 1,
+  "server_pid": 1108569,
+  "port": 8131,
+  "cpu_affinity": "24-47"
+}

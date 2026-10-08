@@ -1,0 +1,1082 @@
+[
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/milk/ep000_step000",
+    "sha256": "dd51c988cab72c7e38f6871a2d1f810c02612db23723705390f9b49f12d54735"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/milk/ep000_step080",
+    "sha256": "1654ba22b9f4b198b1009a08d51dc7e47c2b3c22321bf78703260252b82b2aab"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/milk/ep000_step160",
+    "sha256": "2ed516dc3628598acff398fbf02770996380de8a7b4b8c3ab105952ed7849394"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/milk/ep001_step000",
+    "sha256": "ab70376f7d3524ba1b885eb62652411f759e371360f1845fc339150f2aed4304"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/milk/ep001_step080",
+    "sha256": "8e555c1f679a1614dd755e4e002eed10ced692bc31fb52afd11509856a27f8c2"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/milk/ep001_step160",
+    "sha256": "66d5ebbf52abfe8e408a44c2be2e9ffbf0ca341db7566e26204d9da65258171b"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/milk/ep002_step000",
+    "sha256": "8375401b92a5bb85db4a656f4d913e26d43a5f955d2145bbc0b95b11e00bbc98"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/milk/ep002_step080",
+    "sha256": "672be0a22d7c6f79fdc64adea72475b30e36b0f2896c8c0463c7b99556b12a50"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/milk/ep002_step160",
+    "sha256": "2ac00177aa1721bdedc8e66a689afc69b41441b833cb3bf276b7fc347ef8e685"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/milk/ep003_step000",
+    "sha256": "e19ca3937f967821c90fa8abc787c573c8f60effac95456de0c2140a8996ee5a"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/milk/ep003_step080",
+    "sha256": "596c33f97c9974b85bf11fdc6f3e812d123c381801e224cb397457f698845f5c"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/milk/ep003_step160",
+    "sha256": "8b2f771e78fffbdd34ab3887f2a77160c3cad45b01984660099575585487f598"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/milk/ep004_step000",
+    "sha256": "02453abceb877e3a2c4b6b5b7cb0b12fd3b00a5295cac02f589467dce6f52ec3"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/milk/ep004_step080",
+    "sha256": "4a1f9d54f0c61d22a523054df6c4d02bc4b6407a4b913370f34fab53efee3994"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/milk/ep004_step160",
+    "sha256": "2f09c75d4e1d3edc18ee3c246009d480c18c62343ea929cf241b7ae88b24de9c"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep000_step000",
+    "sha256": "48f56e4e12f90edb678436e3aa5460a658486b00190383785fc499b1426529f2"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep000_step080",
+    "sha256": "10b9f7ac14f296b90558152f3a35dd494c25ab6947c09a709736ee5eaf2ee7dd"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep000_step160",
+    "sha256": "4188b9cfba82dcb7e74f6c8915809d1142e8d6ec28068709bbfbfb3daeef2b87"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep001_step000",
+    "sha256": "840509fe2eac37508ea60f0d5d40071c2fad7e141b6492225e17dc251b5efdd2"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep001_step080",
+    "sha256": "272cada43d760688cceffb70ec416310fcd9b6a20bd0901d91e565013f3271ab"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep001_step160",
+    "sha256": "95d020260aac478005e518fbd8efdf97a2c33d8900bef47500639b31a1428a0c"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep002_step000",
+    "sha256": "4726562f557bc62570cc32a922c1c5b3f3a84b2385cfd93e461482999c71ca14"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep002_step080",
+    "sha256": "9f420e4d21d124838d04d89f600fb6867ba7e1313e7a7bfd75737ce575625a2e"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep002_step160",
+    "sha256": "645a388857559a67787174e57a5f2492bb91f7b09fd233b2d8ba6d9827ababa5"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep003_step000",
+    "sha256": "21cf4771e69ed3632f3b059f30e1a5b901959cdf874736f11c4689d95585b110"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep003_step080",
+    "sha256": "5a7aa02ee31c589c6bd2e55092f929d23e58ad415ee075b6e14a21880fe90792"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep003_step160",
+    "sha256": "9d019921fc74a93576f2c15622b2dd136c89e0d8641eb5adc08152791d1e032e"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep004_step000",
+    "sha256": "3821320cf72403b2843386081f153580ec86673730b0e30feb2bd551ce339a1a"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep004_step080",
+    "sha256": "6d7029a6b2df31232c51c840db987a4f8ecec490769981566ffba80e8545d845"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/correct/tomato_sauce/ep004_step160",
+    "sha256": "6a56630ef7e3ecc68e30ddc9e5aa7cafe3fe8183182d3ef886ca0a3fd1b3ba8d"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/milk/ep000_step000",
+    "sha256": "84a0c51dede1c4ef0584971a1da8119fc185ca3dd890237e7760842e0d595b38"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/milk/ep000_step080",
+    "sha256": "3595f6bdc385028a5daef999126bc344fce4ca4a09fa5c9787d8076d5d4decf6"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/milk/ep000_step160",
+    "sha256": "5eb8acac4e1e59c5a4b94f3fca65016fbfdffe65ac92a28c39b1215d0c634221"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/milk/ep001_step000",
+    "sha256": "aa9e8e1a29ef051dcd14fb9d5ce5ed1eb99c6587adb3b6f7d486c41b974e78f1"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/milk/ep001_step080",
+    "sha256": "876e1348b58350e737004bf8da81e3927c0f70f98c24e717cebe6bd7c05415ea"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/milk/ep001_step160",
+    "sha256": "5383d9aaa25ee66c23210b82370ab8eff8e95536e09cc01ec3ffbf5b344a668f"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/milk/ep002_step000",
+    "sha256": "d364fc677f70e088fdae4c72ef9dd209083d8b1223fe61cf742fda1addb07272"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/milk/ep002_step080",
+    "sha256": "c29680108a58b91c2d922bfe68e6ad063fe8b0aae07a2d0228f9ea52e24b56d6"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/milk/ep002_step160",
+    "sha256": "18dafb0ad65b69a0c77e870e5f881926a0134a79d43f87ecbeac4643bd913887"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/milk/ep003_step000",
+    "sha256": "5383fc9e60d431f5fbc1d44310fcfe5fa976ea4b3fbf79ab4991a3cf7e82575d"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/milk/ep003_step080",
+    "sha256": "163c8436b039e9ac8e6caede2a9c4f5611246cba84a5e0ef518b970cbf97761e"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/milk/ep003_step160",
+    "sha256": "4f2aeafd10b097955c5e0db7ec6e42da3dfbab9d3d335a2c64bab675365241c9"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/milk/ep004_step000",
+    "sha256": "d9f72f08967bb349b0df7a7ccc0e8b38a20ca0aad45d9df112d3263a437928c8"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/milk/ep004_step080",
+    "sha256": "0bf1b69f8d68ac326756083fe76c5013c9aacf6269c9828f3de07cabf4aaf4e0"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/milk/ep004_step160",
+    "sha256": "b510049344e53440da35b085cf97b4af05bfdff8093bd24442d28e40a7133d26"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep000_step000",
+    "sha256": "e0d06dd5a3b6dad27cb0c00037a992d00a5721be60aae1e082981853a1c13e3a"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep000_step080",
+    "sha256": "921fcd60402224e68bd727950ba95e0811055b2319f0aa3e9d8725270ae38242"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep000_step160",
+    "sha256": "578009d3a37d9930b5c3c83ffd9edbc8f35a47191e2ba5d45e8a7aa4923d8716"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep001_step000",
+    "sha256": "f81094578b8a7aced03a7bbff4113ab17d06ce15c29463a2f5119ef3a595b6a4"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep001_step080",
+    "sha256": "9558e8e2ceec994873642959ebe3e545d623da55f54881991be4592a4bad2721"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep001_step160",
+    "sha256": "69348d3ff897510db66ac9e09a88d19ee1ec6680ad9dccce16c2d67dc377ccf3"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep002_step000",
+    "sha256": "75dd7482581755e80d7a8c1a2e1e15ed3b9307c830a65928c4fadd104d1e24aa"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep002_step080",
+    "sha256": "6d00854dc730a6c502c724e4bde5aaeb017b5393b0758b2dbddaa44b3b09ab60"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep002_step160",
+    "sha256": "cff4fb3d26dd993e407eeaae5c0821a151275e286b684649e6c72b0a07a0e536"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep003_step000",
+    "sha256": "ae0ce6476adb4be8a8b20594fe7f9c528955ba3c82b1404aa0ed93d909e7a698"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep003_step080",
+    "sha256": "130d09fcf558961d434d376ae18cc8492fd59acd68c6aa739a00cdbbfb31ae45"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep003_step160",
+    "sha256": "d235ac6d0a60742f42e3a57ee128505ccd697c1019a942b9228fbc57191c5571"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep004_step000",
+    "sha256": "4fbf96fe913889a37be990ac5a14076631e909c11d86226063cd3e2b85437789"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep004_step080",
+    "sha256": "4c7c4a18e376bad6777a724c7a40444def3b2a861726d2f9635159eac0f85bbe"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/original/wrong/tomato_sauce/ep004_step160",
+    "sha256": "2b1a4c4270ef8c0304967c410b0c07010aabbed69560504bb321ae2a9cf21f66"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep000_step000",
+    "sha256": "027a44253414c35b980dbbebd26017621a8192a5de151397703b26a69ee55383"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep000_step080",
+    "sha256": "6017d07031ae88513ec2e3af57021abab0ad7f3d93cc971780a27e6b6418ef15"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep000_step160",
+    "sha256": "9d873500f8795d87657ebc20d952862fc7fbe42ffefcf9821dd381807a365028"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep001_step000",
+    "sha256": "0c57a95deb20122b7713abce906d789d89ff53e3d0ff88d73ea0fd717f8d2ca5"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep001_step080",
+    "sha256": "7f080414d5cdfff677fe19731bce46e41b53f03f64df4c64b572bdd47113f544"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep001_step160",
+    "sha256": "400d6ce45086dfc3b311087240f4aea4c4fa68dec01466cf47c6331162999dc0"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep002_step000",
+    "sha256": "5d6d32c9c4cda2e19961f14729b271a248f8a1329604f6903d00ac171205f73b"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep002_step080",
+    "sha256": "7cdf686f3f1ba8e6be49cb36dbdc8358808d25794eba1760e3f679ce672970ff"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep002_step160",
+    "sha256": "181749160786d43c5da58f7f696bc4220aae98afe4ace5cd8d13a10c07952bbf"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep003_step000",
+    "sha256": "c3b90ebb5d4362bd6e55a1c1bc6f0831fc822878f7e8c9985df3a0ea23b48159"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep003_step080",
+    "sha256": "a5ca8cd1da54249d7a06f41972bf4c3d698771a87fd838cacf70f5a13112692c"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep003_step160",
+    "sha256": "fe4350f40179139c42088908ef2afba5b01c112ed82571eab17c8a1b3d59de61"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep004_step000",
+    "sha256": "521b1048a2ef953d2732a59514df86438f29fd4c74e3258071c5ce82e17f7be5"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep004_step080",
+    "sha256": "6681e3638ecb02543ae0f05be63243ca0671fbc7829b854ffa535d9449f4be98"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/milk/ep004_step160",
+    "sha256": "9e6f566f9f30822075606759c9af0d512bd3e7d49d9dd9a40886f8913df8183e"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep000_step000",
+    "sha256": "c0f62da203f0a01ea256b3a225e705d42ef6ebc36a81eec599bb8a273b612b39"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep000_step080",
+    "sha256": "cd955acb8dd1577717aaf4eb3ec84d4e04bb624fc0bdcef2d3cc2b8d6dc62364"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep000_step160",
+    "sha256": "c6f5d7e965cdadf0c3b6f37d63eaf2e176232a26271fbd4f0334f83f3c424eb6"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep001_step000",
+    "sha256": "564032d98aa071834e08fa4881aad7df605c3661109be7ff5c7305bd447dbe32"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep001_step080",
+    "sha256": "1520891647ebbf5832cb06f5da11f851061bbd50a654e829f9fb20f395b9a8a6"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep001_step160",
+    "sha256": "75d9503e2772129a940f1d00ddfd41e0a7a686cac49109ce574d93f28ff7fdb5"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep002_step000",
+    "sha256": "fbcc1aa995c033d74f3e57927cb16a66258ef65f37ae3992abb09c4bad93c25b"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep002_step080",
+    "sha256": "460b837d6e5f3276eded3f4a3b5ce626b9407338e86f84bcc44279badfa85ab5"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep002_step160",
+    "sha256": "1043e6b63dfb5f8ae1ade221b1fbd5e98718575689acdefca17f67dad45969cb"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep003_step000",
+    "sha256": "f40c8d6c86636eac0052a17de7cacfd49d44a3a74cb5de881f832362e3ada1a1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep003_step080",
+    "sha256": "845fe259daac762b353abf101f0c4774a828a138d96f2c704cea32f25ab91e8a"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep003_step160",
+    "sha256": "84b1279c1063cfa661f9e806df739ba7b87bf73cf1035fae5dd589423c11e01f"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep004_step000",
+    "sha256": "85487bfac8413b9485d941bb12097564d86819763667777bd857300bc1d6aee3"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep004_step080",
+    "sha256": "bcca8aa39cd26e1ee16ed23e992adfc986340286c5a067a7901de3ff2e630a54"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/correct/tomato_sauce/ep004_step160",
+    "sha256": "ad3d75c018de3d452ddecf7031e8fb6506f34a9cea0604d0c4e97c4b84f88441"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep000_step000",
+    "sha256": "aacabf8bf1b2656b9a863f1b851dd71bd47612064b1685e9d7d18f1455bb9963"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep000_step080",
+    "sha256": "a4db3dcb2abaafb99d1d6fc5b61ca50e4a67f8babbf23193b310a2c12f63f982"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep000_step160",
+    "sha256": "605873e240073262ad65f5559ff89ce1edc07dfebcb60946bea7bd547c8c18e2"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep001_step000",
+    "sha256": "d340ea394e4635df9fd75931bfd39669aeea77e05da14155042d8f4e4f525021"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep001_step080",
+    "sha256": "01461fac1d49fa89a8cd0a978f1fe6cf23e934b6468259b2e97018da0ec89720"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep001_step160",
+    "sha256": "6889976adf489653f88ed9f432f4afd1d5f6cebe2b2d1cc6a587a7a41e0b438a"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep002_step000",
+    "sha256": "d93af13fd5e9ebe8e017078f21e5bd99bdf59b6a7b7bbe46a3d67667304b4830"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep002_step080",
+    "sha256": "7badcc88e21a0e1e8927f2a94b3be9fa0bc4aa4c0233bb971d19eabeb49f875e"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep002_step160",
+    "sha256": "21da4216d8115a60be04e2460ed641505cc2abe666550876786b953b0a5eee66"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep003_step000",
+    "sha256": "1fc30c1c4045b6b1438062baa4d7bb5d3283fd854c7907828943488ec949a416"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep003_step080",
+    "sha256": "c1d6b74313a6f97665272ff23affb0ab74cf58ec963299735f724eea05836e62"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep003_step160",
+    "sha256": "ee514785bb48dce35c875f8eb71c7208e9c4c008aeaafd037fc3dcd5daa0cd28"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep004_step000",
+    "sha256": "1628c55dd481c20de86ac9fd7d908e833fd853ad4e7425aa5c486d23aea53cdd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep004_step080",
+    "sha256": "efcb0a37db6f7211708265f06d0aa0fb90a077b5f30ea50b540ea419f0a36802"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/milk/ep004_step160",
+    "sha256": "c3ab7218c360ca1f9586c03d8833371144200a7f2263660bca008864aa55bc02"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step000",
+    "sha256": "dbfa41fb938165fa93fc535f1ec69ec69bdf357023c4ef09346113e34bd10662"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step080",
+    "sha256": "8af5295fed6aae7ccfa76667f23eba389395c880b807db3a0a3f7ebffd464176"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step160",
+    "sha256": "a69c83416711083749954b787f051ee0131210b0c791e4054919bd82c08fe3d4"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step000",
+    "sha256": "b9669812d23f5fc384bc68663f974acf7ff9f4b2464799b85f804fd3dde05d1a"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step080",
+    "sha256": "2780528ff47ccbd3186d5b4f2969d7d823e76413030b4bfd27f092eccdd90c3a"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step160",
+    "sha256": "c387cd9b16bbcba6d659bb12b695378939f4263ac8531ad773fc9fad1351bb98"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step000",
+    "sha256": "380e09b6e5fb15867584065f4b087f9e1938ac45825b0edb3921af5749339485"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step080",
+    "sha256": "02de84290f878fe54821fc460e613547a7936419ac8a743d3c50902619bbdb86"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step160",
+    "sha256": "3f2394c052c4598bd6865fb3c8412681f50dc5dcc44c35bddd24d5a52c112e01"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step000",
+    "sha256": "6f9356c9f008bceffe5c268031df3694c89c55cf489115d16871df21aeedecd8"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step080",
+    "sha256": "5dd129927229f8739924805acbc76b72bff58af455f2b471b950c15ae92ef5fe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step160",
+    "sha256": "963e28149cd8153f113bd7998b46fc289e04c468becf87c3e206a09c8af76c32"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 0,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step000",
+    "sha256": "af98bb9862e7359be1950b948e58f2c47e7bfa8c18fe18d0c96948a7f2b93d22"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 80,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step080",
+    "sha256": "ecc8bb91ef4ed54a9e9c49a71b22b5b1c50fd048cf4ae3f28b6bdd7bff7a0cce"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "environment_step": 160,
+    "path": "server_attempt1/attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step160",
+    "sha256": "e70d65f6fd9a20b8314a690e678f12d0c35627e5f6c7602b4b9434644df26a8a"
+  }
+]

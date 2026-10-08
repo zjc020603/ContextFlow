@@ -1,0 +1,15 @@
+{
+  "protocol": "goal_long_full_correct_context_v1",
+  "status": "complete",
+  "trials_per_task": 50,
+  "unseen_first": true,
+  "started_unix": 1790223656.6310065,
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "unseen_complete": true,
+  "ended_unix": 1790227468.700969,
+  "audited_episodes": 1000,
+  "audited_inferences": 52972,
+  "video_audit_passed": true,
+  "cleanup_recovery_completed": true,
+  "final_audit_unix": 1790227576.6886675
+}

@@ -1,0 +1,230 @@
+{
+  "mode": "wrong",
+  "task_index": 25,
+  "demo_task_index": 28,
+  "rng_components": [
+    0,
+    25,
+    4,
+    0
+  ],
+  "selected_episode": [
+    821
+  ],
+  "nonlanguage_hash": "b06dd1d50842d2430faeec887603f0bbc4a50815e683d9a9a6310430f46a41e5",
+  "demo_hash": "c58fa9f34dfb4a8e0362b462f07326c3c0b558aaeefa77c14880468d7695a8f4",
+  "noise_hash": "49ffb425fae8712e21be524ac2431d6743920531b16cc0b4e67003721b6a1412",
+  "language_tokens": [
+    [
+      2,
+      108,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "language_mask": [
+    [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  ],
+  "layout": {
+    "blocks": [
+      {
+        "name": "base_0_rgb",
+        "kind": "current_image",
+        "start": 0,
+        "stop": 256
+      },
+      {
+        "name": "left_wrist_0_rgb",
+        "kind": "current_image",
+        "start": 256,
+        "stop": 512
+      },
+      {
+        "name": "right_wrist_0_rgb",
+        "kind": "current_image",
+        "start": 512,
+        "stop": 768
+      },
+      {
+        "name": "language",
+        "kind": "language",
+        "start": 768,
+        "stop": 816
+      },
+      {
+        "name": "base_0_rgb",
+        "kind": "demo_image_latents",
+        "start": 816,
+        "stop": 848
+      },
+      {
+        "name": "left_wrist_0_rgb",
+        "kind": "demo_image_latents",
+        "start": 848,
+        "stop": 880
+      },
+      {
+        "name": "right_wrist_0_rgb",
+        "kind": "demo_image_latents",
+        "start": 880,
+        "stop": 912
+      },
+      {
+        "name": "demo_states",
+        "kind": "demo_states",
+        "start": 912,
+        "stop": 944
+      },
+      {
+        "name": "demo_actions",
+        "kind": "demo_actions",
+        "start": 944,
+        "stop": 976
+      },
+      {
+        "name": "current_state",
+        "kind": "current_state",
+        "start": 976,
+        "stop": 977
+      },
+      {
+        "name": "predicted_actions",
+        "kind": "predicted_actions",
+        "start": 977,
+        "stop": 1027
+      }
+    ],
+    "prefix_size": 976,
+    "key_size": 1027,
+    "query_layout": {
+      "current_state": [
+        0,
+        1
+      ],
+      "predicted_actions": [
+        1,
+        51
+      ]
+    }
+  },
+  "checks": {
+    "attention_shape": [
+      3,
+      3,
+      1,
+      8,
+      51,
+      1027
+    ],
+    "row_sum_max_error": 0.0023759212344884872,
+    "row_sum_tolerance": 0.004,
+    "masked_key_max": 0.0,
+    "block_mass": {
+      "current_image/base_0_rgb": 0.06737790256738663,
+      "current_image/left_wrist_0_rgb": 0.11190087348222733,
+      "current_image/right_wrist_0_rgb": 0.0,
+      "language/language": 0.0014276138972491026,
+      "demo_image_latents/base_0_rgb": 0.151398703455925,
+      "demo_image_latents/left_wrist_0_rgb": 0.06521410495042801,
+      "demo_image_latents/right_wrist_0_rgb": 0.0,
+      "demo_states/demo_states": 0.013339960016310215,
+      "demo_actions/demo_actions": 0.17220991849899292,
+      "current_state/current_state": 0.002632708055898547,
+      "predicted_actions/predicted_actions": 0.4144881069660187
+    }
+  },
+  "instruction": ""
+}

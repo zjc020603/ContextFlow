@@ -1,0 +1,20 @@
+{
+  "src/openpi/models/demo_action_ablation.py": "25538d131c2eb8601e3af1ef86160da2cb8cc9d86f410cd98e96e9426007edb5",
+  "src/openpi/models/demo_action_ablation_test.py": "9e8ee85aeff19332cdca3399b0837e1b3bbc6e28ce0fa956dbc9a5f562b4795d",
+  "scripts/serve_demo_action_ablation.py": "2d8356fbfbc5a028f412a93160e617b4ee7fc3d98a1bd6704439d5a664542084",
+  "scripts/summarize_demo_action_ablation.py": "c6743b46fff4545e6fc16b8c084233105780c5f4d29c3f96d5a48e2218e6ca63",
+  "examples/libero/demo_action_ablation.py": "f9163677dc807b6223402dd118ade9b0cd126427c77c4d5cbad42e00c8523a7e",
+  "scripts/DEMO_ACTION_ABLATION.md": "08f88615f4f4e20600c1b8ce89526fde2912d914c8e140123125f335ad572dd3",
+  "examples/libero/context_ablation.py": "89c18ce2cf721eb43cab21aefbab7daea94666186b678b9e4908df2a1a4ef92f",
+  "examples/libero/position_intervention.py": "5edb7ba3303576e6787f0a6ae9857eb65800f606b9078dbe82c31867c01f233a",
+  "src/openpi/models/contextflow.py": "506b80d027006b9dc0cd6c4cef43ea119de35f6fcf3802eb1bb017f948044f2c",
+  "src/openpi/models/attention_capture.py": "9f6347faf0cf076c9f2c1e6fe3d5ba9584381f019d018f653e5cfa4af4208c60",
+  "src/openpi/models/gemma.py": "78fd7f4e2b83e8a80b6dff8e556a3321feb70008544a709873aba757f5270a68",
+  "src/openpi/policies/policy_incontext.py": "9d94bab3f8cf23e79d30563f921b836983730b79717e881de0edd2a866b9e7bd",
+  "src/openpi/policies/policy_config.py": "9a4d491c3d840ea171f924897a9e7d2f6da8ac6fa377adae6d62bac762ce58c7",
+  "src/openpi/policies/context_ablation.py": "a37cf69c853495a41abc2e18048fc2c39fe0ae032a59004f7af91bd5f1451281",
+  "src/openpi/transforms.py": "817eda32a8a46e0300848f68ee8e8392f4399768662bb73e1f91914c98ee4cce",
+  "src/openpi/training/config_libero.py": "4164c9e8cf45afec0780892dbb4d31199759a8a4dd0c2e26535b87f43dbf6b21",
+  "scripts/activate_env.sh": "bce403cfbcf2bb4da640a5d60a2a49ecab8b10d03a5dc33e6e45306f1a7cbfd1",
+  "scripts/check_attention_capture.py": "b242bd076f3aea507f9941d9635c50bc6c6c679726158b3af6235b9317098c9b"
+}

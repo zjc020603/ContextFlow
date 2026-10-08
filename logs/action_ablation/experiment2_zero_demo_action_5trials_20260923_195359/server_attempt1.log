@@ -1,0 +1,268 @@
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Gate 1/60 passed original/correct/milk/ep000_step000
+INFO:root:Gate 2/60 passed original/correct/milk/ep001_step000
+INFO:root:Gate 3/60 passed original/correct/milk/ep002_step000
+INFO:root:Gate 4/60 passed original/correct/milk/ep003_step000
+INFO:root:Gate 5/60 passed original/correct/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Gate 6/60 passed original/correct/tomato_sauce/ep000_step000
+INFO:root:Gate 7/60 passed original/correct/tomato_sauce/ep001_step000
+INFO:root:Gate 8/60 passed original/correct/tomato_sauce/ep002_step000
+INFO:root:Gate 9/60 passed original/correct/tomato_sauce/ep003_step000
+INFO:root:Gate 10/60 passed original/correct/tomato_sauce/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Gate 11/60 passed original/no/milk/ep000_step000
+INFO:root:Gate 12/60 passed original/no/milk/ep001_step000
+INFO:root:Gate 13/60 passed original/no/milk/ep002_step000
+INFO:root:Gate 14/60 passed original/no/milk/ep003_step000
+INFO:root:Gate 15/60 passed original/no/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Gate 16/60 passed original/no/tomato_sauce/ep000_step000
+INFO:root:Gate 17/60 passed original/no/tomato_sauce/ep001_step000
+INFO:root:Gate 18/60 passed original/no/tomato_sauce/ep002_step000
+INFO:root:Gate 19/60 passed original/no/tomato_sauce/ep003_step000
+INFO:root:Gate 20/60 passed original/no/tomato_sauce/ep004_step000
+INFO:root:Gate 21/60 passed original/wrong/milk/ep000_step000
+INFO:root:Gate 22/60 passed original/wrong/milk/ep001_step000
+INFO:root:Gate 23/60 passed original/wrong/milk/ep002_step000
+INFO:root:Gate 24/60 passed original/wrong/milk/ep003_step000
+INFO:root:Gate 25/60 passed original/wrong/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Gate 26/60 passed original/wrong/tomato_sauce/ep000_step000
+INFO:root:Gate 27/60 passed original/wrong/tomato_sauce/ep001_step000
+INFO:root:Gate 28/60 passed original/wrong/tomato_sauce/ep002_step000
+INFO:root:Gate 29/60 passed original/wrong/tomato_sauce/ep003_step000
+INFO:root:Gate 30/60 passed original/wrong/tomato_sauce/ep004_step000
+INFO:root:Gate 31/60 passed swap_milk_tomato/correct/milk/ep000_step000
+INFO:root:Gate 32/60 passed swap_milk_tomato/correct/milk/ep001_step000
+INFO:root:Gate 33/60 passed swap_milk_tomato/correct/milk/ep002_step000
+INFO:root:Gate 34/60 passed swap_milk_tomato/correct/milk/ep003_step000
+INFO:root:Gate 35/60 passed swap_milk_tomato/correct/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Gate 36/60 passed swap_milk_tomato/correct/tomato_sauce/ep000_step000
+INFO:root:Gate 37/60 passed swap_milk_tomato/correct/tomato_sauce/ep001_step000
+INFO:root:Gate 38/60 passed swap_milk_tomato/correct/tomato_sauce/ep002_step000
+INFO:root:Gate 39/60 passed swap_milk_tomato/correct/tomato_sauce/ep003_step000
+INFO:root:Gate 40/60 passed swap_milk_tomato/correct/tomato_sauce/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Gate 41/60 passed swap_milk_tomato/no/milk/ep000_step000
+INFO:root:Gate 42/60 passed swap_milk_tomato/no/milk/ep001_step000
+INFO:root:Gate 43/60 passed swap_milk_tomato/no/milk/ep002_step000
+INFO:root:Gate 44/60 passed swap_milk_tomato/no/milk/ep003_step000
+INFO:root:Gate 45/60 passed swap_milk_tomato/no/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Gate 46/60 passed swap_milk_tomato/no/tomato_sauce/ep000_step000
+INFO:root:Gate 47/60 passed swap_milk_tomato/no/tomato_sauce/ep001_step000
+INFO:root:Gate 48/60 passed swap_milk_tomato/no/tomato_sauce/ep002_step000
+INFO:root:Gate 49/60 passed swap_milk_tomato/no/tomato_sauce/ep003_step000
+INFO:root:Gate 50/60 passed swap_milk_tomato/no/tomato_sauce/ep004_step000
+INFO:root:Gate 51/60 passed swap_milk_tomato/wrong/milk/ep000_step000
+INFO:root:Gate 52/60 passed swap_milk_tomato/wrong/milk/ep001_step000
+INFO:root:Gate 53/60 passed swap_milk_tomato/wrong/milk/ep002_step000
+INFO:root:Gate 54/60 passed swap_milk_tomato/wrong/milk/ep003_step000
+INFO:root:Gate 55/60 passed swap_milk_tomato/wrong/milk/ep004_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Gate 56/60 passed swap_milk_tomato/wrong/tomato_sauce/ep000_step000
+INFO:root:Gate 57/60 passed swap_milk_tomato/wrong/tomato_sauce/ep001_step000
+INFO:root:Gate 58/60 passed swap_milk_tomato/wrong/tomato_sauce/ep002_step000
+INFO:root:Gate 59/60 passed swap_milk_tomato/wrong/tomato_sauce/ep003_step000
+INFO:root:Gate 60/60 passed swap_milk_tomato/wrong/tomato_sauce/ep004_step000
+INFO:websockets.server:server listening on 127.0.0.1:8122
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 57310) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Saved ablated attention attention/original/correct/milk/ep000_step000
+INFO:root:Saved ablated attention attention/original/correct/milk/ep000_step080
+INFO:root:Saved ablated attention attention/original/correct/milk/ep000_step160
+INFO:root:Finished 56 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/milk/ep001_step000
+INFO:root:Saved ablated attention attention/original/correct/milk/ep001_step080
+INFO:root:Saved ablated attention attention/original/correct/milk/ep001_step160
+INFO:root:Finished 112 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/milk/ep002_step000
+INFO:root:Saved ablated attention attention/original/correct/milk/ep002_step080
+INFO:root:Saved ablated attention attention/original/correct/milk/ep002_step160
+INFO:root:Finished 168 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/milk/ep003_step000
+INFO:root:Saved ablated attention attention/original/correct/milk/ep003_step080
+INFO:root:Saved ablated attention attention/original/correct/milk/ep003_step160
+INFO:root:Finished 224 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/milk/ep004_step000
+INFO:root:Saved ablated attention attention/original/correct/milk/ep004_step080
+INFO:root:Saved ablated attention attention/original/correct/milk/ep004_step160
+INFO:root:Finished 280 rollout replans
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep000_step000
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep000_step080
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep000_step160
+INFO:root:Finished 336 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep001_step000
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep001_step080
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep001_step160
+INFO:root:Finished 392 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep002_step000
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep002_step080
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep002_step160
+INFO:root:Finished 448 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep003_step000
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep003_step080
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep003_step160
+INFO:root:Finished 504 rollout replans
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep004_step000
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep004_step080
+INFO:root:Saved ablated attention attention/original/correct/tomato_sauce/ep004_step160
+INFO:root:Finished 560 rollout replans
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48642) opened
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep000_step000
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep000_step080
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep000_step160
+INFO:root:Finished 616 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep001_step000
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep001_step080
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep001_step160
+INFO:root:Finished 672 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep002_step000
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep002_step080
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep002_step160
+INFO:root:Finished 728 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep003_step000
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep003_step080
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep003_step160
+INFO:root:Finished 784 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep004_step000
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep004_step080
+INFO:root:Saved ablated attention attention/original/wrong/milk/ep004_step160
+INFO:root:Finished 840 rollout replans
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep000_step000
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep000_step080
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep000_step160
+INFO:root:Finished 896 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep001_step000
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep001_step080
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep001_step160
+INFO:root:Finished 952 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep002_step000
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep002_step080
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep002_step160
+INFO:root:Finished 1008 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep003_step000
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep003_step080
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep003_step160
+INFO:root:Finished 1064 rollout replans
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep004_step000
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep004_step080
+INFO:root:Saved ablated attention attention/original/wrong/tomato_sauce/ep004_step160
+INFO:root:Finished 1120 rollout replans
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 40526) opened
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep000_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep000_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep000_step160
+INFO:root:Finished 1176 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep001_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep001_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep001_step160
+INFO:root:Finished 1232 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep002_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep002_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep002_step160
+INFO:root:Finished 1288 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep003_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep003_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep003_step160
+INFO:root:Finished 1344 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep004_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep004_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/milk/ep004_step160
+INFO:root:Finished 1400 rollout replans
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep000_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep000_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep000_step160
+INFO:root:Finished 1456 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep001_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep001_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep001_step160
+INFO:root:Finished 1512 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep002_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep002_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep002_step160
+INFO:root:Finished 1568 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep003_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep003_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep003_step160
+INFO:root:Finished 1624 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep004_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep004_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/correct/tomato_sauce/ep004_step160
+INFO:root:Finished 1680 rollout replans
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 52962) opened
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep000_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep000_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep000_step160
+INFO:root:Finished 1736 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep001_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep001_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep001_step160
+INFO:root:Finished 1792 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep002_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep002_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep002_step160
+INFO:root:Finished 1848 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep003_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep003_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep003_step160
+INFO:root:Finished 1904 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep004_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep004_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/milk/ep004_step160
+INFO:root:Finished 1960 rollout replans
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep000_step160
+INFO:root:Finished 2016 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep001_step160
+INFO:root:Finished 2072 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep002_step160
+INFO:root:Finished 2128 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep003_step160
+INFO:root:Finished 2184 rollout replans
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step000
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step080
+INFO:root:Saved ablated attention attention/swap_milk_tomato/wrong/tomato_sauce/ep004_step160
+INFO:root:Finished 2240 rollout replans
+INFO:root:Connection from ('127.0.0.1', 52962) closed
+INFO:root:Connection from ('127.0.0.1', 40526) closed
+INFO:root:Connection from ('127.0.0.1', 48642) closed
+INFO:root:Connection from ('127.0.0.1', 57310) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 60570) opened
+INFO:root:Connection from ('127.0.0.1', 60570) closed

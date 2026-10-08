@@ -1,0 +1,7 @@
+language,context_mode,demo,episodes,language_successes,other_successes,language_only,other_only,both,neither
+milk,correct,milk,25,24,0,24,0,0,1
+tomato_sauce,correct,tomato_sauce,25,22,0,22,0,0,3
+milk,no,none,25,0,0,0,0,0,25
+tomato_sauce,no,none,25,0,0,0,0,0,25
+milk,wrong,tomato_sauce,25,0,23,0,23,0,2
+tomato_sauce,wrong,milk,25,0,24,0,24,0,1

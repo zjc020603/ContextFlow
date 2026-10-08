@@ -1,0 +1,777 @@
+diff --git a/src/openpi/models/demo_context_zero.py b/src/openpi/models/demo_context_zero.py
+new file mode 100644
+index 0000000..4f3a507
+--- /dev/null
++++ b/src/openpi/models/demo_context_zero.py
+@@ -0,0 +1,40 @@
++"""Inference-only zero demo representations with full-demo masks and positions."""
++
++import dataclasses
++
++from flax import nnx
++import jax.numpy as jnp
++
++from openpi.models import contextflow
++from openpi.models import model as model_lib
++from openpi.models.attention_capture import token_layout
++
++
++def zero_demo_blocks(prefix, layout):
++    tokens, mask, ar_mask = prefix
++    blocks = [b for b in layout["blocks"] if b["kind"].startswith("demo_")]
++    if not blocks:
++        raise ValueError("No demonstration blocks to zero")
++    for block in blocks:
++        tokens = tokens.at[:, block["start"] : block["stop"], :].set(jnp.zeros((), tokens.dtype))
++    return tokens, mask, ar_mask
++
++
++@dataclasses.dataclass(frozen=True)
++class DemoContextZeroConfig(contextflow.ContextFlowConfig):
++    def create(self, rng):
++        if not (self.use_image_prompts and self.use_action_state_prompts and self.compress_state_action_prompts):
++            raise ValueError("Requires all three compressed demonstration modalities")
++        return DemoContextZero(self, rngs=nnx.Rngs(rng))
++
++
++class DemoContextZero(contextflow.ContextFlow):
++    def embed_midfix(self, obs, *, train=False):
++        if train:
++            raise ValueError("Demo context zeroing is inference-only")
++        return zero_demo_blocks(super().embed_midfix(obs, train=False), token_layout(self, obs))
++
++    def inspect_ablation(self, obs):
++        obs = model_lib.preprocess_observation_incontext(None, obs, train=False)
++        original = super().embed_midfix(obs, train=False)
++        return original, zero_demo_blocks(original, token_layout(self, obs))
+diff --git a/src/openpi/models/demo_context_zero_test.py b/src/openpi/models/demo_context_zero_test.py
+new file mode 100644
+index 0000000..0ca36b0
+--- /dev/null
++++ b/src/openpi/models/demo_context_zero_test.py
+@@ -0,0 +1,28 @@
++import jax
++import jax.numpy as jnp
++import numpy as np
++import pytest
++
++from openpi.models.contextflow import make_attn_mask
++from openpi.models.demo_context_zero import zero_demo_blocks
++
++
++def test_all_demo_modalities_removed_without_changing_observation_or_positions():
++    kinds = ["current_image", "language", "demo_image_latents", "demo_states", "demo_actions"]
++    layout = {"blocks": [{"kind": k, "start": 2 * i, "stop": 2 * i + 2} for i, k in enumerate(kinds)]}
++    tokens = jnp.arange(80, dtype=jnp.float32).reshape(1, 10, 8)
++    mask = jnp.ones((1, 10), bool).at[:, 5].set(False)
++    ar = jnp.zeros(10, bool)
++    fn = jax.jit(lambda t: zero_demo_blocks((t, mask, ar), layout))
++    changed, new_mask, new_ar = fn(tokens)
++    np.testing.assert_array_equal(changed[:, :4], tokens[:, :4])
++    np.testing.assert_array_equal(changed[:, 4:], 0)
++    np.testing.assert_array_equal(fn(tokens.at[:, 4:].set(-999))[0], changed)
++    np.testing.assert_array_equal(new_mask, mask)
++    np.testing.assert_array_equal(jnp.cumsum(new_mask, -1), jnp.cumsum(mask, -1))
++    np.testing.assert_array_equal(make_attn_mask(new_mask, new_ar), make_attn_mask(mask, ar))
++    assert changed.shape == tokens.shape
++    assert changed.dtype == tokens.dtype
++    assert np.any(np.asarray(tokens[:, 4:]) != 0)
++    with pytest.raises(ValueError, match="No demonstration"):
++        zero_demo_blocks((tokens, mask, ar), {"blocks": []})
+diff --git a/scripts/serve_no_context_zero.py b/scripts/serve_no_context_zero.py
+new file mode 100644
+index 0000000..305e6e7
+--- /dev/null
++++ b/scripts/serve_no_context_zero.py
+@@ -0,0 +1,297 @@
++"""Gated no-context control: zero all encoded demo content, retain full masks."""
++# ruff: noqa: SLF001
++
++import argparse
++import dataclasses
++import json
++import logging
++from pathlib import Path
++
++from flax import nnx
++import jax
++import numpy as np
++
++from openpi.models import model as model_lib
++from openpi.models.attention_capture import token_layout
++from openpi.models.demo_context_zero import DemoContextZeroConfig
++from openpi.policies import policy_config
++from openpi.serving.websocket_policy_server import WebsocketPolicyServer
++from openpi.shared import nnx_utils
++from openpi.training import config
++from scripts.check_attention_capture import array_hash
++from scripts.check_attention_capture import expected_mask
++from scripts.check_attention_capture import validate_attention
++from scripts.serve_demo_action_ablation import exact
++from scripts.serve_demo_action_ablation import output_actions
++
++INTERVENTION = "zero_all_encoded_demo_tokens_keep_mask"
++
++
++def check_prefix(before, after, layout):
++    tokens, mask, ar = map(np.asarray, before)
++    changed, new_mask, new_ar = map(np.asarray, after)
++    exact(mask, new_mask, "Prefix masks changed")
++    exact(ar, new_ar, "Attention block masks changed")
++    exact(np.cumsum(mask, -1), np.cumsum(new_mask, -1), "Positions changed")
++    ranges = []
++    for block in layout["blocks"]:
++        start, stop = block["start"], block["stop"]
++        if start >= layout["prefix_size"]:
++            continue
++        if block["kind"].startswith("demo_"):
++            assert np.all(changed[:, start:stop] == 0)
++            ranges.append([start, stop])
++        else:
++            exact(tokens[:, start:stop], changed[:, start:stop], "Live image/language tokens changed")
++    assert np.isfinite(changed).all()
++    return {
++        "mask_and_positions_exact": True,
++        "non_demo_tokens_exact": True,
++        "demo_zero_ranges": ranges,
++        "valid_prefix_tokens": int(mask.sum()),
++        "first_action_position_id": int(mask.sum()) + 1,
++    }
++
++
++class ZeroPolicy:
++    def __init__(self, args):
++        self.root = Path(args.output).resolve()
++        if self.root.exists():
++            raise FileExistsError("Use a fresh server output directory")
++        self.root.mkdir(parents=True)
++        self.calls = 0
++        self.capture_ids = set()
++        cfg = config.get_config("ContextFlow")
++        cfg = dataclasses.replace(cfg, data=dataclasses.replace(cfg.data, policy_local_files_only=True))
++        baseline = policy_config.create_trained_policy_incontext(
++            cfg, args.checkpoint, inference_dtype="float32", context_ablation=True
++        )
++        zero_cfg = dataclasses.replace(cfg, model=DemoContextZeroConfig(**dataclasses.asdict(cfg.model)))
++        self.policy = policy_config.create_trained_policy_incontext(
++            zero_cfg, args.checkpoint, inference_dtype="float32", context_ablation=True
++        )
++        self.model = self.policy._model_for_diagnostics
++        self.capture_fn = nnx_utils.module_jit(self.model.sample_actions_with_attention)
++        self.inspect_fn = nnx_utils.module_jit(self.model.inspect_ablation)
++        self.parameter_hash = array_hash(nnx.state(self.model, nnx.Param).to_pure_dict())
++        assert self.parameter_hash == array_hash(nnx.state(baseline._model_for_diagnostics, nnx.Param).to_pure_dict())
++        logging.getLogger().setLevel(logging.INFO)
++        self.gate(baseline, Path(args.source))
++        self.metadata = {
++            **self.policy.metadata,
++            "no_context_intervention": INTERVENTION,
++            "baseline_gate_passed": True,
++            "attention_environment_steps": [0, 80, 160],
++        }
++        (self.root / "server_config.json").write_text(
++            json.dumps(
++                {
++                    **vars(args),
++                    "intervention": INTERVENTION,
++                    "parameter_sha256": self.parameter_hash,
++                    "devices": [str(d) for d in jax.devices()],
++                    "weight_dtype": "float32",
++                    "gemma_dtype": self.model.PaliGemma.llm.module.embed_dtype,
++                },
++                indent=2,
++            )
++            + "\n"
++        )
++        (self.root / "READY.json").write_text(json.dumps(self.metadata, indent=2) + "\n")
++
++    def prepare_zero(self, request):
++        # Load the normal same-task template ONLY to retain the original masks.
++        # Its complete encoded content is erased by DemoContextZero before Gemma.
++        request = dict(request)
++        spec = dict(request["context_ablation"])
++        if spec["mode"] != "no":
++            raise ValueError("Only no-context requests are accepted")
++        spec.update(mode="correct", demo_task_index=int(request["task_index"]))
++        request["context_ablation"] = spec
++        inputs, info, rng = self.policy.prepare_inputs(request)
++        template_episode = info["selected_episode"]
++        info.update(
++            mode="no",
++            demo_task_index=None,
++            selected_episode=[],
++            mask_template_episode=template_episode,
++            no_context_intervention=INTERVENTION,
++        )
++        return inputs, info, rng
++
++    def gate(self, baseline, source):
++        cases = json.loads((source / "observations/manifest.json").read_text())["cases"]
++        cases = [c for c in cases if c["layout"] == "original" and c["episode"] == 0 and c["step"] == 0]
++        assert len(cases) == 6
++        results = []
++        for case in cases:
++            with np.load(source / "observations" / case["npz"]) as snap:
++                request = {k: snap[k].copy() for k in snap.files if k != "reference_executed_actions"}
++            request.update(case["request"])
++            inputs, _, rng = baseline.prepare_inputs(request)
++            obs = model_lib.ObservationIncontext.from_dict(inputs)
++            full = np.asarray(baseline._sample_actions(rng, obs))
++            with np.load(source / "validation_attempt3" / case["case_id"] / "capture.npz") as previous:
++                exact(full, previous["ordinary_actions"], "Historical model output changed")
++                exact(
++                    output_actions(baseline, inputs, full),
++                    previous["ordinary_executable_actions"],
++                    "Historical executable actions changed",
++                )
++            result = {"case_id": case["case_id"], "historical_baseline_exact": True}
++            if case["mode"] == "correct":
++                no_request = {**request, "context_ablation": {**request["context_ablation"], "mode": "no"}}
++                new_inputs, info, new_rng = self.prepare_zero(no_request)
++                exact(jax.random.key_data(rng), jax.random.key_data(new_rng), "Noise key changed")
++                new_obs = model_lib.ObservationIncontext.from_dict(new_inputs)
++                assert array_hash(obs) == array_hash(new_obs)
++                assert array_hash(inputs) == array_hash(new_inputs)
++                before, after = self.inspect_fn(obs)
++                layout = token_layout(self.model, obs)
++                result.update(check_prefix(before, after, layout))
++                zero = np.asarray(self.policy._sample_actions(rng, obs))
++                altered = dataclasses.replace(
++                    obs,
++                    incontext_images=jax.tree.map(lambda x: -x + 0.19, obs.incontext_images),
++                    incontext_states=-obs.incontext_states + 0.23,
++                    incontext_actions=-obs.incontext_actions + 0.37,
++                )
++                exact(zero, self.policy._sample_actions(rng, altered), "Demo values leaked through zeroing")
++                wrong_request = {
++                    **request,
++                    "context_ablation": {
++                        **request["context_ablation"],
++                        "mode": "wrong",
++                        "demo_task_index": 28 if case["task"] == "milk" else 25,
++                    },
++                }
++                wrong_inputs, _, _ = baseline.prepare_inputs(wrong_request)
++                wrong_obs = model_lib.ObservationIncontext.from_dict(wrong_inputs)
++                exact(
++                    expected_mask(self.model, obs),
++                    expected_mask(self.model, wrong_obs),
++                    "Demo templates have different masks",
++                )
++                exact(zero, self.policy._sample_actions(rng, wrong_obs), "Demo identity leaked through zeroing")
++                recorded, trace = self.capture_fn(rng, obs)
++                exact(zero, recorded, "Attention capture changed zero-context actions")
++                # The legacy validator's mode=no requires demo keys to be masked.
++                # Here the keys intentionally stay valid, so use generic validation.
++                result["attention_checks"] = validate_attention(
++                    jax.tree.map(np.asarray, trace),
++                    layout,
++                    expected_mask(self.model, obs),
++                    INTERVENTION,
++                    self.model.PaliGemma.llm.module.embed_dtype,
++                )
++                old_inputs, _, _ = baseline.prepare_inputs(no_request)
++                old_mask = expected_mask(self.model, model_lib.ObservationIncontext.from_dict(old_inputs))
++                result.update(
++                    all_demo_values_invariant=True,
++                    swapped_demo_identity_invariant=True,
++                    capture_actions_exact=True,
++                    prepared_full_inputs_exact=True,
++                    old_masked_first_action_position_id=int(old_mask.sum()) + 1,
++                )
++            results.append(result)
++            (self.root / "gate_cases.json").write_text(json.dumps(results, indent=2) + "\n")
++            logging.info("No-context gate %d/6 passed: %s", len(results), case["case_id"])
++        (self.root / "GATE_PASSED.json").write_text(
++            json.dumps(
++                {
++                    "passed": True,
++                    "historical_baselines": 6,
++                    "zero_intervention_checks": 2,
++                    "parameter_sha256": self.parameter_hash,
++                },
++                indent=2,
++            )
++            + "\n"
++        )
++
++    def infer(self, request):
++        if request.get("finalize_no_context_zero") is True:
++            after = array_hash(nnx.state(self.model, nnx.Param).to_pure_dict())
++            assert after == self.parameter_hash
++            result = {
++                "passed": True,
++                "runtime_calls": self.calls,
++                "captures": len(self.capture_ids),
++                "parameter_sha256_before": self.parameter_hash,
++                "parameter_sha256_after": after,
++            }
++            (self.root / "SERVER_FINISHED.json").write_text(json.dumps(result, indent=2) + "\n")
++            return result
++        request = dict(request)
++        if request.pop("no_context_intervention") != INTERVENTION:
++            raise ValueError("Wrong intervention protocol")
++        inputs, info, rng = self.prepare_zero(request)
++        episode, replan = info["rng_components"][2:]
++        assert info["task_index"] in (25, 28)
++        assert 0 <= episode < 25
++        assert 0 <= replan < 56
++        obs = model_lib.ObservationIncontext.from_dict(inputs)
++        ordinary = np.asarray(self.policy._sample_actions(rng, obs))
++        assert np.isfinite(ordinary).all()
++        actions = output_actions(self.policy, inputs, ordinary)
++        task = "milk" if info["task_index"] == 25 else "tomato_sauce"
++        step = replan * 5
++        capture_id = f"{task}/ep{episode:03d}_step{step:03d}"
++        if step in (0, 80, 160) and capture_id not in self.capture_ids:
++            captured, trace = self.capture_fn(rng, obs)
++            exact(ordinary, captured, "Recording changed executed actions")
++            trace = jax.tree.map(np.asarray, trace)
++            exact(trace["noise"], jax.random.normal(rng, ordinary.shape), "Wrong noise")
++            assert int(trace["executed_steps"]) == 10
++            layout = token_layout(self.model, obs)
++            checks = validate_attention(
++                trace, layout, expected_mask(self.model, obs), INTERVENTION, self.model.PaliGemma.llm.module.embed_dtype
++            )
++            prefix = check_prefix(*self.inspect_fn(obs), layout)
++            directory = self.root / "attention" / capture_id
++            directory.mkdir(parents=True)
++            np.savez_compressed(
++                directory / "capture.npz",
++                **trace,
++                ordinary_actions=ordinary,
++                captured_actions=np.asarray(captured),
++                executable_actions=actions,
++                tokenized_prompt=np.asarray(obs.tokenized_prompt),
++                language_mask=np.asarray(obs.tokenized_prompt_mask),
++            )
++            np.savez_compressed(
++                directory / "observation.npz", **{k: v for k, v in request.items() if isinstance(v, np.ndarray)}
++            )
++            (directory / "layout.json").write_text(
++                json.dumps(
++                    {
++                        **layout,
++                        "context": info,
++                        "instruction": request["prompt"],
++                        "intervention": INTERVENTION,
++                        "prefix_checks": prefix,
++                        "attention_checks": checks,
++                        "processed_input_sha256": array_hash(inputs),
++                        "rng_key": np.asarray(jax.random.key_data(rng)).tolist(),
++                    },
++                    indent=2,
++                )
++                + "\n"
++            )
++            self.capture_ids.add(capture_id)
++        self.calls += 1
++        if replan == 55:
++            logging.info("Completed zero-context %s episode %d", task, episode)
++        return {"actions": actions, "context_ablation": info}
++
++
++if __name__ == "__main__":
++    logging.basicConfig(level=logging.INFO)
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--checkpoint", default="/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999")
++    parser.add_argument("--source", default="logs/attention_capture/experiment0_consistency_20260923_143830")
++    parser.add_argument("--output", required=True)
++    parser.add_argument("--port", type=int, default=8123)
++    args = parser.parse_args()
++    policy = ZeroPolicy(args)
++    WebsocketPolicyServer(policy, host="127.0.0.1", port=args.port, metadata=policy.metadata).serve_forever()
+diff --git a/scripts/summarize_no_context_zero.py b/scripts/summarize_no_context_zero.py
+new file mode 100644
+index 0000000..c063145
+--- /dev/null
++++ b/scripts/summarize_no_context_zero.py
+@@ -0,0 +1,267 @@
++"""Audit all paired no-context trials and produce an explicit old/new comparison."""
++# ruff: noqa: RUF001  # Chinese report prose.
++
++import argparse
++import collections
++import csv
++import json
++from pathlib import Path
++
++import matplotlib as mpl
++
++mpl.use("Agg")
++import matplotlib.pyplot as plt
++import numpy as np
++
++INTERVENTION = "zero_all_encoded_demo_tokens_keep_mask"
++TASKS = ("milk", "tomato_sauce")
++
++
++def rows(path):
++    values = [json.loads(line) for line in path.read_text().splitlines()]
++    result = {(r["task"], r["episode_index"]): r for r in values}
++    assert len(result) == len(values)
++    return result
++
++
++def audit(root, baseline):
++    new = rows(root / "rollouts/no/episodes.jsonl")
++    old = {mode: rows(baseline / mode / "episodes.jsonl") for mode in ("correct", "no", "wrong")}
++    expected = {(task, ep) for task in TASKS for ep in range(25)}
++    assert set(new) == expected
++    cfg = json.loads((root / "rollouts/no/config.json").read_text())
++    assert cfg["scene_task"] == "per_language"
++    assert cfg["layout"] == "original"
++    old_cfg = json.loads((baseline / "no/config.json").read_text())
++    for name in ("num_trials_per_task", "seed", "policy_seed", "max_steps", "num_steps_wait", "replan_steps"):
++        assert cfg[name] == old_cfg[name], name
++    paired = []
++    video_lines = [
++        "# 配对视频：旧 masked no 与新 zero no",
++        "",
++        "全部 20 FPS，280 帧；每个视频对应一次完整回合。",
++        "",
++        "| 语言 | 回合 | 旧 no | 新 no |",
++        "|---|---:|---|---|",
++    ]
++    for key, record in sorted(new.items()):
++        for mode, group in old.items():
++            reference = group[key]
++            for field in ("initial_observation_sha256", "initial_state_sha256", "environment_seed", "steps"):
++                assert record[field] == reference[field], (key, mode, field)
++            assert [r["rng_components"] for r in record["context_requests"]] == [
++                r["rng_components"] for r in reference["context_requests"]
++            ]
++        assert len(record["context_requests"]) == 56
++        for request in record["context_requests"]:
++            assert request["no_context_intervention"] == INTERVENTION
++            assert request["mode"] == "no"
++            assert request["selected_episode"] == []
++            assert request["demo_task_index"] is None
++        for file in ("video", "trajectory"):
++            assert (root / "rollouts" / record[file]).is_file()
++        with np.load(root / "rollouts" / record["trajectory"]) as trajectory:
++            actions = trajectory["actions"]
++            with np.load(baseline / old["no"][key]["trajectory"]) as previous:
++                np.testing.assert_array_equal(trajectory["initial_sim_state"], previous["initial_sim_state"])
++                first_action_delta = float(np.max(np.abs(actions[0] - previous["actions"][0])))
++            assert actions.shape == (280, 7)
++            assert np.isfinite(actions).all()
++            assert (
++                dict(zip(trajectory["object_names"].tolist(), trajectory["in_basket"].any(0).tolist(), strict=True))
++                == record["ever_in_basket"]
++            )
++            assert (
++                dict(
++                    zip(
++                        trajectory["scene_object_names"].tolist(),
++                        trajectory["scene_in_basket"].any(0).tolist(),
++                        strict=True,
++                    )
++                )
++                == record["scene_ever_in_basket"]
++            )
++            for step in (0, 80, 160):
++                directory = root / "server/attention" / key[0] / f"ep{key[1]:03d}_step{step:03d}"
++                info = json.loads((directory / "layout.json").read_text())
++                assert info["intervention"] == INTERVENTION
++                assert info["prefix_checks"]["mask_and_positions_exact"]
++                assert info["prefix_checks"]["non_demo_tokens_exact"]
++                with np.load(directory / "capture.npz") as cap:
++                    np.testing.assert_array_equal(cap["ordinary_actions"], cap["captured_actions"])
++                    np.testing.assert_array_equal(cap["executable_actions"][:5], actions[step : step + 5])
++                    assert np.isfinite(cap["probabilities"]).all()
++                    for block in info["blocks"]:
++                        if block["kind"].startswith("demo_"):
++                            mask = cap["prefix_mask"][0, block["start"] : block["stop"]]
++                            # Real front/wrist/state/action slots remain valid; absent right camera remains invalid.
++                            assert np.all(mask == ("right" not in block["name"]))
++        paired.append(
++            {
++                "task": key[0],
++                "episode": key[1],
++                "old_outcome": old["no"][key]["outcome"],
++                "new_outcome": record["outcome"],
++                "paired_initial_state_observation_rng": True,
++                "first_action_max_abs_difference": first_action_delta,
++            }
++        )
++        video_lines.append(
++            f'| {key[0]} | {key[1]} | [旧 no]({baseline / old["no"][key]["video"]}) | [新 no]({root / "rollouts" / record["video"]}) |'
++        )
++    finished = json.loads((root / "server/SERVER_FINISHED.json").read_text())
++    assert finished["passed"]
++    assert finished["captures"] == 150
++    assert finished["runtime_calls"] == 2804
++    assert finished["parameter_sha256_before"] == finished["parameter_sha256_after"]
++    assert len(list((root / "server/attention").glob("*/*/capture.npz"))) == 150
++    comparison = []
++    for task in TASKS:
++        for condition, group in (
++            ("correct", old["correct"]),
++            ("no_zero_keep_mask", new),
++            ("wrong", old["wrong"]),
++            ("no_masked_legacy", old["no"]),
++        ):
++            selected = [r for (t, _), r in group.items() if t == task]
++            comparison.append(
++                {
++                    "task": task,
++                    "condition": condition,
++                    "episodes": len(selected),
++                    "milk_in_basket": sum(r["ever_in_basket"]["milk"] for r in selected),
++                    "tomato_sauce_in_basket": sum(r["ever_in_basket"]["tomato_sauce"] for r in selected),
++                    "language_successes": sum(r["language_success"] for r in selected),
++                    "other_successes": sum(r["other_success"] for r in selected),
++                }
++            )
++    objects = {
++        task: dict(
++            collections.Counter(
++                name
++                for (t, _), r in new.items()
++                if t == task
++                for name, success in r["scene_ever_in_basket"].items()
++                if success
++            )
++        )
++        for task in TASKS
++    }
++    result = {
++        "baseline": str(baseline),
++        "new_rollouts": str(root / "rollouts"),
++        "intervention": INTERVENTION,
++        "comparison": comparison,
++        "new_no_scene_objects_in_basket": objects,
++        "verified_pairs": 50,
++        "attention_captures": 150,
++        "old_no_data_preserved": True,
++        "new_vs_old_first_action_changed_episodes": sum(r["first_action_max_abs_difference"] > 0 for r in paired),
++        "scope": "original per-language scenes only; fixed tomato scene/position-swap no-context NOT rerun",
++    }
++    for name, data in (("comparison.csv", comparison), ("paired_outcomes.csv", paired)):
++        with (root / name).open("w") as f:
++            writer = csv.DictWriter(f, fieldnames=list(data[0]))
++            writer.writeheader()
++            writer.writerows(data)
++    (root / "comparison.json").write_text(json.dumps(result, indent=2) + "\n")
++    (root / "VIDEO_INDEX.md").write_text("\n".join(video_lines) + "\n")
++    fig, axes = plt.subplots(1, 2, figsize=(12, 4), sharey=True)
++    for ax, task in zip(axes, TASKS, strict=True):
++        values = [r for r in comparison if r["task"] == task]
++        x = np.arange(4)
++        ax.bar(x - 0.18, [r["milk_in_basket"] for r in values], width=0.36, label="Milk", color="#367cad")
++        ax.bar(
++            x + 0.18, [r["tomato_sauce_in_basket"] for r in values], width=0.36, label="Tomato sauce", color="#d67945"
++        )
++        ax.set_xticks(x, ["Correct", "No: zero\nkeep masks", "Wrong", "No: masked\nlegacy"])
++        ax.set_ylim(0, 27)
++        ax.set_yticks(range(0, 26, 5))
++        ax.set_title(f"Language / scene: {task}")
++        ax.grid(axis="y", alpha=0.2)
++        ax.set_axisbelow(True)
++        for container in ax.containers:
++            ax.bar_label(container, padding=3)
++    axes[0].set_ylabel("Episodes with object in basket (out of 25)")
++    axes[1].legend()
++    fig.tight_layout()
++    fig.savefig(root / "comparison.png", dpi=170)
++    plt.close(fig)
++    return result
++
++
++def report(root, result):
++    table = ["| 当前语言 / 场景 | 条件 | 牛奶入篮 | 番茄酱入篮 |", "|---|---|---:|---:|"]
++    names = {
++        "correct": "完整正确示范（历史）",
++        "wrong": "完整错误示范（历史）",
++        "no_zero_keep_mask": "无示范内容：表示置零、保留 mask（新）",
++        "no_masked_legacy": "旧 no：关闭示范 mask（历史）",
++    }
++    table.extend(
++        f'| {r["task"]} | {names[r["condition"]]} | {r["milk_in_basket"]}/25 | {r["tomato_sauce_in_basket"]}/25 |'
++        for r in result["comparison"]
++    )
++    values = [r for r in result["comparison"] if r["condition"] == "no_zero_keep_mask"]
++    zero_counts = sum(r["milk_in_basket"] + r["tomato_sauce_in_basket"] for r in values)
++    conclusion = (
++        "新 no 的 50 次试验仍没有牛奶或番茄酱入篮。因此，旧 no 的零成功率在这次保留 mask/位置编号的置零干预中也出现了；不能只用位置编号变化解释旧结果。"
++        if zero_counts == 0
++        else "保留 mask/位置编号的置零干预出现了入篮行为，旧 no 的零成功率不能推广到新的 no 定义。具体区别见表格；这也不单独证明差异由位置编号造成，因为两种干预的 attention 可见性也不同。"
++    )
++    text = f"""# No-context 补充实验：示范表示置零，保留 mask 和位置编号
++
++已完成：两个任务各 25 次，共 50 次，原始的各自任务场景。correct/wrong 复用原实验记录。
++
++**{conclusion}**
++
++{chr(10).join(table)}
++
++![新旧 no 与 correct/wrong 对照](comparison.png)
++
++表图仅统计牛奶与番茄酱。历史 wrong/milk 组虽然这两项都是 0/25，但原实验额外物体回放已确认奶油奶酪入篮 25/25，不能将该组解读为没有操作物体。本次新 no 没有任何场景物体入篮。
++
++## 干预的确切含义
++
++- 原 no：示范原始数据置零，示范 mask=false；token 槽位并未物理删除，但有效位置编号变了。
++- 新 no：先按完整示范路径得到表示，再在进入 Gemma 前把示范图像、状态、action 的全部 160 个 token 槽位置零；保持原 mask，原来有效的 128 个位置继续有效，缺失右相机仍无效。当前图像、语言、本体状态不变。
++- 牛奶 gate 样例首个 action 位置编号保持 653，旧 masked no 为 525。所有实际采集点均验证新 no 与完整示范 prefix 的 mask、位置编号和非示范内容精确相同。
++- 这不是把原始像素/状态/action 数值设为 0 后再编码；编码器的偏置或位置表示不会以这种方式残留为示范内容。
++- 零表示仍是可能的 OOD 输入，不是训练过的“无示范”表示；有效零 token 后续可以融合其他信息，attention 不要求为零。
++
++## 验证和记录
++
++- 50 回合逐一与历史 correct/no/wrong 核对：初始模拟器状态、观察哈希、环境种子、56 次推理噪声全部一致。每回合固定 280 步、每 5 步重规划，初始状态索引 0–24。
++- 6 份历史快照的完整模型 raw/executable actions 与实验 0 保存结果逐字节一致。
++- 两个任务 gate 验证：改变全部示范数值，或换另一任务示范，置零后动作完全相同；示范内容没有绕过干预进入输出。
++- 保存 150 份 attention（每回合 0/80/160 步），每份记录开/关动作精确一致，并与实际执行的 5 步动作核对。仅保存，不分析热图。
++- 检查点参数 hash 运行前后相同。所有 50 个视频按 20 FPS 保存，位于指令命名的子目录。
++- 新 no 的全部场景物体入篮计数：`{json.dumps(result['new_no_scene_objects_in_basket'], ensure_ascii=False)}`。计数可能包括干扰物，不能只依据牛奶/番茄酱失败宣称机器人完全不动。
++
++## 结论范围
++
++新旧 no 在相同初始观察和噪声下，有 {result['new_vs_old_first_action_changed_episodes']}/50 回合的第一步动作不同。因此，成功率即使相同，也不能说两种干预产生了相同的行为；差值保存在逐回合 CSV。
++
++本次补充只针对 20260922_154452 的原 Correct / No / Wrong 实验。固定番茄酱场景、位置交换实验的 no 分组，以及实验 0/1 和 action 消融报告引用的历史 no 记录均未重跑，不能将这里的新数值替换到那些条件中。Table 1 完整示范复现不受此干预影响。
++
++即使新旧 no 都失败，也不能证明位置编号对行为完全没有影响，或证明模型不理解语言；两个对照都可能受 OOD 影响。要单独隔离位置编号，还需保持 attention 可见性不变的另一组控制。
++
++[逐回合配对视频](VIDEO_INDEX.md) · [机器可读对照](comparison.json) · [逐回合结果](paired_outcomes.csv) · [代码修改报告](CODE_CHANGES.md)
++"""
++    (root / "EXPERIMENT_RESULTS.md").write_text(text)
++
++
++if __name__ == "__main__":
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--root", required=True, type=Path)
++    parser.add_argument(
++        "--baseline",
++        default="logs/quickstart/context_ablation_object_correct_no_wrong_25trials_20260922_154452",
++        type=Path,
++    )
++    args = parser.parse_args()
++    root = args.root.resolve()
++    baseline = args.baseline.resolve()
++    result = audit(root, baseline)
++    report(root, result)
++    print(json.dumps(result, indent=2))
+diff --git a/examples/libero/no_context_zero.py b/examples/libero/no_context_zero.py
+new file mode 100644
+index 0000000..e1612ab
+--- /dev/null
++++ b/examples/libero/no_context_zero.py
+@@ -0,0 +1,54 @@
++"""Repeat only the original per-language no-context cells, retaining demo masks."""
++
++import argparse
++import logging
++from pathlib import Path
++
++from openpi_client.websocket_client_policy import WebsocketClientPolicy
++
++from examples.libero import context_ablation as context
++
++INTERVENTION = "zero_all_encoded_demo_tokens_keep_mask"
++
++
++class ZeroClient:
++    def __init__(self, host, port):
++        self.client = WebsocketClientPolicy(host, port)
++        meta = self.client.get_server_metadata()
++        if meta.get("no_context_intervention") != INTERVENTION or not meta.get("baseline_gate_passed"):
++            raise ValueError("Requires the gated no-context-zero server")
++
++    def get_server_metadata(self):
++        return self.client.get_server_metadata()
++
++    def infer(self, request):
++        response = self.client.infer({**request, "no_context_intervention": INTERVENTION})
++        if response["context_ablation"].get("no_context_intervention") != INTERVENTION:
++            raise AssertionError("Wrong no-context definition")
++        return response
++
++
++if __name__ == "__main__":
++    logging.basicConfig(level=logging.INFO)
++    parser = argparse.ArgumentParser()
++    parser.add_argument("--output", required=True)
++    parser.add_argument("--port", type=int, default=8123)
++    parser.add_argument("--trials", type=int, default=25)
++    args = parser.parse_args()
++    context.run(
++        context.Args(
++            port=args.port,
++            mode="no",
++            num_trials_per_task=args.trials,
++            output_dir=str(Path(args.output)),
++            scene_task="per_language",
++            layout="original",
++            seed=7,
++            policy_seed=0,
++            max_steps=280,
++            replan_steps=5,
++            num_steps_wait=10,
++            verify_interventions=True,
++        ),
++        client_factory=ZeroClient,
++    )
+diff --git a/scripts/NO_CONTEXT_ZERO.md b/scripts/NO_CONTEXT_ZERO.md
+new file mode 100644
+index 0000000..4e76714
+--- /dev/null
++++ b/scripts/NO_CONTEXT_ZERO.md
+@@ -0,0 +1,55 @@
++# No-context control with unchanged prefix positions
++
++This supplements the original correct/no/wrong experiment on the milk and
++ tomato-sauce tasks in their own original scenes (25 trials each).
++It does not overwrite historical runs or change the regular policy server.
++
++`DemoContextZero` zeros every compressed demonstration image/state/action token
++immediately before Gemma, retaining the original masks, token slots and position
++IDs. It loads a normal same-task demonstration only to obtain the original mask
++structure, and erases all encoded content. Missing-camera slots stay invalid.
++This is an inference-time intervention, not a learned null context. Valid zero
++slots can subsequently absorb information from other tokens.
++
++The gate checks the historical full-model outputs, unchanged live-image/language
++prefix and positions, invariance to changing all demo values or the template task,
++and equality of ordinary and attention-recording inference.
++
++Start the gated server in a fresh directory (model environment):
++
++```bash
++source scripts/activate_env.sh train
++export CUDA_VISIBLE_DEVICES=2
++RUN=logs/context_ablation/my_no_context_zero_run
++python -m scripts.serve_no_context_zero --port 8123 --output "$RUN/server"
++```
++
++After `server/READY.json` exists, run the simulator in another terminal:
++
++```bash
++source scripts/activate_env.sh libero
++export CUDA_VISIBLE_DEVICES=3
++RUN=logs/context_ablation/my_no_context_zero_run
++python -m examples.libero.no_context_zero --port 8123 --trials 25 --output "$RUN/rollouts"
++python - <<'PY'
++from openpi_client.websocket_client_policy import WebsocketClientPolicy
++print(WebsocketClientPolicy('127.0.0.1',8123).infer({'finalize_no_context_zero':True}))
++PY
++```
++
++Stop that dedicated server after finalization, then validate and summarize:
++
++```bash
++source scripts/activate_env.sh train
++RUN=logs/context_ablation/my_no_context_zero_run
++python -m scripts.summarize_no_context_zero --root "$RUN"
++```
++
++The summary intentionally requires all 50 paired episodes and 150 captures. All
++videos use 20 FPS and instruction-named directories. Attention is saved at steps
++0/80/160 with all heads and selected flow steps/layers, without interpreting it.
++
++The existing quickstart context-ablation menu still uses the historical masked
++no-context definition. Use this dedicated entry point for this new control.
++The fixed tomato-scene position-swap conditions require a separate rerun and
++must not be relabeled using results from these per-language scenes.

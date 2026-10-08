@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "selector_combinations": 390,
+  "video_seek_play_pause_logic": true,
+  "actual_browser_test": false
+}

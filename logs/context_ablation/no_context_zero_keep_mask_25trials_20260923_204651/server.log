@@ -1,0 +1,88 @@
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:No-context gate 1/6 passed: original/correct/milk/ep000_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:No-context gate 2/6 passed: original/correct/tomato_sauce/ep000_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:No-context gate 3/6 passed: original/no/milk/ep000_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:No-context gate 4/6 passed: original/no/tomato_sauce/ep000_step000
+INFO:root:No-context gate 5/6 passed: original/wrong/milk/ep000_step000
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:No-context gate 6/6 passed: original/wrong/tomato_sauce/ep000_step000
+INFO:websockets.server:server listening on 127.0.0.1:8123
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 36594) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Completed zero-context milk episode 0
+INFO:root:Completed zero-context milk episode 1
+INFO:root:Completed zero-context milk episode 2
+INFO:root:Completed zero-context milk episode 3
+INFO:root:Completed zero-context milk episode 4
+INFO:root:Completed zero-context milk episode 5
+INFO:root:Completed zero-context milk episode 6
+INFO:root:Completed zero-context milk episode 7
+INFO:root:Completed zero-context milk episode 8
+INFO:root:Completed zero-context milk episode 9
+INFO:root:Completed zero-context milk episode 10
+INFO:root:Completed zero-context milk episode 11
+INFO:root:Completed zero-context milk episode 12
+INFO:root:Completed zero-context milk episode 13
+INFO:root:Completed zero-context milk episode 14
+INFO:root:Completed zero-context milk episode 15
+INFO:root:Completed zero-context milk episode 16
+INFO:root:Completed zero-context milk episode 17
+INFO:root:Completed zero-context milk episode 18
+INFO:root:Completed zero-context milk episode 19
+INFO:root:Completed zero-context milk episode 20
+INFO:root:Completed zero-context milk episode 21
+INFO:root:Completed zero-context milk episode 22
+INFO:root:Completed zero-context milk episode 23
+INFO:root:Completed zero-context milk episode 24
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:Completed zero-context tomato_sauce episode 0
+INFO:root:Completed zero-context tomato_sauce episode 1
+INFO:root:Completed zero-context tomato_sauce episode 2
+INFO:root:Completed zero-context tomato_sauce episode 3
+INFO:root:Completed zero-context tomato_sauce episode 4
+INFO:root:Completed zero-context tomato_sauce episode 5
+INFO:root:Completed zero-context tomato_sauce episode 6
+INFO:root:Completed zero-context tomato_sauce episode 7
+INFO:root:Completed zero-context tomato_sauce episode 8
+INFO:root:Completed zero-context tomato_sauce episode 9
+INFO:root:Completed zero-context tomato_sauce episode 10
+INFO:root:Completed zero-context tomato_sauce episode 11
+INFO:root:Completed zero-context tomato_sauce episode 12
+INFO:root:Completed zero-context tomato_sauce episode 13
+INFO:root:Completed zero-context tomato_sauce episode 14
+INFO:root:Completed zero-context tomato_sauce episode 15
+INFO:root:Completed zero-context tomato_sauce episode 16
+INFO:root:Completed zero-context tomato_sauce episode 17
+INFO:root:Completed zero-context tomato_sauce episode 18
+INFO:root:Completed zero-context tomato_sauce episode 19
+INFO:root:Completed zero-context tomato_sauce episode 20
+INFO:root:Completed zero-context tomato_sauce episode 21
+INFO:root:Completed zero-context tomato_sauce episode 22
+INFO:root:Completed zero-context tomato_sauce episode 23
+INFO:root:Completed zero-context tomato_sauce episode 24
+INFO:root:Connection from ('127.0.0.1', 36594) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 33384) opened
+INFO:root:Connection from ('127.0.0.1', 33384) closed

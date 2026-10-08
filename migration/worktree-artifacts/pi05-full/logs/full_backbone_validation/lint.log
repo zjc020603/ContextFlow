@@ -1,0 +1,36 @@
+scripts/validate_full_contextflow.py:3:1: I001 [*] Import block is un-sorted or un-formatted
+scripts/validate_full_contextflow.py:44:53: FBT003 Boolean positional value in function call
+scripts/validate_full_contextflow.py:48:14: SLF001 Private member accessed: `_create_train_data_loader`
+scripts/validate_full_contextflow.py:96:5: PT018 Assertion should be broken down into multiple parts
+src/openpi/models/full_contextflow.py:55:27: SLF001 Private member accessed: `_empty_image_tokens`
+src/openpi/models/full_contextflow.py:56:28: SLF001 Private member accessed: `_encode_image_tokens`
+src/openpi/models/full_contextflow_test.py:3:1: I001 [*] Import block is un-sorted or un-formatted
+src/openpi/models/full_contextflow_test.py:42:12: C408 Unnecessary `dict()` call (rewrite as a literal)
+src/openpi/models/full_contextflow_test.py:50:18: FBT002 Boolean default positional argument in function definition
+src/openpi/models/full_contextflow_test.py:89:24: FBT003 Boolean positional value in function call
+src/openpi/training/full_contextflow_config_test.py:13:29: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:14:29: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:15:43: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:16:47: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:17:5: PT018 Assertion should be broken down into multiple parts
+src/openpi/training/full_contextflow_config_test.py:19:5: PT018 Assertion should be broken down into multiple parts
+src/openpi/training/full_contextflow_config_test.py:27:5: PT018 Assertion should be broken down into multiple parts
+src/openpi/training/full_contextflow_config_test.py:29:51: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:38:12: C408 Unnecessary `dict()` call (rewrite as a literal)
+src/openpi/training/full_contextflow_config_test.py:38:24: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:43:35: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:44:42: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:45:42: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:46:42: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:47:23: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:47:37: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:47:53: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:47:83: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:50:40: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:55:27: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:56:42: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:57:50: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:58:42: Q000 [*] Single quotes found but double quotes preferred
+src/openpi/training/full_contextflow_config_test.py:60:42: Q000 [*] Single quotes found but double quotes preferred
+Found 34 errors.
+[*] 22 fixable with the `--fix` option (6 hidden fixes can be enabled with the `--unsafe-fixes` option).

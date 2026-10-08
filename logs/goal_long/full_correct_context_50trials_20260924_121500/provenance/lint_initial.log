@@ -1,0 +1,9 @@
+examples/libero/goal_long_eval.py:138:39: E702 Multiple statements on one line (semicolon)
+examples/libero/goal_long_eval.py:160:61: E701 Multiple statements on one line (colon)
+examples/libero/goal_long_eval.py:174:32: E702 Multiple statements on one line (semicolon)
+examples/libero/goal_long_eval.py:174:71: E702 Multiple statements on one line (semicolon)
+examples/libero/goal_long_eval.py:175:38: E702 Multiple statements on one line (semicolon)
+examples/libero/goal_long_eval.py:175:85: E702 Multiple statements on one line (semicolon)
+examples/libero/goal_long_eval.py:177:21: E701 Multiple statements on one line (colon)
+examples/libero/goal_long_eval.py:179:34: E701 Multiple statements on one line (colon)
+Found 12 errors (4 fixed, 8 remaining).

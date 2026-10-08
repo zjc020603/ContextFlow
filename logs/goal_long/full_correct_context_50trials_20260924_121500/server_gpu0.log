@@ -1,0 +1,23 @@
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:websockets.server:server listening on 127.0.0.1:8130
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 44340) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put the bowl on the stove' (index=17), demo episode(s): [392]
+INFO:root:Connection from ('127.0.0.1', 44340) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 55006) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'put both the cream cheese box and the butter in the basket' (index=7), demo episode(s): [12]
+INFO:root:Connection from ('127.0.0.1', 55006) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 34352) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'push the plate to the front of the stove' (index=15), demo episode(s): [386]
+INFO:root:Connection from ('127.0.0.1', 34352) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48590) opened
+INFO:root:Connection from ('127.0.0.1', 48590) closed

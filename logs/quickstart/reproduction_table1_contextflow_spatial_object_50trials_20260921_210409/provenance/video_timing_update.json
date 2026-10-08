@@ -1,0 +1,3613 @@
+{
+  "updated_at": "2026-09-22T09:51:07.903999+08:00",
+  "renamed_paths": {
+    "/data/zjc/workspace/ContextFlow/logs/quickstart/20260921_210409_Oz66aI": "/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_20260921_210409/libero_spatial",
+    "/data/zjc/workspace/ContextFlow/logs/quickstart/20260921_210415_r29Qv3": "/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_20260921_210409/libero_object",
+    "/data/zjc/workspace/ContextFlow/logs/reproduction/20260921_contextflow": "/data/zjc/workspace/ContextFlow/logs/quickstart/reproduction_table1_contextflow_spatial_object_50trials_20260921_210409/provenance"
+  },
+  "video_fps": 20,
+  "method": "MP4 movie/media timescale doubled; encoded frames unchanged",
+  "original_videos_archive": "provenance/original_10fps_videos.tar.gz",
+  "videos": [
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep000_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 125,
+        "duration": 12.5,
+        "packets": 125,
+        "encoded_frame_sha256": "cfa9f51d3f00eb72690709c6ccf91480d54e8c68d92421ac7882a7aa821b9b82"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 125,
+        "duration": 6.25,
+        "packets": 125,
+        "encoded_frame_sha256": "cfa9f51d3f00eb72690709c6ccf91480d54e8c68d92421ac7882a7aa821b9b82"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep000_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep001_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "68d4e91c7447822ab48a55338760c0b5d1eb97f71bc61b5bffa034366947b4ea"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "68d4e91c7447822ab48a55338760c0b5d1eb97f71bc61b5bffa034366947b4ea"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep001_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep002_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "177e095755f0aae674e737d05bdd04950981b9651017e408bf91d6a40cfea3c0"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "177e095755f0aae674e737d05bdd04950981b9651017e408bf91d6a40cfea3c0"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep002_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep003_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 125,
+        "duration": 12.5,
+        "packets": 125,
+        "encoded_frame_sha256": "760ff86256ce30579b1f2c1abe458b30023b6273b936b8d679af218ec6447ddc"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 125,
+        "duration": 6.25,
+        "packets": 125,
+        "encoded_frame_sha256": "760ff86256ce30579b1f2c1abe458b30023b6273b936b8d679af218ec6447ddc"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep003_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep004_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 117,
+        "duration": 11.7,
+        "packets": 117,
+        "encoded_frame_sha256": "e35a2cfbcb85484a2113afd4dc92bd08e1c55e0ede06bc20560b0a43654768d6"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 117,
+        "duration": 5.85,
+        "packets": 117,
+        "encoded_frame_sha256": "e35a2cfbcb85484a2113afd4dc92bd08e1c55e0ede06bc20560b0a43654768d6"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep004_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep005_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 133,
+        "duration": 13.3,
+        "packets": 133,
+        "encoded_frame_sha256": "588e7907230364991c0c2f4ed5f9bbe9b04716c0204a0077eb67e7f21db972b2"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 133,
+        "duration": 6.65,
+        "packets": 133,
+        "encoded_frame_sha256": "588e7907230364991c0c2f4ed5f9bbe9b04716c0204a0077eb67e7f21db972b2"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep005_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep006_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 167,
+        "duration": 16.7,
+        "packets": 167,
+        "encoded_frame_sha256": "9f46b70165902523bd328a2d034a4001a2e4a34903100710596f849d04c1886a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 167,
+        "duration": 8.35,
+        "packets": 167,
+        "encoded_frame_sha256": "9f46b70165902523bd328a2d034a4001a2e4a34903100710596f849d04c1886a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep006_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep007_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 123,
+        "duration": 12.3,
+        "packets": 123,
+        "encoded_frame_sha256": "ebd9d80eb2622f4db28172674cfed414eeb42375a19592e3919a7362c82ec2d3"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 123,
+        "duration": 6.15,
+        "packets": 123,
+        "encoded_frame_sha256": "ebd9d80eb2622f4db28172674cfed414eeb42375a19592e3919a7362c82ec2d3"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep007_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep008_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 135,
+        "duration": 13.5,
+        "packets": 135,
+        "encoded_frame_sha256": "ff5127d36e752879271357324b93c04f10d2e223fa5ad93298ba4fed3364e645"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 135,
+        "duration": 6.75,
+        "packets": 135,
+        "encoded_frame_sha256": "ff5127d36e752879271357324b93c04f10d2e223fa5ad93298ba4fed3364e645"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep008_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep009_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 117,
+        "duration": 11.7,
+        "packets": 117,
+        "encoded_frame_sha256": "cab7457fa79cfc3f41962cbc61c265d6b9a8bd045dce6e6f52e57028ac141b89"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 117,
+        "duration": 5.85,
+        "packets": 117,
+        "encoded_frame_sha256": "cab7457fa79cfc3f41962cbc61c265d6b9a8bd045dce6e6f52e57028ac141b89"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep009_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep010_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 129,
+        "duration": 12.9,
+        "packets": 129,
+        "encoded_frame_sha256": "29a8bf8089d25c58fc623c4e376d4ff52add24c460be6ce1af983c53b738cd49"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 129,
+        "duration": 6.45,
+        "packets": 129,
+        "encoded_frame_sha256": "29a8bf8089d25c58fc623c4e376d4ff52add24c460be6ce1af983c53b738cd49"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep010_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep011_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "c75f57b07ded9cdb7ab9fb9884339545fbd0970aa7a8b0d681f328d575d6e3ca"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "c75f57b07ded9cdb7ab9fb9884339545fbd0970aa7a8b0d681f328d575d6e3ca"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep011_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep012_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 122,
+        "duration": 12.2,
+        "packets": 122,
+        "encoded_frame_sha256": "baef03e98c2d42d22c4381e46bbc653377cff617fc5133231c9e939040dbcdb7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 122,
+        "duration": 6.1,
+        "packets": 122,
+        "encoded_frame_sha256": "baef03e98c2d42d22c4381e46bbc653377cff617fc5133231c9e939040dbcdb7"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep012_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep013_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 188,
+        "duration": 18.8,
+        "packets": 188,
+        "encoded_frame_sha256": "1e5439ebacdca819088b6d03f1dec9d4ca7bf20afe5e6ab489ace55e4f874d8a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 188,
+        "duration": 9.4,
+        "packets": 188,
+        "encoded_frame_sha256": "1e5439ebacdca819088b6d03f1dec9d4ca7bf20afe5e6ab489ace55e4f874d8a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep013_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep014_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 120,
+        "duration": 12.0,
+        "packets": 120,
+        "encoded_frame_sha256": "80612947b7edb5c6b64cd51069a55c686e88d01dac0202c1e135e060a9d6bcfd"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 120,
+        "duration": 6.0,
+        "packets": 120,
+        "encoded_frame_sha256": "80612947b7edb5c6b64cd51069a55c686e88d01dac0202c1e135e060a9d6bcfd"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep014_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep015_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "cfca36e6f349850923b2baa1697469cb4b9be5238703b339f3256d39906c3c82"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "cfca36e6f349850923b2baa1697469cb4b9be5238703b339f3256d39906c3c82"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep015_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep016_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 129,
+        "duration": 12.9,
+        "packets": 129,
+        "encoded_frame_sha256": "247121eaa4e0b9e61bd02c04c630c05769fcbc19bee196e7c54fb806d6817b7e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 129,
+        "duration": 6.45,
+        "packets": 129,
+        "encoded_frame_sha256": "247121eaa4e0b9e61bd02c04c630c05769fcbc19bee196e7c54fb806d6817b7e"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep016_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep017_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "992bacb90495375a474a9e97a7ac06b50cdc410688edc95540b72c1fd36c990f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "992bacb90495375a474a9e97a7ac06b50cdc410688edc95540b72c1fd36c990f"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep017_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep018_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 128,
+        "duration": 12.8,
+        "packets": 128,
+        "encoded_frame_sha256": "deb99acff73ca65a5491ebe4e496f86b0e2d49ea91d23e1870115651ad4fd549"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 128,
+        "duration": 6.4,
+        "packets": 128,
+        "encoded_frame_sha256": "deb99acff73ca65a5491ebe4e496f86b0e2d49ea91d23e1870115651ad4fd549"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep018_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep019_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "b67d5cd7abd88dfa009825fa1d952affd223c310bafe47adc0740ce9f59b71a2"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "b67d5cd7abd88dfa009825fa1d952affd223c310bafe47adc0740ce9f59b71a2"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep019_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep020_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 116,
+        "duration": 11.6,
+        "packets": 116,
+        "encoded_frame_sha256": "e0ce81e93595fb2f85a5b900573ce98563cf801aadb2557ebe94a3dedd97918e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 116,
+        "duration": 5.8,
+        "packets": 116,
+        "encoded_frame_sha256": "e0ce81e93595fb2f85a5b900573ce98563cf801aadb2557ebe94a3dedd97918e"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep020_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep021_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 229,
+        "duration": 22.9,
+        "packets": 229,
+        "encoded_frame_sha256": "a1919b49c02f430e1317ab04d43baeaf7475bae5c275ea41b334cef21f95e194"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 229,
+        "duration": 11.45,
+        "packets": 229,
+        "encoded_frame_sha256": "a1919b49c02f430e1317ab04d43baeaf7475bae5c275ea41b334cef21f95e194"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep021_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep022_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 116,
+        "duration": 11.6,
+        "packets": 116,
+        "encoded_frame_sha256": "5067be557766bac8f0dac8aaea675c023a830f8f4783a599b43c439d37a3b3e5"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 116,
+        "duration": 5.8,
+        "packets": 116,
+        "encoded_frame_sha256": "5067be557766bac8f0dac8aaea675c023a830f8f4783a599b43c439d37a3b3e5"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep022_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep023_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 132,
+        "duration": 13.2,
+        "packets": 132,
+        "encoded_frame_sha256": "74ba24e2c146cf7a8cf1b8c0944f9bfa26151ae7317dcfacd81eef4992e8c688"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 132,
+        "duration": 6.6,
+        "packets": 132,
+        "encoded_frame_sha256": "74ba24e2c146cf7a8cf1b8c0944f9bfa26151ae7317dcfacd81eef4992e8c688"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep023_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep024_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 126,
+        "duration": 12.6,
+        "packets": 126,
+        "encoded_frame_sha256": "c0342b14b6d378c0ea2e89caa6f8ffc6f99d26941d6640e89ec322d79602c5d7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 126,
+        "duration": 6.3,
+        "packets": 126,
+        "encoded_frame_sha256": "c0342b14b6d378c0ea2e89caa6f8ffc6f99d26941d6640e89ec322d79602c5d7"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep024_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep025_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 122,
+        "duration": 12.2,
+        "packets": 122,
+        "encoded_frame_sha256": "93b30b742e88f44a94e12a86125ddc23879b8b871006a5b27a80bfa7bf8775a7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 122,
+        "duration": 6.1,
+        "packets": 122,
+        "encoded_frame_sha256": "93b30b742e88f44a94e12a86125ddc23879b8b871006a5b27a80bfa7bf8775a7"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep025_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep026_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 130,
+        "duration": 13.0,
+        "packets": 130,
+        "encoded_frame_sha256": "02442f8b257499d164abe09e413ef9b03b476879b3bef3179331675b90148edc"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 130,
+        "duration": 6.5,
+        "packets": 130,
+        "encoded_frame_sha256": "02442f8b257499d164abe09e413ef9b03b476879b3bef3179331675b90148edc"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep026_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep027_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 122,
+        "duration": 12.2,
+        "packets": 122,
+        "encoded_frame_sha256": "8749e5131732a9a669530e106884587bac4ff6a98f711baf78400983ce23419a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 122,
+        "duration": 6.1,
+        "packets": 122,
+        "encoded_frame_sha256": "8749e5131732a9a669530e106884587bac4ff6a98f711baf78400983ce23419a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep027_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep028_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "65f2fae9c46f0bcff035f7518a187348ba8479b21374122bfc6c5fbf2b3dbc8a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "65f2fae9c46f0bcff035f7518a187348ba8479b21374122bfc6c5fbf2b3dbc8a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep028_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep029_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 131,
+        "duration": 13.1,
+        "packets": 131,
+        "encoded_frame_sha256": "67e5e201412d4d518a0215152c3f3f569eee5363b3c7b8ed7fc6c05e0abab763"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 131,
+        "duration": 6.55,
+        "packets": 131,
+        "encoded_frame_sha256": "67e5e201412d4d518a0215152c3f3f569eee5363b3c7b8ed7fc6c05e0abab763"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep029_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep030_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 129,
+        "duration": 12.9,
+        "packets": 129,
+        "encoded_frame_sha256": "2fcf632a28add7aa55e71261bf79fdbf166ddc632aa87e9c8b6c955564652540"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 129,
+        "duration": 6.45,
+        "packets": 129,
+        "encoded_frame_sha256": "2fcf632a28add7aa55e71261bf79fdbf166ddc632aa87e9c8b6c955564652540"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep030_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep031_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 170,
+        "duration": 17.0,
+        "packets": 170,
+        "encoded_frame_sha256": "73680dae8a694f920c6fa56645cd20f98221222b79176a3d5522709bf3bdfbb6"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 170,
+        "duration": 8.5,
+        "packets": 170,
+        "encoded_frame_sha256": "73680dae8a694f920c6fa56645cd20f98221222b79176a3d5522709bf3bdfbb6"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep031_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep032_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 121,
+        "duration": 12.1,
+        "packets": 121,
+        "encoded_frame_sha256": "deddfd1bc83686fbc85c5391bb298e6fef0b032cf034c6991491e0a7f88d8a39"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 121,
+        "duration": 6.05,
+        "packets": 121,
+        "encoded_frame_sha256": "deddfd1bc83686fbc85c5391bb298e6fef0b032cf034c6991491e0a7f88d8a39"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep032_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep033_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 115,
+        "duration": 11.5,
+        "packets": 115,
+        "encoded_frame_sha256": "fed67884941a9bc74fae8fa752ab5504d3fa9add7176689cc25b15df757b6029"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 115,
+        "duration": 5.75,
+        "packets": 115,
+        "encoded_frame_sha256": "fed67884941a9bc74fae8fa752ab5504d3fa9add7176689cc25b15df757b6029"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep033_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep034_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 138,
+        "duration": 13.8,
+        "packets": 138,
+        "encoded_frame_sha256": "9b1177b5a983c48f05224d585f2507185cc932e4fb619650de2069db9b75841b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 138,
+        "duration": 6.9,
+        "packets": 138,
+        "encoded_frame_sha256": "9b1177b5a983c48f05224d585f2507185cc932e4fb619650de2069db9b75841b"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep034_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep035_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "91a86ca4a03a4fa9843b5509517262073eea81755f92b66205a16078517826f5"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "91a86ca4a03a4fa9843b5509517262073eea81755f92b66205a16078517826f5"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep035_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep036_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 141,
+        "duration": 14.1,
+        "packets": 141,
+        "encoded_frame_sha256": "9ba153d231e962333aac0829d23805fa573f7d7562fc59f47d60109ae6234ee4"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 141,
+        "duration": 7.05,
+        "packets": 141,
+        "encoded_frame_sha256": "9ba153d231e962333aac0829d23805fa573f7d7562fc59f47d60109ae6234ee4"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep036_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep037_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "33b220eb4736aaab53170c433bbdda3abdbd1eeb7372b5be9551789152f90b65"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "33b220eb4736aaab53170c433bbdda3abdbd1eeb7372b5be9551789152f90b65"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep037_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep038_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 130,
+        "duration": 13.0,
+        "packets": 130,
+        "encoded_frame_sha256": "5d462dcb9d7b1c15015592a94ff973455285926434dc02b810a887a08625d2a8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 130,
+        "duration": 6.5,
+        "packets": 130,
+        "encoded_frame_sha256": "5d462dcb9d7b1c15015592a94ff973455285926434dc02b810a887a08625d2a8"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep038_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep039_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 137,
+        "duration": 13.7,
+        "packets": 137,
+        "encoded_frame_sha256": "fa0ffa3dbc11645f91c28c6b8653e21266efd4372525fdbfd04dd21c6edc2589"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 137,
+        "duration": 6.85,
+        "packets": 137,
+        "encoded_frame_sha256": "fa0ffa3dbc11645f91c28c6b8653e21266efd4372525fdbfd04dd21c6edc2589"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep039_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep040_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 135,
+        "duration": 13.5,
+        "packets": 135,
+        "encoded_frame_sha256": "e9a82791c81674dfeeb835fb98fbceecca24252e05eeed5eb4fddfc09079bf81"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 135,
+        "duration": 6.75,
+        "packets": 135,
+        "encoded_frame_sha256": "e9a82791c81674dfeeb835fb98fbceecca24252e05eeed5eb4fddfc09079bf81"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep040_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep041_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 130,
+        "duration": 13.0,
+        "packets": 130,
+        "encoded_frame_sha256": "ec11d9071e9b2ff877a8b255697ff218f785c650e379840885c65dbe4a26837c"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 130,
+        "duration": 6.5,
+        "packets": 130,
+        "encoded_frame_sha256": "ec11d9071e9b2ff877a8b255697ff218f785c650e379840885c65dbe4a26837c"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep041_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep042_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "8a0dbb9b477e779b72678e1764edc2a8bc2ea9c326952ce76538b94ca233eed3"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "8a0dbb9b477e779b72678e1764edc2a8bc2ea9c326952ce76538b94ca233eed3"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep042_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep043_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 134,
+        "duration": 13.4,
+        "packets": 134,
+        "encoded_frame_sha256": "f5823ec177686ccafb784b2b0a5e09b9cc4d406012ee17aebe0e8f663899cd94"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 134,
+        "duration": 6.7,
+        "packets": 134,
+        "encoded_frame_sha256": "f5823ec177686ccafb784b2b0a5e09b9cc4d406012ee17aebe0e8f663899cd94"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep043_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep044_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 137,
+        "duration": 13.7,
+        "packets": 137,
+        "encoded_frame_sha256": "0d86a379b26c75998bb4064e8db461f036f6e399041e2fa44f02bfbb3bed4c04"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 137,
+        "duration": 6.85,
+        "packets": 137,
+        "encoded_frame_sha256": "0d86a379b26c75998bb4064e8db461f036f6e399041e2fa44f02bfbb3bed4c04"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep044_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep045_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 125,
+        "duration": 12.5,
+        "packets": 125,
+        "encoded_frame_sha256": "5c1d36f97bde4135a4a607882836b9fca31ab50360852e836e2c91b888cafca9"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 125,
+        "duration": 6.25,
+        "packets": 125,
+        "encoded_frame_sha256": "5c1d36f97bde4135a4a607882836b9fca31ab50360852e836e2c91b888cafca9"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep045_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep046_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "ee1017cb3a7627e7cea27174d93b3ddced66bfa6c8b07d93a0d642d0f764b26d"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "ee1017cb3a7627e7cea27174d93b3ddced66bfa6c8b07d93a0d642d0f764b26d"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep046_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep047_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 236,
+        "duration": 23.6,
+        "packets": 236,
+        "encoded_frame_sha256": "fcde15751fcb1aebfb1f128c30df74cd65d141f66b7bdc3b58bae8c01277f60e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 236,
+        "duration": 11.8,
+        "packets": 236,
+        "encoded_frame_sha256": "fcde15751fcb1aebfb1f128c30df74cd65d141f66b7bdc3b58bae8c01277f60e"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep047_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep048_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 178,
+        "duration": 17.8,
+        "packets": 178,
+        "encoded_frame_sha256": "e196f27a2a3aed1dc1a8258da183100725735735623eee03c0ce86fa24ac2534"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 178,
+        "duration": 8.9,
+        "packets": 178,
+        "encoded_frame_sha256": "e196f27a2a3aed1dc1a8258da183100725735735623eee03c0ce86fa24ac2534"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep048_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_milk_and_place_it_in_the_basket/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep049_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 132,
+        "duration": 13.2,
+        "packets": 132,
+        "encoded_frame_sha256": "153696dc45314c65859d4b0493e9ed8819279599bc088e9764998388ba58f477"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 132,
+        "duration": 6.6,
+        "packets": 132,
+        "encoded_frame_sha256": "153696dc45314c65859d4b0493e9ed8819279599bc088e9764998388ba58f477"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_milk_and_place_it_in_the_basket_ep049_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep000_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 126,
+        "duration": 12.6,
+        "packets": 126,
+        "encoded_frame_sha256": "c8ef270b5a023e5bec74f95ccc7f0c7f3044393cb806de167227e46ab5a71ecf"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 126,
+        "duration": 6.3,
+        "packets": 126,
+        "encoded_frame_sha256": "c8ef270b5a023e5bec74f95ccc7f0c7f3044393cb806de167227e46ab5a71ecf"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep000_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep001_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 194,
+        "duration": 19.4,
+        "packets": 194,
+        "encoded_frame_sha256": "0647e5956ea9457741014476287ff7361abeb293b8718f65750627ff552ec589"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 194,
+        "duration": 9.7,
+        "packets": 194,
+        "encoded_frame_sha256": "0647e5956ea9457741014476287ff7361abeb293b8718f65750627ff552ec589"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep001_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep002_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 153,
+        "duration": 15.3,
+        "packets": 153,
+        "encoded_frame_sha256": "008c9e286af001a2a6f3dc96b67ad8fa33670b8f90b4d09ee164336ccf005ec3"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 153,
+        "duration": 7.65,
+        "packets": 153,
+        "encoded_frame_sha256": "008c9e286af001a2a6f3dc96b67ad8fa33670b8f90b4d09ee164336ccf005ec3"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep002_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep003_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 130,
+        "duration": 13.0,
+        "packets": 130,
+        "encoded_frame_sha256": "b8774baff01716911ab94e7b3e31e4b127ec364290a55d571df06868bf80bcf4"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 130,
+        "duration": 6.5,
+        "packets": 130,
+        "encoded_frame_sha256": "b8774baff01716911ab94e7b3e31e4b127ec364290a55d571df06868bf80bcf4"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep003_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep004_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 272,
+        "duration": 27.2,
+        "packets": 272,
+        "encoded_frame_sha256": "9e176b938517dfdda0a943933f0c45f2c199b3f57536d399e6fb6bb4a903e1d4"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 272,
+        "duration": 13.6,
+        "packets": 272,
+        "encoded_frame_sha256": "9e176b938517dfdda0a943933f0c45f2c199b3f57536d399e6fb6bb4a903e1d4"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep004_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep005_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 129,
+        "duration": 12.9,
+        "packets": 129,
+        "encoded_frame_sha256": "f455fafb07a914050a8e321227413e53b88734df911cbad00c55752ae136ed40"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 129,
+        "duration": 6.45,
+        "packets": 129,
+        "encoded_frame_sha256": "f455fafb07a914050a8e321227413e53b88734df911cbad00c55752ae136ed40"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep005_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep006_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 119,
+        "duration": 11.9,
+        "packets": 119,
+        "encoded_frame_sha256": "6ade88b9fb2070bb2fa65e2da76c37705baa377327ba594a59db0068cea770a2"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 119,
+        "duration": 5.95,
+        "packets": 119,
+        "encoded_frame_sha256": "6ade88b9fb2070bb2fa65e2da76c37705baa377327ba594a59db0068cea770a2"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep006_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep007_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 123,
+        "duration": 12.3,
+        "packets": 123,
+        "encoded_frame_sha256": "5a7598bbada8976be318c06aa6bc4ede4b08de868298c8d0f2767e05c6d1adfe"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 123,
+        "duration": 6.15,
+        "packets": 123,
+        "encoded_frame_sha256": "5a7598bbada8976be318c06aa6bc4ede4b08de868298c8d0f2767e05c6d1adfe"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep007_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep008_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 129,
+        "duration": 12.9,
+        "packets": 129,
+        "encoded_frame_sha256": "c782621ea2b452966fcdf20c03f385cc82d32fe324e551620f5ed63d4e154bad"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 129,
+        "duration": 6.45,
+        "packets": 129,
+        "encoded_frame_sha256": "c782621ea2b452966fcdf20c03f385cc82d32fe324e551620f5ed63d4e154bad"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep008_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep009_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 260,
+        "duration": 26.0,
+        "packets": 260,
+        "encoded_frame_sha256": "fe8b5ff34618099589ed34606e8b8e8e624f2adc219c510b23f5984378b6d84f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 260,
+        "duration": 13.0,
+        "packets": 260,
+        "encoded_frame_sha256": "fe8b5ff34618099589ed34606e8b8e8e624f2adc219c510b23f5984378b6d84f"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep009_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep010_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 156,
+        "duration": 15.6,
+        "packets": 156,
+        "encoded_frame_sha256": "a1fd89e123c44831d79fc1497253167d96f59a13c843fc825c444c03ee339420"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 156,
+        "duration": 7.8,
+        "packets": 156,
+        "encoded_frame_sha256": "a1fd89e123c44831d79fc1497253167d96f59a13c843fc825c444c03ee339420"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep010_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep011_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 167,
+        "duration": 16.7,
+        "packets": 167,
+        "encoded_frame_sha256": "fc145ba0726673ca2bd70033e0f1d7674a5523bfebbf37a7912d1240778ac11e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 167,
+        "duration": 8.35,
+        "packets": 167,
+        "encoded_frame_sha256": "fc145ba0726673ca2bd70033e0f1d7674a5523bfebbf37a7912d1240778ac11e"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep011_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep012_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 275,
+        "duration": 27.5,
+        "packets": 275,
+        "encoded_frame_sha256": "4bc57adf9d43ee620ea30c852e7522c894e3761a54bdb2046d7ffea2e5a4ecb1"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 275,
+        "duration": 13.75,
+        "packets": 275,
+        "encoded_frame_sha256": "4bc57adf9d43ee620ea30c852e7522c894e3761a54bdb2046d7ffea2e5a4ecb1"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep012_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep013_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 239,
+        "duration": 23.9,
+        "packets": 239,
+        "encoded_frame_sha256": "97670bd8ca66c39d17635de352e665ebf8bcfa8913bbae323651bc4fd84d9b98"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 239,
+        "duration": 11.95,
+        "packets": 239,
+        "encoded_frame_sha256": "97670bd8ca66c39d17635de352e665ebf8bcfa8913bbae323651bc4fd84d9b98"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep013_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep014_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 142,
+        "duration": 14.2,
+        "packets": 142,
+        "encoded_frame_sha256": "80f092bba6b5c24c71c66c0d95f33bae63f40e5589281c97e4edc4992cc1ce9b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 142,
+        "duration": 7.1,
+        "packets": 142,
+        "encoded_frame_sha256": "80f092bba6b5c24c71c66c0d95f33bae63f40e5589281c97e4edc4992cc1ce9b"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep014_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep015_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 152,
+        "duration": 15.2,
+        "packets": 152,
+        "encoded_frame_sha256": "64eda86f44c24ce74dbb521a8ace43bc0da112c484c825a9cc36cbb355ce942a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 152,
+        "duration": 7.6,
+        "packets": 152,
+        "encoded_frame_sha256": "64eda86f44c24ce74dbb521a8ace43bc0da112c484c825a9cc36cbb355ce942a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep015_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep016_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 171,
+        "duration": 17.1,
+        "packets": 171,
+        "encoded_frame_sha256": "c1287fb0f18f60da20b4eba9c0b20ac87eafb23317fbc93ab4d83ab9615fca1c"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 171,
+        "duration": 8.55,
+        "packets": 171,
+        "encoded_frame_sha256": "c1287fb0f18f60da20b4eba9c0b20ac87eafb23317fbc93ab4d83ab9615fca1c"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep016_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep017_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 160,
+        "duration": 16.0,
+        "packets": 160,
+        "encoded_frame_sha256": "4eccec774bbdbaeda1923ecc30526629bf2e0bc2e78666f6c4fd890c0f13e1ea"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 160,
+        "duration": 8.0,
+        "packets": 160,
+        "encoded_frame_sha256": "4eccec774bbdbaeda1923ecc30526629bf2e0bc2e78666f6c4fd890c0f13e1ea"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep017_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep018_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 178,
+        "duration": 17.8,
+        "packets": 178,
+        "encoded_frame_sha256": "91c565a400a9ad63b2d12a1385650b708b648b85cdbe16b4e77ee8dca3fc8979"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 178,
+        "duration": 8.9,
+        "packets": 178,
+        "encoded_frame_sha256": "91c565a400a9ad63b2d12a1385650b708b648b85cdbe16b4e77ee8dca3fc8979"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep018_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep019_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "176839c3cc9b3ce89925c9ef61250671956c9316ecb1b7bfaf0d70b06d96d837"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "176839c3cc9b3ce89925c9ef61250671956c9316ecb1b7bfaf0d70b06d96d837"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep019_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep020_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 199,
+        "duration": 19.9,
+        "packets": 199,
+        "encoded_frame_sha256": "e53fb95d9f42c2598fda218b738c2c6b8fe6f7d1bae2113bd680cfc06b1434ba"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 199,
+        "duration": 9.95,
+        "packets": 199,
+        "encoded_frame_sha256": "e53fb95d9f42c2598fda218b738c2c6b8fe6f7d1bae2113bd680cfc06b1434ba"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep020_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep021_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 165,
+        "duration": 16.5,
+        "packets": 165,
+        "encoded_frame_sha256": "23f73f4a10f2f4e83c31fd8ed9551b536dfbbe8cb2902c2aa8c888548ab4c673"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 165,
+        "duration": 8.25,
+        "packets": 165,
+        "encoded_frame_sha256": "23f73f4a10f2f4e83c31fd8ed9551b536dfbbe8cb2902c2aa8c888548ab4c673"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep021_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep022_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 169,
+        "duration": 16.9,
+        "packets": 169,
+        "encoded_frame_sha256": "8f1a4c6f9001af57d89dcfeadd1e6a5f12a00289d96fd390499de09f894af6bf"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 169,
+        "duration": 8.45,
+        "packets": 169,
+        "encoded_frame_sha256": "8f1a4c6f9001af57d89dcfeadd1e6a5f12a00289d96fd390499de09f894af6bf"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep022_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep023_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 154,
+        "duration": 15.4,
+        "packets": 154,
+        "encoded_frame_sha256": "7452b9cb200babbd7a2a8a970e4187a32761a3caf437d5e4baf05c0cf419966a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 154,
+        "duration": 7.7,
+        "packets": 154,
+        "encoded_frame_sha256": "7452b9cb200babbd7a2a8a970e4187a32761a3caf437d5e4baf05c0cf419966a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep023_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep024_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 209,
+        "duration": 20.9,
+        "packets": 209,
+        "encoded_frame_sha256": "9269696556a965a7a0e3e2c29903aac2f59718a6572bbdc079fbdb63e127f4fc"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 209,
+        "duration": 10.45,
+        "packets": 209,
+        "encoded_frame_sha256": "9269696556a965a7a0e3e2c29903aac2f59718a6572bbdc079fbdb63e127f4fc"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep024_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep025_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 172,
+        "duration": 17.2,
+        "packets": 172,
+        "encoded_frame_sha256": "85b7a17e30d9396336fdc7db111da9b086baade8441d46e5c65a0376d47ef9ed"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 172,
+        "duration": 8.6,
+        "packets": 172,
+        "encoded_frame_sha256": "85b7a17e30d9396336fdc7db111da9b086baade8441d46e5c65a0376d47ef9ed"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep025_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep026_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "7ab828b5b4aced4777dd374d8e557839bd61811df37a617f1a520b331676cf95"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "7ab828b5b4aced4777dd374d8e557839bd61811df37a617f1a520b331676cf95"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep026_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep027_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 202,
+        "duration": 20.2,
+        "packets": 202,
+        "encoded_frame_sha256": "a39136d368b814e02ae562da001dd2e17659b1c34494ad46b3703b29c48520d4"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 202,
+        "duration": 10.1,
+        "packets": 202,
+        "encoded_frame_sha256": "a39136d368b814e02ae562da001dd2e17659b1c34494ad46b3703b29c48520d4"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep027_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep028_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 174,
+        "duration": 17.4,
+        "packets": 174,
+        "encoded_frame_sha256": "4d6d60abe122f6806f57fa608a013cd8a157221db18382100397f436d4d31597"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 174,
+        "duration": 8.7,
+        "packets": 174,
+        "encoded_frame_sha256": "4d6d60abe122f6806f57fa608a013cd8a157221db18382100397f436d4d31597"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep028_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep029_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "72fd8c5fbeea589bd34e89f0661f007368e3a634435e12294465909f5b3db572"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "72fd8c5fbeea589bd34e89f0661f007368e3a634435e12294465909f5b3db572"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep029_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep030_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 218,
+        "duration": 21.8,
+        "packets": 218,
+        "encoded_frame_sha256": "8d2a5f40c584402560018db2527e6b216240d0d5e234101bb272ef2e0371fe0b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 218,
+        "duration": 10.9,
+        "packets": 218,
+        "encoded_frame_sha256": "8d2a5f40c584402560018db2527e6b216240d0d5e234101bb272ef2e0371fe0b"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep030_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep031_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 195,
+        "duration": 19.5,
+        "packets": 195,
+        "encoded_frame_sha256": "73a785dace52540c4d5d0687eaa6eb02157f01efe1d622459e1ba3d0d87e61a0"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 195,
+        "duration": 9.75,
+        "packets": 195,
+        "encoded_frame_sha256": "73a785dace52540c4d5d0687eaa6eb02157f01efe1d622459e1ba3d0d87e61a0"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep031_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep032_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 118,
+        "duration": 11.8,
+        "packets": 118,
+        "encoded_frame_sha256": "e7309ae4a22d8e3a13f0bc01810d56efaa4e56a7623ea3c9155a3a3729d58656"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 118,
+        "duration": 5.9,
+        "packets": 118,
+        "encoded_frame_sha256": "e7309ae4a22d8e3a13f0bc01810d56efaa4e56a7623ea3c9155a3a3729d58656"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep032_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep033_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 167,
+        "duration": 16.7,
+        "packets": 167,
+        "encoded_frame_sha256": "823dc485244a3e758a06651d5e952758fb5821e703475c082374065ce7940bef"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 167,
+        "duration": 8.35,
+        "packets": 167,
+        "encoded_frame_sha256": "823dc485244a3e758a06651d5e952758fb5821e703475c082374065ce7940bef"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep033_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep034_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 145,
+        "duration": 14.5,
+        "packets": 145,
+        "encoded_frame_sha256": "1a7f63094ee0a9fd27f7ae823cb65e0661f628ca0e78686665bb59641000f858"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 145,
+        "duration": 7.25,
+        "packets": 145,
+        "encoded_frame_sha256": "1a7f63094ee0a9fd27f7ae823cb65e0661f628ca0e78686665bb59641000f858"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep034_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep035_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 174,
+        "duration": 17.4,
+        "packets": 174,
+        "encoded_frame_sha256": "a6b96bb2efa263cee10fc916b8bb310a758eb9caaab1d5af109c78dd008f9f5e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 174,
+        "duration": 8.7,
+        "packets": 174,
+        "encoded_frame_sha256": "a6b96bb2efa263cee10fc916b8bb310a758eb9caaab1d5af109c78dd008f9f5e"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep035_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep036_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 109,
+        "duration": 10.9,
+        "packets": 109,
+        "encoded_frame_sha256": "773b4c46a6521c4242530aee5ce751cc6ff2c5643544cdb08a2a2037e507eede"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 109,
+        "duration": 5.45,
+        "packets": 109,
+        "encoded_frame_sha256": "773b4c46a6521c4242530aee5ce751cc6ff2c5643544cdb08a2a2037e507eede"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep036_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep037_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 198,
+        "duration": 19.8,
+        "packets": 198,
+        "encoded_frame_sha256": "0c7c5230d74c9161fd4bd4f8592a22ab9b03df9bf6d4f5219ab56ac11fa255ae"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 198,
+        "duration": 9.9,
+        "packets": 198,
+        "encoded_frame_sha256": "0c7c5230d74c9161fd4bd4f8592a22ab9b03df9bf6d4f5219ab56ac11fa255ae"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep037_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep038_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 280,
+        "duration": 28.0,
+        "packets": 280,
+        "encoded_frame_sha256": "cc4ddd4c1593c32889f46f2a1d120bb2ab1c5b601e7657007a20b771c1e6a732"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 280,
+        "duration": 14.0,
+        "packets": 280,
+        "encoded_frame_sha256": "cc4ddd4c1593c32889f46f2a1d120bb2ab1c5b601e7657007a20b771c1e6a732"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep038_failure.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep039_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 204,
+        "duration": 20.4,
+        "packets": 204,
+        "encoded_frame_sha256": "b729b6e978fdec316129f5fda2905e18e34d04758e9bba38bea907af114fd407"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 204,
+        "duration": 10.2,
+        "packets": 204,
+        "encoded_frame_sha256": "b729b6e978fdec316129f5fda2905e18e34d04758e9bba38bea907af114fd407"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep039_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep040_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 219,
+        "duration": 21.9,
+        "packets": 219,
+        "encoded_frame_sha256": "7c687e2e9e0ab251346858f3aa5b0ab546b6c62797599c64757c8128ee759128"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 219,
+        "duration": 10.95,
+        "packets": 219,
+        "encoded_frame_sha256": "7c687e2e9e0ab251346858f3aa5b0ab546b6c62797599c64757c8128ee759128"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep040_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep041_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 123,
+        "duration": 12.3,
+        "packets": 123,
+        "encoded_frame_sha256": "817d2e6b04a7b27a2dab8ab8dd4dbdfb48fbf828f58c1208a5de9f82f1df4c46"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 123,
+        "duration": 6.15,
+        "packets": 123,
+        "encoded_frame_sha256": "817d2e6b04a7b27a2dab8ab8dd4dbdfb48fbf828f58c1208a5de9f82f1df4c46"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep041_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep042_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 180,
+        "duration": 18.0,
+        "packets": 180,
+        "encoded_frame_sha256": "5e66c12dc2e00b569c4d9de6b536eb4007ee6b773d264c54ef47d44100ee13c0"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 180,
+        "duration": 9.0,
+        "packets": 180,
+        "encoded_frame_sha256": "5e66c12dc2e00b569c4d9de6b536eb4007ee6b773d264c54ef47d44100ee13c0"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep042_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep043_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 165,
+        "duration": 16.5,
+        "packets": 165,
+        "encoded_frame_sha256": "f98adbaa302738a39f85128d3bd1c8df5fb62b8f8aeb9f20744d65d9c0abba9b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 165,
+        "duration": 8.25,
+        "packets": 165,
+        "encoded_frame_sha256": "f98adbaa302738a39f85128d3bd1c8df5fb62b8f8aeb9f20744d65d9c0abba9b"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep043_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep044_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 138,
+        "duration": 13.8,
+        "packets": 138,
+        "encoded_frame_sha256": "15e1f780c8a6e7ebb00de3600f547e4e427dac1ab1431150e6bc00fca034957d"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 138,
+        "duration": 6.9,
+        "packets": 138,
+        "encoded_frame_sha256": "15e1f780c8a6e7ebb00de3600f547e4e427dac1ab1431150e6bc00fca034957d"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep044_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep045_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 159,
+        "duration": 15.9,
+        "packets": 159,
+        "encoded_frame_sha256": "1f512fd9e64c41fc9485e974fc84d257f023c6e4b976d51fdb2e9486dacee0ac"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 159,
+        "duration": 7.95,
+        "packets": 159,
+        "encoded_frame_sha256": "1f512fd9e64c41fc9485e974fc84d257f023c6e4b976d51fdb2e9486dacee0ac"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep045_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep046_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 185,
+        "duration": 18.5,
+        "packets": 185,
+        "encoded_frame_sha256": "f68bf44900b1d03f2a7f89bb8497f939893ac820d1bbf01510561db01e151202"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 185,
+        "duration": 9.25,
+        "packets": 185,
+        "encoded_frame_sha256": "f68bf44900b1d03f2a7f89bb8497f939893ac820d1bbf01510561db01e151202"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep046_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep047_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 142,
+        "duration": 14.2,
+        "packets": 142,
+        "encoded_frame_sha256": "98e0380e37208feefee7db81dac726ff6bfb24dd9ba15fc0d70522d13701cb05"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 142,
+        "duration": 7.1,
+        "packets": 142,
+        "encoded_frame_sha256": "98e0380e37208feefee7db81dac726ff6bfb24dd9ba15fc0d70522d13701cb05"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep047_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep048_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 175,
+        "duration": 17.5,
+        "packets": 175,
+        "encoded_frame_sha256": "9153b45b519906b6650c89005b29367392d39db12fa84ef58c5d2aec3a06a16a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 175,
+        "duration": 8.75,
+        "packets": 175,
+        "encoded_frame_sha256": "9153b45b519906b6650c89005b29367392d39db12fa84ef58c5d2aec3a06a16a"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep048_success.mp4"
+    },
+    {
+      "path": "libero_object/videos/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep049_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 199,
+        "duration": 19.9,
+        "packets": 199,
+        "encoded_frame_sha256": "20536957f1a56fe3e722c66b8565043ec7fcea8fc743d48a27d0224916a6f480"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 199,
+        "duration": 9.95,
+        "packets": 199,
+        "encoded_frame_sha256": "20536957f1a56fe3e722c66b8565043ec7fcea8fc743d48a27d0224916a6f480"
+      },
+      "original_path": "libero_object/videos/libero_object/rollout_pick_up_the_tomato_sauce_and_place_it_in_the_basket_ep049_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep000_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "d4c95ec114b4c273bf9acdf83e6e07360e3e2ab96692e8bd70c0ea1fedcf5c5b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "d4c95ec114b4c273bf9acdf83e6e07360e3e2ab96692e8bd70c0ea1fedcf5c5b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep000_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep001_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "fc684d8fd8b45ab0a0fd1191edac2a5a9ea7648956eb63790e9c2890a1489470"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "fc684d8fd8b45ab0a0fd1191edac2a5a9ea7648956eb63790e9c2890a1489470"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep001_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep002_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7a2772402f4f54ca8fbdfb252c1e67104e0b52131ba698af424c046ca9440826"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7a2772402f4f54ca8fbdfb252c1e67104e0b52131ba698af424c046ca9440826"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep002_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep003_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "6a3f8f8b98504f26f5c0a0da270041b5db4da7dd3afd229cbd27cf2e72ebf400"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "6a3f8f8b98504f26f5c0a0da270041b5db4da7dd3afd229cbd27cf2e72ebf400"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep003_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep004_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "e2a2f9bbd67868c5e61316beb0b3e2890ed05a4aa0ec10dfb3527a45e4f33cfa"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "e2a2f9bbd67868c5e61316beb0b3e2890ed05a4aa0ec10dfb3527a45e4f33cfa"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep004_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep005_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8abad706593295f8b32145481f1754d89acfee85752ccea4a0999d1cb28cfded"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8abad706593295f8b32145481f1754d89acfee85752ccea4a0999d1cb28cfded"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep005_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep006_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 100,
+        "duration": 10.0,
+        "packets": 100,
+        "encoded_frame_sha256": "9ae6753c834957ffaa0253a697d6432a8db573facfb2a917a022faab8dd7d468"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 100,
+        "duration": 5.0,
+        "packets": 100,
+        "encoded_frame_sha256": "9ae6753c834957ffaa0253a697d6432a8db573facfb2a917a022faab8dd7d468"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep006_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep007_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2c985f1b361c7d604efe5f8d084b391859e8b3e65516bc850080de2c63c4ea5c"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2c985f1b361c7d604efe5f8d084b391859e8b3e65516bc850080de2c63c4ea5c"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep007_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep008_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "f1682e3b304b9ac6a20d1c29efe80107b8ab7f2b691214e11377ed06e3e79407"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "f1682e3b304b9ac6a20d1c29efe80107b8ab7f2b691214e11377ed06e3e79407"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep008_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep009_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 109,
+        "duration": 10.9,
+        "packets": 109,
+        "encoded_frame_sha256": "8c0c10d346c100ca5b7735d1808659b5f18ff08a93cf6f302f9bda2805d02f3b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 109,
+        "duration": 5.45,
+        "packets": 109,
+        "encoded_frame_sha256": "8c0c10d346c100ca5b7735d1808659b5f18ff08a93cf6f302f9bda2805d02f3b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep009_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep010_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "30528271562c6b6db8337773af6ea40c75f3b6af38170fca90c4116c50467f22"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "30528271562c6b6db8337773af6ea40c75f3b6af38170fca90c4116c50467f22"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep010_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep011_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 201,
+        "duration": 20.1,
+        "packets": 201,
+        "encoded_frame_sha256": "bfcd46bc754ee14dfbde78afbb3e43eabde71b8565647dfbc5b73aae45203f5b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 201,
+        "duration": 10.05,
+        "packets": 201,
+        "encoded_frame_sha256": "bfcd46bc754ee14dfbde78afbb3e43eabde71b8565647dfbc5b73aae45203f5b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep011_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep012_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "98714898bdbb2d4c86eca2d7606b2750fd55f640f62c93e8ae9934cad3570f1a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "98714898bdbb2d4c86eca2d7606b2750fd55f640f62c93e8ae9934cad3570f1a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep012_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep013_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 127,
+        "duration": 12.7,
+        "packets": 127,
+        "encoded_frame_sha256": "af8dbba4bf066f21ba20d1446efd1f41352e168a5277c40cffd1d03b68f1552b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 127,
+        "duration": 6.35,
+        "packets": 127,
+        "encoded_frame_sha256": "af8dbba4bf066f21ba20d1446efd1f41352e168a5277c40cffd1d03b68f1552b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep013_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep014_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 115,
+        "duration": 11.5,
+        "packets": 115,
+        "encoded_frame_sha256": "b6a27b7de235369392351316525bca1a209c36c14736040f84c81f2f0750ed29"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 115,
+        "duration": 5.75,
+        "packets": 115,
+        "encoded_frame_sha256": "b6a27b7de235369392351316525bca1a209c36c14736040f84c81f2f0750ed29"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep014_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep015_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 175,
+        "duration": 17.5,
+        "packets": 175,
+        "encoded_frame_sha256": "ca9b8eaa67b8506082478a7738ab59c61d1c39f2423d40b30287a324397d2e41"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 175,
+        "duration": 8.75,
+        "packets": 175,
+        "encoded_frame_sha256": "ca9b8eaa67b8506082478a7738ab59c61d1c39f2423d40b30287a324397d2e41"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep015_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep016_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 83,
+        "duration": 8.3,
+        "packets": 83,
+        "encoded_frame_sha256": "3490e2705fd2157075007a8a8e26cd2b157a4673ddc18da75b5dfce075a39b24"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 83,
+        "duration": 4.15,
+        "packets": 83,
+        "encoded_frame_sha256": "3490e2705fd2157075007a8a8e26cd2b157a4673ddc18da75b5dfce075a39b24"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep016_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep017_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "540543079d8bcf4ed7b621bfc745b87e08dde2dc14082e871c36c47c9a4da8b8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "540543079d8bcf4ed7b621bfc745b87e08dde2dc14082e871c36c47c9a4da8b8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep017_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep018_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "23c80a63489c4f433a06db8e52c261d7304863cca77e2f74344c9482a0e3ce25"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "23c80a63489c4f433a06db8e52c261d7304863cca77e2f74344c9482a0e3ce25"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep018_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep019_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "f4809066addbfb6743ed905f6dbb80dcca295678327732ab9ba081b9f92f0c33"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "f4809066addbfb6743ed905f6dbb80dcca295678327732ab9ba081b9f92f0c33"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep019_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep020_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "019e6c7c1b1816b22ae39f0f0465d9b6f1e75dafe0f34ed9a3bb547e19de7804"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "019e6c7c1b1816b22ae39f0f0465d9b6f1e75dafe0f34ed9a3bb547e19de7804"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep020_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep021_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "48c22781c917d1e5d05e744d5da1cf2293f26d200238748e025c6633a199d544"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "48c22781c917d1e5d05e744d5da1cf2293f26d200238748e025c6633a199d544"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep021_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep022_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "246fa2dce9dcbf0e1f7feb5ded3cfb413fa55b647ac06e9a8482a3a08942169a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "246fa2dce9dcbf0e1f7feb5ded3cfb413fa55b647ac06e9a8482a3a08942169a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep022_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep023_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7ab4bd592af681d49519a39749d104992be3de329b6331a1344fbe958b97f9b8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7ab4bd592af681d49519a39749d104992be3de329b6331a1344fbe958b97f9b8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep023_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep024_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 166,
+        "duration": 16.6,
+        "packets": 166,
+        "encoded_frame_sha256": "106daad0b3628cd09d9c4ddd62871570528cee0903de999d45a4e46d191247af"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 166,
+        "duration": 8.3,
+        "packets": 166,
+        "encoded_frame_sha256": "106daad0b3628cd09d9c4ddd62871570528cee0903de999d45a4e46d191247af"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep024_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep025_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 157,
+        "duration": 15.7,
+        "packets": 157,
+        "encoded_frame_sha256": "fb115fa887a767acb0f1b63246d95ce4e16af4092a39864babca62b3c262f013"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 157,
+        "duration": 7.85,
+        "packets": 157,
+        "encoded_frame_sha256": "fb115fa887a767acb0f1b63246d95ce4e16af4092a39864babca62b3c262f013"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep025_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep026_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "98a65f5b59927b3332eee2c27486a32d51ea51a229a1404de9334c37b77554f7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "98a65f5b59927b3332eee2c27486a32d51ea51a229a1404de9334c37b77554f7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep026_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep027_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 118,
+        "duration": 11.8,
+        "packets": 118,
+        "encoded_frame_sha256": "2f8075b9eebcfb210d752a5e54236a313777dfc10310ac476bacb4abf9575e99"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 118,
+        "duration": 5.9,
+        "packets": 118,
+        "encoded_frame_sha256": "2f8075b9eebcfb210d752a5e54236a313777dfc10310ac476bacb4abf9575e99"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep027_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep028_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "b37e3cbc9a6d93b70e20566c9e5b1e6861f20d82c2f36d2da834790269bc94cf"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "b37e3cbc9a6d93b70e20566c9e5b1e6861f20d82c2f36d2da834790269bc94cf"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep028_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep029_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "986298faae3f34a2379c4d4d0582ddceb618d052dff6196911a59d83a0393b0a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "986298faae3f34a2379c4d4d0582ddceb618d052dff6196911a59d83a0393b0a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep029_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep030_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "3a54f153ebb0d11011155d9652f891ed9a83780398de16537a0394403bf07e30"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "3a54f153ebb0d11011155d9652f891ed9a83780398de16537a0394403bf07e30"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep030_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep031_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7ca2cfcfa4982b06b700c5428c30317fd0282f9586e61bb4e965e7505d7eec2a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "7ca2cfcfa4982b06b700c5428c30317fd0282f9586e61bb4e965e7505d7eec2a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep031_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep032_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1061e4c174c1fedc75cab91c13b01d73372eb417a5a79c4f21720888ab5c5a04"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1061e4c174c1fedc75cab91c13b01d73372eb417a5a79c4f21720888ab5c5a04"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep032_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep033_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2e855131db09869017e38f5c0c43a25020734aedddf49e3a6d2fd2527684389e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2e855131db09869017e38f5c0c43a25020734aedddf49e3a6d2fd2527684389e"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep033_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep034_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "bdbfa76e4dba637b1f6b42b674e15c7786f808bd23e67e4e5f16cd8505c1e2d0"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "bdbfa76e4dba637b1f6b42b674e15c7786f808bd23e67e4e5f16cd8505c1e2d0"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep034_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep035_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "28513dc7fdaf063548a530fcb7ceb4022b364154024b3846bdf157203097ef46"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "28513dc7fdaf063548a530fcb7ceb4022b364154024b3846bdf157203097ef46"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep035_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep036_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 119,
+        "duration": 11.9,
+        "packets": 119,
+        "encoded_frame_sha256": "69b8f76e79906c3c7f6b4856ffe080678896775150fa91d3c8112d8b6dbb2977"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 119,
+        "duration": 5.95,
+        "packets": 119,
+        "encoded_frame_sha256": "69b8f76e79906c3c7f6b4856ffe080678896775150fa91d3c8112d8b6dbb2977"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep036_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep037_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "4a51054cdb4121c264ed67f7070d42bbe59789b492cf56b6fdec047aea5b3b60"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "4a51054cdb4121c264ed67f7070d42bbe59789b492cf56b6fdec047aea5b3b60"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep037_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep038_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 145,
+        "duration": 14.5,
+        "packets": 145,
+        "encoded_frame_sha256": "4f1fc00b25d37cb825a60c82d72eacbcd6668a69529c9480027242d9d0e0af61"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 145,
+        "duration": 7.25,
+        "packets": 145,
+        "encoded_frame_sha256": "4f1fc00b25d37cb825a60c82d72eacbcd6668a69529c9480027242d9d0e0af61"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep038_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep039_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 185,
+        "duration": 18.5,
+        "packets": 185,
+        "encoded_frame_sha256": "78f77a8414962eac2dc43e58c7e48d6b314572d7633d1dd509751416e405b545"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 185,
+        "duration": 9.25,
+        "packets": 185,
+        "encoded_frame_sha256": "78f77a8414962eac2dc43e58c7e48d6b314572d7633d1dd509751416e405b545"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep039_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep040_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 92,
+        "duration": 9.2,
+        "packets": 92,
+        "encoded_frame_sha256": "d0b3cb6f3dc4408a2786115bb5ba8db342cdadc9820d8013050472964c5de933"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 92,
+        "duration": 4.6,
+        "packets": 92,
+        "encoded_frame_sha256": "d0b3cb6f3dc4408a2786115bb5ba8db342cdadc9820d8013050472964c5de933"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep040_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep041_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8fbc0854cd35ab5a6183b5748689ef265125569a83d9fc36a9b792bb48165c2d"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8fbc0854cd35ab5a6183b5748689ef265125569a83d9fc36a9b792bb48165c2d"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep041_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep042_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 79,
+        "duration": 7.9,
+        "packets": 79,
+        "encoded_frame_sha256": "d9e4914887eb6a7ffc75f5a1f988c5eaa0dc57780089a5e9be2f9e02389d3e95"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 79,
+        "duration": 3.95,
+        "packets": 79,
+        "encoded_frame_sha256": "d9e4914887eb6a7ffc75f5a1f988c5eaa0dc57780089a5e9be2f9e02389d3e95"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep042_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep043_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "3bef0cb37dafbb3a503916a70161152a058846e69924ece3ba48497adce16f65"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "3bef0cb37dafbb3a503916a70161152a058846e69924ece3ba48497adce16f65"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep043_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep044_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "46f3cad970d1aebcb90f2a8c2c993bdd0b55587f671984d860ae764f89329399"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "46f3cad970d1aebcb90f2a8c2c993bdd0b55587f671984d860ae764f89329399"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep044_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep045_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1e58655ab80ac5ffeb75afadcab2f367fa1e9989c1b82a8dbcef7e8e58650aa7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1e58655ab80ac5ffeb75afadcab2f367fa1e9989c1b82a8dbcef7e8e58650aa7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep045_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep046_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2633dc74a6e662f92a2a27d58102be8cf7503a93c878e48734ce79298038bf56"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "2633dc74a6e662f92a2a27d58102be8cf7503a93c878e48734ce79298038bf56"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep046_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep047_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8e9cb8087e8c9a99ec194a9b03307a5c8cc4b3981bee00ad7a5e76a9129a72fa"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "8e9cb8087e8c9a99ec194a9b03307a5c8cc4b3981bee00ad7a5e76a9129a72fa"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep047_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep048_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 174,
+        "duration": 17.4,
+        "packets": 174,
+        "encoded_frame_sha256": "b2717e854e1a1c073ec6b02f40b5e45dad5cf6eda2df878514fa026cddb4b5f7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 174,
+        "duration": 8.7,
+        "packets": 174,
+        "encoded_frame_sha256": "b2717e854e1a1c073ec6b02f40b5e45dad5cf6eda2df878514fa026cddb4b5f7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep048_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep049_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 167,
+        "duration": 16.7,
+        "packets": 167,
+        "encoded_frame_sha256": "403ca7813aa302e1b3df89e669e913165251e8eada6350b45e95387c50588dce"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 167,
+        "duration": 8.35,
+        "packets": 167,
+        "encoded_frame_sha256": "403ca7813aa302e1b3df89e669e913165251e8eada6350b45e95387c50588dce"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_ep049_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep000_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 82,
+        "duration": 8.2,
+        "packets": 82,
+        "encoded_frame_sha256": "8e387c6e29898feb37fb7223015c194f8b82ef5f115d32754250d5b619be3b1f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 82,
+        "duration": 4.1,
+        "packets": 82,
+        "encoded_frame_sha256": "8e387c6e29898feb37fb7223015c194f8b82ef5f115d32754250d5b619be3b1f"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep000_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep001_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 94,
+        "duration": 9.4,
+        "packets": 94,
+        "encoded_frame_sha256": "1ef19d5df58732ddc9dd2a3fbb53a1bb86f544f9009d735e84204023e31f20a5"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 94,
+        "duration": 4.7,
+        "packets": 94,
+        "encoded_frame_sha256": "1ef19d5df58732ddc9dd2a3fbb53a1bb86f544f9009d735e84204023e31f20a5"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep001_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep002_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 138,
+        "duration": 13.8,
+        "packets": 138,
+        "encoded_frame_sha256": "f77877d32c84886ed8d7a4472b93cc4daa08b1fd8ca13a15e848dc393decfff9"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 138,
+        "duration": 6.9,
+        "packets": 138,
+        "encoded_frame_sha256": "f77877d32c84886ed8d7a4472b93cc4daa08b1fd8ca13a15e848dc393decfff9"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep002_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep003_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 84,
+        "duration": 8.4,
+        "packets": 84,
+        "encoded_frame_sha256": "6a55f44dbe86ba9bba1c243dec02a4737fa0a0572f1fa716841306467a457b51"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 84,
+        "duration": 4.2,
+        "packets": 84,
+        "encoded_frame_sha256": "6a55f44dbe86ba9bba1c243dec02a4737fa0a0572f1fa716841306467a457b51"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep003_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep004_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 76,
+        "duration": 7.6,
+        "packets": 76,
+        "encoded_frame_sha256": "0d81c6752206d7870cc32df638e416a5dd05c98ddaf952cf0da4d29689644c92"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 76,
+        "duration": 3.8,
+        "packets": 76,
+        "encoded_frame_sha256": "0d81c6752206d7870cc32df638e416a5dd05c98ddaf952cf0da4d29689644c92"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep004_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep005_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 87,
+        "duration": 8.7,
+        "packets": 87,
+        "encoded_frame_sha256": "410b06e360a93561981fb138e176e66dbc7ccb2b391514ae86f111e8ef7e8db8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 87,
+        "duration": 4.35,
+        "packets": 87,
+        "encoded_frame_sha256": "410b06e360a93561981fb138e176e66dbc7ccb2b391514ae86f111e8ef7e8db8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep005_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep006_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 85,
+        "duration": 8.5,
+        "packets": 85,
+        "encoded_frame_sha256": "b11f8273c12d54fef468bd682ad66447fb068d45c6862c226e16c3169236c0c7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 85,
+        "duration": 4.25,
+        "packets": 85,
+        "encoded_frame_sha256": "b11f8273c12d54fef468bd682ad66447fb068d45c6862c226e16c3169236c0c7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep006_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep007_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 83,
+        "duration": 8.3,
+        "packets": 83,
+        "encoded_frame_sha256": "729f197b2c7427e0627daa2f16a19995c40b6c15d81dbb0535865fa103792b6a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 83,
+        "duration": 4.15,
+        "packets": 83,
+        "encoded_frame_sha256": "729f197b2c7427e0627daa2f16a19995c40b6c15d81dbb0535865fa103792b6a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep007_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep008_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 94,
+        "duration": 9.4,
+        "packets": 94,
+        "encoded_frame_sha256": "02eed286334dfb2cd01187a6106879f6834180827191532e52fd1bd301b21bf9"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 94,
+        "duration": 4.7,
+        "packets": 94,
+        "encoded_frame_sha256": "02eed286334dfb2cd01187a6106879f6834180827191532e52fd1bd301b21bf9"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep008_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep009_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 141,
+        "duration": 14.1,
+        "packets": 141,
+        "encoded_frame_sha256": "345a2b52140798f3be04150d5d24f04f8f4ddd4bf4389532497919bf8d0699d8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 141,
+        "duration": 7.05,
+        "packets": 141,
+        "encoded_frame_sha256": "345a2b52140798f3be04150d5d24f04f8f4ddd4bf4389532497919bf8d0699d8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep009_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep010_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 84,
+        "duration": 8.4,
+        "packets": 84,
+        "encoded_frame_sha256": "7e9f6f7daac2c271d1ba87a8db2a4f31ab0941df5608d383297a94ca76bc7ece"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 84,
+        "duration": 4.2,
+        "packets": 84,
+        "encoded_frame_sha256": "7e9f6f7daac2c271d1ba87a8db2a4f31ab0941df5608d383297a94ca76bc7ece"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep010_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep011_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 79,
+        "duration": 7.9,
+        "packets": 79,
+        "encoded_frame_sha256": "6b4587dea294359b4f6a38b1cdf668075eb34685864b107cfeea4cfe09aecbd5"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 79,
+        "duration": 3.95,
+        "packets": 79,
+        "encoded_frame_sha256": "6b4587dea294359b4f6a38b1cdf668075eb34685864b107cfeea4cfe09aecbd5"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep011_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep012_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 98,
+        "duration": 9.8,
+        "packets": 98,
+        "encoded_frame_sha256": "638d9c4fd6415c6a0c2ce488de7f748a055058e2b061af5e417362002a4f538b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 98,
+        "duration": 4.9,
+        "packets": 98,
+        "encoded_frame_sha256": "638d9c4fd6415c6a0c2ce488de7f748a055058e2b061af5e417362002a4f538b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep012_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep013_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 86,
+        "duration": 8.6,
+        "packets": 86,
+        "encoded_frame_sha256": "9f55273d48268da229ac0ae071317db3637b0e29d6d638673278c25f2f81f8d8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 86,
+        "duration": 4.3,
+        "packets": 86,
+        "encoded_frame_sha256": "9f55273d48268da229ac0ae071317db3637b0e29d6d638673278c25f2f81f8d8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep013_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep014_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1c5b095901b0cc2c264ed30ed837268b27b44e4eb39208e8199c7266cb26ecc4"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "1c5b095901b0cc2c264ed30ed837268b27b44e4eb39208e8199c7266cb26ecc4"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep014_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep015_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 93,
+        "duration": 9.3,
+        "packets": 93,
+        "encoded_frame_sha256": "a360808485f21e256689fcfc5700c2fc3c104e18b98bcacbfa977c3f22001666"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 93,
+        "duration": 4.65,
+        "packets": 93,
+        "encoded_frame_sha256": "a360808485f21e256689fcfc5700c2fc3c104e18b98bcacbfa977c3f22001666"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep015_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep016_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 87,
+        "duration": 8.7,
+        "packets": 87,
+        "encoded_frame_sha256": "7ab2657d0ab757e3d67a5fc0b8d9c57b90c57f1b532329d3ada0f557f1d8b195"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 87,
+        "duration": 4.35,
+        "packets": 87,
+        "encoded_frame_sha256": "7ab2657d0ab757e3d67a5fc0b8d9c57b90c57f1b532329d3ada0f557f1d8b195"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep016_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep017_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 87,
+        "duration": 8.7,
+        "packets": 87,
+        "encoded_frame_sha256": "d46f6bde73020d59d0456952006a18a0682dcc75d8234eb3e8ae6084705bb279"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 87,
+        "duration": 4.35,
+        "packets": 87,
+        "encoded_frame_sha256": "d46f6bde73020d59d0456952006a18a0682dcc75d8234eb3e8ae6084705bb279"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep017_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep018_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 96,
+        "duration": 9.6,
+        "packets": 96,
+        "encoded_frame_sha256": "e9fcc53b7ae2771849a7cb2f231c9429c28b0cf480b430287ca6d1e57f03de02"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 96,
+        "duration": 4.8,
+        "packets": 96,
+        "encoded_frame_sha256": "e9fcc53b7ae2771849a7cb2f231c9429c28b0cf480b430287ca6d1e57f03de02"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep018_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep019_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 80,
+        "duration": 8.0,
+        "packets": 80,
+        "encoded_frame_sha256": "0c48078a9cace39a975f47203585fc083a92bc88358c1f310c2a2d74fd49c4a1"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 80,
+        "duration": 4.0,
+        "packets": 80,
+        "encoded_frame_sha256": "0c48078a9cace39a975f47203585fc083a92bc88358c1f310c2a2d74fd49c4a1"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep019_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep020_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "710c8c4ad5fc67a5573369383c9667de2d74f21570a724918dbcd702fdcc66d7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "710c8c4ad5fc67a5573369383c9667de2d74f21570a724918dbcd702fdcc66d7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep020_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep021_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 95,
+        "duration": 9.5,
+        "packets": 95,
+        "encoded_frame_sha256": "39d18cea0c907ca2b238b2c05c3899507e12bddb159b5ee5662aaef2df66df2e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 95,
+        "duration": 4.75,
+        "packets": 95,
+        "encoded_frame_sha256": "39d18cea0c907ca2b238b2c05c3899507e12bddb159b5ee5662aaef2df66df2e"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep021_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep022_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "180355906b1da3eaa61cabbb0020c7f8f1d9f2eb3834547466109bf7d97e16fd"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "180355906b1da3eaa61cabbb0020c7f8f1d9f2eb3834547466109bf7d97e16fd"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep022_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep023_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 100,
+        "duration": 10.0,
+        "packets": 100,
+        "encoded_frame_sha256": "bee2ce51c828d5aeb0608b72d5148d25717d6c7ee431507bd31ac5d40744b96f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 100,
+        "duration": 5.0,
+        "packets": 100,
+        "encoded_frame_sha256": "bee2ce51c828d5aeb0608b72d5148d25717d6c7ee431507bd31ac5d40744b96f"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep023_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep024_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 93,
+        "duration": 9.3,
+        "packets": 93,
+        "encoded_frame_sha256": "c90806854e6ae3ef348ed4b05da746e333c37544f73b61b10f5c9ac178d3b2d8"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 93,
+        "duration": 4.65,
+        "packets": 93,
+        "encoded_frame_sha256": "c90806854e6ae3ef348ed4b05da746e333c37544f73b61b10f5c9ac178d3b2d8"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep024_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep025_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 113,
+        "duration": 11.3,
+        "packets": 113,
+        "encoded_frame_sha256": "3f193347338ead9e2bbdb4f6cb710e9b698adb30f8fba405939f45191c22587f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 113,
+        "duration": 5.65,
+        "packets": 113,
+        "encoded_frame_sha256": "3f193347338ead9e2bbdb4f6cb710e9b698adb30f8fba405939f45191c22587f"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep025_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep026_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 88,
+        "duration": 8.8,
+        "packets": 88,
+        "encoded_frame_sha256": "d651476acc0d47620a06f87c7dda21097986119b13738ee2f431cb5a0b680a05"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 88,
+        "duration": 4.4,
+        "packets": 88,
+        "encoded_frame_sha256": "d651476acc0d47620a06f87c7dda21097986119b13738ee2f431cb5a0b680a05"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep026_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep027_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 85,
+        "duration": 8.5,
+        "packets": 85,
+        "encoded_frame_sha256": "2f0f709a516887de39785e322f4fe99d26e2ed43882cf6292bff56616c18fda7"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 85,
+        "duration": 4.25,
+        "packets": 85,
+        "encoded_frame_sha256": "2f0f709a516887de39785e322f4fe99d26e2ed43882cf6292bff56616c18fda7"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep027_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep028_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 85,
+        "duration": 8.5,
+        "packets": 85,
+        "encoded_frame_sha256": "d240c16ece9c24731cb829d30297bec4b97993a324cf0dd4f2be09b94a714f43"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 85,
+        "duration": 4.25,
+        "packets": 85,
+        "encoded_frame_sha256": "d240c16ece9c24731cb829d30297bec4b97993a324cf0dd4f2be09b94a714f43"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep028_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep029_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 95,
+        "duration": 9.5,
+        "packets": 95,
+        "encoded_frame_sha256": "25d8f73a09a1577757e162926bf698886714de333c85b995c6e9b44bbbb3652f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 95,
+        "duration": 4.75,
+        "packets": 95,
+        "encoded_frame_sha256": "25d8f73a09a1577757e162926bf698886714de333c85b995c6e9b44bbbb3652f"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep029_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep030_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 206,
+        "duration": 20.6,
+        "packets": 206,
+        "encoded_frame_sha256": "ac73476a83ac8e181b4fc7bb6f1e9b3df122d6240fb0c6c88b6838e17b17e163"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 206,
+        "duration": 10.3,
+        "packets": 206,
+        "encoded_frame_sha256": "ac73476a83ac8e181b4fc7bb6f1e9b3df122d6240fb0c6c88b6838e17b17e163"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep030_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep031_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 82,
+        "duration": 8.2,
+        "packets": 82,
+        "encoded_frame_sha256": "db27d30c30fa3b3c3a97c7e32821eb6ae115ecc7459606f084d8b876cef9ee7e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 82,
+        "duration": 4.1,
+        "packets": 82,
+        "encoded_frame_sha256": "db27d30c30fa3b3c3a97c7e32821eb6ae115ecc7459606f084d8b876cef9ee7e"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep031_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep032_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 79,
+        "duration": 7.9,
+        "packets": 79,
+        "encoded_frame_sha256": "d82b654c1d83e620c6d1e70d25cc966cb6cf99f47780507b8023654ba77d8681"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 79,
+        "duration": 3.95,
+        "packets": 79,
+        "encoded_frame_sha256": "d82b654c1d83e620c6d1e70d25cc966cb6cf99f47780507b8023654ba77d8681"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep032_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep033_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "51de74c13b89be65653caf1fa220c163dc98ff17324676e61b2a14f0ca93f14d"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "51de74c13b89be65653caf1fa220c163dc98ff17324676e61b2a14f0ca93f14d"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep033_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep034_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "376e174f9296944b91951f5ede654f664f4a93c9fec6fefaa19eda0bcc0a3eec"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "376e174f9296944b91951f5ede654f664f4a93c9fec6fefaa19eda0bcc0a3eec"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep034_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep035_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 202,
+        "duration": 20.2,
+        "packets": 202,
+        "encoded_frame_sha256": "1f145256f8f50440fa3edde1b13ada9a4b74b2eda5f2c375f2ef4f223e958609"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 202,
+        "duration": 10.1,
+        "packets": 202,
+        "encoded_frame_sha256": "1f145256f8f50440fa3edde1b13ada9a4b74b2eda5f2c375f2ef4f223e958609"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep035_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep036_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 142,
+        "duration": 14.2,
+        "packets": 142,
+        "encoded_frame_sha256": "c1e3e53d9b3c4adbd2ba7308198bfdec71ec883d05070028e801c6bce83f148b"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 142,
+        "duration": 7.1,
+        "packets": 142,
+        "encoded_frame_sha256": "c1e3e53d9b3c4adbd2ba7308198bfdec71ec883d05070028e801c6bce83f148b"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep036_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep037_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 97,
+        "duration": 9.7,
+        "packets": 97,
+        "encoded_frame_sha256": "724612d1e5112375ad0fda829c2832ce275f6e9e9137e77ca9055d052afd2792"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 97,
+        "duration": 4.85,
+        "packets": 97,
+        "encoded_frame_sha256": "724612d1e5112375ad0fda829c2832ce275f6e9e9137e77ca9055d052afd2792"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep037_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep038_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 81,
+        "duration": 8.1,
+        "packets": 81,
+        "encoded_frame_sha256": "bcb4305e6b2f0e3a6264373c1083b942992a57e0b9a19ca470006ee59231b7fd"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 81,
+        "duration": 4.05,
+        "packets": 81,
+        "encoded_frame_sha256": "bcb4305e6b2f0e3a6264373c1083b942992a57e0b9a19ca470006ee59231b7fd"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep038_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep039_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 126,
+        "duration": 12.6,
+        "packets": 126,
+        "encoded_frame_sha256": "b096140cb89cacc332c0536b297584ae0af61b2884cbeecd8aaddbde450ae750"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 126,
+        "duration": 6.3,
+        "packets": 126,
+        "encoded_frame_sha256": "b096140cb89cacc332c0536b297584ae0af61b2884cbeecd8aaddbde450ae750"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep039_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep040_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 86,
+        "duration": 8.6,
+        "packets": 86,
+        "encoded_frame_sha256": "c123daebf78598948a8c5c198645079e48435236004d8ce906cb6593ba57ea6a"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 86,
+        "duration": 4.3,
+        "packets": 86,
+        "encoded_frame_sha256": "c123daebf78598948a8c5c198645079e48435236004d8ce906cb6593ba57ea6a"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep040_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep041_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 99,
+        "duration": 9.9,
+        "packets": 99,
+        "encoded_frame_sha256": "eddda33719154a739402a959750022b704ed336e7bc1df9a8454197fff9a1ef9"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 99,
+        "duration": 4.95,
+        "packets": 99,
+        "encoded_frame_sha256": "eddda33719154a739402a959750022b704ed336e7bc1df9a8454197fff9a1ef9"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep041_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep042_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 86,
+        "duration": 8.6,
+        "packets": 86,
+        "encoded_frame_sha256": "6be5bf2f1610246dff43383f7d5bf920f085a139c6196f40849ae5d931febc57"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 86,
+        "duration": 4.3,
+        "packets": 86,
+        "encoded_frame_sha256": "6be5bf2f1610246dff43383f7d5bf920f085a139c6196f40849ae5d931febc57"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep042_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep043_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 86,
+        "duration": 8.6,
+        "packets": 86,
+        "encoded_frame_sha256": "6d2c2c303185170874758e74007ae0c0bdf45f7c8814d7a624e0e4a6f163239e"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 86,
+        "duration": 4.3,
+        "packets": 86,
+        "encoded_frame_sha256": "6d2c2c303185170874758e74007ae0c0bdf45f7c8814d7a624e0e4a6f163239e"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep043_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep044_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 136,
+        "duration": 13.6,
+        "packets": 136,
+        "encoded_frame_sha256": "34969ccbea94cfee7b7440bc57f332f9cef7e3f1048787485cf30b692916d609"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 136,
+        "duration": 6.8,
+        "packets": 136,
+        "encoded_frame_sha256": "34969ccbea94cfee7b7440bc57f332f9cef7e3f1048787485cf30b692916d609"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep044_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep045_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 90,
+        "duration": 9.0,
+        "packets": 90,
+        "encoded_frame_sha256": "cae6465cd851ead20d3e044d225c7f5e53d5e5a942588d75d606d9ace8e8f88f"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 90,
+        "duration": 4.5,
+        "packets": 90,
+        "encoded_frame_sha256": "cae6465cd851ead20d3e044d225c7f5e53d5e5a942588d75d606d9ace8e8f88f"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep045_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep046_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "9d40d0894afae057ec2a5800737ccc44c2619c20fef4e0948ee34302e55d9454"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "9d40d0894afae057ec2a5800737ccc44c2619c20fef4e0948ee34302e55d9454"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep046_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep047_failure.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 220,
+        "duration": 22.0,
+        "packets": 220,
+        "encoded_frame_sha256": "b5eaa7a7a50388c2a8c428b404904aed1e41b19726dfe751c52e01cc681bc7f3"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 220,
+        "duration": 11.0,
+        "packets": 220,
+        "encoded_frame_sha256": "b5eaa7a7a50388c2a8c428b404904aed1e41b19726dfe751c52e01cc681bc7f3"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep047_failure.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep048_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 172,
+        "duration": 17.2,
+        "packets": 172,
+        "encoded_frame_sha256": "209f578badac6ace646b13f8d5a899b0be029ca19395ccad5773640679e01997"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 172,
+        "duration": 8.6,
+        "packets": 172,
+        "encoded_frame_sha256": "209f578badac6ace646b13f8d5a899b0be029ca19395ccad5773640679e01997"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep048_success.mp4"
+    },
+    {
+      "path": "libero_spatial/videos/libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep049_success.mp4",
+      "before": {
+        "fps": 10.0,
+        "frames": 110,
+        "duration": 11.0,
+        "packets": 110,
+        "encoded_frame_sha256": "12ebb702b959947f66358d2cdbfbf2b9bf6057b51ae9421617f5b23bc2620aac"
+      },
+      "after": {
+        "fps": 20.0,
+        "frames": 110,
+        "duration": 5.5,
+        "packets": 110,
+        "encoded_frame_sha256": "12ebb702b959947f66358d2cdbfbf2b9bf6057b51ae9421617f5b23bc2620aac"
+      },
+      "original_path": "libero_spatial/videos/libero_spatial/rollout_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_ep049_success.mp4"
+    }
+  ]
+}

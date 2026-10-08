@@ -1,0 +1,46 @@
+usage: main_incontext.py [-h] [OPTIONS]
+
+╭─ options ──────────────────────────────────────────────────────────────────╮
+│ -h, --help              show this help message and exit                    │
+│ --host STR                                                                 │
+│                         #################################################… │
+│                         Model server parameters                            │
+│                         #################################################… │
+│                         (default: 0.0.0.0)                                 │
+│ --port INT                                                                 │
+│                         #################################################… │
+│                         Model server parameters                            │
+│                         #################################################… │
+│                         (default: 8000)                                    │
+│ --resize-size INT                                                          │
+│                         #################################################… │
+│                         Model server parameters                            │
+│                         #################################################… │
+│                         (default: 224)                                     │
+│ --replan-steps INT                                                         │
+│                         #################################################… │
+│                         Model server parameters                            │
+│                         #################################################… │
+│                         (default: 5)                                       │
+│ --task-suite-name STR                                                      │
+│                         #################################################… │
+│                         LIBERO environment-specific parameters             │
+│                         #################################################… │
+│                         (default: libero_spatial)                          │
+│ --num-steps-wait INT    Number of steps to wait for objects to stabilize i │
+│                         n sim (default: 10)                                │
+│ --num-trials-per-task INT                                                  │
+│                         Number of rollouts per task (default: 50)          │
+│ --unseen-only, --no-unseen-only                                            │
+│                         Evaluate only held-out tasks by default (default:  │
+│                         True)                                              │
+│ --unseen-task-index INT                                                    │
+│                         If >= 0, evaluate this index within the suite's    │
+│                         unseen tasks (default: -1)                         │
+│ --video-out-path STR    Path to save videos (default:                      │
+│                         data/libero_incontext/videos)                      │
+│ --results-out-path STR  Path to save JSON results (default:                │
+│                         logs/eval_results/<task_suite_name>_results.json)  │
+│                         (default: '')                                      │
+│ --seed INT              Random Seed (for reproducibility) (default: 7)     │
+╰────────────────────────────────────────────────────────────────────────────╯

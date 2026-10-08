@@ -1,0 +1,9 @@
+{
+  "wrong/milk": {
+    "episodes": 25,
+    "object_in_basket_counts": {
+      "cream_cheese_1": 25
+    },
+    "max_original_trajectory_error": 0.0
+  }
+}

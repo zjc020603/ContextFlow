@@ -1,0 +1,22 @@
+[
+  {
+    "task_index": 1,
+    "first_episodes_checked": 3,
+    "rng_sequence_exact": true
+  },
+  {
+    "task_index": 5,
+    "first_episodes_checked": 3,
+    "rng_sequence_exact": true
+  },
+  {
+    "task_index": 10,
+    "first_episodes_checked": 3,
+    "rng_sequence_exact": true
+  },
+  {
+    "task_index": 17,
+    "first_episodes_checked": 3,
+    "rng_sequence_exact": true
+  }
+]

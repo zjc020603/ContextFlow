@@ -1,0 +1,31 @@
+dataset_task_index,suite,split,goal_clause,initially_true,ever_true,finally_true,newly_true_from_initially_false,trials
+19,libero_goal,seen,open wooden_cabinet_1_middle_region,0,50,50,50,50
+17,libero_goal,unseen,on akita_black_bowl_1 flat_stove_1_cook_region,0,0,0,0,50
+14,libero_goal,seen,on wine_bottle_1 wooden_cabinet_1_top_side,0,50,50,50,50
+12,libero_goal,seen,in akita_black_bowl_1 wooden_cabinet_1_top_region,0,37,37,37,50
+18,libero_goal,seen,on akita_black_bowl_1 wooden_cabinet_1_top_side,0,49,49,49,50
+15,libero_goal,seen,on plate_1 main_table_stove_front_region,0,41,41,41,50
+13,libero_goal,seen,on cream_cheese_1 akita_black_bowl_1,0,45,45,45,50
+16,libero_goal,seen,turnon flat_stove_1,0,49,49,49,50
+10,libero_goal,unseen,on akita_black_bowl_1 plate_1,0,0,0,0,50
+11,libero_goal,seen,on wine_bottle_1 wine_rack_1_top_region,0,40,40,40,50
+5,libero_10,unseen,in alphabet_soup_1 basket_1_contain_region,0,0,0,0,50
+5,libero_10,unseen,in tomato_sauce_1 basket_1_contain_region,0,0,0,0,50
+7,libero_10,seen,in cream_cheese_1 basket_1_contain_region,0,49,49,49,50
+7,libero_10,seen,in butter_1 basket_1_contain_region,0,48,48,48,50
+3,libero_10,seen,turnon flat_stove_1,0,50,50,50,50
+3,libero_10,seen,on moka_pot_1 flat_stove_1_cook_region,0,37,37,37,50
+8,libero_10,seen,close white_cabinet_1_bottom_region,0,45,45,45,50
+8,libero_10,seen,in akita_black_bowl_1 white_cabinet_1_bottom_region,0,48,47,48,50
+0,libero_10,seen,on porcelain_mug_1 plate_1,0,36,36,36,50
+0,libero_10,seen,on white_yellow_mug_1 plate_2,0,47,46,47,50
+9,libero_10,seen,in black_book_1 desk_caddy_1_back_contain_region,0,45,45,45,50
+1,libero_10,unseen,on porcelain_mug_1 plate_1,0,6,2,6,50
+1,libero_10,unseen,on chocolate_pudding_1 living_room_table_plate_right_region,0,0,0,0,50
+4,libero_10,seen,in alphabet_soup_1 basket_1_contain_region,0,49,48,49,50
+4,libero_10,seen,in cream_cheese_1 basket_1_contain_region,0,47,47,47,50
+6,libero_10,seen,on moka_pot_1 flat_stove_1_cook_region,0,29,28,29,50
+6,libero_10,seen,on moka_pot_2 flat_stove_1_cook_region,0,41,37,41,50
+6,libero_10,seen,turnon flat_stove_1,50,50,50,0,50
+2,libero_10,seen,in white_yellow_mug_1 microwave_1_heating_region,0,37,36,37,50
+2,libero_10,seen,close microwave_1,0,35,35,35,50

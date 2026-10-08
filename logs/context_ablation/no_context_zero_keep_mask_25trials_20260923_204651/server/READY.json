@@ -1,0 +1,10 @@
+{
+  "context_ablation_protocol": 1,
+  "no_context_intervention": "zero_all_encoded_demo_tokens_keep_mask",
+  "baseline_gate_passed": true,
+  "attention_environment_steps": [
+    0,
+    80,
+    160
+  ]
+}

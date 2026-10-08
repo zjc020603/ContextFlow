@@ -1,0 +1,1138 @@
+{
+  "source_run": "/data/zjc/workspace/ContextFlow/logs/attention_capture/experiment0_consistency_20260923_143830",
+  "task": "milk",
+  "layout": "original",
+  "environment_step": 0,
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "primary_episode": 0,
+  "modes": [
+    "correct",
+    "no",
+    "wrong"
+  ],
+  "default_layer": 17,
+  "default_flow_step": 9,
+  "heads": "mean of 8",
+  "queries": "first 5 action positions; state query excluded",
+  "paired_checks": "images, state, language tokens/mask, instruction, initial simulator hash, noise, PRNG key: exact across all three contexts in each episode",
+  "default_block_masses": [
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "当前主视角图像",
+      "mass_percent": 5.784340607647779
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "当前手腕图像",
+      "mass_percent": 12.996029350903198
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "语言",
+      "mass_percent": 0.18577985569663721
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.8076758618316967
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.8559331260275378
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.9814831388621313
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.442098667030223
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "当前状态",
+      "mass_percent": 0.6425023078918457
+    },
+    {
+      "episode": 0,
+      "context": "correct",
+      "block": "预测动作 token",
+      "mass_percent": 71.28503341227768
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "当前主视角图像",
+      "mass_percent": 4.876457454034604
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "当前手腕图像",
+      "mass_percent": 13.488394084455486
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "语言",
+      "mass_percent": 0.2605675730069379
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "示范动作压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "当前状态",
+      "mass_percent": 0.3548085689544678
+    },
+    {
+      "episode": 0,
+      "context": "no",
+      "block": "预测动作 token",
+      "mass_percent": 81.01048972050194
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "当前主视角图像",
+      "mass_percent": 5.502435593371616
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "当前手腕图像",
+      "mass_percent": 13.046364489820164
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "语言",
+      "mass_percent": 0.17569475474374485
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.8976284464651204
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.8845998939881184
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "示范状态压缩 token",
+      "mass_percent": 1.0296859939330716
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.5035908517893395
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "当前状态",
+      "mass_percent": 0.4958987236022949
+    },
+    {
+      "episode": 0,
+      "context": "wrong",
+      "block": "预测动作 token",
+      "mass_percent": 71.45979067310691
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "当前主视角图像",
+      "mass_percent": 6.595993493847914
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "当前手腕图像",
+      "mass_percent": 11.605189251075247
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "语言",
+      "mass_percent": 0.17895791338787603
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.9416892120693308
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.893873600033427
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.7088361144701594
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "示范动作压缩 token",
+      "mass_percent": 5.815460357698612
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "当前状态",
+      "mass_percent": 0.7806825637817383
+    },
+    {
+      "episode": 1,
+      "context": "correct",
+      "block": "预测动作 token",
+      "mass_percent": 72.46005323715508
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "当前主视角图像",
+      "mass_percent": 5.44452270730554
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "当前手腕图像",
+      "mass_percent": 12.221633462284212
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "语言",
+      "mass_percent": 0.2990574946716151
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "示范动作压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "当前状态",
+      "mass_percent": 0.4368257522583008
+    },
+    {
+      "episode": 1,
+      "context": "no",
+      "block": "预测动作 token",
+      "mass_percent": 81.59737894049613
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "当前主视角图像",
+      "mass_percent": 6.009063823240482
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "当前手腕图像",
+      "mass_percent": 11.854382532112915
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "语言",
+      "mass_percent": 0.15860563028468277
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 1.2182316359043346
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 1.1166759063603549
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.710739632160653
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "示范动作压缩 token",
+      "mass_percent": 5.843044481589459
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "当前状态",
+      "mass_percent": 0.5850505828857422
+    },
+    {
+      "episode": 1,
+      "context": "wrong",
+      "block": "预测动作 token",
+      "mass_percent": 72.49462375417352
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "当前主视角图像",
+      "mass_percent": 5.923258884614597
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "当前手腕图像",
+      "mass_percent": 12.564920755512363
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "语言",
+      "mass_percent": 0.18320910724469286
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.8791060740461916
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.7781880814734073
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.7568093541112829
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.199624991277233
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "当前状态",
+      "mass_percent": 0.8375573158264159
+    },
+    {
+      "episode": 2,
+      "context": "correct",
+      "block": "预测动作 token",
+      "mass_percent": 71.86399061232805
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "当前主视角图像",
+      "mass_percent": 4.9350743677362985
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "当前手腕图像",
+      "mass_percent": 12.039429308985525
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "语言",
+      "mass_percent": 0.22157391706059568
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "示范动作压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "当前状态",
+      "mass_percent": 0.3888261318206787
+    },
+    {
+      "episode": 2,
+      "context": "no",
+      "block": "预测动作 token",
+      "mass_percent": 82.40972234576475
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "当前主视角图像",
+      "mass_percent": 5.963976706965468
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "当前手腕图像",
+      "mass_percent": 12.530898667981063
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "语言",
+      "mass_percent": 0.17363036016831757
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.8950942981143484
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.7336272015567964
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.7908988466942901
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.005343495635316
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "当前状态",
+      "mass_percent": 0.5812382698059082
+    },
+    {
+      "episode": 2,
+      "context": "wrong",
+      "block": "预测动作 token",
+      "mass_percent": 72.3294647783041
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "当前主视角图像",
+      "mass_percent": 6.5494330904270734
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "当前手腕图像",
+      "mass_percent": 12.71200280200288
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "语言",
+      "mass_percent": 0.1768103761008888
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.5756720817059551
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.6384178074220255
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "示范状态压缩 token",
+      "mass_percent": 1.0275484984913419
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.998547774273903
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "当前状态",
+      "mass_percent": 0.6278896331787109
+    },
+    {
+      "episode": 3,
+      "context": "correct",
+      "block": "预测动作 token",
+      "mass_percent": 70.69266563281417
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "当前主视角图像",
+      "mass_percent": 7.666571711509499
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "当前手腕图像",
+      "mass_percent": 12.164820064523923
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "语言",
+      "mass_percent": 0.534105109391021
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "示范动作压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "当前状态",
+      "mass_percent": 0.4124367237091064
+    },
+    {
+      "episode": 3,
+      "context": "no",
+      "block": "预测动作 token",
+      "mass_percent": 79.21366994938582
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "当前主视角图像",
+      "mass_percent": 6.492675245249018
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "当前手腕图像",
+      "mass_percent": 12.854020678029626
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "语言",
+      "mass_percent": 0.17087294456416657
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.808531905535766
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.8257801115570846
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "示范状态压缩 token",
+      "mass_percent": 1.07220519445832
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "示范动作压缩 token",
+      "mass_percent": 6.241381273139269
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "当前状态",
+      "mass_percent": 0.48384308815002436
+    },
+    {
+      "episode": 3,
+      "context": "wrong",
+      "block": "预测动作 token",
+      "mass_percent": 71.0477134026587
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "当前主视角图像",
+      "mass_percent": 6.025257468574523
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "当前手腕图像",
+      "mass_percent": 12.569343402324549
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "语言",
+      "mass_percent": 0.16159455786805665
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.9850011454444082
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.9253433104527417
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.7325741582098999
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "示范动作压缩 token",
+      "mass_percent": 5.775702694372739
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "当前状态",
+      "mass_percent": 0.7466626167297363
+    },
+    {
+      "episode": 4,
+      "context": "correct",
+      "block": "预测动作 token",
+      "mass_percent": 72.07312835380436
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "当前主视角图像",
+      "mass_percent": 5.523918212977498
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "当前手腕图像",
+      "mass_percent": 12.22334653364431
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "语言",
+      "mass_percent": 0.24835273351527576
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "示范动作压缩 token",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "当前状态",
+      "mass_percent": 0.40255546569824224
+    },
+    {
+      "episode": 4,
+      "context": "no",
+      "block": "预测动作 token",
+      "mass_percent": 81.59344820684056
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "当前主视角图像",
+      "mass_percent": 5.643854855723589
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "当前手腕图像",
+      "mass_percent": 12.546963979297557
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "当前右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "语言",
+      "mass_percent": 0.14544284671046626
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "示范主视角压缩 token",
+      "mass_percent": 1.2376207103303867
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "示范手腕压缩 token",
+      "mass_percent": 1.195551393307503
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "示范右手图像（屏蔽）",
+      "mass_percent": 0.0
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "示范状态压缩 token",
+      "mass_percent": 0.7231316388674713
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "示范动作压缩 token",
+      "mass_percent": 5.4440096515463665
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "当前状态",
+      "mass_percent": 0.5591058731079102
+    },
+    {
+      "episode": 4,
+      "context": "wrong",
+      "block": "预测动作 token",
+      "mass_percent": 72.50708507373929
+    }
+  ],
+  "default_spatial_differences": [
+    {
+      "episode": 0,
+      "camera": "Front camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.3950640753811503
+    },
+    {
+      "episode": 0,
+      "camera": "Front camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.0546671617624178
+    },
+    {
+      "episode": 0,
+      "camera": "Wrist camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.849296089052429
+    },
+    {
+      "episode": 0,
+      "camera": "Wrist camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.06322607742957931
+    },
+    {
+      "episode": 1,
+      "camera": "Front camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.4525708755139196
+    },
+    {
+      "episode": 1,
+      "camera": "Front camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.05786915521620905
+    },
+    {
+      "episode": 1,
+      "camera": "Wrist camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.825080035317961
+    },
+    {
+      "episode": 1,
+      "camera": "Wrist camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.08032938304538942
+    },
+    {
+      "episode": 2,
+      "camera": "Front camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.4211226110738911
+    },
+    {
+      "episode": 2,
+      "camera": "Front camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.06027451093007178
+    },
+    {
+      "episode": 2,
+      "camera": "Wrist camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.8346963005552418
+    },
+    {
+      "episode": 2,
+      "camera": "Wrist camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.07093443227414467
+    },
+    {
+      "episode": 3,
+      "camera": "Front camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.4919012216934247
+    },
+    {
+      "episode": 3,
+      "camera": "Front camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.04966940582468849
+    },
+    {
+      "episode": 3,
+      "camera": "Wrist camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.820751470232102
+    },
+    {
+      "episode": 3,
+      "camera": "Wrist camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.061026020958817234
+    },
+    {
+      "episode": 4,
+      "camera": "Front camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.44246801287871185
+    },
+    {
+      "episode": 4,
+      "camera": "Front camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.05099863355460492
+    },
+    {
+      "episode": 4,
+      "camera": "Wrist camera",
+      "comparison": "no - correct",
+      "spatial_tv": 0.8419969222778356
+    },
+    {
+      "episode": 4,
+      "camera": "Wrist camera",
+      "comparison": "wrong - correct",
+      "spatial_tv": 0.06520375441351266
+    }
+  ]
+}

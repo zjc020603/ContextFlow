@@ -1,0 +1,542 @@
+[
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/milk/ep000_neither.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/milk/ep001_language_only.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/milk/ep002_language_only.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/milk/ep003_language_only.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/milk/ep004_language_only.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/tomato_sauce/ep000_neither.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/tomato_sauce/ep001_language_only.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/tomato_sauce/ep002_language_only.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/tomato_sauce/ep003_language_only.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/correct/trajectories/tomato_sauce/ep004_language_only.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/milk/ep000_other_only.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/milk/ep001_other_only.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/milk/ep002_other_only.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/milk/ep003_other_only.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/milk/ep004_other_only.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/tomato_sauce/ep000_other_only.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/tomato_sauce/ep001_other_only.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/tomato_sauce/ep002_other_only.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/tomato_sauce/ep003_other_only.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/wrong/trajectories/tomato_sauce/ep004_other_only.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/milk/ep000_neither.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/milk/ep001_neither.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/milk/ep002_neither.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/milk/ep003_neither.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/milk/ep004_neither.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/tomato_sauce/ep000_neither.npz",
+    "initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/tomato_sauce/ep001_neither.npz",
+    "initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/tomato_sauce/ep002_neither.npz",
+    "initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/tomato_sauce/ep003_neither.npz",
+    "initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb"
+  },
+  {
+    "layout": "original",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/original/no/trajectories/tomato_sauce/ep004_neither.npz",
+    "initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/milk/ep000_other_only.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/milk/ep001_other_only.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/milk/ep002_other_only.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/milk/ep003_other_only.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/milk/ep004_other_only.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/tomato_sauce/ep000_other_only.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/tomato_sauce/ep001_other_only.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/tomato_sauce/ep002_other_only.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/tomato_sauce/ep003_other_only.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "correct",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_other_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/correct/trajectories/tomato_sauce/ep004_other_only.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/milk/ep000_neither.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/milk/ep001_neither.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/milk/ep002_language_only.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/milk/ep003_language_only.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/milk/ep004_neither.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/tomato_sauce/ep000_language_only.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/tomato_sauce/ep001_language_only.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/tomato_sauce/ep002_language_only.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_language_only.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/tomato_sauce/ep003_language_only.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "wrong",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/wrong/trajectories/tomato_sauce/ep004_neither.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "milk",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/milk/ep000_neither.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "milk",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep001_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/milk/ep001_neither.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "milk",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep002_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/milk/ep002_neither.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "milk",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep003_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/milk/ep003_neither.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "milk",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_milk_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/milk/ep004_neither.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 0,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep000_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/tomato_sauce/ep000_neither.npz",
+    "initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 1,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep001_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/tomato_sauce/ep001_neither.npz",
+    "initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 2,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep002_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/tomato_sauce/ep002_neither.npz",
+    "initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 3,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep003_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/tomato_sauce/ep003_neither.npz",
+    "initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd"
+  },
+  {
+    "layout": "swap_milk_tomato",
+    "mode": "no",
+    "task": "tomato_sauce",
+    "episode": 4,
+    "video": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/videos/pick_up_the_tomato_sauce_and_place_it_in_the_basket/ep004_neither.mp4",
+    "trajectory": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506/swap_milk_tomato/no/trajectories/tomato_sauce/ep004_neither.npz",
+    "initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad"
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "comparison": [
+    {
+      "language": "milk",
+      "context_mode": "correct",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 24,
+      "other_successes": 0,
+      "language_only": 24,
+      "other_only": 0,
+      "both": 0,
+      "neither": 1
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "correct",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 22,
+      "other_successes": 0,
+      "language_only": 22,
+      "other_only": 0,
+      "both": 0,
+      "neither": 3
+    },
+    {
+      "language": "milk",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "no",
+      "demo": "none",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 0,
+      "language_only": 0,
+      "other_only": 0,
+      "both": 0,
+      "neither": 25
+    },
+    {
+      "language": "milk",
+      "context_mode": "wrong",
+      "demo": "tomato_sauce",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 23,
+      "language_only": 0,
+      "other_only": 23,
+      "both": 0,
+      "neither": 2
+    },
+    {
+      "language": "tomato_sauce",
+      "context_mode": "wrong",
+      "demo": "milk",
+      "episodes": 25,
+      "language_successes": 0,
+      "other_successes": 24,
+      "language_only": 0,
+      "other_only": 24,
+      "both": 0,
+      "neither": 1
+    }
+  ],
+  "paired_correct_vs_wrong": {
+    "milk": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 22,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "neither -> other_only": 1,
+        "language_only -> other_only": 22,
+        "language_only -> neither": 2
+      }
+    },
+    "tomato_sauce": {
+      "pairs": 25,
+      "correct_language_only_to_wrong_other_only": 21,
+      "correct_other_only_to_wrong_language_only": 0,
+      "transition_counts": {
+        "neither -> other_only": 3,
+        "language_only -> other_only": 21,
+        "language_only -> neither": 1
+      }
+    }
+  },
+  "verified": "Matching initial simulator states, observations and per-replan noise seeds in all conditions"
+}

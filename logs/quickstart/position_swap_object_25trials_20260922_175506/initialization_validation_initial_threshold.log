@@ -1,0 +1,23 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+/data/zjc/workspace/ContextFlow/examples/libero/.venv/lib/python3.8/site-packages/numba/np/arraymath.py:3845: DeprecationWarning: `np.MachAr` is deprecated (NumPy 1.22).
+  @overload(np.MachAr)
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.8-linux-x86_64-gnu/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/position_ablation.py", line 96, in <module>
+    run(tyro.cli(Args))
+  File "/data/zjc/workspace/ContextFlow/examples/libero/position_ablation.py", line 75, in run
+    validate(args)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/position_ablation.py", line 56, in validate
+    intervention.validate_settled(env, meta)
+  File "/data/zjc/workspace/ContextFlow/examples/libero/position_intervention.py", line 69, in validate_settled
+    raise ValueError(f"Unstable initialization: {name}, XY={xy_drift}, Z={z_drift}, quat={quat_similarity}")
+ValueError: Unstable initialization: milk_1, XY=1.6291516323862946e-06, Z=0.0347354763840372, quat=0.9999999999999871

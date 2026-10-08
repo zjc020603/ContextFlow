@@ -1,0 +1,9 @@
+{
+  "passed": [
+    "WebSocket readiness, occupied port rejection, client failure propagation, server cleanup",
+    "Early server exit detected",
+    "SIGINT cleans owned process and preserves unrelated process",
+    "SIGTERM cleans owned process and preserves unrelated process",
+    "Invalid numeric inputs rejected; leading zeros normalized"
+  ]
+}

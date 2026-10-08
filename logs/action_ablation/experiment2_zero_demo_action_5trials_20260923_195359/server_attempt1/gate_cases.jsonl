@@ -1,0 +1,60 @@
+{"case_id": "original/correct/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 652, "first_action_position_id": 653, "original_action_token_l2": 8391.408191238717, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.4393388032913208, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "original/correct/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 653, "first_action_position_id": 654, "original_action_token_l2": 8390.993974498004, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.13836586475372314, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "original/correct/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/correct/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 524, "first_action_position_id": 525, "original_action_token_l2": 6061.709014680815, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.0}
+{"case_id": "original/no/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 525, "first_action_position_id": 526, "original_action_token_l2": 6061.709014680815, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.0}
+{"case_id": "original/no/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/no/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 652, "first_action_position_id": 653, "original_action_token_l2": 8390.993974498004, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.17113584280014038, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "original/wrong/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 653, "first_action_position_id": 654, "original_action_token_l2": 8391.408191238717, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.35397011041641235, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "original/wrong/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "original/wrong/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 652, "first_action_position_id": 653, "original_action_token_l2": 8391.408191238717, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.3912743330001831, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "swap_milk_tomato/correct/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 653, "first_action_position_id": 654, "original_action_token_l2": 8390.993974498004, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.13793832063674927, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "swap_milk_tomato/correct/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/correct/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 524, "first_action_position_id": 525, "original_action_token_l2": 6061.709014680815, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.0}
+{"case_id": "swap_milk_tomato/no/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 525, "first_action_position_id": 526, "original_action_token_l2": 6061.709014680815, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.0}
+{"case_id": "swap_milk_tomato/no/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/no/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/milk/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 652, "first_action_position_id": 653, "original_action_token_l2": 8390.993974498004, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.14448153972625732, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "swap_milk_tomato/wrong/milk/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/milk/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/milk/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/milk/ep004_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/tomato_sauce/ep000_step000", "historical_baseline_raw_and_executable_exact": true, "prefix_shape": [1, 976, 2048], "demo_action_range": [944, 976], "valid_prefix_tokens": 653, "first_action_position_id": 654, "original_action_token_l2": 8391.408191238717, "zero_action_token_l2": 0.0, "non_action_tokens_exact": true, "mask_and_positions_exact": true, "zero_capture_exact": true, "zero_vs_baseline_max_abs_diff": 0.3128732442855835, "changed_demo_action_values_have_zero_effect": true}
+{"case_id": "swap_milk_tomato/wrong/tomato_sauce/ep001_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/tomato_sauce/ep002_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/tomato_sauce/ep003_step000", "historical_baseline_raw_and_executable_exact": true}
+{"case_id": "swap_milk_tomato/wrong/tomato_sauce/ep004_step000", "historical_baseline_raw_and_executable_exact": true}

@@ -1,0 +1,253 @@
+INFO:2026-09-24 20:08:51,989:jax._src.xla_bridge:945: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-09-24 20:08:51,990:jax._src.xla_bridge:945: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:root:Loaded norm stats from /data/zjc/workspace/ContextFlow/.worktrees/pi05-full/assets/ContextFlow_pi05_full/physical-intelligence/libero
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+WARNING:huggingface_hub._snapshot_download:Returning existing local_dir `/data/zjc/workspace/datasets/physical-intelligence/libero` as remote repo cannot be accessed in `snapshot_download` (None).
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['llm']['embedder']['input_embedding'].value of shape (257152, 2048) (2009.00 MiB) along axis 0
+INFO:root:Sharding .params['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value of shape (1024, 3072) (12.00 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value of shape (18, 8, 256, 2048) (288.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value of shape (18, 8, 256, 1024) (144.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value of shape (18, 2, 1, 2048, 256) (72.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value of shape (18, 2, 1, 1024, 256) (36.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value of shape (18, 8, 2048, 256) (288.00 MiB) along axis 2
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value of shape (18, 8, 1024, 256) (144.00 MiB) along axis 2
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value of shape (18, 2, 2048, 16384) (4608.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['mlp']['linear'].value of shape (18, 16384, 2048) (2304.00 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value of shape (18, 2, 1024, 4096) (576.00 MiB) along axis 3
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['linear'].value of shape (18, 4096, 1024) (288.00 MiB) along axis 1
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .params['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .params['action_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['action_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .params['action_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['action_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['action_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['cross_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .params['image_compressor']['ffn_layers']['layer_1']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['ffn_layers']['layer_1']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['image_compressor']['self_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['state_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .params['state_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .params['state_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['state_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .params['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:root:Sharding .params['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['embedder']['input_embedding'].value of shape (257152, 2048) (2009.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value of shape (1024, 3072) (12.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value of shape (18, 8, 256, 2048) (288.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value of shape (18, 8, 256, 1024) (144.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value of shape (18, 2, 1, 2048, 256) (72.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value of shape (18, 2, 1, 1024, 256) (36.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value of shape (18, 8, 2048, 256) (288.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value of shape (18, 8, 1024, 256) (144.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value of shape (18, 2, 2048, 16384) (4608.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp']['linear'].value of shape (18, 16384, 2048) (2304.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value of shape (18, 2, 1024, 4096) (576.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp_1']['linear'].value of shape (18, 4096, 1024) (288.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['action_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['cross_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['ffn_layers']['layer_1']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['ffn_layers']['layer_1']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['image_compressor']['self_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['state_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].mu['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].mu['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['embedder']['input_embedding'].value of shape (257152, 2048) (2009.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value of shape (1024, 3072) (12.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value of shape (18, 8, 256, 2048) (288.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value of shape (18, 8, 256, 1024) (144.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value of shape (18, 2, 1, 2048, 256) (72.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value of shape (18, 2, 1, 1024, 256) (36.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value of shape (18, 8, 2048, 256) (288.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value of shape (18, 8, 1024, 256) (144.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value of shape (18, 2, 2048, 16384) (4608.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp']['linear'].value of shape (18, 16384, 2048) (2304.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value of shape (18, 2, 1024, 4096) (576.00 MiB) along axis 3
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp_1']['linear'].value of shape (18, 4096, 1024) (288.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (216.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['action_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['cross_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['ffn_layers']['layer_1']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['ffn_layers']['layer_1']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_1']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_1']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_1']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['image_compressor']['self_attn_layers']['layer_1']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['cross_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['cross_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['cross_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['cross_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['ffn_layers']['layer_0']['down_proj']['kernel'].value of shape (8192, 2048) (64.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['ffn_layers']['layer_0']['up_proj']['kernel'].value of shape (2048, 8192) (64.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['self_attn_layers']['layer_0']['key']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['self_attn_layers']['layer_0']['out']['kernel'].value of shape (8, 256, 2048) (16.00 MiB) along axis 2
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['self_attn_layers']['layer_0']['query']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['state_compressor']['self_attn_layers']['layer_0']['value']['kernel'].value of shape (2048, 8, 256) (16.00 MiB) along axis 0
+INFO:root:Sharding .opt_state[1][0].nu['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:root:Sharding .opt_state[1][0].nu['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1
+INFO:absl:orbax-checkpoint version: 0.11.1
+INFO:absl:Created BasePyTreeCheckpointHandler: pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=None
+INFO:absl:Restoring checkpoint from /data/zjc/workspace/ContextFlow/.model-cache/openpi-assets/checkpoints/pi05_base/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 390.7 MiB/s (total bytes: 12.5 GiB) (time elapsed: 32 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint from /data/zjc/workspace/ContextFlow/.model-cache/openpi-assets/checkpoints/pi05_base/params.
+INFO:absl:[process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:restore
+Timeout (0:01:30)!
+Thread 0x00007f5182ffd640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 331 in wait
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 629 in wait
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x00007f61fd40b740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 38 in <dictcomp>
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 38 in merge_full_backbone
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 54 in load
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/scripts/train.py", line 122 in _load_weights_and_validate
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/scripts/train.py", line 169 in init_train_state
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 483 in wrapped_fn_impl
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 559 in wrapped_fn
+  File "scripts/validate_full_contextflow.py", line 60 in main
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/tyro/_cli.py", line 189 in cli
+  File "scripts/validate_full_contextflow.py", line 138 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "/tmp/contextflow_smoke_trace.py", line 5 in <module>
+Timeout (0:01:30)!
+Thread 0x00007f5182ffd640 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 331 in wait
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 629 in wait
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/tqdm/_monitor.py", line 60 in run
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1045 in _bootstrap_inner
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/threading.py", line 1002 in _bootstrap
+
+Thread 0x00007f61fd40b740 (most recent call first):
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 38 in <dictcomp>
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 38 in merge_full_backbone
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/src/openpi/training/full_backbone_weights.py", line 54 in load
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/scripts/train.py", line 122 in _load_weights_and_validate
+  File "/data/zjc/workspace/ContextFlow/.worktrees/pi05-full/scripts/train.py", line 169 in init_train_state
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 483 in wrapped_fn_impl
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/jaxtyping/_decorator.py", line 559 in wrapped_fn
+  File "scripts/validate_full_contextflow.py", line 60 in main
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/tyro/_cli.py", line 189 in cli
+  File "scripts/validate_full_contextflow.py", line 138 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 291 in run_path
+  File "/tmp/contextflow_smoke_trace.py", line 5 in <module>

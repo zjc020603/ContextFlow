@@ -1,0 +1,29 @@
+{
+  "episode": 0,
+  "frames": 214,
+  "sample_shapes": {
+    "image": [
+      3,
+      256,
+      256
+    ],
+    "wrist_image": [
+      3,
+      256,
+      256
+    ],
+    "state": [
+      8
+    ],
+    "actions": [
+      7
+    ],
+    "timestamp": [],
+    "frame_index": [],
+    "episode_index": [],
+    "index": [],
+    "task_index": []
+  },
+  "total_tasks": 40,
+  "total_episodes": 1693
+}

@@ -1,0 +1,24 @@
+{
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "observation_manifest": "/data/zjc/workspace/ContextFlow/logs/attention_analysis/experiment1_milk_full_trajectory_20260923_195044/observations/manifest.json",
+  "pairs": 840,
+  "layers": [
+    0,
+    9,
+    17
+  ],
+  "capture_steps": [
+    0,
+    5,
+    9
+  ],
+  "parameter_sha256_before": "19e92cff3ca1839d800da29b2f8362e8058522556bd316164d6bd00243d6b4d4",
+  "model_config": "ContextFlowConfig(action_dim=32, action_horizon=50, max_token_len=48, use_action_state_prompts=True, use_image_prompts=True, use_text_prompts=True, sample_episodes=1, dtype='bfloat16', paligemma_variant=None, prompt_expert_variant='gemma_300m_v2', action_expert_variant='gemma_300m_lora', sample_frames=8, sample_actions=128, random_select=True, avg_current_img=False, num_image_queries=32, num_state_queries=32, num_action_queries=32, num_attn_heads=8, num_image_compressor_layers=4, num_state_compressor_layers=2, num_action_compressor_layers=2, compress_state_action_prompts=True)",
+  "weight_load_dtype": "float32",
+  "attention_probability_dtype": "bfloat16",
+  "jax_version": "0.5.0",
+  "devices": [
+    "cuda:0"
+  ],
+  "capture_scope": "Gemma suffix queries to all prefix and suffix keys; Perceiver and SigLIP internals not captured"
+}

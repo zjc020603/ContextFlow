@@ -1,0 +1,50 @@
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 0, "success": true, "elapsed_seconds": 20.414933567866683}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 1, "success": true, "elapsed_seconds": 11.952985733747482}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 2, "success": true, "elapsed_seconds": 9.449976040050387}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 3, "success": true, "elapsed_seconds": 8.034507179632783}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 4, "success": true, "elapsed_seconds": 15.51583407819271}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 5, "success": true, "elapsed_seconds": 8.076471647247672}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 6, "success": true, "elapsed_seconds": 7.438511995598674}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 7, "success": true, "elapsed_seconds": 7.587292734533548}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 8, "success": true, "elapsed_seconds": 7.980221273377538}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 9, "success": true, "elapsed_seconds": 14.862286852672696}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 10, "success": true, "elapsed_seconds": 9.465765047818422}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 11, "success": true, "elapsed_seconds": 9.87421003356576}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 12, "success": true, "elapsed_seconds": 15.41274981200695}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 13, "success": true, "elapsed_seconds": 13.620584772899747}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 14, "success": true, "elapsed_seconds": 8.573339935392141}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 15, "success": true, "elapsed_seconds": 9.132457807660103}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 16, "success": true, "elapsed_seconds": 10.308209454640746}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 17, "success": true, "elapsed_seconds": 9.610376011580229}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 18, "success": true, "elapsed_seconds": 10.765197981148958}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 19, "success": true, "elapsed_seconds": 12.662450719624758}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 20, "success": true, "elapsed_seconds": 11.639239551499486}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 21, "success": true, "elapsed_seconds": 9.708541655912995}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 22, "success": true, "elapsed_seconds": 10.007241237908602}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 23, "success": true, "elapsed_seconds": 9.135401464998722}
+{"task_id": 5, "task_description": "pick up the tomato sauce and place it in the basket", "episode_index": 24, "success": true, "elapsed_seconds": 12.03594334796071}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 0, "success": true, "elapsed_seconds": 7.799890587106347}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 1, "success": true, "elapsed_seconds": 6.274150060489774}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 2, "success": false, "elapsed_seconds": 15.20137477107346}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 3, "success": true, "elapsed_seconds": 8.293406873941422}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 4, "success": true, "elapsed_seconds": 7.084387339651585}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 5, "success": true, "elapsed_seconds": 8.370847946032882}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 6, "success": true, "elapsed_seconds": 8.029885485768318}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 7, "success": true, "elapsed_seconds": 7.465990357100964}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 8, "success": true, "elapsed_seconds": 8.618903709575534}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 9, "success": true, "elapsed_seconds": 7.755825513973832}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 10, "success": true, "elapsed_seconds": 7.933516779914498}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 11, "success": true, "elapsed_seconds": 7.450936045497656}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 12, "success": true, "elapsed_seconds": 7.415831167250872}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 13, "success": true, "elapsed_seconds": 8.100302312523127}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 14, "success": false, "elapsed_seconds": 16.028931649401784}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 15, "success": true, "elapsed_seconds": 8.713737167418003}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 16, "success": true, "elapsed_seconds": 8.103438131511211}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 17, "success": true, "elapsed_seconds": 8.049368107691407}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 18, "success": true, "elapsed_seconds": 8.263524053618312}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 19, "success": true, "elapsed_seconds": 8.479848943650723}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 20, "success": true, "elapsed_seconds": 7.393543034791946}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 21, "success": true, "elapsed_seconds": 8.173358114436269}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 22, "success": true, "elapsed_seconds": 8.139868313446641}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 23, "success": true, "elapsed_seconds": 7.403271311894059}
+{"task_id": 7, "task_description": "pick up the milk and place it in the basket", "episode_index": 24, "success": false, "elapsed_seconds": 15.243709394708276}

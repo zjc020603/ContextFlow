@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1UV71ia2NVD20CkXkPJgXtFf4DrdLno7B",
+    "path": "assets/physical-intelligence/libero/norm_stats.json",
+    "size": 4513,
+    "url": "https://drive.google.com/file/d/1UV71ia2NVD20CkXkPJgXtFf4DrdLno7B/view?usp=drivesdk",
+    "mime_type": "application/json"
+  },
+  {
+    "id": "1VtKEacQE3PoYH1pdzZUaD7UhGVFsSjC0",
+    "path": "params/manifest.ocdbt",
+    "size": 118,
+    "url": "https://drive.google.com/file/d/1VtKEacQE3PoYH1pdzZUaD7UhGVFsSjC0/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1t8zhEjXInNtJ4j_sH-Mfy_hFLWljLL3b",
+    "path": "params/ocdbt.process_0/manifest.ocdbt",
+    "size": 661,
+    "url": "https://drive.google.com/file/d/1t8zhEjXInNtJ4j_sH-Mfy_hFLWljLL3b/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1AJ50PP_k-D4DzPNo0wRiwr60S7wOKCWd",
+    "path": "params/ocdbt.process_0/d/4888ef41461d55726f7dbe7973597032",
+    "size": 1389,
+    "url": "https://drive.google.com/file/d/1AJ50PP_k-D4DzPNo0wRiwr60S7wOKCWd/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1R965rr9XcYB14ReUz8XmfeXt0QtTkmW4",
+    "path": "params/ocdbt.process_0/d/dc37dde22e6cceb122622e0ff38d0f54",
+    "size": 1957704192,
+    "url": "https://drive.google.com/file/d/1R965rr9XcYB14ReUz8XmfeXt0QtTkmW4/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "12h-zSOKjf90-i6fEHtnkYZKYwuDwhdbR",
+    "path": "params/ocdbt.process_0/d/9ba8e539bba5165ec09b9330d4c102f7",
+    "size": 979,
+    "url": "https://drive.google.com/file/d/12h-zSOKjf90-i6fEHtnkYZKYwuDwhdbR/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "12DSwyW5OmLCP0t9UhdNbA1rGgdXgbZn9",
+    "path": "params/ocdbt.process_0/d/9587076fc2613372d0fde0996430241d",
+    "size": 3904,
+    "url": "https://drive.google.com/file/d/12DSwyW5OmLCP0t9UhdNbA1rGgdXgbZn9/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1MZlSUuBI9XTXcJY4RLIZJLBgcZ5n0TI0",
+    "path": "params/ocdbt.process_0/d/e4da0a2b9ecdc50064fb59d9c1237863",
+    "size": 318886852,
+    "url": "https://drive.google.com/file/d/1MZlSUuBI9XTXcJY4RLIZJLBgcZ5n0TI0/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "15Dg1o2Q8dvAwAOKeI06i4gNWLE_QMHLC",
+    "path": "params/ocdbt.process_0/d/12d88af0caa1e430ae96a44d9eb0da7c",
+    "size": 843619492,
+    "url": "https://drive.google.com/file/d/15Dg1o2Q8dvAwAOKeI06i4gNWLE_QMHLC/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "168WvGlzFzR_WhsC3Yb__wjB0Q4wzpwCM",
+    "path": "params/ocdbt.process_0/d/e15b047215d17e2f5ca4731506584622",
+    "size": 1803,
+    "url": "https://drive.google.com/file/d/168WvGlzFzR_WhsC3Yb__wjB0Q4wzpwCM/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1V0QkuYPuLv9COTcoxEujk6AuhFNpBHYp",
+    "path": "params/ocdbt.process_0/d/0982d5892eec8655f759a64c532c80f1",
+    "size": 795287583,
+    "url": "https://drive.google.com/file/d/1V0QkuYPuLv9COTcoxEujk6AuhFNpBHYp/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1mE6UYiDNQw0ppObetfVnT-FAo20WmKHy",
+    "path": "params/ocdbt.process_0/d/de7304fe50f591c0230f845fb8f87c0b",
+    "size": 213,
+    "url": "https://drive.google.com/file/d/1mE6UYiDNQw0ppObetfVnT-FAo20WmKHy/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1tzT8FBewMgb5Z_2EKcMV0M0Ianch92MX",
+    "path": "params/ocdbt.process_0/d/9195b8140e2283508ab1d98cb4557ebe",
+    "size": 1118330769,
+    "url": "https://drive.google.com/file/d/1tzT8FBewMgb5Z_2EKcMV0M0Ianch92MX/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1beDYwg6UjTdvg1ovg2dI-jaJT9O2_bfe",
+    "path": "params/ocdbt.process_0/d/6743752b99d9270a19041349ecd1cef6",
+    "size": 773254948,
+    "url": "https://drive.google.com/file/d/1beDYwg6UjTdvg1ovg2dI-jaJT9O2_bfe/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1iHrnBdtdASLjCjCDYqT9DXGJ4ek-WPGL",
+    "path": "params/ocdbt.process_0/d/d103ff03208852161c800ffa992f01d4",
+    "size": 1550681447,
+    "url": "https://drive.google.com/file/d/1iHrnBdtdASLjCjCDYqT9DXGJ4ek-WPGL/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1QFwRHWtM3Jlt-zi1abxyDtdGraAaMg8L",
+    "path": "params/ocdbt.process_0/d/f51965b3a8044f767642a7adcf9e83ee",
+    "size": 19299585,
+    "url": "https://drive.google.com/file/d/1QFwRHWtM3Jlt-zi1abxyDtdGraAaMg8L/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1OXVCdSptSebPUPu4qt7XpWuoINIp9Zt6",
+    "path": "params/d/cadac88e3456c6982e815f3290e39b34",
+    "size": 4000,
+    "url": "https://drive.google.com/file/d/1OXVCdSptSebPUPu4qt7XpWuoINIp9Zt6/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1FH_6bTl-0vYCdYgCqcZxN_9B9GPc8Hkr",
+    "path": "params/_METADATA",
+    "size": 76040,
+    "url": "https://drive.google.com/file/d/1FH_6bTl-0vYCdYgCqcZxN_9B9GPc8Hkr/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1ZbJ6JT-K78f2Mo_j-vWOBh2k0AyKT9BL",
+    "path": "params/_sharding",
+    "size": 53720,
+    "url": "https://drive.google.com/file/d/1ZbJ6JT-K78f2Mo_j-vWOBh2k0AyKT9BL/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  },
+  {
+    "id": "1YRlhpXcxnE1gOckpHP2BuysFf_-RgXFt",
+    "path": "_CHECKPOINT_METADATA",
+    "size": 417,
+    "url": "https://drive.google.com/file/d/1YRlhpXcxnE1gOckpHP2BuysFf_-RgXFt/view?usp=drivesdk",
+    "mime_type": "application/octet-stream"
+  }
+]

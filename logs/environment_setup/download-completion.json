@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "name": "LIBERO v2.0",
+      "path": "/data/zjc/workspace/datasets/physical-intelligence/libero",
+      "files": 1699,
+      "bytes": 34938926941,
+      "download_verified": true
+    },
+    {
+      "name": "pi0_base",
+      "path": "/data/zjc/workspace/models/openpi/openpi-assets/checkpoints/pi0_base",
+      "files": 33,
+      "bytes": 12014440489,
+      "download_verified": true
+    },
+    {
+      "name": "ContextFlow",
+      "path": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+      "files": 20,
+      "bytes": 7377212625,
+      "download_verified": true
+    },
+    {
+      "name": "PaliGemma tokenizer",
+      "path": "/data/zjc/workspace/models/openpi/big_vision/paligemma_tokenizer.model",
+      "files": 1,
+      "bytes": 4264023,
+      "download_verified": true
+    }
+  ],
+  "total_bytes": 54334844078,
+  "model_validation": {
+    "pi0": {
+      "checkpoint": "/data/zjc/workspace/models/openpi/openpi-assets/checkpoints/pi0_base",
+      "arrays": 50,
+      "parameters": 3238048528,
+      "bytes": 12952194112,
+      "orbax_restore": "passed",
+      "finite_samples": "passed"
+    },
+    "contextflow": {
+      "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+      "arrays": 179,
+      "parameters": 2170151696,
+      "bytes": 8057676864,
+      "orbax_restore": "passed",
+      "finite_samples": "passed",
+      "config_shape_check": "passed"
+    }
+  }
+}

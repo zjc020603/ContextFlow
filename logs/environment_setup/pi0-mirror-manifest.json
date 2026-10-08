@@ -1,0 +1,224 @@
+{
+  "repo_id": "oldTOM/pi0_base",
+  "sha": "88e794fb312e073e9f09d2d7e10737a92c4aadcb",
+  "files": [
+    {
+      "path": "pi0_base/assets/arx/norm_stats.json",
+      "size": 2796,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/arx_mobile/norm_stats.json",
+      "size": 2865,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/droid/norm_stats.json",
+      "size": 2413,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/fibocom_mobile/norm_stats.json",
+      "size": 2968,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/franka/norm_stats.json",
+      "size": 2424,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/trossen/norm_stats.json",
+      "size": 2797,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/trossen_mobile/norm_stats.json",
+      "size": 2867,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/ur5e/norm_stats.json",
+      "size": 2354,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/assets/ur5e_dual/norm_stats.json",
+      "size": 2806,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/_CHECKPOINT_METADATA",
+      "size": 92,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/_METADATA",
+      "size": 19031,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/_sharding",
+      "size": 7607,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/d/85a4b908b188b86024ebb92e85065acd",
+      "size": 2184,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/manifest.ocdbt",
+      "size": 117,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/085d261a6434a2182b9cf8204a14f929",
+      "size": 203056647,
+      "lfs": {
+        "size": 203056647,
+        "sha256": "626b8b7cdc5cf2dd4fb49cf4ec229c635d4894ce1b2ca8f5d54879a599fb26c7",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/148068583a1e9abda7c46b410e91850f",
+      "size": 2240220744,
+      "lfs": {
+        "size": 2240220744,
+        "sha256": "08349adbc7d3f5bc417fe902456377ba319b800f701943eac92771b47eb70804",
+        "pointer_size": 135
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/2f72ae7e4e549700e9d7da10816ed9a4",
+      "size": 25249068,
+      "lfs": {
+        "size": 25249068,
+        "sha256": "d63b1ca054933d93b696622322bee833c69ccb9706a90ea6f9a27177a9ca9799",
+        "pointer_size": 133
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/309555f68bee51df688c4564b4d66fa5",
+      "size": 1048478,
+      "lfs": {
+        "size": 1048478,
+        "sha256": "0219aee51a9c0d85df1010fe9c9d53f19261228c576e7e80e8eccb5d13595973",
+        "pointer_size": 132
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/450c3d3cb6793dc644c1faf981296eb3",
+      "size": 34976130,
+      "lfs": {
+        "size": 34976130,
+        "sha256": "cfcea8d28790cb585ed0ee39eb120ade6f0b88838f8d43202b171eabc78fa23c",
+        "pointer_size": 133
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/45c6cbcc04a07d5f963bcf46cba903c4",
+      "size": 3077824146,
+      "lfs": {
+        "size": 3077824146,
+        "sha256": "de371b276d760d803124bc0b115174ac9c74510a9cff605cbaa38fa74232071f",
+        "pointer_size": 135
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/4e5aa230b6c768224fb6b77d78d6a1be",
+      "size": 1649,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/5e775a3f399b6add8c3c8330df655e1b",
+      "size": 5379,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/5f605020f3dadefc18287f67f369e264",
+      "size": 132845636,
+      "lfs": {
+        "size": 132845636,
+        "sha256": "4b61c384b627ec5fcd42460774ce548ccca8bff8bd2a85ce354d710cfdf62bb7",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/6629f15468f4d0cc39fb27518b7034a8",
+      "size": 2173,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/808abec8853273a1e0076b0e42d19910",
+      "size": 209,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/8dd6f7ae99ab482b841a1eefa796bb41",
+      "size": 1040,
+      "lfs": null
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/93fcf358bb740a5f61526a13e9a2c769",
+      "size": 839453563,
+      "lfs": {
+        "size": 839453563,
+        "sha256": "61637e7c13d35f4bcaaebe9882df98a4fcb9bb964d3dd07c6b0fb0a7879d7703",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/99debaeabd76bd2cc1600905278c454b",
+      "size": 559736645,
+      "lfs": {
+        "size": 559736645,
+        "sha256": "1dea0fcfeae147c4a933723768f9fedfd8e05b7883c79562f648c3c82c0a0896",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/c5e0b7744afd7fde8b33a80d7f0329bc",
+      "size": 2240216669,
+      "lfs": {
+        "size": 2240216669,
+        "sha256": "92caa09e328aea0cc6a62f843974302a303af5963c4ceaf23f8f2c427ed53817",
+        "pointer_size": 135
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/d5e67a46c20fea80fd9ccf63a434178c",
+      "size": 993821460,
+      "lfs": {
+        "size": 993821460,
+        "sha256": "21ca80596df5802491aacabf0ebd16f50d0af0e366789240c40e0e1ddd3ed1bb",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/fc0caaf15ec5a8930e6d0a269722cbe6",
+      "size": 545792151,
+      "lfs": {
+        "size": 545792151,
+        "sha256": "b8f9020d63df8dbce11b4930a8814999a3b0a705af1fbe3d3adde6b0a20e4b91",
+        "pointer_size": 134
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/d/fec2923fef877d6b2a636a44d72670b8",
+      "size": 1120134616,
+      "lfs": {
+        "size": 1120134616,
+        "sha256": "8e694e7a4e2adbe64591b692ecd453625a7d71b3abdc47ed4b199632793897bb",
+        "pointer_size": 135
+      }
+    },
+    {
+      "path": "pi0_base/params/ocdbt.process_0/manifest.ocdbt",
+      "size": 765,
+      "lfs": null
+    }
+  ],
+  "mismatches": []
+}

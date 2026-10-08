@@ -1,0 +1,30 @@
+INFO:root:Loading model with dtype: <class 'jax.numpy.float32'>...
+INFO:2026-09-21 21:04:22,052:jax._src.xla_bridge:945: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-09-21 21:04:22,053:jax._src.xla_bridge:945: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.1
+INFO:absl:Created BasePyTreeCheckpointHandler: pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=None
+INFO:absl:Restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 421.6 MiB/s (total bytes: 8.1 GiB) (time elapsed: 19 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:restore
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+INFO:root:Loaded norm stats from /data/zjc/workspace/ContextFlow/assets/ContextFlow/physical-intelligence/libero
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1389.19it/s]
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1166.54it/s]
+Fetching 1699 files:   0%|          | 0/1699 [00:00<?, ?it/s]Fetching 1699 files:   7%|▋         | 121/1699 [00:00<00:01, 1137.87it/s]Fetching 1699 files:  15%|█▍        | 248/1699 [00:00<00:01, 1200.09it/s]Fetching 1699 files:  22%|██▏       | 371/1699 [00:00<00:01, 1209.25it/s]Fetching 1699 files:  30%|██▉       | 505/1699 [00:00<00:00, 1251.97it/s]Fetching 1699 files:  38%|███▊      | 640/1699 [00:00<00:00, 1280.98it/s]Fetching 1699 files:  45%|████▌     | 769/1699 [00:00<00:00, 1272.66it/s]Fetching 1699 files:  53%|█████▎    | 898/1699 [00:00<00:00, 1276.38it/s]Fetching 1699 files:  61%|██████    | 1033/1699 [00:00<00:00, 1285.46it/s]Fetching 1699 files:  68%|██████▊   | 1162/1699 [00:00<00:00, 1280.67it/s]Fetching 1699 files:  76%|███████▌  | 1291/1699 [00:01<00:00, 1253.77it/s]Fetching 1699 files:  83%|████████▎ | 1417/1699 [00:01<00:00, 1222.25it/s]Fetching 1699 files:  91%|█████████ | 1540/1699 [00:01<00:00, 1209.04it/s]Fetching 1699 files:  98%|█████████▊| 1662/1699 [00:01<00:00, 1187.46it/s]Fetching 1699 files: 100%|██████████| 1699/1699 [00:01<00:00, 1237.66it/s]
+INFO:root:Loaded norm stats from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/assets/physical-intelligence/libero
+INFO:root:Creating server (host: 10-118-231-160, bind: 0.0.0.0:8766)
+INFO:websockets.server:server listening on 0.0.0.0:8766
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48460) opened
+INFO:root:Connection from ('127.0.0.1', 48460) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48464) opened
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the tomato sauce and place it in the basket' (index=28), demo episode(s): [821]
+INFO:root:[InjectDemoFromCustomDataset] Test task: 'pick up the milk and place it in the basket' (index=25), demo episode(s): [814]
+INFO:root:Connection from ('127.0.0.1', 48464) closed

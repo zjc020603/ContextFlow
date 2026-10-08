@@ -1,0 +1,9 @@
+{
+  "correct/milk": {
+    "episodes": 1,
+    "object_in_basket_counts": {
+      "tomato_sauce_1": 1
+    },
+    "max_original_trajectory_error": 0.0
+  }
+}

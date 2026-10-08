@@ -1,0 +1,87 @@
+INFO:root:Loading model with dtype: <class 'jax.numpy.float32'>...
+INFO:2026-09-22 15:49:02,340:jax._src.xla_bridge:945: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-09-22 15:49:02,341:jax._src.xla_bridge:945: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.1
+INFO:absl:Created BasePyTreeCheckpointHandler: pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=None
+INFO:absl:Restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 388.7 MiB/s (total bytes: 8.1 GiB) (time elapsed: 21 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint from /data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999/params.
+INFO:absl:[process=0][thread=MainThread] Skipping global process sync, barrier name: Checkpointer:restore
+asset_id:  physical-intelligence/libero
+assets.asset_id:  None
+repo_id:  physical-intelligence/libero
+INFO:root:Loaded norm stats from /data/zjc/workspace/ContextFlow/assets/ContextFlow/physical-intelligence/libero
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/datasets/physical-intelligence/libero/refs (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_policy.py", line 175, in <module>
+    main(tyro.cli(Args))
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_policy.py", line 152, in main
+    policy = create_policy(args)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_policy.py", line 142, in create_policy
+    return create_policy_from_checkpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/scripts/serve_policy.py", line 111, in create_policy_from_checkpoint
+    return _policy_config.create_trained_policy_incontext(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/src/openpi/policies/policy_config.py", line 115, in create_trained_policy_incontext
+    data_config = train_config.data.create_policy(train_config.assets_dirs, train_config.model)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/src/openpi/training/config_libero.py", line 193, in create_policy
+    dataset_meta = lerobot_dataset_mod.LeRobotDatasetMetadata(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/lerobot/common/datasets/lerobot_dataset.py", line 87, in __init__
+    self.pull_from_repo(allow_patterns="meta/")
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/lerobot/common/datasets/lerobot_dataset.py", line 101, in pull_from_repo
+    revision=self._hub_version,
+             ^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.cache/python/cpython-3.11.16-linux-x86_64-gnu/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/lerobot/common/datasets/lerobot_dataset.py", line 110, in _hub_version
+    return None if self.local_files_only else get_hub_safe_version(self.repo_id, CODEBASE_VERSION)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/lerobot/common/datasets/utils.py", line 255, in get_hub_safe_version
+    dataset_info = api.list_repo_refs(repo_id, repo_type="dataset")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3083, in list_repo_refs
+    response = get_session().get(
+               ^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 93, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/zjc/workspace/ContextFlow/.venv/lib/python3.11/site-packages/requests/adapters.py", line 698, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /api/datasets/physical-intelligence/libero/refs (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: bbdfc85f-09f0-456f-913b-24b0734a14ea)')

@@ -1,0 +1,5117 @@
+{
+  "source": "/data/zjc/workspace/ContextFlow/logs/quickstart/position_swap_object_25trials_20260922_175506",
+  "episodes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "steps": [
+    0,
+    80,
+    160
+  ],
+  "cases": [
+    {
+      "case_id": "original/correct/milk/ep000_step000",
+      "npz": "original/correct/milk/ep000_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep000_step080",
+      "npz": "original/correct/milk/ep000_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep000_step160",
+      "npz": "original/correct/milk/ep000_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep001_step000",
+      "npz": "original/correct/milk/ep001_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep001_step080",
+      "npz": "original/correct/milk/ep001_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep001_step160",
+      "npz": "original/correct/milk/ep001_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep002_step000",
+      "npz": "original/correct/milk/ep002_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep002_step080",
+      "npz": "original/correct/milk/ep002_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep002_step160",
+      "npz": "original/correct/milk/ep002_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep003_step000",
+      "npz": "original/correct/milk/ep003_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep003_step080",
+      "npz": "original/correct/milk/ep003_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep003_step160",
+      "npz": "original/correct/milk/ep003_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep004_step000",
+      "npz": "original/correct/milk/ep004_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep004_step080",
+      "npz": "original/correct/milk/ep004_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/milk/ep004_step160",
+      "npz": "original/correct/milk/ep004_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep000_step000",
+      "npz": "original/correct/tomato_sauce/ep000_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep000_step080",
+      "npz": "original/correct/tomato_sauce/ep000_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep000_step160",
+      "npz": "original/correct/tomato_sauce/ep000_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep001_step000",
+      "npz": "original/correct/tomato_sauce/ep001_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep001_step080",
+      "npz": "original/correct/tomato_sauce/ep001_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep001_step160",
+      "npz": "original/correct/tomato_sauce/ep001_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep002_step000",
+      "npz": "original/correct/tomato_sauce/ep002_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep002_step080",
+      "npz": "original/correct/tomato_sauce/ep002_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep002_step160",
+      "npz": "original/correct/tomato_sauce/ep002_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep003_step000",
+      "npz": "original/correct/tomato_sauce/ep003_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep003_step080",
+      "npz": "original/correct/tomato_sauce/ep003_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep003_step160",
+      "npz": "original/correct/tomato_sauce/ep003_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep004_step000",
+      "npz": "original/correct/tomato_sauce/ep004_step000.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep004_step080",
+      "npz": "original/correct/tomato_sauce/ep004_step080.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/correct/tomato_sauce/ep004_step160",
+      "npz": "original/correct/tomato_sauce/ep004_step160.npz",
+      "layout": "original",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep000_step000",
+      "npz": "original/no/milk/ep000_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep000_step080",
+      "npz": "original/no/milk/ep000_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep000_step160",
+      "npz": "original/no/milk/ep000_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep001_step000",
+      "npz": "original/no/milk/ep001_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep001_step080",
+      "npz": "original/no/milk/ep001_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep001_step160",
+      "npz": "original/no/milk/ep001_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep002_step000",
+      "npz": "original/no/milk/ep002_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep002_step080",
+      "npz": "original/no/milk/ep002_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep002_step160",
+      "npz": "original/no/milk/ep002_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep003_step000",
+      "npz": "original/no/milk/ep003_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep003_step080",
+      "npz": "original/no/milk/ep003_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep003_step160",
+      "npz": "original/no/milk/ep003_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep004_step000",
+      "npz": "original/no/milk/ep004_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep004_step080",
+      "npz": "original/no/milk/ep004_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/milk/ep004_step160",
+      "npz": "original/no/milk/ep004_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep000_step000",
+      "npz": "original/no/tomato_sauce/ep000_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep000_step080",
+      "npz": "original/no/tomato_sauce/ep000_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep000_step160",
+      "npz": "original/no/tomato_sauce/ep000_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep001_step000",
+      "npz": "original/no/tomato_sauce/ep001_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep001_step080",
+      "npz": "original/no/tomato_sauce/ep001_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep001_step160",
+      "npz": "original/no/tomato_sauce/ep001_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep002_step000",
+      "npz": "original/no/tomato_sauce/ep002_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep002_step080",
+      "npz": "original/no/tomato_sauce/ep002_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep002_step160",
+      "npz": "original/no/tomato_sauce/ep002_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep003_step000",
+      "npz": "original/no/tomato_sauce/ep003_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep003_step080",
+      "npz": "original/no/tomato_sauce/ep003_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep003_step160",
+      "npz": "original/no/tomato_sauce/ep003_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep004_step000",
+      "npz": "original/no/tomato_sauce/ep004_step000.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep004_step080",
+      "npz": "original/no/tomato_sauce/ep004_step080.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/no/tomato_sauce/ep004_step160",
+      "npz": "original/no/tomato_sauce/ep004_step160.npz",
+      "layout": "original",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep000_step000",
+      "npz": "original/wrong/milk/ep000_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep000_step080",
+      "npz": "original/wrong/milk/ep000_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep000_step160",
+      "npz": "original/wrong/milk/ep000_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep001_step000",
+      "npz": "original/wrong/milk/ep001_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep001_step080",
+      "npz": "original/wrong/milk/ep001_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep001_step160",
+      "npz": "original/wrong/milk/ep001_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep002_step000",
+      "npz": "original/wrong/milk/ep002_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep002_step080",
+      "npz": "original/wrong/milk/ep002_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep002_step160",
+      "npz": "original/wrong/milk/ep002_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep003_step000",
+      "npz": "original/wrong/milk/ep003_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep003_step080",
+      "npz": "original/wrong/milk/ep003_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep003_step160",
+      "npz": "original/wrong/milk/ep003_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep004_step000",
+      "npz": "original/wrong/milk/ep004_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep004_step080",
+      "npz": "original/wrong/milk/ep004_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/milk/ep004_step160",
+      "npz": "original/wrong/milk/ep004_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep000_step000",
+      "npz": "original/wrong/tomato_sauce/ep000_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep000_step080",
+      "npz": "original/wrong/tomato_sauce/ep000_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep000_step160",
+      "npz": "original/wrong/tomato_sauce/ep000_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cf8c189abc2cbccd910b0905b155b8c707a167459107cc35ab1fd0e5ea744328",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep001_step000",
+      "npz": "original/wrong/tomato_sauce/ep001_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep001_step080",
+      "npz": "original/wrong/tomato_sauce/ep001_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep001_step160",
+      "npz": "original/wrong/tomato_sauce/ep001_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "475f626f23023aabbf7a8be0ad88d385abdcafa6ff350bf8719b920c8b66105e",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep002_step000",
+      "npz": "original/wrong/tomato_sauce/ep002_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep002_step080",
+      "npz": "original/wrong/tomato_sauce/ep002_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep002_step160",
+      "npz": "original/wrong/tomato_sauce/ep002_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "53070331660a35024197d5a1764d4b5c90a7ee9452f53ce48f376a9e90caa148",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep003_step000",
+      "npz": "original/wrong/tomato_sauce/ep003_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep003_step080",
+      "npz": "original/wrong/tomato_sauce/ep003_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep003_step160",
+      "npz": "original/wrong/tomato_sauce/ep003_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "65a39409eff6ff1172c4b69f4c06843e6809d309a4678de23d5af5c979b442eb",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep004_step000",
+      "npz": "original/wrong/tomato_sauce/ep004_step000.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep004_step080",
+      "npz": "original/wrong/tomato_sauce/ep004_step080.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "original/wrong/tomato_sauce/ep004_step160",
+      "npz": "original/wrong/tomato_sauce/ep004_step160.npz",
+      "layout": "original",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "cae60fd104920d89090f964a4609653f72aaf33e647c3f0f58e63fdbad24b0de",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep000_step000",
+      "npz": "swap_milk_tomato/correct/milk/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep000_step080",
+      "npz": "swap_milk_tomato/correct/milk/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep000_step160",
+      "npz": "swap_milk_tomato/correct/milk/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep001_step000",
+      "npz": "swap_milk_tomato/correct/milk/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep001_step080",
+      "npz": "swap_milk_tomato/correct/milk/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep001_step160",
+      "npz": "swap_milk_tomato/correct/milk/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep002_step000",
+      "npz": "swap_milk_tomato/correct/milk/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep002_step080",
+      "npz": "swap_milk_tomato/correct/milk/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep002_step160",
+      "npz": "swap_milk_tomato/correct/milk/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep003_step000",
+      "npz": "swap_milk_tomato/correct/milk/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep003_step080",
+      "npz": "swap_milk_tomato/correct/milk/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep003_step160",
+      "npz": "swap_milk_tomato/correct/milk/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep004_step000",
+      "npz": "swap_milk_tomato/correct/milk/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep004_step080",
+      "npz": "swap_milk_tomato/correct/milk/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/milk/ep004_step160",
+      "npz": "swap_milk_tomato/correct/milk/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep000_step000",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep000_step080",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep000_step160",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep001_step000",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep001_step080",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep001_step160",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep002_step000",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep002_step080",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep002_step160",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep003_step000",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep003_step080",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep003_step160",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep004_step000",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep004_step080",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/correct/tomato_sauce/ep004_step160",
+      "npz": "swap_milk_tomato/correct/tomato_sauce/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "correct",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "correct",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep000_step000",
+      "npz": "swap_milk_tomato/no/milk/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep000_step080",
+      "npz": "swap_milk_tomato/no/milk/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep000_step160",
+      "npz": "swap_milk_tomato/no/milk/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep001_step000",
+      "npz": "swap_milk_tomato/no/milk/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep001_step080",
+      "npz": "swap_milk_tomato/no/milk/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep001_step160",
+      "npz": "swap_milk_tomato/no/milk/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep002_step000",
+      "npz": "swap_milk_tomato/no/milk/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep002_step080",
+      "npz": "swap_milk_tomato/no/milk/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep002_step160",
+      "npz": "swap_milk_tomato/no/milk/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep003_step000",
+      "npz": "swap_milk_tomato/no/milk/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep003_step080",
+      "npz": "swap_milk_tomato/no/milk/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep003_step160",
+      "npz": "swap_milk_tomato/no/milk/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep004_step000",
+      "npz": "swap_milk_tomato/no/milk/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep004_step080",
+      "npz": "swap_milk_tomato/no/milk/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/milk/ep004_step160",
+      "npz": "swap_milk_tomato/no/milk/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep000_step000",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep000_step080",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep000_step160",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep001_step000",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep001_step080",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep001_step160",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep002_step000",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep002_step080",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep002_step160",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep003_step000",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep003_step080",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep003_step160",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep004_step000",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep004_step080",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/no/tomato_sauce/ep004_step160",
+      "npz": "swap_milk_tomato/no/tomato_sauce/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "no",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "no",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep000_step000",
+      "npz": "swap_milk_tomato/wrong/milk/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep000_step080",
+      "npz": "swap_milk_tomato/wrong/milk/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep000_step160",
+      "npz": "swap_milk_tomato/wrong/milk/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep001_step000",
+      "npz": "swap_milk_tomato/wrong/milk/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep001_step080",
+      "npz": "swap_milk_tomato/wrong/milk/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep001_step160",
+      "npz": "swap_milk_tomato/wrong/milk/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep002_step000",
+      "npz": "swap_milk_tomato/wrong/milk/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep002_step080",
+      "npz": "swap_milk_tomato/wrong/milk/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep002_step160",
+      "npz": "swap_milk_tomato/wrong/milk/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep003_step000",
+      "npz": "swap_milk_tomato/wrong/milk/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep003_step080",
+      "npz": "swap_milk_tomato/wrong/milk/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep003_step160",
+      "npz": "swap_milk_tomato/wrong/milk/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep004_step000",
+      "npz": "swap_milk_tomato/wrong/milk/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep004_step080",
+      "npz": "swap_milk_tomato/wrong/milk/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/milk/ep004_step160",
+      "npz": "swap_milk_tomato/wrong/milk/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "milk",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the milk and place it in the basket",
+        "task_index": 25,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 28,
+          "rng_components": [
+            0,
+            25,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        821
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep000_step000",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep000_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep000_step080",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep000_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep000_step160",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep000_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 0,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            0,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "03d983c9a33011cbf9a428f2f4e9d86989e30ac030b727188b5963cd5cd050f1",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep001_step000",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep001_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep001_step080",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep001_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep001_step160",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep001_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 1,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            1,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "8aadf7c6855b7554588dc6c8bb9ae4d5477db531be27a0dd24422b3e85e01ebe",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep002_step000",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep002_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep002_step080",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep002_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep002_step160",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep002_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 2,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            2,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "c74baaf2e6aa06519b300bdc9d1cad88d3ab2d84df3358cee8fe5f07cb112f48",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep003_step000",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep003_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep003_step080",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep003_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep003_step160",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep003_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 3,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            3,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "677406d96c3947bdb7978636ea553523f93a43463c40e4fc0c0605ca9ff9cccd",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep004_step000",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep004_step000.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 0,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            0
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep004_step080",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep004_step080.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 80,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            16
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    },
+    {
+      "case_id": "swap_milk_tomato/wrong/tomato_sauce/ep004_step160",
+      "npz": "swap_milk_tomato/wrong/tomato_sauce/ep004_step160.npz",
+      "layout": "swap_milk_tomato",
+      "mode": "wrong",
+      "task": "tomato_sauce",
+      "episode": 4,
+      "step": 160,
+      "request": {
+        "prompt": "pick up the tomato sauce and place it in the basket",
+        "task_index": 28,
+        "split": "test",
+        "context_ablation": {
+          "mode": "wrong",
+          "demo_task_index": 25,
+          "rng_components": [
+            0,
+            28,
+            4,
+            32
+          ]
+        }
+      },
+      "expected_selected_episode": [
+        814
+      ],
+      "source_initial_state_sha256": "4d54b3ff7fced493f738b09c2ee33882c65e785f2a0cfde6c5c2dc02af183aad",
+      "replay_max_error": 0.0
+    }
+  ]
+}

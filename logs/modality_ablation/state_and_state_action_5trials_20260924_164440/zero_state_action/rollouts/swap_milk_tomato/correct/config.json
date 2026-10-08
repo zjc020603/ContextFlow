@@ -1,0 +1,30 @@
+{
+  "host": "127.0.0.1",
+  "port": 8125,
+  "mode": "correct",
+  "num_trials_per_task": 5,
+  "output_dir": "logs/modality_ablation/state_and_state_action_5trials_20260924_164440/zero_state_action/rollouts/swap_milk_tomato",
+  "seed": 7,
+  "policy_seed": 0,
+  "max_steps": 280,
+  "num_steps_wait": 10,
+  "replan_steps": 5,
+  "scene_task": "tomato_sauce",
+  "layout": "swap_milk_tomato",
+  "verify_interventions": false,
+  "tasks": {
+    "milk": {
+      "id": 7,
+      "index": 25,
+      "description": "pick up the milk and place it in the basket"
+    },
+    "tomato_sauce": {
+      "id": 5,
+      "index": 28,
+      "description": "pick up the tomato sauce and place it in the basket"
+    }
+  },
+  "termination": "fixed horizon; neither goal terminates early",
+  "success_measure": "LIBERO In predicate at any post-action step",
+  "video_fps": 20
+}

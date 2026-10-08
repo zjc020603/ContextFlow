@@ -1,0 +1,147 @@
+{
+  "blocks": [
+    {
+      "name": "base_0_rgb",
+      "kind": "current_image",
+      "start": 0,
+      "stop": 256
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 256,
+      "stop": 512
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "current_image",
+      "start": 512,
+      "stop": 768
+    },
+    {
+      "name": "language",
+      "kind": "language",
+      "start": 768,
+      "stop": 816
+    },
+    {
+      "name": "base_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 816,
+      "stop": 848
+    },
+    {
+      "name": "left_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 848,
+      "stop": 880
+    },
+    {
+      "name": "right_wrist_0_rgb",
+      "kind": "demo_image_latents",
+      "start": 880,
+      "stop": 912
+    },
+    {
+      "name": "demo_states",
+      "kind": "demo_states",
+      "start": 912,
+      "stop": 944
+    },
+    {
+      "name": "demo_actions",
+      "kind": "demo_actions",
+      "start": 944,
+      "stop": 976
+    },
+    {
+      "name": "current_state",
+      "kind": "current_state",
+      "start": 976,
+      "stop": 977
+    },
+    {
+      "name": "predicted_actions",
+      "kind": "predicted_actions",
+      "start": 977,
+      "stop": 1027
+    }
+  ],
+  "prefix_size": 976,
+  "key_size": 1027,
+  "query_layout": {
+    "current_state": [
+      0,
+      1
+    ],
+    "predicted_actions": [
+      1,
+      51
+    ]
+  },
+  "instruction": "pick up the milk and place it in the basket",
+  "context": {
+    "mode": "wrong",
+    "task_index": 25,
+    "demo_task_index": 28,
+    "rng_components": [
+      0,
+      25,
+      1,
+      33
+    ],
+    "selected_episode": [
+      821
+    ]
+  },
+  "language_token_pieces": [
+    "<bos>",
+    "pick",
+    "\u2581up",
+    "\u2581the",
+    "\u2581milk",
+    "\u2581and",
+    "\u2581place",
+    "\u2581it",
+    "\u2581in",
+    "\u2581the",
+    "\u2581basket",
+    "\n",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>",
+    "<pad>"
+  ]
+}

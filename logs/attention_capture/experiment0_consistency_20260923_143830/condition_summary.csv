@@ -1,0 +1,13 @@
+layout,language,context,pairs,exact_pairs,max_action_difference,max_historical_difference
+original,milk,correct,15,15,0.0,0.0
+original,milk,no,15,15,0.0,0.0
+original,milk,wrong,15,15,0.0,0.0
+original,tomato_sauce,correct,15,15,0.0,0.0
+original,tomato_sauce,no,15,15,0.0,0.0
+original,tomato_sauce,wrong,15,15,0.0,0.0
+swap_milk_tomato,milk,correct,15,15,0.0,0.0
+swap_milk_tomato,milk,no,15,15,0.0,0.0
+swap_milk_tomato,milk,wrong,15,15,0.0,0.0
+swap_milk_tomato,tomato_sauce,correct,15,15,0.0,0.0
+swap_milk_tomato,tomato_sauce,no,15,15,0.0,0.0
+swap_milk_tomato,tomato_sauce,wrong,15,15,0.0,0.0

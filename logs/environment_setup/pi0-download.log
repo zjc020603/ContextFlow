@@ -1,0 +1,134 @@
+{"kind": "pi0", "chunks": 20, "total_chunks": 1461, "elapsed_seconds": 17.7}
+{"kind": "pi0", "chunks": 40, "total_chunks": 1461, "elapsed_seconds": 74.0}
+{"kind": "pi0", "chunks": 60, "total_chunks": 1461, "elapsed_seconds": 113.2}
+RETRY 00042 1/16 ProxyError
+{"kind": "pi0", "chunks": 80, "total_chunks": 1461, "elapsed_seconds": 150.6}
+RETRY 00058 1/16 ProxyError
+RETRY 00067 1/16 ProxyError
+{"kind": "pi0", "chunks": 100, "total_chunks": 1461, "elapsed_seconds": 194.9}
+{"kind": "pi0", "chunks": 120, "total_chunks": 1461, "elapsed_seconds": 263.2}
+RETRY 00098 1/16 ProxyError
+{"kind": "pi0", "chunks": 140, "total_chunks": 1461, "elapsed_seconds": 403.9}
+RETRY 00123 1/16 ProxyError
+{"kind": "pi0", "chunks": 160, "total_chunks": 1461, "elapsed_seconds": 478.3}
+{"kind": "pi0", "chunks": 20, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 40, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 60, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 80, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 100, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 120, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 140, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 160, "total_chunks": 1447, "elapsed_seconds": 7.2}
+{"kind": "pi0", "chunks": 180, "total_chunks": 1447, "elapsed_seconds": 33.5}
+{"kind": "pi0", "chunks": 200, "total_chunks": 1447, "elapsed_seconds": 80.8}
+{"kind": "pi0", "chunks": 220, "total_chunks": 1447, "elapsed_seconds": 142.4}
+{"kind": "pi0", "chunks": 20, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 40, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 60, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 80, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 100, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 120, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 140, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 160, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 180, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 200, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 220, "total_chunks": 1447, "elapsed_seconds": 0.0}
+{"kind": "pi0", "chunks": 240, "total_chunks": 1447, "elapsed_seconds": 6.9}
+{"kind": "pi0", "chunks": 260, "total_chunks": 1447, "elapsed_seconds": 16.6}
+{"kind": "pi0", "chunks": 280, "total_chunks": 1447, "elapsed_seconds": 27.6}
+{"kind": "pi0", "chunks": 300, "total_chunks": 1447, "elapsed_seconds": 36.7}
+{"kind": "pi0", "chunks": 320, "total_chunks": 1447, "elapsed_seconds": 44.9}
+{"kind": "pi0", "chunks": 340, "total_chunks": 1447, "elapsed_seconds": 55.1}
+{"kind": "pi0", "chunks": 360, "total_chunks": 1447, "elapsed_seconds": 64.7}
+{"kind": "pi0", "chunks": 380, "total_chunks": 1447, "elapsed_seconds": 75.9}
+{"kind": "pi0", "chunks": 400, "total_chunks": 1447, "elapsed_seconds": 84.3}
+{"kind": "pi0", "chunks": 420, "total_chunks": 1447, "elapsed_seconds": 94.1}
+{"kind": "pi0", "chunks": 440, "total_chunks": 1447, "elapsed_seconds": 104.1}
+{"kind": "pi0", "chunks": 460, "total_chunks": 1447, "elapsed_seconds": 113.1}
+{"kind": "pi0", "chunks": 480, "total_chunks": 1447, "elapsed_seconds": 121.0}
+{"kind": "pi0", "chunks": 500, "total_chunks": 1447, "elapsed_seconds": 129.0}
+{"kind": "pi0", "chunks": 520, "total_chunks": 1447, "elapsed_seconds": 137.6}
+{"kind": "pi0", "chunks": 540, "total_chunks": 1447, "elapsed_seconds": 146.4}
+{"kind": "pi0", "chunks": 560, "total_chunks": 1447, "elapsed_seconds": 155.5}
+{"kind": "pi0", "chunks": 580, "total_chunks": 1447, "elapsed_seconds": 165.9}
+{"kind": "pi0", "chunks": 600, "total_chunks": 1447, "elapsed_seconds": 175.9}
+{"kind": "pi0", "chunks": 620, "total_chunks": 1447, "elapsed_seconds": 185.1}
+{"kind": "pi0", "chunks": 640, "total_chunks": 1447, "elapsed_seconds": 192.2}
+{"kind": "pi0", "chunks": 660, "total_chunks": 1447, "elapsed_seconds": 201.6}
+{"kind": "pi0", "chunks": 680, "total_chunks": 1447, "elapsed_seconds": 213.0}
+{"kind": "pi0", "chunks": 700, "total_chunks": 1447, "elapsed_seconds": 224.6}
+{"kind": "pi0", "chunks": 720, "total_chunks": 1447, "elapsed_seconds": 234.1}
+{"kind": "pi0", "chunks": 740, "total_chunks": 1447, "elapsed_seconds": 245.1}
+{"kind": "pi0", "chunks": 760, "total_chunks": 1447, "elapsed_seconds": 254.1}
+{"kind": "pi0", "chunks": 780, "total_chunks": 1447, "elapsed_seconds": 266.0}
+{"kind": "pi0", "chunks": 800, "total_chunks": 1447, "elapsed_seconds": 274.3}
+{"kind": "pi0", "chunks": 820, "total_chunks": 1447, "elapsed_seconds": 284.6}
+{"kind": "pi0", "chunks": 840, "total_chunks": 1447, "elapsed_seconds": 294.8}
+{"kind": "pi0", "chunks": 860, "total_chunks": 1447, "elapsed_seconds": 306.1}
+{"kind": "pi0", "chunks": 880, "total_chunks": 1447, "elapsed_seconds": 312.9}
+{"kind": "pi0", "chunks": 900, "total_chunks": 1447, "elapsed_seconds": 322.2}
+{"kind": "pi0", "chunks": 920, "total_chunks": 1447, "elapsed_seconds": 332.8}
+{"kind": "pi0", "chunks": 940, "total_chunks": 1447, "elapsed_seconds": 345.3}
+{"kind": "pi0", "chunks": 960, "total_chunks": 1447, "elapsed_seconds": 353.5}
+{"kind": "pi0", "chunks": 980, "total_chunks": 1447, "elapsed_seconds": 364.1}
+RETRY 00026 1/16 ReadTimeout
+{"kind": "pi0", "chunks": 1000, "total_chunks": 1447, "elapsed_seconds": 374.7}
+{"kind": "pi0", "chunks": 1020, "total_chunks": 1447, "elapsed_seconds": 382.4}
+{"kind": "pi0", "chunks": 1040, "total_chunks": 1447, "elapsed_seconds": 389.4}
+{"kind": "pi0", "chunks": 1060, "total_chunks": 1447, "elapsed_seconds": 402.6}
+{"kind": "pi0", "chunks": 1080, "total_chunks": 1447, "elapsed_seconds": 411.7}
+{"kind": "pi0", "chunks": 1100, "total_chunks": 1447, "elapsed_seconds": 418.1}
+{"kind": "pi0", "chunks": 1120, "total_chunks": 1447, "elapsed_seconds": 426.4}
+{"kind": "pi0", "chunks": 1140, "total_chunks": 1447, "elapsed_seconds": 439.5}
+{"kind": "pi0", "chunks": 1160, "total_chunks": 1447, "elapsed_seconds": 452.2}
+{"kind": "pi0", "chunks": 1180, "total_chunks": 1447, "elapsed_seconds": 460.9}
+{"kind": "pi0", "chunks": 1200, "total_chunks": 1447, "elapsed_seconds": 466.8}
+{"kind": "pi0", "chunks": 1220, "total_chunks": 1447, "elapsed_seconds": 475.0}
+{"kind": "pi0", "chunks": 1240, "total_chunks": 1447, "elapsed_seconds": 483.5}
+{"kind": "pi0", "chunks": 1260, "total_chunks": 1447, "elapsed_seconds": 500.5}
+{"kind": "pi0", "chunks": 1280, "total_chunks": 1447, "elapsed_seconds": 524.9}
+RETRY 00016 1/16 ReadTimeout
+{"kind": "pi0", "chunks": 1300, "total_chunks": 1447, "elapsed_seconds": 551.8}
+{"kind": "pi0", "chunks": 1320, "total_chunks": 1447, "elapsed_seconds": 561.5}
+{"kind": "pi0", "chunks": 1340, "total_chunks": 1447, "elapsed_seconds": 571.7}
+{"kind": "pi0", "chunks": 1360, "total_chunks": 1447, "elapsed_seconds": 582.4}
+RETRY 00010 1/16 ConnectionError
+{"kind": "pi0", "chunks": 1380, "total_chunks": 1447, "elapsed_seconds": 594.5}
+{"kind": "pi0", "chunks": 1400, "total_chunks": 1447, "elapsed_seconds": 604.7}
+{"kind": "pi0", "chunks": 1420, "total_chunks": 1447, "elapsed_seconds": 610.8}
+{"kind": "pi0", "chunks": 1440, "total_chunks": 1447, "elapsed_seconds": 617.3}
+{"kind": "pi0", "chunks": 1447, "total_chunks": 1447, "elapsed_seconds": 635.2}
+VERIFIED assets/arx/norm_stats.json
+VERIFIED assets/arx_mobile/norm_stats.json
+VERIFIED assets/droid/norm_stats.json
+VERIFIED assets/fibocom_mobile/norm_stats.json
+VERIFIED assets/franka/norm_stats.json
+VERIFIED assets/trossen/norm_stats.json
+VERIFIED assets/trossen_mobile/norm_stats.json
+VERIFIED assets/ur5e/norm_stats.json
+VERIFIED assets/ur5e_dual/norm_stats.json
+VERIFIED params/_CHECKPOINT_METADATA
+VERIFIED params/_METADATA
+VERIFIED params/_sharding
+VERIFIED params/d/85a4b908b188b86024ebb92e85065acd
+VERIFIED params/manifest.ocdbt
+VERIFIED params/ocdbt.process_0/d/085d261a6434a2182b9cf8204a14f929
+VERIFIED params/ocdbt.process_0/d/148068583a1e9abda7c46b410e91850f
+VERIFIED params/ocdbt.process_0/d/2f72ae7e4e549700e9d7da10816ed9a4
+VERIFIED params/ocdbt.process_0/d/309555f68bee51df688c4564b4d66fa5
+VERIFIED params/ocdbt.process_0/d/450c3d3cb6793dc644c1faf981296eb3
+VERIFIED params/ocdbt.process_0/d/45c6cbcc04a07d5f963bcf46cba903c4
+VERIFIED params/ocdbt.process_0/d/4e5aa230b6c768224fb6b77d78d6a1be
+VERIFIED params/ocdbt.process_0/d/5e775a3f399b6add8c3c8330df655e1b
+VERIFIED params/ocdbt.process_0/d/5f605020f3dadefc18287f67f369e264
+VERIFIED params/ocdbt.process_0/d/6629f15468f4d0cc39fb27518b7034a8
+VERIFIED params/ocdbt.process_0/d/808abec8853273a1e0076b0e42d19910
+VERIFIED params/ocdbt.process_0/d/8dd6f7ae99ab482b841a1eefa796bb41
+VERIFIED params/ocdbt.process_0/d/93fcf358bb740a5f61526a13e9a2c769
+VERIFIED params/ocdbt.process_0/d/99debaeabd76bd2cc1600905278c454b
+VERIFIED params/ocdbt.process_0/d/c5e0b7744afd7fde8b33a80d7f0329bc
+VERIFIED params/ocdbt.process_0/d/d5e67a46c20fea80fd9ccf63a434178c
+VERIFIED params/ocdbt.process_0/d/fc0caaf15ec5a8930e6d0a269722cbe6
+VERIFIED params/ocdbt.process_0/d/fec2923fef877d6b2a636a44d72670b8
+VERIFIED params/ocdbt.process_0/manifest.ocdbt
+PI0 COMPLETE: all files verified against S3 ETags

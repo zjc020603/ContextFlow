@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/data/zjc/workspace/models/ContextFlow/ContextFlow_run1/19999",
+  "arrays": 179,
+  "parameters": 2170151696,
+  "bytes": 8057676864,
+  "orbax_restore": "passed",
+  "finite_samples": "passed",
+  "config_shape_check": "passed"
+}

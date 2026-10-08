@@ -1,0 +1,10 @@
+{
+  "html_ok": true,
+  "linked_resources_HEAD_ok": 80,
+  "mp4_range_checks_ok": 60,
+  "first_frame_HTTP_decode_tasks": [
+    1,
+    5
+  ],
+  "vs_code_GUI_verified": false
+}

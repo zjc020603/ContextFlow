@@ -1,0 +1,8 @@
+[
+  "src/openpi/models/demo_context_zero.py",
+  "src/openpi/models/demo_context_zero_test.py",
+  "scripts/serve_no_context_zero.py",
+  "scripts/summarize_no_context_zero.py",
+  "examples/libero/no_context_zero.py",
+  "scripts/NO_CONTEXT_ZERO.md"
+]

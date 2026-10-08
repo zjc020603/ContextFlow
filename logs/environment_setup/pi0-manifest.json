@@ -1,0 +1,167 @@
+[
+  {
+    "key": "checkpoints/pi0_base/assets/arx/norm_stats.json",
+    "size": 2796,
+    "etag": "\"6d8967a23d55994df2cb1788e40cd908\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/arx_mobile/norm_stats.json",
+    "size": 2865,
+    "etag": "\"15f4c609b5a80faaaffc54b3f49f140e\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/droid/norm_stats.json",
+    "size": 2413,
+    "etag": "\"9a38813a44d1343e8a1b48bc9cb3ce55\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/fibocom_mobile/norm_stats.json",
+    "size": 2968,
+    "etag": "\"58ff8a509edcc970c67037fe530fc558\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/franka/norm_stats.json",
+    "size": 2424,
+    "etag": "\"5eff54d529a25dda802243068b814c04\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/trossen/norm_stats.json",
+    "size": 2797,
+    "etag": "\"5e05f2883532ef3a773333e3d39cfe54\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/trossen_mobile/norm_stats.json",
+    "size": 2867,
+    "etag": "\"30060455f53fe9fc4f5ac4e8236369a0\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/ur5e/norm_stats.json",
+    "size": 2354,
+    "etag": "\"23be1033727eee9cbb4ecd793e199fe2\""
+  },
+  {
+    "key": "checkpoints/pi0_base/assets/ur5e_dual/norm_stats.json",
+    "size": 2806,
+    "etag": "\"f9ec4acba3573db015db8d49cad8abc4\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/_CHECKPOINT_METADATA",
+    "size": 92,
+    "etag": "\"6a7f17d94a4e8fff701493caf2d3d12e\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/_METADATA",
+    "size": 19031,
+    "etag": "\"c90f85ad1432f6b65047b3350decc1cc\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/_sharding",
+    "size": 7607,
+    "etag": "\"41a6bc8471b0711b9ae367974609bed6\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/d/85a4b908b188b86024ebb92e85065acd",
+    "size": 2184,
+    "etag": "\"ac2b1fe50810dac645e746f35fb7e939\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/manifest.ocdbt",
+    "size": 117,
+    "etag": "\"d5a17eb199387c56550501f4fa781cd8\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/085d261a6434a2182b9cf8204a14f929",
+    "size": 203056647,
+    "etag": "\"79bee49874aca50509941122b4208363-25\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/148068583a1e9abda7c46b410e91850f",
+    "size": 2240220744,
+    "etag": "\"e87dbaa69e4b1ff85ffd4bfeb79bbe1b-268\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/2f72ae7e4e549700e9d7da10816ed9a4",
+    "size": 25249068,
+    "etag": "\"30508421681ff600d187af3aa01cb973-4\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/309555f68bee51df688c4564b4d66fa5",
+    "size": 1048478,
+    "etag": "\"a9c27a7ff20ad7a627b557206193e218\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/450c3d3cb6793dc644c1faf981296eb3",
+    "size": 34976130,
+    "etag": "\"efe60c13dcbf2abcbc8fca6e78b77e8a-5\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/45c6cbcc04a07d5f963bcf46cba903c4",
+    "size": 3077824146,
+    "etag": "\"2d83dcbe640a5eb7a8a0315281e9b9b9-367\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/4e5aa230b6c768224fb6b77d78d6a1be",
+    "size": 1649,
+    "etag": "\"4ed01e65da22c18201822ba162d230c4\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/5e775a3f399b6add8c3c8330df655e1b",
+    "size": 5379,
+    "etag": "\"a6e38f894cbbad8d201610fc23fb72ce\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/5f605020f3dadefc18287f67f369e264",
+    "size": 132845636,
+    "etag": "\"ce5f9ffbf2123fd7a7d7c9c2884b4018-16\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/6629f15468f4d0cc39fb27518b7034a8",
+    "size": 2173,
+    "etag": "\"2491531cdd22c796913c4d5f90c36086\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/808abec8853273a1e0076b0e42d19910",
+    "size": 209,
+    "etag": "\"36d256b615229071eb57b78fdb33a712\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/8dd6f7ae99ab482b841a1eefa796bb41",
+    "size": 1040,
+    "etag": "\"964ff9c47957566a78e7907665db9c54\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/93fcf358bb740a5f61526a13e9a2c769",
+    "size": 839453563,
+    "etag": "\"756bf3f5b96194fb96e10fb0e0aaa539-101\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/99debaeabd76bd2cc1600905278c454b",
+    "size": 559736645,
+    "etag": "\"f13a76ce3476ecdc4df5a07edb2aab8b-67\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/c5e0b7744afd7fde8b33a80d7f0329bc",
+    "size": 2240216669,
+    "etag": "\"4cd28e826bb217c33d31dfc48ba416d1-268\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/d5e67a46c20fea80fd9ccf63a434178c",
+    "size": 993821460,
+    "etag": "\"68600cea12537abf1d2590a5576e4783-119\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/fc0caaf15ec5a8930e6d0a269722cbe6",
+    "size": 545792151,
+    "etag": "\"db7b91c828ca4ee82cc4b9451e306010-66\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/d/fec2923fef877d6b2a636a44d72670b8",
+    "size": 1120134616,
+    "etag": "\"bdb674fce615e533bd41e4ff93987df4-134\""
+  },
+  {
+    "key": "checkpoints/pi0_base/params/ocdbt.process_0/manifest.ocdbt",
+    "size": 765,
+    "etag": "\"1551ebbebbdb44db3457e472f33b64bf\""
+  }
+]

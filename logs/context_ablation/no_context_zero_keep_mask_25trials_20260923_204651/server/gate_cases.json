@@ -1,0 +1,140 @@
+[
+  {
+    "case_id": "original/correct/milk/ep000_step000",
+    "historical_baseline_exact": true,
+    "mask_and_positions_exact": true,
+    "non_demo_tokens_exact": true,
+    "demo_zero_ranges": [
+      [
+        816,
+        848
+      ],
+      [
+        848,
+        880
+      ],
+      [
+        880,
+        912
+      ],
+      [
+        912,
+        944
+      ],
+      [
+        944,
+        976
+      ]
+    ],
+    "valid_prefix_tokens": 652,
+    "first_action_position_id": 653,
+    "attention_checks": {
+      "attention_shape": [
+        3,
+        3,
+        1,
+        8,
+        51,
+        1027
+      ],
+      "row_sum_max_error": 0.0026835185126401484,
+      "row_sum_tolerance": 0.004,
+      "masked_key_max": 0.0,
+      "block_mass": {
+        "current_image/base_0_rgb": 0.1311943531036377,
+        "current_image/left_wrist_0_rgb": 0.12120780348777771,
+        "current_image/right_wrist_0_rgb": 0.0,
+        "language/language": 0.013213787227869034,
+        "demo_image_latents/base_0_rgb": 0.032631732523441315,
+        "demo_image_latents/left_wrist_0_rgb": 0.032063648104667664,
+        "demo_image_latents/right_wrist_0_rgb": 0.0,
+        "demo_states/demo_states": 0.03438255563378334,
+        "demo_actions/demo_actions": 0.035672035068273544,
+        "current_state/current_state": 0.004315834958106279,
+        "predicted_actions/predicted_actions": 0.5953154563903809
+      }
+    },
+    "all_demo_values_invariant": true,
+    "swapped_demo_identity_invariant": true,
+    "capture_actions_exact": true,
+    "prepared_full_inputs_exact": true,
+    "old_masked_first_action_position_id": 525
+  },
+  {
+    "case_id": "original/correct/tomato_sauce/ep000_step000",
+    "historical_baseline_exact": true,
+    "mask_and_positions_exact": true,
+    "non_demo_tokens_exact": true,
+    "demo_zero_ranges": [
+      [
+        816,
+        848
+      ],
+      [
+        848,
+        880
+      ],
+      [
+        880,
+        912
+      ],
+      [
+        912,
+        944
+      ],
+      [
+        944,
+        976
+      ]
+    ],
+    "valid_prefix_tokens": 653,
+    "first_action_position_id": 654,
+    "attention_checks": {
+      "attention_shape": [
+        3,
+        3,
+        1,
+        8,
+        51,
+        1027
+      ],
+      "row_sum_max_error": 0.002443024975946173,
+      "row_sum_tolerance": 0.004,
+      "masked_key_max": 0.0,
+      "block_mass": {
+        "current_image/base_0_rgb": 0.1305912286043167,
+        "current_image/left_wrist_0_rgb": 0.11990824341773987,
+        "current_image/right_wrist_0_rgb": 0.0,
+        "language/language": 0.015029101632535458,
+        "demo_image_latents/base_0_rgb": 0.03282685950398445,
+        "demo_image_latents/left_wrist_0_rgb": 0.031431347131729126,
+        "demo_image_latents/right_wrist_0_rgb": 0.0,
+        "demo_states/demo_states": 0.03411397710442543,
+        "demo_actions/demo_actions": 0.03440099209547043,
+        "current_state/current_state": 0.004445953760296106,
+        "predicted_actions/predicted_actions": 0.5972601771354675
+      }
+    },
+    "all_demo_values_invariant": true,
+    "swapped_demo_identity_invariant": true,
+    "capture_actions_exact": true,
+    "prepared_full_inputs_exact": true,
+    "old_masked_first_action_position_id": 526
+  },
+  {
+    "case_id": "original/no/milk/ep000_step000",
+    "historical_baseline_exact": true
+  },
+  {
+    "case_id": "original/no/tomato_sauce/ep000_step000",
+    "historical_baseline_exact": true
+  },
+  {
+    "case_id": "original/wrong/milk/ep000_step000",
+    "historical_baseline_exact": true
+  },
+  {
+    "case_id": "original/wrong/tomato_sauce/ep000_step000",
+    "historical_baseline_exact": true
+  }
+]

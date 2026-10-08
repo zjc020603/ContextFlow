@@ -224,10 +224,14 @@ and [migration inventory](migration/snapshot_manifest.json). Installed package
 snapshots are in `migration/environments`; previously local helper scripts are
 preserved in `migration/local-tools` (some retain original machine paths).
 
-A Git clone alone does **not** restore ignored checkpoints, model/data directories,
-or virtual environments. The inventory records the backup status of large
-experimental artifacts. All public and locally trained model checkpoints are
-excluded from this migration by request; the local pi05 fine-tuned weights cannot
-be recovered by downloading the public base model. The old cluster's files remain
-untouched. Recreate environments and LIBERO path configuration on the new cluster
-rather than relying on old absolute paths.
+This migration includes code, reports, figures, interactive report HTML,
+JSON/JSONL/CSV results, configurations and provenance. Raw attention/observation
+arrays, rollout videos, binary viewer/video archives, all model checkpoints,
+external datasets and virtual environments are intentionally excluded. Some
+report links to those excluded files therefore require the original artifacts.
+
+Public weights and datasets can be downloaded again using the setup instructions.
+The local pi05 fine-tuned weights cannot be recovered by downloading the public
+base model; they were also excluded by request. The old cluster's original files
+remain untouched. Recreate environments and LIBERO path configuration on the new
+cluster rather than relying on old absolute paths.

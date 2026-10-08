@@ -189,22 +189,42 @@
     "/data/zjc/workspace/datasets",
     "/data/zjc/workspace/models"
   ],
-  "large_artifacts_pending": {
-    "experiment_numeric_arrays_and_videos": "about 12.9 GB; upload method pending"
-  },
   "excluded_from_public_upload": [
     "authentication credentials and private keys"
   ],
-  "status": "preparing; not a complete migration backup",
+  "status": "source/report snapshot; binary artifacts intentionally excluded",
   "excluded_from_migration": [
     "public downloadable pretrained/released model weights",
     "rebuildable virtual environments and dependency caches",
-    "all locally trained checkpoints (explicit user choice)"
+    "all locally trained checkpoints (explicit user choice)",
+    "raw experiment arrays (.npz)",
+    "rollout videos (.mp4) and duplicate binary viewer/video archives",
+    "runtime PID files and Python bytecode caches",
+    "external public datasets (download again on the new cluster)"
   ],
   "verification": {
     "focused_tests_passed": 20,
     "public_upload_secret_scan": "passed (3444 source/report files plus staged-file scan)",
-    "notes": "Source/report snapshot validated. Large experimental arrays and videos still require separate upload. All model checkpoints are excluded by user choice."
+    "notes": "20 focused tests passed. Source/report files scanned for credentials. Raw arrays, videos, all checkpoints and rebuildable environments are intentionally excluded; originals remain on the old cluster.",
+    "all_markdown_reports_in_logs_included": true,
+    "tracked_experiment_record_counts": {
+      ".json": 2299,
+      ".log": 203,
+      ".png": 609,
+      ".py": 286,
+      "": 13,
+      ".jsonl": 85,
+      ".txt": 14,
+      ".md": 49,
+      ".patch": 15,
+      ".csv": 24,
+      ".html": 13,
+      ".cjs": 4,
+      ".sh": 7,
+      ".bddl": 20,
+      ".typed": 2,
+      ".svg": 1
+    }
   },
   "excluded_local_training_output": {
     "publicly_redownloadable": false,
@@ -217,5 +237,12 @@
     "per_step_params_GiB": 12.51,
     "per_step_training_state_GiB": 20.34,
     "retention": "excluded by user request; original files retained on old cluster"
-  }
+  },
+  "included": [
+    "source code and experiment scripts",
+    "reports, figures and interactive report HTML",
+    "JSON/JSONL/CSV metrics, configuration and provenance",
+    "environment package inventories and setup instructions",
+    "small training/validation logs from separate worktrees"
+  ]
 }

@@ -213,7 +213,7 @@ full pretrained backbone variants remain separate branches:
 `experiment/pi0-full-contextflow` and `experiment/pi05-full-contextflow`.
 
 ```bash
-git clone --recurse-submodules https://github.com/zjc020603/ContextFlow.git
+git -c 'url.https://github.com/.insteadOf=git@github.com:' clone --recurse-submodules https://github.com/zjc020603/ContextFlow.git
 cd ContextFlow
 git worktree add -b experiment/pi0-full-contextflow .worktrees/pi0-full origin/experiment/pi0-full-contextflow
 git worktree add -b experiment/pi05-full-contextflow .worktrees/pi05-full origin/experiment/pi05-full-contextflow
